@@ -3,23 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>SJCP NavBar</title>
-    <link href='fonts/stjude-sans' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700">
   </head>
 
-  <style>
+  <style type="text/css">
     @font-face {
       font-family: 'StJudeSans';
-      src: url('fonts/stjude-sans/sjs-regular.ttf');
+      src: url('fonts/sjs-light.woff');
+      font-weight: 300;
+    }
+
+    @font-face {
+      font-family: 'StJudeSans';
+      font-weight: 400;
+      src: url('fonts/sjs-regular.eot'),
+           url('fonts/sjs-regular.ttf'),
+           url('fonts/sjs-regular.woff'),
+           url('fonts/sjs-regular.woff2');
+    }
+
+    @font-face {
+      font-family: 'StJudeSans';
+      font-weight: 700;
+      src: url('fonts/sjs-bold.eot'),
+           url('fonts/sjs-bold.ttf'),
+           url('fonts/sjs-bold.woff'),
+           url('fonts/sjs-bold.woff2');
     }
 
     .navbar {
       background: #1874DC;
-      font-family: 'StJudeSans';
-      padding-top: 0;
-      padding-bottom: 0;
+      font-family: 'StJudeSans', 'Open Sans', sans-serif;
+      font-weight: 700;
+      padding-left: 0px;
+      padding-right: 0px;
     }
 
     .site-icon {
@@ -29,43 +49,72 @@
       background-size: 100% auto;
       background-repeat: no-repeat;
       float: left;
-      margin-right: 10px;
+      margin-left: 10px;
+      margin: 0 10px -10px 10px;
       margin-bottom: -10px;
     }
 
     .title-text {
       border-left: 1px solid #7DBAD5;
-      padding: 10px 0 10px 10px;
-      font-weight: 500;
+      padding: 5px 0 5px 10px;
       color: white;
     }
 
     .title-subtext {
-      margin-left: 5px;
-      font-weight: 200;
-      color: #a1cde1;
-    }
-
-    .navbar-nav {
-      font-weight: 500;
+      padding-left: 5px;
+      font-weight: 300;
+      color: #A1CDE1;
     }
 
     .navbar-nav > .nav-item {
       font-size: 14px;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      line-height: 22px;
+      text-align: center;
     }
 
     .navbar-nav > .nav-item > a {
+      transition: all .25s ease-in-out;
       color: #FFF !important;
     }
 
     .navbar-nav > .nav-item > a.active {
-      background-color: #6BA9EF;
+      background-color: #6BA9EF !important;
     }
 
     .navbar-nav > .nav-item > a:hover {
-      background-color: #6BA9EF;
+      opacity: 0.8;
+    }
+
+    button.navbar-toggler {
+      margin-right: 15px;
+    }
+
+    @media only screen and (min-width: 992px) {
+      .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      .navbar-nav > .nav-item > a {
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      .navbar-nav > .nav-item:last-of-type > a {
+        padding-right: 15px;
+      }
+
+      .nav-link {
+        padding-top: 17px;
+        padding-bottom: 17px;
+      }
+    }
+
+    @media only screen and (max-width: 991px) {
+      ul.navbar-nav {
+        padding-top: 5px;
+      }
     }
   </style>
 
@@ -74,11 +123,14 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a href="/" class="navbar-brand">
-          <span class="site-icon" alt="St. Jude logo"> </span>
+          <span class="site-icon"></span>
           <span class="title-text">St. Jude Cloud</span>
           <span class="title-subtext">Platform</span>
         </a>
-        <div class="navbar-collapse collapse">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a href="/data" class="nav-link active">DATA</a>
