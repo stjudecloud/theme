@@ -1,6 +1,9 @@
 @font-face {
   font-family: 'St. Jude Sans';
-  src: url('fonts/stjude-sans/sjs-light.woff') format('woff');
+  src: url('../fonts/stjude-sans/sjs-light.eot');
+  src: url('../fonts/stjude-sans/sjs-light.ttf') format('truetype'),
+    url('../fonts/stjude-sans/sjs-light.woff') format('woff'),
+    url('../fonts/stjude-sans/sjs-light.woff2') format('woff2');
   font-weight: 300;
 }
 
