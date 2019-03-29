@@ -1,5 +1,14 @@
 @font-face {
   font-family: 'St. Jude Sans';
+  src: url('../fonts/stjude-sans/sjs-bold.eot');
+  src: url('../fonts/stjude-sans/sjs-bold.woff2') format('woff2'),
+    url('../fonts/stjude-sans/sjs-bold.woff') format('woff'),
+    url('../fonts/stjude-sans/sjs-bold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'St. Jude Sans';
   src: url('../fonts/stjude-sans/sjs-light.eot');
   src: url('../fonts/stjude-sans/sjs-light.ttf') format('truetype'),
     url('../fonts/stjude-sans/sjs-light.woff') format('woff'),
@@ -22,7 +31,7 @@
 .navbar {
   background: #1874dc;
   font-family: 'St. Jude Sans', 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   min-width: 250px;
   padding-left: 0px;
   padding-right: 0px;
