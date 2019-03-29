@@ -6,23 +6,28 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700">
-    <link rel="stylesheet" href="static/stjude-cloud-brand.css">
-    <link rel="stylesheet" href="static/navbar.css">
+
+    <link rel="stylesheet" type="text/css" href="static/stjude-cloud-brand.css">
+    <link rel="stylesheet" type="text/css" href="static/navbar.css">
+    <script type="text/javascript" src="static/navbar.js" defer="defer"></script>
   </head>
 
   <body>
     <header>
       <nav class="main-nav navbar navbar-expand-lg navbar-dark">
-        <a href="/" class="navbar-brand d-none d-sm-block">
-          <span class="site-icon"></span>
-          <span class="title-text">St. Jude Cloud</span>
+        <div class="navbar-brand d-none d-sm-block">
+          <a href="https://stjude.cloud/">
+            <span class="site-icon"></span>
+            <span class="title-text">St. Jude Cloud</span>
+          </a>
           <span class="title-subtext">Platform</span>
-        </a>
-        <a href="/" class="navbar-brand d-block d-sm-none">
-          <span class="site-icon"></span>
+        </div>
+        <div class="navbar-brand d-block d-sm-none">
+          <a href="https://stjude.cloud/">
+            <span class="site-icon"></span>
+          </a>
           <span class="title-text">Platform</span>
-        </a>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sjcNavigation" aria-controls="sjcNavigation" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -68,16 +73,5 @@
         </div>
       </nav>
     </header>
-
-    <script>
-      $('.secondary-nav .nav-link').on('click', function(e) {
-        // Bootstrap bug https://github.com/twbs/bootstrap/issues/19374
-        e.preventDefault();
-        $(this).tab('show');
-        var clickedTab = $(this);
-        $('.secondary-nav .nav-link').removeClass('active');
-        clickedTab.addClass('active');
-      });
-    </script>
   </body>
 </html>
