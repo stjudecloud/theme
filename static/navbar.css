@@ -1,19 +1,28 @@
 @font-face {
   font-family: 'St. Jude Sans';
-  src: url('../fonts/stjude-sans/sjs-bold.eot');
-  src: url('../fonts/stjude-sans/sjs-bold.woff2') format('woff2'),
-    url('../fonts/stjude-sans/sjs-bold.woff') format('woff'),
-    url('../fonts/stjude-sans/sjs-bold.ttf') format('truetype');
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: 'St. Jude Sans';
   src: url('../fonts/stjude-sans/sjs-light.eot');
   src: url('../fonts/stjude-sans/sjs-light.ttf') format('truetype'),
     url('../fonts/stjude-sans/sjs-light.woff') format('woff'),
     url('../fonts/stjude-sans/sjs-light.woff2') format('woff2');
   font-weight: 300;
+}
+
+@font-face {
+  font-family: 'St. Jude Sans';
+  src: url('../fonts/stjude-sans/sjs-regular.eot');
+  src: url('../fonts/stjude-sans/sjs-regular.woff2') format('woff2'),
+    url('../fonts/stjude-sans/sjs-regular.woff') format('woff'),
+    url('../fonts/stjude-sans/sjs-regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'St. Jude Sans';
+  src: url('../fonts/stjude-sans/sjs-bold.eot');
+  src: url('../fonts/stjude-sans/sjs-bold.woff2') format('woff2'),
+    url('../fonts/stjude-sans/sjs-bold.woff') format('woff'),
+    url('../fonts/stjude-sans/sjs-bold.ttf') format('truetype');
+  font-weight: 800;
 }
 
 .site-icon {
@@ -31,13 +40,14 @@
 .navbar {
   background: #1874dc;
   font-family: 'St. Jude Sans', 'Open Sans', sans-serif;
-  font-weight: 800;
+  font-weight: 400;
   min-width: 250px;
   padding-left: 0px;
   padding-right: 0px;
 }
 
 .main-nav .title-text {
+  font-weight: 800;
   border-left: 1px solid #7dbad5;
   padding: 5px 0 5px 10px;
   color: white;
