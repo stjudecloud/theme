@@ -15,5 +15,8 @@
     "St. Jude Cloud"
   ],
   "author": "",
-  "homepage": "https://github.com/stjude/stjde-cloud-theme#readme"
+  "homepage": "https://github.com/stjude/stjde-cloud-theme#readme",
+  "devDependencies": {
+    "bootstrap": "^4.3.1"
+  }
 }
