@@ -1,0 +1,19 @@
+{
+  "name": "stjude-cloud-theme",
+  "version": "1.0.0",
+  "description": "St. Jude Cloud Theme and Guidelines",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/stjude/stjde-cloud-theme.git"
+  },
+  "keywords": [
+    "St. Jude",
+    "St. Jude Cloud"
+  ],
+  "author": "",
+  "homepage": "https://github.com/stjude/stjde-cloud-theme#readme"
+}
