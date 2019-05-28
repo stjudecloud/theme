@@ -5,25 +5,25 @@
 /* Typography ************************************************/
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      "St. Jude Sans", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+$font-family-sans-serif: "St. Jude Sans", "Open Sans", "Helvetica Neue",
+  "Helvetica", "Arial", "sans-serif";
 // $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
 /* Monochromatic - Grays - Bootstrap Defaults ****************/
 
-   $white:    #fff;
-   $gray-100: #f8f9fa;
-   $gray-200: #e9ecef;
-   $gray-300: #dee2e6;
-   $gray-400: #ced4da;
-   $gray-500: #adb5bd;
-   $gray-600: #6c757d;
-   $gray-700: #495057;
-   $gray-800: #343a40;
-   $gray-900: #212529;
-   $black:    #000;
-   
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
 
 // $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -44,21 +44,21 @@ $font-family-sans-serif:      "St. Jude Sans", "Open Sans", "Helvetica Neue", "H
 
 /* Main Brand Colors *****************************************/
 
-   $blue:    		#1874dc; // Interface, Hyperlinks, UI Button
-   $blue-dark:    	#002856; 
-   $purple:  		#8332a7; 
-   $purple-dark:  	#490e67;
-   $red:     		#c10f3a; // Accent, Alert, St. Jude Logo
-   $red-dark:     	#911938;
-   $orange:  		#e03400; // Error Message
-   $yellow:  		#ffd100; // Warning
-   $yellow-dark:  	#ffb125;
-   $green:   		#c0da07; // Success, Action Button
-   $green-dark:   	#75bc21;
-   $aqua:   		#64d0e4; 
-   $aqua-dark:   	#1eadc1;
-   $gray:   		#cccccc;
-   $gray-dark:   	#63666b;
+$blue: #1874dc; // Interface, Hyperlinks, UI Button
+$blue-dark: #002856;
+$purple: #8332a7;
+$purple-dark: #490e67;
+$red: #c10f3a; // Accent, Alert, St. Jude Logo
+$red-dark: #911938;
+$orange: #e03400; // Error Message
+$yellow: #ffd100; // Warning
+$yellow-dark: #ffb125;
+$green: #c0da07; // Success, Action Button
+$green-dark: #75bc21;
+$aqua: #64d0e4;
+$aqua-dark: #1eadc1;
+$gray: #cccccc;
+$gray-dark: #63666b;
 
 // $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -81,11 +81,11 @@ $font-family-sans-serif:      "St. Jude Sans", "Open Sans", "Helvetica Neue", "H
 //   $colors
 // );
 
-   $primary:       $blue !default;
+$primary: $blue !default;
 // $secondary:     $gray-600 !default;
-   $success:       $green-dark;
-   $info:          $purple;
-   $warning:       $yellow-dark !default;
+$success: $green-dark;
+$info: $purple;
+$warning: $yellow-dark !default;
 // $danger:        $red !default;
 // $light:         $gray-100 !default;
 // $dark:          $gray-800 !default;
@@ -108,16 +108,16 @@ $font-family-sans-serif:      "St. Jude Sans", "Open Sans", "Helvetica Neue", "H
 
 /* SJC Custom Swatches  *****************************************/
 
-   $swatch-1:			$red;
-   $swatch-1-dark:		$red-dark;
-   $swatch-2:			$blue;
-   $swatch-2-dark:		$blue-dark;
-   $swatch-3:			$green;
-   $swatch-3-dark:		$green-dark;
-   $swatch-4:			$purple;
-   $swatch-4-dark:		$purple-dark;
-   $swatch-5:			$yellow;
-   $swatch-5-dark:		$yellow-dark;
-   $swatch-6:			$aqua;
-   $swatch-6-dark:		$aqua-dark;
-   $swatch-7:			$orange;
+$swatch-1: $red;
+$swatch-1-dark: $red-dark;
+$swatch-2: $blue;
+$swatch-2-dark: $blue-dark;
+$swatch-3: $green;
+$swatch-3-dark: $green-dark;
+$swatch-4: $purple;
+$swatch-4-dark: $purple-dark;
+$swatch-5: $yellow;
+$swatch-5-dark: $yellow-dark;
+$swatch-6: $aqua;
+$swatch-6-dark: $aqua-dark;
+$swatch-7: $orange;
