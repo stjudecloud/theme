@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="St. Jude Cloud Development Framework guidelines, tips and code snippets.">
+    <meta name="author" content="">
+    <meta name="keywords" content="st. jude, stjude, stjude cloud, st. jude cloud, genomics">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>Components | St. Jude Cloud Developer Guide</title>
+
+    <!-- Load Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">	
+
+    <!-- Load Customized St. Jude Bootstrap Theme -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/navbar.js"></script>
+  </head>
+
+  <body id="home">
+
+    <header>
+      <!-- Global Omnibar -->
+      <div id="omnibar">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="https://stjude.cloud">
+            <span class="logo"><img src="images/stjude-logo-child.png" alt="St. Jude Cloud" title="St. Jude Cloud" /></span>
+          </a>
+          <span class="sjc-title" href="https://stjude.cloud"><a href="">St. Jude Cloud</a></span>
+
+          <span class="site-title mr-auto">
+            <a href=""><span>Designer and Developer Guide</span></a>
+          </span>
+          <!-- Global Icons -->	
+          <ul class="nav justify-content-center global-icons">
+            <li class="nav-item active" id="icon-platform" title="About St. Jude Cloud">
+              <a class="nav-link" href="https://stjude.github.io/sjcloud-docs/index.html"><i class="fas fa-info-circle"></i></a>
+            </li>
+            <li class="nav-item nav-item-apps dropdown">
+              <a class="nav-link dropdown-toggle" href="/" id="nav-item-icon-apps" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="St. Jude Cloud Apps">
+                <i class="fas fa-th"></i></a>
+              <div class="dropdown-menu" aria-labelledby="nav-item-icon-apps">
+                <a class="dropdown-item" href="http://cstn-ui.azurewebsites.net">CSTN</a>
+                <a class="dropdown-item" href="http://nbtp-dev.azurewebsites.net">NBTP</a>
+                <a class="dropdown-item" href="https://pecan.stjude.cloud">Pecan</a>
+                <a class="dropdown-item" href="http://sicklecelldev.azurewebsites.net">Sickle Cell</a>
+              </div>
+            </li>
+            <li class="nav-item nav-item-user dropdown">
+              <a class="nav-link dropdown-toggle" href="/" id="nav-item-icon-user" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="User Info"><i class="fas fa-user"></i></a>
+              <div class="dropdown-menu" aria-labelledby="nav-item-icon-user">
+                <a class="dropdown-item" href="/oauth_login">Sign In</a>
+                <a class="dropdown-item" href="/user/details">Create Account</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Start Portal Nav -->
+      <nav class="navbar navbar-expand-md navbar-light site-nav">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#siteSpecificNavigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span><span class="site-nav-label">Site Menu</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="siteSpecificNavigation">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="components.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Components
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="components.html">Buttons</a>
+                <a class="dropdown-item" href="components-global.html">Global Top Bar and Footer</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="color-palette.html">Color Palette</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+
+    <!-- Start Banner-->
+
+    <div class="container-fluid banner">
+      <div class="jumbotron main-banner">
+        <div class="container">
+          <h1>Components</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Main Content-->
+
+    <div id="content-main">
+
+      <div class="container">
+
+        <h2 >Buttons</h2>
+
+        <p> <button type="button" class="btn btn-primary mr-2">UI Button</button><button type="button" class="btn btn-outline-primary mr-2">UI Button</button></p>
+
+        <p><button type="button" class="btn btn-success mr-2">Action Button</button><button type="button" class="btn btn-outline-success">Action Button</button></p>
+
+        <p><button type="button" class="btn btn-danger mr-2">Alert Button</button><button type="button" class="btn btn-outline-danger">Alert Button</button></p>
+
+        <h2 class="pt-4">Alerts/Info</h2>
+        <div class="alert alert-warning" role="alert">
+          A simple warning alert—check it out!
+        </div>
+        <h2 class="pt-4">Card</h2>
+        <div class="row">
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-3 mb-4">
+            <div class="card">
+              <div class="card-header">Card Layout 1</div>	
+              <img src="images/dna-code.jpg" alt="" target="_blank" />
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <div class="card">
+
+              <img class="icon" src="images/icon-tools.png" alt="" />
+              <p class="card-text mb-0">This is <strong>Card Layout 2</strong> and it's without the card header.</p>
+              <div class="card-body">
+                <a href="#" target="_blank" class="btn btn-success btn-block">Button</a>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-3 mb-4">
+            <div class="card">
+              <div class="card-header">Card Layout 3						</div>
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-3 mb-4">
+            <div class="card">
+              <div class="card-header">Card Layout 4</div>	
+              <img class="icon" src="images/icon-visualizations.png" alt="" />
+              <div class="card-body">
+                <p class="card-text">Stay tuned for Framework upgrades, new features and enhancements.</p>
+                <a class="btn btn-success" href="#">It's just a button :)</a>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+
+      </div>
+
+
+    </div><!-- /.container-main -->
+
+
+
+    <!-- Start Footer-->
+
+    <footer class="footer">
+      <div class="container-fluid">
+
+        <p class="copyright">© Copyright 2019. St. Jude Children's Research Hospital, a not-for-profit, section 501(c)(3).
+          <a href="https://www.stjude.org"
+             target="_blank">www.stjude.org</a> |
+           <a href="https://stjude.cloud/contact" target="_blank">Contact Us</a> |
+           <a href="https://stjude.cloud/privacy-policy">Privacy Policy</a> |
+           <a href="https://stjude.cloud/terms-of-use">Terms and Conditions</a>
+        </p>
+        <ul class="nav justify-content-center">
+
+          <li>
+            <a target="_blank" href="https://www.stjude.org/legal/u-s-privacy-policy-statement.html" title="U.S. Privacy Policy Statement">U.S. Privacy Policy Statement</a>
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.stjude.org/legal.html" title="Disclaimer / Registrations / Copyright Statement">Disclaimer / Registrations / Copyright Statement</a>
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.stjude.org/legal/linking-policy.html" title="Linking Policy">Linking Policy</a>
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.stjude.org/legal/notice-of-privacy-practices.html" title="Notice of Privacy Practices (HIPAA)">Notice of Privacy Practices (HIPAA)</a>
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.stjude.org/legal/notice-of-non-discrimination.html" title="Notice of Non-Discrimination">Notice of Non-Discrimination</a>
+          </li>
+        </ul>
+
+
+        <ul class="social-media">
+          <li>
+            <a target="_blank" href="https://www.facebook.com/stjuderesearch" class="fab fa-facebook-f"></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/StJudeResearch" class="fab fa-twitter"></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/stjuderesearch/" class="fab fa-instagram"></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/company/st-jude-childrens-research-hospital/" class="fab fa-linkedin"></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.youtube.com/user/MyStJude" class="fab fa-youtube"></a>
+          </li>
+        </ul>
+
+
+      </div>
+    </footer>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
