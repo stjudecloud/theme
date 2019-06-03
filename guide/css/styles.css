@@ -9540,17 +9540,17 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /* Omnibar - Global Top Bar */
-#omnibar .navbar {
+.omnibar .navbar {
   background-color: #1874dc;
   padding: 0;
   height: 56px;
 }
 
-#omnibar .navbar-brand {
+.omnibar .navbar-brand {
   display: flex;
 }
 
-#omnibar .navbar-brand a {
+.omnibar .navbar-brand a {
   display: inline-block;
 }
 
@@ -9576,7 +9576,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #c7def9;
 }
 
-body #omnibar .dropdown-menu {
+body .omnibar .dropdown-menu {
   position: absolute;
   left: -115px;
   margin-top: 0;
@@ -9586,7 +9586,7 @@ body #omnibar .dropdown-menu {
   border-bottom: 3px solid #1874dc;
 }
 
-#omnibar .nav-item-apps .dropdown-menu i {
+.omnibar .nav-item-apps .dropdown-menu i {
   padding-right: 5px;
   font-size: 1em;
   color: #1874dc;
@@ -9626,10 +9626,12 @@ body #omnibar .dropdown-menu {
   padding: 0 0px 0 10px;
   display: inline-block;
   outline: none;
+  color: #fff;
 }
 
 .sjc-title a {
   color: #fff;
+  text-decoration: none;
 }
 
 .site-title {
@@ -9638,20 +9640,12 @@ body #omnibar .dropdown-menu {
   line-height: 1.2rem;
   display: inline-block;
   padding-left: 5px;
-}
-
-.site-title em {
-  font-style: normal;
-}
-
-.site-title a {
   color: #99c4f4;
   text-decoration: none;
 }
 
-.site-title a:hover {
-  text-decoration: none;
-  color: #fff;
+.site-title em {
+  font-style: normal;
 }
 
 /* Media Query Overrides ****************************************/
