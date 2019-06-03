@@ -1,16 +1,11 @@
-
 //
 // SJC Color Palette
 //
 
 /* Typography ************************************************/
 
-// stylelint-disable value-keyword-case
 $font-family-sans-serif: "St. Jude Sans", "Open Sans", "Helvetica Neue",
-  "Helvetica", "Arial", "sans-serif";
-// $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-// $font-family-base:            $font-family-sans-serif !default;
-// stylelint-enable value-keyword-case
+  "Helvetica", Arial, sans-serif;
 
 /* Monochromatic - Grays - Bootstrap Defaults ****************/
 
@@ -25,23 +20,6 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
 $black: #000;
-
-// $grays: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
-// $grays: map-merge(
-//   (
-//     "100": $gray-100,
-//     "200": $gray-200,
-//     "300": $gray-300,
-//     "400": $gray-400,
-//     "500": $gray-500,
-//     "600": $gray-600,
-//     "700": $gray-700,
-//     "800": $gray-800,
-//     "900": $gray-900
-//   ),
-//   $grays
-// );
 
 /* Main Brand Colors *****************************************/
 
@@ -61,51 +39,14 @@ $aqua-dark: #1eadc1;
 $gray: #cccccc;
 $gray-dark: #63666b;
 
-// $colors: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
-// $colors: map-merge(
-//   (
-//     "blue":       $blue,
-//     "indigo":     $indigo,
-//     "purple":     $purple,
-//     "pink":       $pink,
-//     "red":        $red,
-//     "orange":     $orange,
-//     "yellow":     $yellow,
-//     "green":      $green,
-//     "teal":       $teal,
-//     "cyan":       $cyan,
-//     "white":      $white,
-//     "gray":       $gray-600,
-//     "gray-dark":  $gray-800
-//   ),
-//   $colors
-// );
-
-$primary: $blue !default;
-// $secondary:     $gray-600 !default;
+$primary: $blue;
+// $secondary: $gray-600 !default;
 $success: $green-dark;
 $info: $purple;
-$warning: $yellow-dark !default;
-// $danger:        $red !default;
-// $light:         $gray-100 !default;
-// $dark:          $gray-800 !default;
-
-// $theme-colors: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
-// $theme-colors: map-merge(
-//   (
-//     "primary":    $primary,
-//     "secondary":  $secondary,
-//     "success":    $success,
-//     "info":       $info,
-//     "warning":    $warning,
-//     "danger":     $danger,
-//     "light":      $light,
-//     "dark":       $dark
-//   ),
-//   $theme-colors
-// );
+$warning: $yellow-dark;
+// $danger:    $red !default;
+// $light:     $gray-100 !default;
+// $dark:      $gray-800 !default;
 
 /* SJC Custom Swatches  *****************************************/
 
@@ -122,6 +63,3 @@ $swatch-5-dark: $yellow-dark;
 $swatch-6: $aqua;
 $swatch-6-dark: $aqua-dark;
 $swatch-7: $orange;
-
-@import "~bootstrap/scss/variables";
-
