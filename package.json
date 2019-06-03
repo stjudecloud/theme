@@ -11,19 +11,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/stjude/stjde-cloud-theme.git"
+    "url": "git+https://github.com/stjude/stjde-cloud-theme.git"
   },
   "keywords": [
     "St. Jude",
-    "St. Jude Cloud"
+    "St. Jude Cloud",
+    "Bootstrap Theme",
+    "css",
+    "sass"
   ],
-  "author": "",
-  "homepage": "https://github.com/stjude/stjde-cloud-theme#readme",
+  "files": [
+    "dist/{css}/*.{css,map}",
+    "fonts/stjude-sans/*.{eot,otf,ttf,woff,woff2}",
+    "scss/**/*.scss"
+  ],
+  "author": "St. Jude",
+  "homepage": "https://github.com/stjude/stjde-cloud-theme",
   "peerDependencies": {
     "bootstrap": "4.3.1"
   },
   "devDependencies": {
-    "bootstrap": "^4.3.1",
+    "bootstrap": "4.3.1",
     "clean-css-cli": "^4.3.0",
     "node-sass": "^4.12.0",
     "node-sass-package-importer": "^5.3.1"
