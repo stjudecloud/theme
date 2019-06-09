@@ -10239,8 +10239,8 @@ h3 {
   font-family: 'St. Jude Sans';
   src: url("../fonts/stjude-sans/sjs-book.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/stjude-sans/sjs-book.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-book.woff") format("woff"), url("../fonts/stjude-sans/sjs-book.ttf") format("truetype");
-  /* Safari, Android, iOS */
+  src: url("../fonts/stjude-sans/sjs-book.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-book.woff") format("woff");
+  /* Pretty Modern Browsers */
   font-weight: 600;
 }
 
@@ -10248,8 +10248,8 @@ h3 {
   font-family: 'St. Jude Sans';
   src: url("../fonts/stjude-sans/sjs-book-italic.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/stjude-sans/sjs-book-italic.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-book-italic.woff") format("woff"), url("../fonts/stjude-sans/sjs-book-italic.ttf") format("truetype");
-  /* Safari, Android, iOS */
+  src: url("../fonts/stjude-sans/sjs-book-italic.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-book-italic.woff") format("woff");
+  /* Pretty Modern Browsers */
   font-style: italic;
   font-weight: 600;
 }
