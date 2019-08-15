@@ -16,7 +16,7 @@
     <header>
       <!-- Global Omnibar -->
       <div class="omnibar">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar">
           <a class="navbar-brand" href="https://stjude.cloud">
             <span class="logo">
               <img src="images/stjude-logo-child.png" alt="St. Jude Cloud" title="St. Jude Cloud" />
@@ -31,29 +31,43 @@
           </span>
 
           <ul class="nav justify-content-center global-icons">
-            <li class="nav-item active" id="icon-platform" title="About St. Jude Cloud">
-              <a class="nav-link" href="https://stjude.github.io/sjcloud-docs/index.html">
-                <i class="fa fa-info-circle"></i>
-              </a>
-            </li>
             <li class="nav-item nav-item-apps dropdown">
-              <a class="nav-link dropdown-toggle" href="/" id="nav-item-icon-apps" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="St. Jude Cloud Apps">
-                <i class="fa fa-th"></i>
+              <a class="nav-link dropdown-toggle nav-link-active" href="/" id="nav-item-icon-apps" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="St. Jude Cloud Apps">
+                <i class="fas fa-bars"></i>
               </a>
-              <div class="dropdown-menu" aria-labelledby="nav-item-icon-apps">
-                <a class="dropdown-item" href="http://cstn-ui.azurewebsites.net">CSTN</a>
-                <a class="dropdown-item" href="http://nbtp-dev.azurewebsites.net">NBTP</a>
-                <a class="dropdown-item" href="https://pecan.stjude.cloud">Pecan</a>
-                <a class="dropdown-item" href="http://sicklecelldev.azurewebsites.net">Sickle Cell</a>
-              </div>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-main" aria-labelledby="nav-item-icon-waffle " id="dropdown-main">
+                <div class="d-flex flex-column flex-lg-row">
+                  <div class="nav-flex-fill">
+                    <a class="dropdown-item dropdown-main-options" href="https://www.stjude.cloud/data"><img alt="data-icon" id="icon-nav" src="images/icon-nav-data.png">Data Browser</a>
+                    <a class="dropdown-item dropdown-main-options" href="https://www.stjude.cloud/tools"><img alt="tools-icon" id="icon-nav" src="images/icon-nav-tools.png">Analysis Tools</a>
+                    <a class="dropdown-item dropdown-main-options" href="https://www.stjude.cloud/visualizations"><img alt="visualizations-icon" id="icon-nav" src="images/icon-nav-visualization.png">Curated Visualizations</a>
+                  </div>
+                  <div class="nav-flex-fill">
+                    <p class="dropdown-column-header">Apps</p>
+                    <a class="dropdown-item" href="https://pecan.stjude.cloud">Pecan (Pediatric Cancer)</a>
+                    <a class="dropdown-item" href="http://sickle-cell.stjude.cloud/">Sickle Cell Disease</a>
+                    <a class="dropdown-item" href="https://proteinpaint.stjude.org/survivorship/">Survivorship</a>
+                  </div>
+                  <div class="nav-flex-fill">
+                    <p class="dropdown-column-header">Help</p>
+                    <a class="dropdown-item" href="https://www.stjude.cloud/docs/" target="_blank">User Guides</a>
+                    <a class="dropdown-item" href="https://www.stjude.cloud/faq" target="_blank">FAQ</a>
+                    <a class="dropdown-item" href="https://www.stjude.cloud/contact" target="_blank">Contact Us</a>
+                  </div>
+                </div>
+               
+             </div>
+ 
             </li>
             <li class="nav-item nav-item-user dropdown">
-              <a class="nav-link dropdown-toggle" href="/" id="nav-item-icon-user" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="User Info">
+              <a class="nav-link dropdown-toggle nav-link-active" href="/" id="nav-item-icon-user" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="User Info">
                 <i class="fa fa-user"></i>
               </a>
-              <div class="dropdown-menu" aria-labelledby="nav-item-icon-user">
-                <a class="dropdown-item" href="/oauth_login">Sign In</a>
-                <a class="dropdown-item" href="/user/details">Create Account</a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-profile" aria-labelledby="nav-item-icon-user" id="dropdown-user">
+                <div class="nav-flex-fill">
+                <a class="dropdown-item profile" href="/oauth_login">Sign In</a>
+                <a class="dropdown-item profile" href="/user/details">Create Account</a>
+              </div>
               </div>
             </li>
           </ul>
