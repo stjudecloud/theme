@@ -32,19 +32,19 @@ $red-dark: #911938 !default;
 $orange: #e03400 !default; // Error Message
 $yellow: #ffd100 !default; // Warning
 $yellow-dark: #ffb125 !default;
-$green: #c0da07 !default; // Success, Action Button
-$green-dark: #75bc21 !default;
+$green: #c0da07 !default;
+$green-dark: #75bc21 !default; // Success, Action Button
 $aqua: #64d0e4 !default;
 $aqua-dark: #1eadc1 !default;
 $gray: #cccccc !default;
 $gray-dark: #63666b !default;
 
 $primary: $blue !default;
-// $secondary: $gray-600 !default;
+$secondary: $blue-dark !default;
 $success: $green-dark !default;
 $info: $purple !default;
 $warning: $yellow-dark !default;
-// $danger:    $red !default;
+$danger: $orange !default;
 // $light:     $gray-100 !default;
 // $dark:      $gray-800 !default;
 
