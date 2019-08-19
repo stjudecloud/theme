@@ -38,12 +38,10 @@
 	color: lighten($primary, 40%);
 }
 
-.nav-item {
-	&.show {
-		background-color: lighten($primary, 10%);
-		border-radius: 5px;
-		text-align: center;
-	}
+.nav-link[aria-expanded="true"] {
+	background-color: lighten($primary, 10%);
+	border-radius: 5px;
+	text-align: center;
 }
 
 
@@ -244,6 +242,16 @@ a:hover.dropdown-item {
 		display: inline-block;
 	}
 	
+	.dropdown {
+		position: static;
+	}
+
+	.dropdown-menu {
+		width: 100%;
+		right: 0;
+		top: 100%;
+	}
+
 }
 
 
