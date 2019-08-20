@@ -5,19 +5,21 @@ This repository provides theme guidelines and plug-n-play style components for S
 
 ```text
 stjude-cloud-theme/
-├── dist/
-│   └── css/
-│       ├── stjude-cloud-theme.css
-│       ├── stjude-cloud-theme.css.map
-│       ├── stjude-cloud-theme.min.css
-│       └── stjude-cloud-theme.min.css.map
-└── fonts/
-    └── stjude-sans/
-        ├── sjs-regular.eot
-        ├── sjs-regular.ttf
-        ├── sjs-regular.woff
-        ├── sjs-regular.woff2
-        └── ... and bold/italic variants
+└── dist/
+    ├── css/
+    │   ├── stjude-cloud-theme.css
+    │   ├── stjude-cloud-theme.css.map
+    │   ├── stjude-cloud-theme.min.css
+    │   └── stjude-cloud-theme.min.css.map
+    ├── fonts/
+    │   └── stjude-sans/
+    │       ├── sjs-regular.eot
+    │       ├── sjs-regular.ttf
+    │       ├── sjs-regular.woff
+    │       ├── sjs-regular.woff2
+    │       └── ... and bold/italic variants
+    └── images/
+        └── stjude-child-logo.png
 ```
 
 Compiled CSS contains all of default Bootstrap with St. Jude theme overrides.
