@@ -21,8 +21,9 @@
     "sass"
   ],
   "files": [
-    "dist/{css}/*.{css,map}",
-    "fonts/stjude-sans/*.{eot,otf,ttf,woff,woff2}",
+    "dist/css/*.{css,map}",
+    "dist/fonts/stjude-sans/*.{eot,otf,ttf,woff,woff2}",
+    "dist/images/*.png",
     "scss/**/*.scss"
   ],
   "author": "St. Jude",
