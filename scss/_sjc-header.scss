@@ -15,7 +15,7 @@
 }
 
 .global-icons .nav-link {
-	color: #fff;
+	color: $white;
 	padding: .5rem;
 	margin-left: .5rem;
 	text-align: center;
@@ -44,7 +44,6 @@
 	text-align: center;
 }
 
-
 body .omnibar .dropdown-menu  {	
 	position: absolute;
 	margin-top: 0;
@@ -53,7 +52,6 @@ body .omnibar .dropdown-menu  {
 	border-radius: 0;
 	border-bottom: 3px solid darken($primary, 10%);
 	left: auto;
-	
 }
 
 .dropdown-menu-main {
@@ -74,11 +72,11 @@ body .omnibar .dropdown-menu  {
 	content: none;
 }
 
-/* Brand*/
+/* Brand */
 
 .logo {
 	display: inline-block;
-	color: #fff;
+	color: $white;
 	text-decoration: none;
 	width: 60px;
 	padding-left: 5px;
@@ -102,14 +100,14 @@ body .omnibar .dropdown-menu  {
 	font-weight: 800;
 	font-size: 20px;
 	margin: 0;
-	padding: 0 0px 0 10px;
+	padding: 0 0 0 10px;
 	display: inline-block;
 	outline: none;	
-  	color: #fff;
+  	color: $white;
 }
 
 .sjc-title a {
-  color: #fff;
+  color: $white;
   text-decoration: none;
 }
 
@@ -128,16 +126,17 @@ body .omnibar .dropdown-menu  {
 }
 
 
-// The dropdown menu
+/* Dropdown Menu */
+
 .dropdown-menu {
 	top: 125%;
 	padding: 1.5rem 0;
 	color: $white;
 	background: lighten($primary, 10%) !important;
-  }
+}
 
 .nav-flex-fill {
-	padding: 0 1rem;
+	padding: 0 1.25rem;
 	flex: 1 1 auto !important;
 	min-width: 225px;
 	border-right: 2px solid darken($primary, 5%);
@@ -156,7 +155,7 @@ body .omnibar .dropdown-menu  {
 
 .dropdown-item {
 	color: $white;
-	padding: .25rem .5rem;
+	padding: .4rem .5rem;
 	min-width: 10rem;
 	flex: 1 1 auto;
 	border-bottom: solid $primary .5px;
@@ -194,7 +193,7 @@ a:hover.dropdown-item {
 	
 /* Media Query Overrides ****************************************/
 
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-down(md) {
 	
 	.sjc-title {
 		display: none;
@@ -205,12 +204,8 @@ a:hover.dropdown-item {
 	}
 	
 	.site-title a {
-		color: #fff;
+		color: $white;
 	}
-
-}
-
-@include media-breakpoint-down(md) {
 	
 	.dropdown-column-header {
 		margin-top: 1.25rem;
@@ -237,7 +232,7 @@ a:hover.dropdown-item {
 	}
 	
 	.site-title a {
-		color: #fff;
+		color: $white;
 		font-size: 16px;
 		display: inline-block;
 	}
@@ -253,81 +248,3 @@ a:hover.dropdown-item {
 	}
 
 }
-
-
-
-
-@font-face {
-	font-family: 'St. Jude Sans';
-	src: url('../fonts/stjude-sans/sjs-regular.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/stjude-sans/sjs-regular.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('../fonts/stjude-sans/sjs-regular.woff') format('woff'), /* Pretty Modern Browsers */
-		 url('../fonts/stjude-sans/sjs-regular.ttf')  format('truetype'); /* Safari, Android, iOS */
-	font-weight: 400;
-  }
-  
-  @font-face {
-	font-family: 'St. Jude Sans';
-	src: url('../fonts/stjude-sans/sjs-regular-italic.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/stjude-sans/sjs-regular-italic.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('../fonts/stjude-sans/sjs-regular-italic.woff') format('woff'), /* Pretty Modern Browsers */
-		 url('../fonts/stjude-sans/sjs-regular-italic.ttf')  format('truetype'); /* Safari, Android, iOS */
-	font-style: italic;
-	font-weight: 400;
-  }
-  
-  @font-face {
-	font-family: 'St. Jude Sans';
-	src: url('../fonts/stjude-sans/sjs-book.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/stjude-sans/sjs-book.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('../fonts/stjude-sans/sjs-book.woff') format('woff'); /* Pretty Modern Browsers */
-	font-weight: 600;
-  }
-  
-  @font-face {
-	font-family: 'St. Jude Sans';
-	src: url('../fonts/stjude-sans/sjs-book-italic.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/stjude-sans/sjs-book-italic.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('../fonts/stjude-sans/sjs-book-italic.woff') format('woff'); /* Pretty Modern Browsers */
-	font-style: italic;
-	font-weight: 600;
-  }
-  
-  @font-face {
-	font-family: 'St. Jude Sans';
-	src: url('../fonts/stjude-sans/sjs-medium.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/stjude-sans/sjs-medium.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('../fonts/stjude-sans/sjs-medium.woff') format('woff'), /* Pretty Modern Browsers */
-		 url('../fonts/stjude-sans/sjs-medium.ttf')  format('truetype'); /* Safari, Android, iOS */
-	font-weight: 700;
-  }
-  
-  @font-face {
-	font-family: 'St. Jude Sans';
-	src: url('../fonts/stjude-sans/sjs-medium-italic.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/stjude-sans/sjs-medium-italic.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('../fonts/stjude-sans/sjs-medium-italic.woff') format('woff'), /* Pretty Modern Browsers */
-		 url('../fonts/stjude-sans/sjs-medium-italic.ttf')  format('truetype'); /* Safari, Android, iOS */
-	font-style: italic;
-	font-weight: 700;
-  }
-  
-  @font-face {
-	font-family: 'St. Jude Sans';
-	src: url('../fonts/stjude-sans/sjs-bold.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/stjude-sans/sjs-bold.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('../fonts/stjude-sans/sjs-bold.woff') format('woff'), /* Pretty Modern Browsers */
-		 url('../fonts/stjude-sans/sjs-bold.ttf')  format('truetype'); /* Safari, Android, iOS */
-	font-weight: 800;
-  }
-  
-  @font-face {
-	font-family: 'St. Jude Sans';
-	src: url('../fonts/stjude-sans/sjs-bold-italic.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/stjude-sans/sjs-bold-italic.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('../fonts/stjude-sans/sjs-bold-italic.woff') format('woff'), /* Pretty Modern Browsers */
-		 url('../fonts/stjude-sans/sjs-bold-italic.ttf')  format('truetype'); /* Safari, Android, iOS */
-	font-style: italic;
-	font-weight: 800;
-  }
-  
