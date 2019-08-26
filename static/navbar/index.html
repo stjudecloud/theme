@@ -4,11 +4,6 @@
     <meta charset="utf-8">
     <title>SJCP NavBar</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" type="text/css" href="../../dist/css/stjude-cloud-theme.css">
   </head>
 
@@ -19,7 +14,7 @@
         <nav class="navbar">
           <a class="navbar-brand" href="https://stjude.cloud">
             <span class="logo">
-              <img src="images/stjude-logo-child.png" alt="St. Jude Cloud" title="St. Jude Cloud" />
+              <img src="../../dist/images/stjude-logo-child.png" alt="St. Jude Cloud" title="St. Jude Cloud" />
             </span>
           </a>
 
@@ -39,9 +34,9 @@
               <div class="dropdown-menu dropdown-menu-right dropdown-menu-main" aria-labelledby="nav-item-icon-waffle" id="dropdown-main">
                 <div class="d-flex flex-column flex-lg-row">
                   <div class="nav-flex-fill">
-                    <a class="dropdown-item dropdown-main-options" href="https://www.stjude.cloud/data"><img alt="data-icon" id="icon-nav" src="images/icon-nav-data.png">Data Browser</a>
-                    <a class="dropdown-item dropdown-main-options" href="https://www.stjude.cloud/tools"><img alt="tools-icon" id="icon-nav" src="images/icon-nav-tools.png">Analysis Tools</a>
-                    <a class="dropdown-item dropdown-main-options" href="https://www.stjude.cloud/visualizations"><img alt="visualizations-icon" id="icon-nav" src="images/icon-nav-visualization.png">Curated Visualizations</a>
+                    <a class="dropdown-item dropdown-main-options" href="https://www.stjude.cloud/data"><img alt="data-icon" class="icon-nav" src="../../dist/images/icon-nav-data.png">Data Browser</a>
+                    <a class="dropdown-item dropdown-main-options" href="https://www.stjude.cloud/tools"><img alt="tools-icon" class="icon-nav" src="../../dist/images/icon-nav-tools.png">Analysis Tools</a>
+                    <a class="dropdown-item dropdown-main-options" href="https://www.stjude.cloud/visualizations"><img alt="visualizations-icon" class="icon-nav" src="../../dist/images/icon-nav-visualization.png">Curated Visualizations</a>
                   </div>
                   <div class="nav-flex-fill">
                     <p class="dropdown-column-header">Apps</p>
@@ -51,22 +46,22 @@
                   </div>
                   <div class="nav-flex-fill">
                     <p class="dropdown-column-header">Help</p>
-                    <a class="dropdown-item" href="https://www.stjude.cloud/docs/" target="_blank">User Guides</a>
-                    <a class="dropdown-item" href="https://www.stjude.cloud/faq" target="_blank">FAQ</a>
-                    <a class="dropdown-item" href="https://www.stjude.cloud/contact" target="_blank">Contact Us</a>
+                    <a class="dropdown-item" href="https://www.stjude.cloud/docs/" target="_blank" rel="noopener noreferrer">User Guides</a>
+                    <a class="dropdown-item" href="https://www.stjude.cloud/faq">FAQ</a>
+                    <a class="dropdown-item" href="https://www.stjude.cloud/contact" target="_blank" rel="noopener noreferrer">Contact Us</a>
                   </div>
                 </div>
              </div>
             </li>
             
             <li class="nav-item nav-item-user dropdown">
-              <a class="nav-link dropdown-toggle " href="/" id="nav-item-icon-user" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="User Info">
+              <a class="nav-link dropdown-toggle" href="/" id="nav-item-icon-user" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="User Info">
                 <i class="fa fa-user"></i>
               </a>
               <div class="dropdown-menu dropdown-menu-right dropdown-menu-profile" aria-labelledby="nav-item-icon-user" id="dropdown-user">
                 <div class="nav-flex-fill">
-                  <a class="dropdown-item profile" href="/oauth_login">Sign In</a>
-                  <a class="dropdown-item profile" href="/user/details">Create Account</a>
+                  <a class="dropdown-item profile-menu-dropdown-item" href="/oauth_login">Sign In</a>
+                  <a class="dropdown-item profile-menu-dropdown-item" href="/user/details">Create Account</a>
                 </div>
               </div>
             </li>
@@ -89,5 +84,12 @@
       </ul>
       
     </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/navbar.js"></script>
+
   </body>
 </html>
