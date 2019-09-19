@@ -4,7 +4,7 @@
   "description": "St. Jude Cloud Theme and Guidelines",
   "main": "index.js",
   "scripts": {
-    "css-compile": "npm-run-all css-lint css-compile-main css-compile-guide css-minify",
+    "css-compile": "npm-run-all css-compile-main css-compile-guide css-minify",
     "css-compile-main": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js --output-style expanded --source-map true --source-map-contents true --precision 6 scss/stjude-cloud-theme.scss dist/css/stjude-cloud-theme.css",
     "css-compile-guide": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js --output-style expanded --source-map true --source-map-contents true --precision 6 guide/scss/styles.scss guide/css/styles.css",
     "css-minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/stjude-cloud-theme.min.css dist/css/stjude-cloud-theme.css",
