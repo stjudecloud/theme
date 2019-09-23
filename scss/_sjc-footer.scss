@@ -6,7 +6,7 @@ footer {
 	background: #ddd;
 	border-top: 4px solid white;
 	padding: 20px 10px 0 10px;
-	font-size: .9em;	
+	font-size: .9em;
 }
 
 footer p {
@@ -16,7 +16,11 @@ footer p {
 
 footer p.copyright {
 	font-weight: normal;
-	
+
+}
+
+footer .nav {
+	justify-content: center;
 }
 
 footer .nav li {

@@ -26,6 +26,7 @@
 
 .global-icons {
 	margin-right: 10px;
+	justify-content: center;
 }
 
 .global-icons i {
@@ -36,7 +37,7 @@
 	color: lighten($primary, 40%);
 }
 
-body .omnibar .dropdown-menu  {	
+body .omnibar .dropdown-menu  {
 	position: absolute;
 	left: -115px;
 	margin-top: 0;
@@ -86,7 +87,7 @@ body .omnibar .dropdown-menu  {
 	margin: 0;
 	padding: 0 0px 0 10px;
 	display: inline-block;
-	outline: none;	
+	outline: none;
   color: #fff;
 }
 
@@ -100,48 +101,49 @@ body .omnibar .dropdown-menu  {
 	font-size: 20px;
 	line-height: 1.2rem;
 	display: inline-block;
+	margin-right: auto;
 	padding-left: 5px;
 	color: lighten($primary, 30%);
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 .site-title em {
 	font-style: normal;
 }
-	
+
 /* Media Query Overrides ****************************************/
 
 @include media-breakpoint-down(lg) {
-	
+
 	.sjc-title {
 		display: none;
-	}	
-	
+	}
+
 	.site-title {
 		padding-left: 10px;
 	}
-	
+
 	.site-title a {
 		color: #fff;
 	}
 }
 
 @include media-breakpoint-down(sm) {
-	
+
 	body {
 		min-width: 400px;
 	}
-	
+
 	.site-title {
 		width: 180px;
 	}
-	
+
 	.site-title a {
 		color: #fff;
 		font-size: 16px;
 		display: inline-block;
 	}
-	
+
 	.global-icons .nav-link {
     	padding: 1rem .6rem;
 	}
