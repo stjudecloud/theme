@@ -5,7 +5,7 @@
 /* Typography ************************************************/
 
 $font-family-sans-serif: "St. Jude Sans", "Open Sans", "Helvetica Neue",
-  "Helvetica", Arial, sans-serif;
+  "Helvetica", arial, sans-serif;
 
 $font-size-base: 1rem !default; // Bootstrap default
 $h1-font-size: $font-size-base * 2.25 !default;
@@ -39,7 +39,7 @@ $green: #c0da07 !default;
 $green-dark: #75bc21 !default; // Success, Action Button
 $aqua: #64d0e4 !default;
 $aqua-dark: #1eadc1 !default;
-$gray: #cccccc !default;
+$gray: #ccc !default;
 $gray-dark: #63666b !default;
 
 $primary: $blue !default;
@@ -66,3 +66,6 @@ $swatch-5-dark: $yellow-dark !default;
 $swatch-6: $aqua !default;
 $swatch-6-dark: $aqua-dark !default;
 $swatch-7: $orange !default;
+
+/* Bootstrap defaults  *****************************************/
+@import "~bootstrap/scss/variables";

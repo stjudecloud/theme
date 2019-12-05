@@ -2,12 +2,7 @@
 /* Monochromatic - Grays - Bootstrap Defaults ****************/
 /* Main Brand Colors *****************************************/
 /* SJC Custom Swatches  *****************************************/
-/*!
- * Bootstrap v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+/* Bootstrap defaults  *****************************************/
 :root {
   --blue: #1874dc;
   --indigo: #6610f2;
