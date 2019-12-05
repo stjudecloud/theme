@@ -35,7 +35,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "St. Jude Sans", "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  --font-family-sans-serif: "St. Jude Sans", "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -58,13 +58,13 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "St. Jude Sans", "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "St. Jude Sans", "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #F5F5F5;
+  background-color: #fff;
 }
 
 [tabindex="-1"]:focus {
@@ -162,7 +162,7 @@ a {
 
 a:hover {
   color: #105097;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:not([href]):not([tabindex]) {
@@ -375,12 +375,12 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 }
 
 @media (max-width: 1200px) {
   h1, .h1 {
-    font-size: calc(1.375rem + 1.5vw) ;
+    font-size: calc(1.35rem + 1.2vw) ;
   }
 }
 
@@ -2816,11 +2816,11 @@ fieldset:disabled a.btn {
 
 .btn-link:hover {
   color: #105097;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .btn-link:focus, .btn-link.focus {
-  text-decoration: none;
+  text-decoration: underline;
   box-shadow: none;
 }
 
@@ -2929,7 +2929,7 @@ input[type="button"].btn-block {
   color: #212529;
   text-align: left;
   list-style: none;
-  background-color: #e9ecef;
+  background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
@@ -3107,9 +3107,9 @@ input[type="button"].btn-block {
 }
 
 .dropdown-item.active, .dropdown-item:active {
-  color: inherit;
+  color: #fff;
   text-decoration: none;
-  background-color: inherit;
+  background-color: #1874dc;
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
@@ -4248,11 +4248,11 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .navbar-light .navbar-nav .nav-link.disabled {
@@ -4267,7 +4267,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -4276,7 +4276,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-text {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar-light .navbar-text a {
@@ -4850,15 +4850,15 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .jumbotron {
-  padding: 1rem 0.5rem;
-  margin-bottom: 1rem;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
   background-color: #e9ecef;
   border-radius: 0.3rem;
 }
 
 @media (min-width: 576px) {
   .jumbotron {
-    padding: 2rem 1rem;
+    padding: 4rem 2rem;
   }
 }
 
@@ -4899,11 +4899,11 @@ a.badge-dark:focus, a.badge-dark.focus {
 .alert-primary {
   color: #0c3c72;
   background-color: #d1e3f8;
-  border-color: #62a0e7;
+  border-color: #bed8f5;
 }
 
 .alert-primary hr {
-  border-top-color: #4c93e4;
+  border-top-color: #a8cbf2;
 }
 
 .alert-primary .alert-link {
@@ -4913,11 +4913,11 @@ a.badge-dark:focus, a.badge-dark.focus {
 .alert-secondary {
   color: #00152d;
   background-color: #ccd4dd;
-  border-color: #526d8c;
+  border-color: #b8c3d0;
 }
 
 .alert-secondary hr {
-  border-top-color: #49607c;
+  border-top-color: #a9b6c6;
 }
 
 .alert-secondary .alert-link {
@@ -4927,11 +4927,11 @@ a.badge-dark:focus, a.badge-dark.focus {
 .alert-success {
   color: #3d6211;
   background-color: #e3f2d3;
-  border-color: #a1d168;
+  border-color: #d8ecc1;
 }
 
 .alert-success hr {
-  border-top-color: #95cb54;
+  border-top-color: #cce6ad;
 }
 
 .alert-success .alert-link {
@@ -4941,11 +4941,11 @@ a.badge-dark:focus, a.badge-dark.focus {
 .alert-info {
   color: #441a57;
   background-color: #e6d6ed;
-  border-color: #ab74c3;
+  border-color: #dcc6e6;
 }
 
 .alert-info hr {
-  border-top-color: #a062bb;
+  border-top-color: #d1b4de;
 }
 
 .alert-info .alert-link {
@@ -4955,11 +4955,11 @@ a.badge-dark:focus, a.badge-dark.focus {
 .alert-warning {
   color: #855c13;
   background-color: #ffefd3;
-  border-color: #ffca6b;
+  border-color: #ffe9c2;
 }
 
 .alert-warning hr {
-  border-top-color: #ffc152;
+  border-top-color: #ffe0a9;
 }
 
 .alert-warning .alert-link {
@@ -4969,11 +4969,11 @@ a.badge-dark:focus, a.badge-dark.focus {
 .alert-danger {
   color: #741b00;
   background-color: #f9d6cc;
-  border-color: #ea7552;
+  border-color: #f6c6b8;
 }
 
 .alert-danger hr {
-  border-top-color: #e7633b;
+  border-top-color: #f3b4a1;
 }
 
 .alert-danger .alert-link {
@@ -4983,11 +4983,11 @@ a.badge-dark:focus, a.badge-dark.focus {
 .alert-light {
   color: #818182;
   background-color: #fefefe;
-  border-color: #fafbfc;
+  border-color: #fdfdfe;
 }
 
 .alert-light hr {
-  border-top-color: #eaeef2;
+  border-top-color: #ececf6;
 }
 
 .alert-light .alert-link {
@@ -4997,11 +4997,11 @@ a.badge-dark:focus, a.badge-dark.focus {
 .alert-dark {
   color: #1b1e21;
   background-color: #d6d8d9;
-  border-color: #75797d;
+  border-color: #c6c8ca;
 }
 
 .alert-dark hr {
-  border-top-color: #696c70;
+  border-top-color: #b9bbbe;
 }
 
 .alert-dark .alert-link {
@@ -5669,7 +5669,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "St. Jude Sans", "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "St. Jude Sans", "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5782,7 +5782,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "St. Jude Sans", "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "St. Jude Sans", "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -9559,9 +9559,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* Omnibar - Global Top Bar */
 .omnibar .navbar {
-  background-color: #1874dc;
-  padding: 0;
   height: 56px;
+  padding: 0;
+  background-color: #1874dc;
 }
 
 .omnibar .navbar-brand {
@@ -9573,9 +9573,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .global-icons .nav-link {
-  color: #fff;
   padding: .5rem;
   margin-left: .5rem;
+  color: #fff;
 }
 
 .navbar-brand {
@@ -9599,9 +9599,9 @@ body .omnibar .dropdown-menu {
   left: -115px;
   margin-top: 0;
   background: #fff;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  border-radius: 0;
   border-bottom: 3px solid #1874dc;
+  border-radius: 0;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 .omnibar .nav-item-apps .dropdown-menu i {
@@ -9610,41 +9610,42 @@ body .omnibar .dropdown-menu {
   color: #1874dc;
 }
 
-#nav-item-icon-apps.dropdown-toggle::after, #nav-item-icon-user.dropdown-toggle::after {
+#nav-item-icon-apps.dropdown-toggle::after,
+#nav-item-icon-user.dropdown-toggle::after {
   content: none;
 }
 
-/* Brand*/
+/* Brand */
 .logo {
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  width: 60px;
-  padding-left: 5px;
-  padding-right: 5px;
-  text-align: center;
-  border-right: 1px solid;
-  border-color: #99c4f4;
   position: static;
+  display: inline-block;
+  width: 60px;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-color: #99c4f4;
+  border-right: 1px solid;
 }
 
 .logo img {
-  border: none;
-  padding: 0;
   width: 40px;
-  margin-right: 10px 10px 10px 0;
-  height: 40px;
   width: auto;
+  height: 40px;
+  padding: 0;
+  margin-right: 10px 10px 10px 0;
+  border: none;
 }
 
 .sjc-title {
-  font-weight: 800;
-  font-size: 20px;
-  margin: 0;
-  padding: 0 0px 0 10px;
   display: inline-block;
-  outline: none;
+  padding: 0 0 0 10px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
   color: #fff;
+  outline: none;
 }
 
 .sjc-title a {
@@ -9653,11 +9654,11 @@ body .omnibar .dropdown-menu {
 }
 
 .site-title {
-  font-weight: 200;
-  font-size: 20px;
-  line-height: 1.2rem;
   display: inline-block;
   padding-left: 5px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.2rem;
   color: #99c4f4;
   text-decoration: none;
 }
@@ -9687,9 +9688,9 @@ body .omnibar .dropdown-menu {
     width: 180px;
   }
   .site-title a {
-    color: #fff;
-    font-size: 16px;
     display: inline-block;
+    font-size: 16px;
+    color: #fff;
   }
   .global-icons .nav-link {
     padding: 1rem .6rem;
@@ -9698,17 +9699,17 @@ body .omnibar .dropdown-menu {
 
 /* Footer */
 footer {
-  text-align: center;
+  padding: 20px 10px 0;
   clear: both;
-  background: #ddd;
-  border-top: 4px solid white;
-  padding: 20px 10px 0 10px;
   font-size: .9em;
+  text-align: center;
+  background: #ddd;
+  border-top: 4px solid #fff;
 }
 
 footer p {
-  color: #333;
   margin-bottom: 10px;
+  color: #333;
 }
 
 footer p.copyright {
@@ -9720,7 +9721,9 @@ footer .nav li {
   line-height: 120%;
 }
 
-footer .nav li a, footer .nav li a:active, footer .nav li a:visited {
+footer .nav li a,
+footer .nav li a:active,
+footer .nav li a:visited {
   color: #333;
   text-decoration: underline;
   background: none !important;
@@ -9739,14 +9742,14 @@ footer .social-media {
 }
 
 .social-media {
-  list-style-type: none;
   padding-left: 0;
+  list-style-type: none;
 }
 
 .social-media li {
   display: inline-block;
-  font-size: 24px;
   padding: 10px;
+  font-size: 24px;
 }
 
 .social-media a {
@@ -9755,8 +9758,8 @@ footer .social-media {
 }
 
 .social-media li a:hover {
-  text-decoration: none;
   color: #1874dc;
+  text-decoration: none;
 }
 
 /* Body */
@@ -9769,6 +9772,8 @@ h2 {
 }
 
 h3 {
+  font-weight: 600;
+  color: #75bc21;
   margin-bottom: 0.5rem;
 }
 
@@ -9778,27 +9783,27 @@ strong {
 }
 
 /* Main Content */
-#content-main {
-  padding-bottom: 3em;
+.content-main {
   padding-top: 2em;
+  padding-bottom: 3em;
 }
 
 .jumbotron.main-banner h1 {
-  color: #fff;
-  text-align: center;
-  line-height: 150%;
-  margin-bottom: 0;
   padding-top: 0;
   margin-top: 0;
+  margin-bottom: 0;
+  line-height: 150%;
+  color: #fff;
+  text-align: center;
 }
 
 .jumbotron.main-banner {
-  background: url("../images/dna-bg.jpg") 60% center;
-  background-size: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-radius: 0;
   margin-bottom: 0;
+  background: url("../images/dna-bg.jpg") 60% center;
+  background-size: 100%;
+  border-radius: 0;
 }
 
 .jumbotron.code-examples {
@@ -9806,8 +9811,8 @@ strong {
 }
 
 .container-fluid.banner {
-  padding-left: 0;
   padding-right: 0;
+  padding-left: 0;
 }
 
 .card .icon {
@@ -9819,8 +9824,8 @@ strong {
 }
 
 .card-header {
-  background-color: #1874dc;
   color: #fff;
+  background-color: #1874dc;
 }
 
 .card img {
@@ -9830,31 +9835,26 @@ strong {
 }
 
 .card img.icon {
-  max-width: 50%;
   width: auto;
+  max-width: 50%;
 }
 
 .jumbotron.branding {
+  color: #fff;
   background: #444;
-  color: white;
 }
 
 .colors span {
   display: block;
-  padding: 20px;
-  color: white;
   float: left;
+  width: 106px;
+  padding: 20px;
   margin-right: 5px;
   margin-bottom: 5px;
-  text-align: center;
   font-size: 90%;
-  font-weight: bold;
-  width: 106px;
-}
-
-h3 {
-  color: #75bc21;
-  font-weight: 600;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
 }
 
 /* Colors */
@@ -10158,9 +10158,9 @@ h3 {
 
 /* Site Nav - Site-Specific Navigation */
 .site-nav {
-  background-color: #fff;
   position: relative;
   padding: 0;
+  background-color: #fff;
 }
 
 .site-nav-label {
@@ -10173,22 +10173,22 @@ h3 {
 }
 
 #siteSpecificNavigation .nav-link {
-  padding: 0.75rem 1rem;
+  padding: .75rem 1rem;
 }
 
 #siteSpecificNavigation ul li .dropdown-menu {
-  border-radius: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   margin-top: 0;
   border: 0;
   border-color: #dee2e6;
   border-bottom: 3px solid #adb5bd;
-  padding-bottom: 0;
-  padding-top: 0;
+  border-radius: 0;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 #siteSpecificNavigation .dropdown-menu .dropdown-item a {
-  padding: 0.5rem 1rem;
+  padding: .5rem 1rem;
 }
 
 #siteSpecificNavigation .nav-item.active {
@@ -10197,31 +10197,31 @@ h3 {
 
 @media (max-width: 767.98px) {
   .site-nav {
-    padding: 0.5rem 0;
+    padding: .5rem 0;
   }
   #siteSpecificNavigation {
     position: absolute;
     top: 54px;
-    background: #fff;
     width: 100%;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    background: #fff;
     border-bottom: 3px solid #adb5bd;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   }
   #siteSpecificNavigation .nav-link {
-    padding: 0.5rem 1rem;
+    padding: .5rem 1rem;
   }
   .site-nav button {
-    margin: 0 10px;
     width: 100%;
+    margin: 0 10px;
   }
   #siteSpecificNavigation ul {
     padding: 10px;
   }
   #siteSpecificNavigation ul li .dropdown-menu {
-    border: 0;
-    box-shadow: none;
     padding: 0 0 0 1rem;
     background: #fff;
+    border: 0;
+    box-shadow: none;
   }
   #navbarDropdown {
     box-shadow: 0 !important;
@@ -10235,79 +10235,79 @@ h3 {
 }
 
 @font-face {
-  font-family: 'St. Jude Sans';
+  font-family: "St. Jude Sans";
+  font-weight: 400;
   src: url("../fonts/stjude-sans/sjs-regular.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/stjude-sans/sjs-regular.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-regular.woff") format("woff"), url("../fonts/stjude-sans/sjs-regular.ttf") format("truetype");
   /* Safari, Android, iOS */
-  font-weight: 400;
 }
 
 @font-face {
-  font-family: 'St. Jude Sans';
+  font-family: "St. Jude Sans";
+  font-style: italic;
+  font-weight: 400;
   src: url("../fonts/stjude-sans/sjs-regular-italic.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/stjude-sans/sjs-regular-italic.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-regular-italic.woff") format("woff"), url("../fonts/stjude-sans/sjs-regular-italic.ttf") format("truetype");
   /* Safari, Android, iOS */
-  font-style: italic;
-  font-weight: 400;
 }
 
 @font-face {
-  font-family: 'St. Jude Sans';
+  font-family: "St. Jude Sans";
+  font-weight: 600;
   src: url("../fonts/stjude-sans/sjs-book.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/stjude-sans/sjs-book.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-book.woff") format("woff");
   /* Pretty Modern Browsers */
-  font-weight: 600;
 }
 
 @font-face {
-  font-family: 'St. Jude Sans';
+  font-family: "St. Jude Sans";
+  font-style: italic;
+  font-weight: 600;
   src: url("../fonts/stjude-sans/sjs-book-italic.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/stjude-sans/sjs-book-italic.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-book-italic.woff") format("woff");
   /* Pretty Modern Browsers */
-  font-style: italic;
-  font-weight: 600;
 }
 
 @font-face {
-  font-family: 'St. Jude Sans';
+  font-family: "St. Jude Sans";
+  font-weight: 700;
   src: url("../fonts/stjude-sans/sjs-medium.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/stjude-sans/sjs-medium.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-medium.woff") format("woff"), url("../fonts/stjude-sans/sjs-medium.ttf") format("truetype");
   /* Safari, Android, iOS */
-  font-weight: 700;
 }
 
 @font-face {
-  font-family: 'St. Jude Sans';
+  font-family: "St. Jude Sans";
+  font-style: italic;
+  font-weight: 700;
   src: url("../fonts/stjude-sans/sjs-medium-italic.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/stjude-sans/sjs-medium-italic.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-medium-italic.woff") format("woff"), url("../fonts/stjude-sans/sjs-medium-italic.ttf") format("truetype");
   /* Safari, Android, iOS */
-  font-style: italic;
-  font-weight: 700;
 }
 
 @font-face {
-  font-family: 'St. Jude Sans';
+  font-family: "St. Jude Sans";
+  font-weight: 800;
   src: url("../fonts/stjude-sans/sjs-bold.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/stjude-sans/sjs-bold.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-bold.woff") format("woff"), url("../fonts/stjude-sans/sjs-bold.ttf") format("truetype");
   /* Safari, Android, iOS */
-  font-weight: 800;
 }
 
 @font-face {
-  font-family: 'St. Jude Sans';
+  font-family: "St. Jude Sans";
+  font-style: italic;
+  font-weight: 800;
   src: url("../fonts/stjude-sans/sjs-bold-italic.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/stjude-sans/sjs-bold-italic.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-bold-italic.woff") format("woff"), url("../fonts/stjude-sans/sjs-bold-italic.ttf") format("truetype");
   /* Safari, Android, iOS */
-  font-style: italic;
-  font-weight: 800;
 }
 
 /*# sourceMappingURL=styles.css.map */

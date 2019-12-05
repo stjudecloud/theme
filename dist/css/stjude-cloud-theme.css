@@ -30,7 +30,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "St. Jude Sans", "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  --font-family-sans-serif: "St. Jude Sans", "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -53,7 +53,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "St. Jude Sans", "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "St. Jude Sans", "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -5604,7 +5604,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "St. Jude Sans", "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "St. Jude Sans", "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5717,7 +5717,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "St. Jude Sans", "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "St. Jude Sans", "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -9478,9 +9478,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* Omnibar - Global Top Bar */
 .omnibar .navbar {
-  background-color: #1874dc;
-  padding: 0;
   height: 56px;
+  padding: 0;
+  background-color: #1874dc;
 }
 
 .omnibar .navbar-brand {
@@ -9492,9 +9492,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .global-icons .nav-link {
-  color: #fff;
   padding: .5rem;
   margin-left: .5rem;
+  color: #fff;
 }
 
 .navbar-brand {
@@ -9518,9 +9518,9 @@ body .omnibar .dropdown-menu {
   left: -115px;
   margin-top: 0;
   background: #fff;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  border-radius: 0;
   border-bottom: 3px solid #1874dc;
+  border-radius: 0;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 .omnibar .nav-item-apps .dropdown-menu i {
@@ -9529,41 +9529,42 @@ body .omnibar .dropdown-menu {
   color: #1874dc;
 }
 
-#nav-item-icon-apps.dropdown-toggle::after, #nav-item-icon-user.dropdown-toggle::after {
+#nav-item-icon-apps.dropdown-toggle::after,
+#nav-item-icon-user.dropdown-toggle::after {
   content: none;
 }
 
-/* Brand*/
+/* Brand */
 .logo {
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  width: 60px;
-  padding-left: 5px;
-  padding-right: 5px;
-  text-align: center;
-  border-right: 1px solid;
-  border-color: #99c4f4;
   position: static;
+  display: inline-block;
+  width: 60px;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-color: #99c4f4;
+  border-right: 1px solid;
 }
 
 .logo img {
-  border: none;
-  padding: 0;
   width: 40px;
-  margin-right: 10px 10px 10px 0;
-  height: 40px;
   width: auto;
+  height: 40px;
+  padding: 0;
+  margin-right: 10px 10px 10px 0;
+  border: none;
 }
 
 .sjc-title {
-  font-weight: 800;
-  font-size: 20px;
-  margin: 0;
-  padding: 0 0px 0 10px;
   display: inline-block;
-  outline: none;
+  padding: 0 0 0 10px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
   color: #fff;
+  outline: none;
 }
 
 .sjc-title a {
@@ -9572,11 +9573,11 @@ body .omnibar .dropdown-menu {
 }
 
 .site-title {
-  font-weight: 200;
-  font-size: 20px;
-  line-height: 1.2rem;
   display: inline-block;
   padding-left: 5px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.2rem;
   color: #99c4f4;
   text-decoration: none;
 }
@@ -9606,9 +9607,9 @@ body .omnibar .dropdown-menu {
     width: 180px;
   }
   .site-title a {
-    color: #fff;
-    font-size: 16px;
     display: inline-block;
+    font-size: 16px;
+    color: #fff;
   }
   .global-icons .nav-link {
     padding: 1rem .6rem;
@@ -9617,17 +9618,17 @@ body .omnibar .dropdown-menu {
 
 /* Footer */
 footer {
-  text-align: center;
+  padding: 20px 10px 0;
   clear: both;
-  background: #ddd;
-  border-top: 4px solid white;
-  padding: 20px 10px 0 10px;
   font-size: .9em;
+  text-align: center;
+  background: #ddd;
+  border-top: 4px solid #fff;
 }
 
 footer p {
-  color: #333;
   margin-bottom: 10px;
+  color: #333;
 }
 
 footer p.copyright {
@@ -9639,7 +9640,9 @@ footer .nav li {
   line-height: 120%;
 }
 
-footer .nav li a, footer .nav li a:active, footer .nav li a:visited {
+footer .nav li a,
+footer .nav li a:active,
+footer .nav li a:visited {
   color: #333;
   text-decoration: underline;
   background: none !important;
@@ -9658,14 +9661,14 @@ footer .social-media {
 }
 
 .social-media {
-  list-style-type: none;
   padding-left: 0;
+  list-style-type: none;
 }
 
 .social-media li {
   display: inline-block;
-  font-size: 24px;
   padding: 10px;
+  font-size: 24px;
 }
 
 .social-media a {
@@ -9674,8 +9677,8 @@ footer .social-media {
 }
 
 .social-media li a:hover {
-  text-decoration: none;
   color: #1874dc;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=stjude-cloud-theme.css.map */
