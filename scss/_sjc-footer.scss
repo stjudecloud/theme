@@ -15,8 +15,7 @@ footer p {
 }
 
 footer p.copyright {
-  font-weight: normal;
-
+  font-weight: $font-weight-normal;
 }
 
 footer .nav li {
@@ -29,7 +28,7 @@ footer .nav li a:active,
 footer .nav li a:visited {
   color: #333;
   text-decoration: underline;
-  background: none !important;
+  background: none;
 }
 
 footer .nav > li > a {
@@ -37,7 +36,7 @@ footer .nav > li > a {
 }
 
 footer .nav > li > a:hover {
-  background: none !important;
+  background: none;
 }
 
 footer .social-media {
