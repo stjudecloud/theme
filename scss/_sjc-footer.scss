@@ -14,15 +14,18 @@ footer p {
   color: #333;
 }
 
+/* stylelint-disable selector-no-qualifying-type */
 footer p.copyright {
   font-weight: $font-weight-normal;
 }
+/* stylelint-enable */
 
 footer .nav li {
   display: inline-block;
   line-height: 120%;
 }
 
+/* stylelint-disable selector-max-type */
 footer .nav li a,
 footer .nav li a:active,
 footer .nav li a:visited {
@@ -38,6 +41,7 @@ footer .nav > li > a {
 footer .nav > li > a:hover {
   background: none;
 }
+/* stylelint-enable */
 
 footer .social-media {
   margin-bottom: 0;

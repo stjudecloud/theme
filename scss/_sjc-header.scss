@@ -52,10 +52,12 @@ body .omnibar .dropdown-menu  {
   color: $primary;
 }
 
+/* stylelint-disable selector-max-id */
 #nav-item-icon-apps.dropdown-toggle::after,
 #nav-item-icon-user.dropdown-toggle::after  {
   content: none;
 }
+/* stylelint-enable */
 
 /* Brand */
 
