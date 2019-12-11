@@ -44,17 +44,17 @@ $sizes: map-merge(
 //
 // Settings for the `<body>` element.
 
-   $body-bg:                   #F5F5F5;
+$body-bg:                   #f5f5f5;
 // $body-color:                $gray-900 !default;
 
 // Links
 //
 // Style anchor elements.
 
-   $link-color:                $primary;
+$link-color:                $primary;
 // $link-decoration:           none !default;
 // $link-hover-color:          darken($link-color, 15%) !default;
-   $link-hover-decoration:     none;
+$link-hover-decoration:     none;
 
 // Paragraphs
 //
@@ -77,9 +77,9 @@ $sizes: map-merge(
 // $border-radius-lg:            .3rem !default;
 // $border-radius-sm:            .2rem !default;
 
- $box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
- $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
- $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
+$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 
 // $component-active-color:      $white !default;
 // $component-active-bg:         theme-color("primary") !default;
@@ -102,7 +102,7 @@ $sizes: map-merge(
 // stylelint-enable value-keyword-case
 
 
-   $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 // $font-size-lg:                ($font-size-base * 1.25) !default;
 // $font-size-sm:                ($font-size-base * .875) !default;
 
@@ -113,12 +113,12 @@ $sizes: map-merge(
 // $font-weight-base:            $font-weight-normal !default;
 // $line-height-base:            1.5 !default;
 
-   $h1-font-size:                $font-size-base * 2.5;
-   $h2-font-size:                $font-size-base * 2 !default;
-   $h3-font-size:                $font-size-base * 1.5 !default;
-   $h4-font-size:                $font-size-base * 1.25 !default;
-   $h5-font-size:                $font-size-base * 1.25 !default;
-   $h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.5 !default;
+$h4-font-size:                $font-size-base * 1.25 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
 
 // $headings-margin-bottom:      ($spacer / 2) !default;
 // $headings-font-family:        inherit !default;
@@ -233,24 +233,24 @@ $sizes: map-merge(
 // $dropdown-min-width:                10rem !default;
 // $dropdown-padding-y:                .5rem !default;
 // $dropdown-spacer:                   .125rem !default;
-   $dropdown-bg:                       $gray-200;
+$dropdown-bg:                       $gray-200;
 // $dropdown-border-color:             rgba($black, .15) !default;
 // $dropdown-border-radius:            $border-radius !default;
 // $dropdown-border-width:             $border-width !default;
 // $dropdown-divider-bg:               $gray-200 !default;
-   $dropdown-box-shadow:               $box-shadow-lg;
+$dropdown-box-shadow:               $box-shadow-lg;
 
 // $dropdown-link-color:               $gray-800 !default;
 // $dropdown-link-hover-color:         darken($gray-900, 5%) !default;
-   $dropdown-link-hover-bg:            $gray-100;
+$dropdown-link-hover-bg:            $gray-100;
 
-   $dropdown-link-active-color:        inherit;
-   $dropdown-link-active-bg:           inherit;
+$dropdown-link-active-color:        inherit;
+$dropdown-link-active-bg:           inherit;
 
 // $dropdown-link-disabled-color:      $gray-600 !default;
 
 // $dropdown-item-padding-y:           .25rem !default;
-   $dropdown-item-padding-x:           1rem !default;
+$dropdown-item-padding-x:           1rem !default;
 
 // $dropdown-header-color:             $gray-600 !default;
 
@@ -302,8 +302,8 @@ $sizes: map-merge(
 // $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
 // $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
 
-   $navbar-light-color:                rgba($black, .8);
-   $navbar-light-hover-color:          rgba($black, .6);
+$navbar-light-color:                rgba($black, .8);
+$navbar-light-hover-color:          rgba($black, .6);
 // $navbar-light-active-color:         rgba($black, .9) !default;
 // $navbar-light-disabled-color:       rgba($black, .3) !default;
 // $navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
@@ -311,7 +311,7 @@ $sizes: map-merge(
 
 // Jumbotron
 
-   $jumbotron-padding:                 1rem;
+$jumbotron-padding:                 1rem;
 // $jumbotron-bg:                      $gray-200 !default;
 
 
@@ -348,5 +348,5 @@ $sizes: map-merge(
 // $alert-border-width:                $border-width !default;
 
 // $alert-bg-level:                    -10 !default;
-   $alert-border-level:                   -4;
+$alert-border-level:                   -4;
 // $alert-color-level:                 6 !default;
