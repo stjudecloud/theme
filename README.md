@@ -30,7 +30,6 @@ stjude-cloud-theme/
     │       ├── sjs-regular.woff2
     │       └── ... and bold/italic variants
     └── images/
-        ├── apple-touch-icon.png
         ├── favicon-16x16.png
         ├── favicon-32x32.png
         ├── favicon.ico
