@@ -6,7 +6,7 @@ footer {
   font-size: .9em;
   text-align: center;
   background: #ddd;
-  border-top: 4px solid white;
+  border-top: 4px solid #fff;
 }
 
 footer p {
@@ -14,11 +14,11 @@ footer p {
   color: #333;
 }
 
-footer p.copyright {
-  font-weight: normal;
-
+footer .copyright {
+  font-weight: $font-weight-normal;
 }
 
+/* stylelint-disable selector-max-type */
 footer .nav li {
   display: inline-block;
   line-height: 120%;
@@ -29,7 +29,7 @@ footer .nav li a:active,
 footer .nav li a:visited {
   color: #333;
   text-decoration: underline;
-  background: none !important;
+  background: none;
 }
 
 footer .nav > li > a {
@@ -37,8 +37,9 @@ footer .nav > li > a {
 }
 
 footer .nav > li > a:hover {
-  background: none !important;
+  background: none;
 }
+/* stylelint-enable */
 
 footer .social-media {
   margin-bottom: 0;

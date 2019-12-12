@@ -42,7 +42,7 @@ body .omnibar .dropdown-menu  {
   margin-top: 0;
   background: $white;
   border-bottom: 3px solid $primary;
-  border-radius: 0;
+  @include border-radius(0);
   box-shadow: $box-shadow-sm;
 }
 
@@ -52,10 +52,12 @@ body .omnibar .dropdown-menu  {
   color: $primary;
 }
 
+/* stylelint-disable selector-max-id */
 #nav-item-icon-apps.dropdown-toggle::after,
 #nav-item-icon-user.dropdown-toggle::after  {
   content: none;
 }
+/* stylelint-enable */
 
 /* Brand */
 

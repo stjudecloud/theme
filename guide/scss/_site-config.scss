@@ -10,6 +10,8 @@ h2 {
 
 h3 {
   margin-bottom: ($spacer / 2);
+  font-weight: 600;
+  color: $green-dark;
 }
 
 b,
@@ -19,7 +21,7 @@ strong {
 
 /* Main Content */
 
-#content-main {
+.content-main {
   padding-top: 2em;
   padding-bottom: 3em;
 }
@@ -39,7 +41,7 @@ strong {
   margin-bottom: 0;
   background: url("../images/dna-bg.jpg") 60% center;
   background-size: 100%;
-  border-radius: 0;
+  @include border-radius(0);
 }
 
 .jumbotron.code-examples {
@@ -49,10 +51,6 @@ strong {
 .container-fluid.banner {
   padding-right: 0;
   padding-left: 0;
-}
-
-.card .icon {
-  padding-top: 15px;
 }
 
 .card {
@@ -70,13 +68,14 @@ strong {
   margin: 0 auto;
 }
 
-.card img.icon {
+.card .icon {
   width: auto;
   max-width: 50%;
+  padding-top: 15px;
 }
 
 .jumbotron.branding {
-  color: white;
+  color: #fff;
   background: #444;
 }
 
@@ -88,14 +87,9 @@ strong {
   margin-right: 5px;
   margin-bottom: 5px;
   font-size: 90%;
-  font-weight: bold;
-  color: white;
+  font-weight: $font-weight-bold;
+  color: #fff;
   text-align: center;
-}
-
-h3 {
-  font-weight: 600;
-  color: $green-dark;
 }
 
 /* Colors */

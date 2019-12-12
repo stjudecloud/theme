@@ -15,26 +15,26 @@
   outline: none;
 }
 
-#siteSpecificNavigation .nav-link {
+#siteSpecificNavigation .nav-link { /* stylelint-disable-line */
   padding: .75rem 1rem;
 }
 
-#siteSpecificNavigation ul li .dropdown-menu {
+#siteSpecificNavigation ul li .dropdown-menu { /* stylelint-disable-line */
   padding-top: 0;
   padding-bottom: 0;
   margin-top: 0;
   border: 0;
   border-color: $gray-300;
   border-bottom: 3px solid $gray-500;
-  border-radius: 0;
+  @include border-radius(0);
   box-shadow: $box-shadow-sm;
 }
 
-#siteSpecificNavigation .dropdown-menu .dropdown-item a {
+#siteSpecificNavigation .dropdown-menu .dropdown-item a { /* stylelint-disable-line */
   padding: .5rem 1rem;
 }
 
-#siteSpecificNavigation .nav-item.active {
+#siteSpecificNavigation .nav-item.active { /* stylelint-disable-line */
   background: $gray-200;
 }
 
@@ -45,7 +45,7 @@
     padding: .5rem 0;
   }
 
-  #siteSpecificNavigation {
+  #siteSpecificNavigation { /* stylelint-disable-line */
     position: absolute;
     top: 54px;
     width: 100%;
@@ -54,7 +54,7 @@
     box-shadow: $box-shadow-sm;
   }
 
-  #siteSpecificNavigation .nav-link {
+  #siteSpecificNavigation .nav-link { /* stylelint-disable-line */
     padding: .5rem 1rem;
   }
 
@@ -63,26 +63,26 @@
     margin: 0 10px;
   }
 
-  #siteSpecificNavigation ul {
+  #siteSpecificNavigation ul { /* stylelint-disable-line */
     padding: 10px;
   }
 
-  #siteSpecificNavigation ul li .dropdown-menu {
+  #siteSpecificNavigation ul li .dropdown-menu { /* stylelint-disable-line */
     padding: 0 0 0 1rem;
     background: $white;
     border: 0;
     box-shadow: none;
   }
 
-  #navbarDropdown {
-    box-shadow: 0 !important;
+  #navbarDropdown { /* stylelint-disable-line */
+    box-shadow: 0;
   }
 
-  #siteSpecificNavigation .dropdown-menu .dropdown-item {
+  #siteSpecificNavigation .dropdown-menu .dropdown-item { /* stylelint-disable-line */
     padding: .5rem 1rem;
   }
 
-  #siteSpecificNavigation .dropdown-menu .dropdown-item:hover {
+  #siteSpecificNavigation .dropdown-menu .dropdown-item:hover { /* stylelint-disable-line */
     background: none;
   }
 }

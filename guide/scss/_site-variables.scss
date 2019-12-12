@@ -38,23 +38,23 @@ $sizes: map-merge(
     auto: auto
   ),
   $sizes
-);
+) !default;
 
 // Body
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   #f5f5f5;
+$body-bg:                   #f5f5f5 !default;
 // $body-color:                $gray-900 !default;
 
 // Links
 //
 // Style anchor elements.
 
-$link-color:                $primary;
+$link-color:                $primary !default;
 // $link-decoration:           none !default;
 // $link-hover-color:          darken($link-color, 15%) !default;
-$link-hover-decoration:     none;
+$link-hover-decoration:     none !default;
 
 // Paragraphs
 //
@@ -113,7 +113,7 @@ $font-size-base:              1rem !default; // Assumes the browser default, typ
 // $font-weight-base:            $font-weight-normal !default;
 // $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.5;
+$h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.5 !default;
 $h4-font-size:                $font-size-base * 1.25 !default;
@@ -233,19 +233,19 @@ $h6-font-size:                $font-size-base !default;
 // $dropdown-min-width:                10rem !default;
 // $dropdown-padding-y:                .5rem !default;
 // $dropdown-spacer:                   .125rem !default;
-$dropdown-bg:                       $gray-200;
+$dropdown-bg:                       $gray-200 !default;
 // $dropdown-border-color:             rgba($black, .15) !default;
 // $dropdown-border-radius:            $border-radius !default;
 // $dropdown-border-width:             $border-width !default;
 // $dropdown-divider-bg:               $gray-200 !default;
-$dropdown-box-shadow:               $box-shadow-lg;
+$dropdown-box-shadow:               $box-shadow-lg !default;
 
 // $dropdown-link-color:               $gray-800 !default;
 // $dropdown-link-hover-color:         darken($gray-900, 5%) !default;
-$dropdown-link-hover-bg:            $gray-100;
+$dropdown-link-hover-bg:            $gray-100 !default;
 
-$dropdown-link-active-color:        inherit;
-$dropdown-link-active-bg:           inherit;
+$dropdown-link-active-color:        inherit !default;
+$dropdown-link-active-bg:           inherit !default;
 
 // $dropdown-link-disabled-color:      $gray-600 !default;
 
@@ -302,8 +302,8 @@ $dropdown-item-padding-x:           1rem !default;
 // $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
 // $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
 
-$navbar-light-color:                rgba($black, .8);
-$navbar-light-hover-color:          rgba($black, .6);
+$navbar-light-color:                rgba($black, .8) !default;
+$navbar-light-hover-color:          rgba($black, .6) !default;
 // $navbar-light-active-color:         rgba($black, .9) !default;
 // $navbar-light-disabled-color:       rgba($black, .3) !default;
 // $navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
@@ -311,7 +311,7 @@ $navbar-light-hover-color:          rgba($black, .6);
 
 // Jumbotron
 
-$jumbotron-padding:                 1rem;
+$jumbotron-padding:                 1rem !default;
 // $jumbotron-bg:                      $gray-200 !default;
 
 
@@ -348,5 +348,5 @@ $jumbotron-padding:                 1rem;
 // $alert-border-width:                $border-width !default;
 
 // $alert-bg-level:                    -10 !default;
-$alert-border-level:                   -4;
+$alert-border-level:                   -4 !default;
 // $alert-color-level:                 6 !default;
