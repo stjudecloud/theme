@@ -10,8 +10,6 @@ h2 {
 
 h3 {
   margin-bottom: ($spacer / 2);
-  font-weight: 600;
-  color: $green-dark;
 }
 
 b,
@@ -51,27 +49,6 @@ strong {
 .container-fluid.banner {
   padding-right: 0;
   padding-left: 0;
-}
-
-.card {
-  text-align: center;
-}
-
-.card-header {
-  color: #fff;
-  background-color: $primary;
-}
-
-.card img {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.card .icon {
-  width: auto;
-  max-width: 50%;
-  padding-top: 15px;
 }
 
 .jumbotron.branding {

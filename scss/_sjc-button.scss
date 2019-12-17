@@ -1,0 +1,12 @@
+//Button colors/sizing/border-radius is managed in variables.scss
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value,
+    $hover-background: lighten($value, 20%),
+    $hover-border: lighten($value, 20%),
+    $active-background: lighten($value, 20%),
+    $active-border: lighten($value, 20%)
+    );
+  }
+}
