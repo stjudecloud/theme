@@ -10096,6 +10096,7 @@ footer .social-media {
 
 .card {
   text-align: center;
+  box-shadow: 0px 0px 6px #000;
 }
 
 .card-header {
@@ -10154,7 +10155,8 @@ strong {
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-bottom: 0;
-  background: url("../images/data-points.jpg") center top;
+  background: url("../images/data-points.jpg");
+  background-position: center top;
   background-size: cover;
   border-radius: 0;
 }
@@ -10187,7 +10189,7 @@ strong {
   text-align: center;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 767.98px) {
   .jumbotron.main-banner {
     background-size: auto;
   }

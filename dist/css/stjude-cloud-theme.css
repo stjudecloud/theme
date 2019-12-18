@@ -9965,6 +9965,7 @@ footer .social-media {
 
 .card {
   text-align: center;
+  box-shadow: 0px 0px 6px #000;
 }
 
 .card-header {
