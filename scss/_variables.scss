@@ -7,8 +7,11 @@
 $font-family-sans-serif: "St. Jude Sans", "Open Sans", "Helvetica Neue",
   "Helvetica", arial, sans-serif !default;
 
-$font-size-base: 1rem !default; // Bootstrap default
-$h1-font-size: $font-size-base * 2.25 !default;
+$font-size-base: 1.125rem !default; // 18px
+$h1-font-size: $font-size-base * 2.78 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.67 !default;
+$h4-font-size: $font-size-base * 1.33 !default;
 
 /* Monochromatic - Grays - Bootstrap Defaults ****************/
 
@@ -37,7 +40,7 @@ $peach-dark: #eb4e36 !default; // Error Message
 $yellow: #ffd100 !default; // Warning
 $yellow-dark: #ffb125 !default;
 $green: #c0da07 !default;
-$green-dark: #75bc21 !default; // Success, Action Button
+$green-dark: #5ca132 !default; // Success, Action Button
 $aqua: #64d0e4 !default;
 $aqua-dark: #1eadc1 !default;
 $gray: #f2f2f2 !default;
@@ -73,5 +76,5 @@ $swatch-7-dark:               $peach-dark !default;
 
 $btn-border-radius:           1.55rem !default;
 $btn-padding-y:               .94rem !default;
-$btn-padding-x:               .94rem !default;
+$btn-padding-x:               1.9rem !default;
 $btn-line-height:             .5 !default;
