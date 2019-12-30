@@ -3,7 +3,7 @@
 // Button colors/sizing/border-radius is managed in variables.scss
 
 @each $color, $value in $theme-colors {
-  .sjc-btn-#{$color} {
+  .btn-#{$color} {
     color: $gray;
     @include gradient-bg($value);
     border-color: $value;
