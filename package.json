@@ -29,7 +29,7 @@
   "files": [
     "dist/css/*.{css,map}",
     "dist/fonts/stjude-sans/*.{eot,otf,ttf,woff,woff2}",
-    "dist/images/*.png",
+    "dist/images/*.{ico,png}",
     "scss/**/*.scss"
   ],
   "author": "St. Jude",

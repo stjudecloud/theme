@@ -1,0 +1,60 @@
+// St. Jude Cloud Theme Custom Buttons
+// Customizes the button-variant bootstrap mixin to darken on hover while maintaining text colors
+// Button colors/sizing/border-radius is managed in variables.scss
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    color: $gray;
+    @include gradient-bg($value);
+    border-color: $value;
+    @include box-shadow($btn-box-shadow);
+
+    @include hover () {
+      color: $gray;
+      @include gradient-bg(lighten($value, 20%));
+      border-color: lighten($value, 20%);
+    }
+
+    &:focus,
+    &.focus {
+      // Avoid using mixin so we can pass custom focus shadow properly
+      @if $enable-shadows {
+        box-shadow: $btn-box-shadow, 0 0 0 $btn-focus-width rgba(mix(color-yiq($value), $value, 15%), .5);
+      } @else {
+        box-shadow: 0 0 0 $btn-focus-width rgba(mix(color-yiq($value), $value, 15%), .5);
+      }
+    }
+
+    // Disabled comes first so active can properly restyle
+    &.disabled,
+    &:disabled {
+      color: $gray;
+      background-color: $value;
+      border-color: $value;
+      // Remove CSS gradients if they're enabled
+      @if $enable-gradients {
+        background-image: none;
+      }
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active,
+    .show > &.dropdown-toggle {
+      color: $gray;
+      background-color: lighten($value, 20%);
+      @if $enable-gradients {
+        background-image: none; // Remove the gradient for the pressed/active state
+      }
+      border-color: lighten($value, 20%);
+
+      &:focus {
+        // Avoid using mixin so we can pass custom focus shadow properly
+        @if $enable-shadows and $btn-active-box-shadow != none {
+          box-shadow: $btn-active-box-shadow, 0 0 0 $btn-focus-width rgba(mix(color-yiq($value), $value, 15%), .5);
+        } @else {
+          box-shadow: 0 0 0 $btn-focus-width rgba(mix(color-yiq($value), $value, 15%), .5);
+        }
+      }
+    }
+  }
+}

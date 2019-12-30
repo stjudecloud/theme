@@ -5,10 +5,13 @@
 /* Typography ************************************************/
 
 $font-family-sans-serif: "St. Jude Sans", "Open Sans", "Helvetica Neue",
-  "Helvetica", Arial, sans-serif;
+  "Helvetica", arial, sans-serif !default;
 
-$font-size-base: 1rem !default; // Bootstrap default
-$h1-font-size: $font-size-base * 2.25 !default;
+$font-size-base: 1.125rem !default; // 18px
+$h1-font-size: $font-size-base * 2.78 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.67 !default;
+$h4-font-size: $font-size-base * 1.33 !default;
 
 /* Monochromatic - Grays - Bootstrap Defaults ****************/
 
@@ -32,24 +35,25 @@ $purple: #8332a7 !default;
 $purple-dark: #490e67 !default;
 $red: #c10f3a !default; // Accent, Alert, St. Jude Logo
 $red-dark: #911938 !default;
-$orange: #e03400 !default; // Error Message
+$peach: #fd5339 !default;
+$peach-dark: #eb4e36 !default; // Error Message
 $yellow: #ffd100 !default; // Warning
 $yellow-dark: #ffb125 !default;
 $green: #c0da07 !default;
-$green-dark: #75bc21 !default; // Success, Action Button
+$green-dark: #5ca132 !default; // Success, Action Button
 $aqua: #64d0e4 !default;
 $aqua-dark: #1eadc1 !default;
-$gray: #cccccc !default;
-$gray-dark: #63666b !default;
+$gray: #f2f2f2 !default;
+$gray-dark: #aeb2b5 !default;
 
 $primary: $blue !default;
 $secondary: $blue-dark !default;
 $success: $green-dark !default;
 $info: $purple !default;
 $warning: $yellow-dark !default;
-$danger: $orange !default;
-// $light:     $gray-100 !default;
-// $dark:      $gray-800 !default;
+$danger: $peach-dark !default;
+$light: $gray !default;
+$dark: $gray-dark !default;
 
 /* SJC Custom Swatches  *****************************************/
 
@@ -65,4 +69,12 @@ $swatch-5: $yellow !default;
 $swatch-5-dark: $yellow-dark !default;
 $swatch-6: $aqua !default;
 $swatch-6-dark: $aqua-dark !default;
-$swatch-7: $orange !default;
+$swatch-7: $peach !default;
+$swatch-7-dark: $peach-dark !default;
+
+/* SJC Button Overrides ***************************************/
+
+$btn-border-radius: 1.55rem !default;
+$btn-padding-y: .94rem !default;
+$btn-padding-x: 1.9rem !default;
+$btn-line-height: .5 !default;

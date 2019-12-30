@@ -1,88 +1,88 @@
 /* Site Nav - Site-Specific Navigation */
 
 .site-nav {
-	background-color: $white;
-	position: relative;
-	padding: 0;
+  position: relative;
+  padding: 0;
+  background-color: $white;
 }
 
 .site-nav-label {
-	padding-left: 10px;
-	font-size: 1rem;
+  padding-left: 10px;
+  font-size: 1rem;
 }
 
 .navbar-toggler {
-	outline: none;
+  outline: none;
 }
 
-#siteSpecificNavigation .nav-link {
-	padding: 0.75rem 1rem;	
+#siteSpecificNavigation .nav-link { /* stylelint-disable-line */
+  padding: .75rem 1rem;
 }
 
-#siteSpecificNavigation ul li .dropdown-menu {
-	border-radius: 0;
-	margin-top: 0;
-	border: 0;
-	border-color: $gray-300;
-	border-bottom: 3px solid $gray-500;
-	padding-bottom: 0;
-	padding-top: 0;
-	box-shadow: $box-shadow-sm;	
+#siteSpecificNavigation ul li .dropdown-menu { /* stylelint-disable-line */
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  border: 0;
+  border-color: $gray-300;
+  border-bottom: 3px solid $gray-500;
+  @include border-radius(0);
+  box-shadow: $box-shadow-sm;
 }
 
-#siteSpecificNavigation .dropdown-menu .dropdown-item a {
-	padding: 0.5rem 1rem;	
+#siteSpecificNavigation .dropdown-menu .dropdown-item a { /* stylelint-disable-line */
+  padding: .5rem 1rem;
 }
 
-#siteSpecificNavigation .nav-item.active {
-	background: $gray-200;
+#siteSpecificNavigation .nav-item.active { /* stylelint-disable-line */
+  background: $gray-200;
 }
 
 
 @include media-breakpoint-down(sm) {
-	
-	.site-nav {
-		padding: 0.5rem 0; 
-	}
-	
-	#siteSpecificNavigation {
-		position: absolute;
-		top: 54px;
-		background: $white;
-		width: 100%;
-		box-shadow: $box-shadow-sm;
-		border-bottom: 3px solid $gray-500;
-	}
-	
-	#siteSpecificNavigation .nav-link {
-		padding: 0.5rem 1rem;	
-	}
-	
-	.site-nav button {
-		margin: 0 10px;
-		width: 100%;
-	}
-	
-	#siteSpecificNavigation ul {
-		padding: 10px;	
-	}
-	
-	#siteSpecificNavigation ul li .dropdown-menu {
-		border: 0;
-		box-shadow: none;
-		padding: 0 0 0 1rem;
-		background: $white;
-	}
-	
-	#navbarDropdown {
-		box-shadow: 0!important;
-	}
-	
-	#siteSpecificNavigation .dropdown-menu .dropdown-item {
-		padding: .5rem 1rem;
-	}
-	
-	#siteSpecificNavigation .dropdown-menu .dropdown-item:hover {
-		background: none;
-	}
+
+  .site-nav {
+    padding: .5rem 0;
+  }
+
+  #siteSpecificNavigation { /* stylelint-disable-line */
+    position: absolute;
+    top: 54px;
+    width: 100%;
+    background: $white;
+    border-bottom: 3px solid $gray-500;
+    box-shadow: $box-shadow-sm;
+  }
+
+  #siteSpecificNavigation .nav-link { /* stylelint-disable-line */
+    padding: .5rem 1rem;
+  }
+
+  .site-nav button {
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  #siteSpecificNavigation ul { /* stylelint-disable-line */
+    padding: 10px;
+  }
+
+  #siteSpecificNavigation ul li .dropdown-menu { /* stylelint-disable-line */
+    padding: 0 0 0 1rem;
+    background: $white;
+    border: 0;
+    box-shadow: none;
+  }
+
+  #navbarDropdown { /* stylelint-disable-line */
+    box-shadow: 0;
+  }
+
+  #siteSpecificNavigation .dropdown-menu .dropdown-item { /* stylelint-disable-line */
+    padding: .5rem 1rem;
+  }
+
+  #siteSpecificNavigation .dropdown-menu .dropdown-item:hover { /* stylelint-disable-line */
+    background: none;
+  }
 }

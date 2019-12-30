@@ -1,0 +1,21 @@
+.card {
+  text-align: center;
+  box-shadow: 0 0 6px #000;
+}
+
+.card-header {
+  color: #fff;
+  background-color: $primary;
+}
+
+.card img {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.card .icon {
+  width: auto;
+  max-width: 50%;
+  padding-top: 15px;
+}

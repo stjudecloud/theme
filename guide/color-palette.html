@@ -19,10 +19,9 @@
     <!-- Load Customized St. Jude Bootstrap Theme -->
     <link href="css/styles.css" rel="stylesheet">
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first, then Popper.js. Boostrap is included with St. Jude Bootstrap Theme-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="js/navbar.js"></script>
   </head>
 
@@ -87,16 +86,10 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="components.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Components
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="components.html">Buttons</a>
-                <a class="dropdown-item" href="components-global.html">Global Top Bar and Footer</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="components.html">Components</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="color-palette.html">Color Palette</a>
             </li>
 
@@ -118,142 +111,47 @@
 
     <!-- Start Main Content-->
 
-    <div id="content-main">
+    <div class="content-main">
 
       <div class="container">
 
-        <p>The &quot;<span style="color:#1874dc">St. Jude Cloud Blue</span>&quot; in the top navigation area is the most recognizable branding element for St. Jude Cloud applications. In addition, the colors below are officially-approved St. Jude brand colors. For more detailed information and <strong>print</strong> color versions, see the <a href="docs/stjude-brand-color-pallette-2018.pdf"><strong>St. Jude Branding Guide</strong></a>.</p>
-        <div class="colors mb-4">
-          <p><strong>Blue / Interface / Hyperlinks / UI Button </strong></p>
-          <p>
-            <span class="blue">100%<br/>#1874dc</span>
-            <span class="blue-90">90%<br/>~<br/>rgba(24, 116, 220, 0.9)</span>
-            <span class="blue-80">80%<br/>~<br/>rgba(24, 116, 220, 0.8)</span>
-            <span class="blue-70">70%<br/>~<br/>rgba(24, 116, 220, 0.7)</span>
-            <span class="blue-60">60%<br/>~<br/>rgba(24, 116, 220, 0.6)</span>
-            <span class="blue-50">50%<br/>~<br/>rgba(24, 116, 220, 0.5)</span>
-            <span class="blue-40">40%<br/>~<br/>rgba(24, 116, 220, 0.4)</span>
-            <span class="blue-30">30%<br/>~<br/>rgba(24, 116, 220, 0.3)</span>
-            <span class="blue-20">20%<br/>~<br/>rgba(24, 116, 220, 0.2)</span>
-            <span class="blue-10">10%<br/>~<br/>rgba(24, 116, 220, 0.1)</span>
-          </p>
-        </div>
-        <div class="clearfix"></div>
-        <div class="colors mt-4">
-          <p><strong>Dark Green / Success / Action Button</strong></p>
-          <p>
-            <span class="green-dark">100%<br/>#75bc21</span>
-            <span class="green-dark-90">90%<br/>~<br/>rgba(117, 188, 33, 0.9)</span>
-            <span class="green-dark-80">80%<br/>~<br/>rgba(117, 188, 33, 0.8)</span>
-            <span class="green-dark-70">70%<br/>~<br/>rgba(117, 188, 33, 0.7)</span>
-            <span class="green-dark-60">60%<br/>~<br/>rgba(117, 188, 33, 0.6)</span>
-            <span class="green-dark-50">50%<br/>~<br/>rgba(117, 188, 33, 0.5)</span>
-            <span class="green-dark-40">40%<br/>~<br/>rgba(117, 188, 33, 0.4)</span>
-            <span class="green-dark-30">30%<br/>~<br/>rgba(117, 188, 33, 0.3)</span>
-            <span class="green-dark-20">20%<br/>~<br/>rgba(117, 188, 33, 0.2)</span>
-            <span class="green-dark-10">10%<br/>~<br/>rgba(117, 188, 33, 0.1)</span>
-          </p>
-        </div>
-        <div class="clearfix"></div>
-        <div class="colors mt-4">
-          <p><strong>Dark Aqua / Info</strong></p>
-          <p>
-            <span class="aqua-dark">100%<br/>#64d0e4</span>
-            <span class="aqua-dark-90">90%<br/>~<br/>rgba(100, 208, 228, 0.9)</span>
-            <span class="aqua-dark-80">80%<br/>~<br/>rgba(100, 208, 228, 0.8)</span>
-            <span class="aqua-dark-70">70%<br/>~<br/>rgba(100, 208, 228, 0.7)</span>
-            <span class="aqua-dark-60">60%<br/>~<br/>rgba(100, 208, 228, 0.6)</span>
-            <span class="aqua-dark-50">50%<br/>~<br/>rgba(100, 208, 228, 0.5)</span>
-            <span class="aqua-dark-40">40%<br/>~<br/>rgba(100, 208, 228, 0.4)</span>
-            <span class="aqua-dark-30">30%<br/>~<br/>rgba(100, 208, 228, 0.3)</span>
-            <span class="aqua-dark-20">20%<br/>~<br/>rgba(100, 208, 228, 0.2)</span>
-            <span class="aqua-dark-10">10%<br/>~<br/>rgba(100, 208, 228, 0.1)</span>
-          </p>
-        </div>
-        <div class="clearfix"></div>
-        <div class="colors mt-4">
-          <p><strong>Aqua / Info</strong></p>
-          <p>
-            <span class="aqua">100%<br/>#1eadc1</span>
-            <span class="aqua-90">90%<br/>~<br/>rgba(30, 173, 193, 0.9)</span>
-            <span class="aqua-80">80%<br/>~<br/>rgba(30, 173, 193, 0.8)</span>
-            <span class="aqua-70">70%<br/>~<br/>rgba(30, 173, 193, 0.7)</span>
-            <span class="aqua-60">60%<br/>~<br/>rgba(30, 173, 193, 0.6)</span>
-            <span class="aqua-50">50%<br/>~<br/>rgba(30, 173, 193, 0.5)</span>
-            <span class="aqua-40">40%<br/>~<br/>rgba(30, 173, 193, 0.4)</span>
-            <span class="aqua-30">30%<br/>~<br/>rgba(30, 173, 193, 0.3)</span>
-            <span class="aqua-20">20%<br/>~<br/>rgba(30, 173, 193, 0.2)</span>
-            <span class="aqua-10">10%<br/>~<br/>rgba(30, 173, 193, 0.1)</span>
-          </p>
-        </div>
-        <div class="clearfix"></div>
-        <div class="colors mt-4">
-          <p><strong>Dark Yellow / Warning</strong></p>
-          <p>
-            <span class="yellow-dark">100%<br/>#ffb125</span>
-            <span class="yellow-dark-90">90%<br/>~<br/>rgba(255, 177, 37, 0.9)</span>
-            <span class="yellow-dark-80">80%<br/>~<br/>rgba(255, 177, 37, 0.8)</span>
-            <span class="yellow-dark-70">70%<br/>~<br/>rgba(255, 177, 37, 0.7)</span>
-            <span class="yellow-dark-60">60%<br/>~<br/>rgba(255, 177, 37, 0.6)</span>
-            <span class="yellow-dark-50">50%<br/>~<br/>rgba(255, 177, 37, 0.5)</span>
-            <span class="yellow-dark-40">40%<br/>~<br/>rgba(255, 177, 37, 0.4)</span>
-            <span class="yellow-dark-30">30%<br/>~<br/>rgba(255, 177, 37, 0.3)</span>
-            <span class="yellow-dark-20">20%<br/>~<br/>rgba(255, 177, 37, 0.2)</span>
-            <span class="yellow-dark-10">10%<br/>~<br/>rgba(255, 177, 37, 0.1)</span>
-          </p>
-        </div>
-        <div class="clearfix"></div>
-        <div class="colors mt-4">
-          <p><strong>Purple / Info</strong></p>
-          <p>
-            <span class="purple">100%<br/>#8332a7</span>
-            <span class="purple-90">90%<br/>~<br/>rgba(131, 50, 167, 0.9)</span>
-            <span class="purple-80">80%<br/>~<br/>rgba(131, 50, 167, 0.8)</span>
-            <span class="purple-70">70%<br/>~<br/>rgba(131, 50, 167, 0.7)</span>
-            <span class="purple-60">60%<br/>~<br/>rgba(131, 50, 167, 0.6)</span>
-            <span class="purple-50">50%<br/>~<br/>rgba(131, 50, 167, 0.5)</span>
-            <span class="purple-40">40%<br/>~<br/>rgba(131, 50, 167, 0.4)</span>
-            <span class="purple-30">30%<br/>~<br/>rgba(131, 50, 167, 0.3)</span>
-            <span class="purple-20">20%<br/>~<br/>rgba(131, 50, 167, 0.2)</span>
-            <span class="purple-10">10%<br/>~<br/>rgba(131, 50, 167, 0.1)</span>
-          </p>
-        </div>
-        <div class="clearfix"></div>
-        <div class="colors mt-4">
-          <p><strong>Dark Gray</strong></p>
-          <p>
-            <span class="gray-dark">100%<br/>#63666b</span>
-            <span class="gray-dark-90">90%<br/>~<br/>rgba(99, 102, 107, 0.9)</span>
-            <span class="gray-dark-80">80%<br/>~<br/>rgba(99, 102, 107, 0.8)</span>
-            <span class="gray-dark-70">70%<br/>~<br/>rgba(99, 102, 107, 0.7)</span>
-            <span class="gray-dark-60">60%<br/>~<br/>rgba(99, 102, 107, 0.6)</span>
-            <span class="gray-dark-50">50%<br/>~<br/>rgba(99, 102, 107, 0.5)</span>
-            <span class="gray-dark-40">40%<br/>~<br/>rgba(99, 102, 107, 0.4)</span>
-            <span class="gray-dark-30">30%<br/>~<br/>rgba(99, 102, 107, 0.3)</span>
-            <span class="gray-dark-20">20%<br/>~<br/>rgba(99, 102, 107, 0.2)</span>
-            <span class="gray-dark-10">10%<br/>~<br/>rgba(99, 102, 107, 0.1)</span>
-          </p>
-        </div>
-        <div class="clearfix"></div>
-        <div class="colors mt-4">
-          <p><strong>Orange (Peach) / Error</strong></p>
-          <p>
-            <span class="orange">100%<br/>#e03400</span>
-          </p>
-        </div>
-        <div class="clearfix"></div>
-        <div class="colors mt-4">
-          <p><strong>Red / Accent / Alert / St. Jude Logo</strong></p>
-          <p>
-            <span class="red">Main Red<br/>#c10f3a</span>
-            <span class="red-dark">Dark Red<br/>#911938</span>
-          </p>
-        </div>
+        <p>The &quot;<span class="text-primary">St. Jude Cloud Blue</span>&quot; in the top navigation area is the most recognizable branding element for St. Jude Cloud applications. In addition, the colors below are officially-approved St. Jude brand colors. For more detailed information and <strong>print</strong> color versions, see the <a href="https://home.stjude.org/biomedical-communications/Documents/brand-quick-reference-guide.pdf#search=brand%20standards"><strong>St. Jude Branding Guide</strong></a>.</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Color</th>
+              <th>HEX Value</th>
+              <th>RGB Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-primary">
+              <td>Primary (St. Jude Cloud Blue)</td><td>#1874DC</td><td>rgb(24,116,220)</td>
+            </tr>
+            <tr class="bg-secondary text-light">
+              <td>Secondary (Dark Blue)</td><td>#002856</td><td>rgb(0,40,86)</td>
+            </tr>
+            <tr class="bg-success">
+              <td>Success (Green)</td><td>#5CA132</td><td>rgb(92,161,50)</td>
+            </tr>
+            <tr class="bg-danger">
+              <td>Danger (Dark Peach)</td><td>#EB4E36</td><td>rgb(235,78,54)</td>
+            </tr>
+            <tr class="bg-warning">
+              <td>Warning (Dark Yellow)</td><td>#FFB125</td><td>rgb(255,177,37)</td>
+            </tr>
+            <tr class="bg-info">
+              <td>Info (Purple)</td><td>#8332A7</td><td>rgb(131,50,167)</td>
+            </tr>
+            <tr class="bg-light">
+              <td>Light Gray</td><td>#F2F2F2</td><td>rgb(242,242,242)</td>
+            </tr>
+            <tr class="bg-dark text-light">
+              <td>Medium Gray</td><td>#AEB2B5</td><td>rgb(174,178,181)</td>
+            </tr>
+          </tbody>
+        </table>
       </div><!-- /.container -->
-      <div class="clearfix"></div>
-
-
-
     </div><!-- /.container-main -->
 
 

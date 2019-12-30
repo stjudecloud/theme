@@ -10,8 +10,14 @@
 // Apply our site-specific theme
 @import "site-variables";
 
-// Require the reset of the theme (includes bootstrap)
-@import "../../scss/stjude-cloud-theme";
+// Add all of bootstrap or selectively choose components you need:
+@import "~bootstrap/scss/bootstrap.scss";
+
+// Require custom components from St Jude Cloud Theme
+@import "../../scss/sjc-header";
+@import "../../scss/sjc-footer";
+@import "../../scss/button";
+@import "../../scss/sjc-card";
 
 // Apply our site-specific components and other CSS
 @import "site-config";
