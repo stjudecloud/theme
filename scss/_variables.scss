@@ -31,6 +31,7 @@ $black: #000 !default;
 
 $blue: #1874dc !default; // Interface, Hyperlinks, UI Button
 $blue-dark: #002856 !default;
+$blue-light: #eff5fc !default;
 $purple: #8332a7 !default;
 $purple-dark: #490e67 !default;
 $red: #c10f3a !default; // Accent, Alert, St. Jude Logo
@@ -38,11 +39,11 @@ $red-dark: #911938 !default;
 $peach: #fd5339 !default;
 $peach-dark: #eb4e36 !default; // Error Message
 $yellow: #ffd100 !default; // Warning
-$yellow-dark: #ffb125 !default;
-$green: #c0da07 !default;
+$yellow-dark: #ffc32c !default;
+$green: #c4d82e !default;
 $green-dark: #5ca132 !default; // Success, Action Button
-$aqua: #64d0e4 !default;
-$aqua-dark: #1eadc1 !default;
+$aqua: #7ad0e4 !default;
+$aqua-dark: #17818f !default;
 $gray: #f2f2f2 !default;
 $gray-dark: #aeb2b5 !default;
 
@@ -54,6 +55,8 @@ $warning: $yellow-dark !default;
 $danger: $peach-dark !default;
 $light: $gray !default;
 $dark: $gray-dark !default;
+
+$headings-color: $secondary !default;
 
 /* SJC Custom Swatches  *****************************************/
 
