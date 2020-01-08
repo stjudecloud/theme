@@ -11,8 +11,8 @@
 
     @include hover () {
       color: $gray;
-      @include gradient-bg(lighten($value, 20%));
-      border-color: lighten($value, 20%);
+      @include gradient-bg(lighten($value, 15%));
+      border-color: lighten($value, 15%);
     }
 
     &:focus,
@@ -41,11 +41,11 @@
     &:not(:disabled):not(.disabled).active,
     .show > &.dropdown-toggle {
       color: $gray;
-      background-color: lighten($value, 20%);
+      background-color: lighten($value, 15%);
       @if $enable-gradients {
         background-image: none; // Remove the gradient for the pressed/active state
       }
-      border-color: lighten($value, 20%);
+      border-color: lighten($value, 15%);
 
       &:focus {
         // Avoid using mixin so we can pass custom focus shadow properly
