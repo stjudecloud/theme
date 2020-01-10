@@ -2,10 +2,6 @@
 // Customizes the button-variant bootstrap mixin to darken on hover while maintaining text colors
 // Button colors/sizing/border-radius is managed in variables.scss
 
-.btn{
-  display: inline-flex;
-}
-
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
     color: $gray;
