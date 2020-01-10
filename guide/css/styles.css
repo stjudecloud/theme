@@ -9824,6 +9824,10 @@ footer .social-media {
   text-decoration: none;
 }
 
+.btn {
+  display: inline-flex;
+}
+
 .btn-primary {
   color: #f2f2f2;
   background-color: #1874dc;
