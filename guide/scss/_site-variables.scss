@@ -9,9 +9,16 @@
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-$spacer: 1rem !default;
-$spacers: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
+
+// This guide is an example of how to override the default variables. We don't
+// want to specify !default here; we want to intentionally override.
+// stylelint-disable scss/dollar-variable-default
+
+$stjude-sans-font-path: "../../dist/fonts/stjude-sans";
+
+$spacer: 1rem;
+
+$spacers: ();
 $spacers: map-merge(
   (
     0: 0,
@@ -25,8 +32,7 @@ $spacers: map-merge(
 );
 
 // This variable affects the `.h-*` and `.w-*` classes.
-$sizes: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: ();
 $sizes: map-merge(
   (
     25: 25%,
@@ -36,49 +42,49 @@ $sizes: map-merge(
     auto: auto
   ),
   $sizes
-) !default;
+);
 
 // Body
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   #f5f5f5 !default;
+$body-bg:                   #f5f5f5;
 
 // Links
 //
 // Style anchor elements.
 
-$link-color:                $primary !default;
-$link-hover-decoration:     none !default;
+$link-color:                $primary;
+$link-hover-decoration:     none;
 
 
 // Components
 //
 // Define common padding and border radius sizes and more.
 
-$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
-$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
-$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+$box-shadow-sm:               0 .125rem .25rem rgba($black, .075);
+$box-shadow:                  0 .5rem 1rem rgba($black, .15);
+$box-shadow-lg:               0 1rem 3rem rgba($black, .175);
 
 // Dropdowns
 //
 // Dropdown menu container and contents.
 
-$dropdown-bg:                       $gray-200 !default;
-$dropdown-box-shadow:               $box-shadow-lg !default;
-$dropdown-link-hover-bg:            $gray-100 !default;
-$dropdown-link-active-color:        inherit !default;
-$dropdown-link-active-bg:           inherit !default;
-$dropdown-item-padding-x:           1rem !default;
+$dropdown-bg:                       $gray-200;
+$dropdown-box-shadow:               $box-shadow-lg;
+$dropdown-link-hover-bg:            $gray-100;
+$dropdown-link-active-color:        inherit;
+$dropdown-link-active-bg:           inherit;
+$dropdown-item-padding-x:           1rem;
 
 // Navbar
-$navbar-light-color:                rgba($black, .8) !default;
-$navbar-light-hover-color:          rgba($black, .6) !default;
+$navbar-light-color:                rgba($black, .8);
+$navbar-light-hover-color:          rgba($black, .6);
 
 // Jumbotron
-$jumbotron-padding:                 1rem !default;
+$jumbotron-padding:                 1rem;
 
 // Alerts
 //
 // Define alert colors, border radius, and padding.
-$alert-border-level:                   -4 !default;
+$alert-border-level:                   -4;

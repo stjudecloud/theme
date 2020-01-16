@@ -7,6 +7,8 @@
 $font-family-sans-serif: "St. Jude Sans", "Open Sans", "Helvetica Neue",
   "Helvetica", arial, sans-serif !default;
 
+$stjude-sans-font-path: "../dist/fonts/stjude-sans" !default;
+
 $font-size-base: 1.125rem !default; // 18px
 $h1-font-size: $font-size-base * 2.78 !default;
 $h2-font-size: $font-size-base * 2 !default;

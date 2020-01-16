@@ -6,11 +6,12 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
 // St. Jude components
-@import "sjc-header";
-@import "sjc-footer";
 @import "button";
 @import "sjc-card";
+@import "sjc-footer";
+@import "sjc-header";
+@import "typography";
 
-h2{
+h2 {
   font-weight: 800;
 }

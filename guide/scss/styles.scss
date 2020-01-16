@@ -1,25 +1,12 @@
 @charset "UTF-8";
 
-// Order matters. First we need bootstrap functions and mixins.
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/mixins";
-
-// Import SJC Theme variables
+// Apply our site-specific overrides
 @import "../../scss/variables";
-
-// Apply our site-specific theme
 @import "site-variables";
 
-// Add all of bootstrap or selectively choose components you need:
-@import "~bootstrap/scss/bootstrap.scss";
-
-// Require custom components from St Jude Cloud Theme
-@import "../../scss/sjc-header";
-@import "../../scss/sjc-footer";
-@import "../../scss/button";
-@import "../../scss/sjc-card";
+// Import SJC Theme, this includes bootstrap
+@import "../../scss/stjude-cloud-theme";
 
 // Apply our site-specific components and other CSS
 @import "site-config";
 @import "site-nav";
-@import "typography";

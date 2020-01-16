@@ -94,7 +94,7 @@ Since the compiled CSS from the theme includes all of default Bootstrap and St. 
 
 ## Fonts
 
-**Compiled CSS does not include font families for St. Jude Sans.** It is not possible to know where fonts are located for all projects. Feel free to reference [the guide](guide/scss/_typography.scss) as an example of how to add font families. In most cases, only the paths will need to be updated to the true location of fonts.
+To correctly include font families for a project, override the default `$stjude-sans-font-path` variable.
 
 ## Versioning
 
