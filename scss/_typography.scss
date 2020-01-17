@@ -1,0 +1,65 @@
+// St. Jude Cloud Theme Custom Fonts
+
+h2 {
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "St. Jude Sans";
+  font-weight: 400;
+  src: url("#{$stjude-sans-font-path}/sjs-regular.eot"); /* IE9 Compat Modes */
+  src: url("#{$stjude-sans-font-path}/sjs-regular.woff2") format("woff2"), url("#{$stjude-sans-font-path}/sjs-regular.woff") format("woff"), url("#{$stjude-sans-font-path}/sjs-regular.ttf")  format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "St. Jude Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("#{$stjude-sans-font-path}/sjs-regular-italic.eot"); /* IE9 Compat Modes */
+  src: url("#{$stjude-sans-font-path}/sjs-regular-italic.woff2") format("woff2"), url("#{$stjude-sans-font-path}/sjs-regular-italic.woff") format("woff"), url("#{$stjude-sans-font-path}/sjs-regular-italic.ttf")  format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "St. Jude Sans";
+  font-weight: 600;
+  src: url("#{$stjude-sans-font-path}/sjs-book.eot"); /* IE9 Compat Modes */
+  src: url("#{$stjude-sans-font-path}/sjs-book.woff2") format("woff2"), url("#{$stjude-sans-font-path}/sjs-book.woff") format("woff"); /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: "St. Jude Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: url("#{$stjude-sans-font-path}/sjs-book-italic.eot"); /* IE9 Compat Modes */
+  src: url("#{$stjude-sans-font-path}/sjs-book-italic.woff2") format("woff2"), url("#{$stjude-sans-font-path}/sjs-book-italic.woff") format("woff"); /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: "St. Jude Sans";
+  font-weight: 700;
+  src: url("#{$stjude-sans-font-path}/sjs-medium.eot"); /* IE9 Compat Modes */
+  src: url("#{$stjude-sans-font-path}/sjs-medium.woff2") format("woff2"), url("#{$stjude-sans-font-path}/sjs-medium.woff") format("woff"), url("#{$stjude-sans-font-path}/sjs-medium.ttf")  format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "St. Jude Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("#{$stjude-sans-font-path}/sjs-medium-italic.eot"); /* IE9 Compat Modes */
+  src: url("#{$stjude-sans-font-path}/sjs-medium-italic.woff2") format("woff2"), url("#{$stjude-sans-font-path}/sjs-medium-italic.woff") format("woff"), url("#{$stjude-sans-font-path}/sjs-medium-italic.ttf")  format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "St. Jude Sans";
+  font-weight: 800;
+  src: url("#{$stjude-sans-font-path}/sjs-bold.eot"); /* IE9 Compat Modes */
+  src: url("#{$stjude-sans-font-path}/sjs-bold.woff2") format("woff2"), url("#{$stjude-sans-font-path}/sjs-bold.woff") format("woff"), url("#{$stjude-sans-font-path}/sjs-bold.ttf")  format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "St. Jude Sans";
+  font-style: italic;
+  font-weight: 800;
+  src: url("#{$stjude-sans-font-path}/sjs-bold-italic.eot"); /* IE9 Compat Modes */
+  src: url("#{$stjude-sans-font-path}/sjs-bold-italic.woff2") format("woff2"), url("#{$stjude-sans-font-path}/sjs-bold-italic.woff") format("woff"), url("#{$stjude-sans-font-path}/sjs-bold-italic.ttf")  format("truetype"); /* Safari, Android, iOS */
+}
