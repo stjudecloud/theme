@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stjude/stjde-cloud-theme.git"
+    "url": "git+https://github.com/stjudecloud/theme.git"
   },
   "keywords": [
     "St. Jude",
@@ -33,7 +33,7 @@
     "scss/**/*.scss"
   ],
   "author": "St. Jude",
-  "homepage": "https://github.com/stjude/stjde-cloud-theme",
+  "homepage": "https://stjude.cloud/",
   "peerDependencies": {
     "bootstrap": "4.3.1"
   },
