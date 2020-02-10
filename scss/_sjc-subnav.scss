@@ -36,8 +36,8 @@
         display: block;
         content: "";
         border-bottom: solid 1px $blue-dark;
-        transform: scaleX(0);
         transition: transform .2s ease-in-out; // stylelint-disable-line
+        transform: scaleX(0);
       }
 
       &:hover::after {
