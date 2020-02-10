@@ -90,3 +90,20 @@ $btn-padding-y-lg: .5rem !default;
 $btn-padding-x-lg: 2rem !default;
 $btn-padding-y-sm: .2rem !default;
 $btn-padding-x-sm: 1.75rem !default;
+
+/* SJC Navbar Overrides ***************************************/
+
+$navbar-nav-link-padding-x: 1.25rem !default;
+$navbar-light-color: $blue-dark !default;
+$navbar-light-hover-color: $black !default;
+$navbar-light-active-color: $black !default;
+$navbar-light-disabled-color: rgba($blue-dark, .3) !default;
+$navbar-light-toggler-border-color: rgba($blue-dark, .1) !default;
+
+$navbar-dark-color: $blue-dark !default;
+$navbar-dark-hover-color: $black !default;
+$navbar-dark-active-color: $black !default;
+$navbar-dark-disabled-color: rgba($blue-dark, .25) !default;
+$navbar-dark-toggler-border-color: rgba($blue-dark, .1) !default;
+
+$enable-caret: false !default;
