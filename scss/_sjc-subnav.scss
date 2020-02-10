@@ -3,15 +3,6 @@
   background-color: $white;
   border-bottom: rgba(0, 0, 0, .15) 1px solid;
 
-  .dropdown-item,
-  .nav-link {
-    color: $blue-dark;
-
-    &:hover {
-      color: $black;
-    }
-  }
-
   .dropdown-menu {
     border-radius: 0; // stylelint-disable-line
   }
@@ -31,22 +22,8 @@
       top: 112%;
     }
 
-    .nav-link {
-      &::after {
-        display: block;
-        content: "";
-        border-bottom: solid 1px $blue-dark;
-        transition: transform .2s ease-in-out; // stylelint-disable-line
-        transform: scaleX(0);
-      }
-
-      &:hover::after {
-        transform: scaleX(1);
-      }
-    }
-
-    .nav-item.show .nav-link::after {
-      transform: scaleX(1);
+    .nav-item.active .nav-link {
+      color: darken($primary, 15%);
     }
   }
 }
