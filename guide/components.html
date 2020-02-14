@@ -13,78 +13,249 @@
 
     <title>Components | St. Jude Cloud Developer Guide</title>
 
-    <!-- Load Icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">	
-
-    <!-- Load Customized St. Jude Bootstrap Theme -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet">
   </head>
 
   <body id="home">
     <header>
-      <div class="omnibar">
+      <div class="sjc-omnibar">
         <nav class="navbar">
           <a class="navbar-brand" href="https://stjude.cloud">
-            <span class="logo">
-              <img src="../dist/images/stjude-logo-child.svg" alt="St. Jude Cloud" title="St. Jude Cloud" />
-            </span>
+            <span class="logo"></span>
           </a>
           <a class="sjc-title" href="https://stjude.cloud">St. Jude Cloud</a>
           <span class="portal-title">
             Portal Title
           </span>
 
-          <ul class="nav justify-content-center global-icons">
-            
-            <li class="nav-item nav-item-apps dropdown">
-              <a class="nav-link dropdown-toggle" href="/" id="nav-item-icon-apps" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="St. Jude Cloud Apps">
-                <i class="fas fa-bars"></i>
+          <ul class="nav global-icons">
+            <li class="nav-item user-dropdown dropdown">
+              <a
+                class="nav-link dropdown-toggle profile-dropdown-toggle"
+                href=""
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                title="User Info"
+              >
+                <span class="user-icon"></i>
               </a>
-              <div class="dropdown-menu dropdown-menu-right dropdown-menu-main" aria-labelledby="nav-item-icon-waffle" id="dropdown-main">
-                <div class="d-flex flex-column flex-lg-row">
-                  <div class="nav-flex-fill">
-                    <a class="dropdown-item dropdown-main-options" href="https://www.stjude.cloud/data"><img alt="data-icon" class="icon-nav" src="../dist/images/icon-nav-data.png">Data Browser</a>
-                    <a class="dropdown-item dropdown-main-options" href="https://www.stjude.cloud/tools"><img alt="tools-icon" class="icon-nav" src="../dist/images/icon-nav-tools.png">Analysis Tools</a>
-                    <a class="dropdown-item dropdown-main-options" href="https://www.stjude.cloud/visualizations"><img alt="visualizations-icon" class="icon-nav" src="../dist/images/icon-nav-visualization.png">Curated Visualizations</a>
-                  </div>
-                  <div class="nav-flex-fill">
-                    <a class="dropdown-column-header dropdown-item" href="">Apps</a>
-                    <a class="dropdown-item" href="https://pecan.stjude.cloud">PeCan</a>
-                    <a class="dropdown-item" href="https://platform.stjude.cloud">Platform</a>
-                    <a class="dropdown-column-header dropdown-item" href="">Studies</a>
-                  </div>
-                  <div class="nav-flex-fill">
-                    <p class="dropdown-column-header">Help</p>
-                    <a class="dropdown-item" href="https://www.stjude.cloud/docs/" target="_blank" rel="noopener noreferrer">User Guides</a>
-                    <a class="dropdown-item" href="https://www.stjude.cloud/faq">FAQ</a>
-                    <a class="dropdown-item" href="https://www.stjude.cloud/contact" target="_blank" rel="noopener noreferrer">Contact Us</a>
-                  </div>
-                </div>
-             </div>
-            </li>
-            
-            <li class="nav-item nav-item-user dropdown">
-              <a class="nav-link dropdown-toggle" href="/" id="nav-item-icon-user" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="User Info">
-                <i class="fa fa-user"></i>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right dropdown-menu-profile" aria-labelledby="nav-item-icon-user" id="dropdown-user">
-                <div class="nav-flex-fill">
-                  <a class="dropdown-item profile-menu-dropdown-item" href="">Sign In</a>
-                  <a class="dropdown-item profile-menu-dropdown-item" href="">Create Account</a>
-                </div>
+              <div
+                class="dropdown-menu dropdown-menu-right profile-dropdown-menu"
+                aria-labelledby="profile-dropdown-toggle"
+              >
+              <ul class="list-unstyled">
+                <li>
+                  <a class="dropdown-item" href="">
+                    Sign In
+                  </a>
+                </li>
+                  <li>
+                    <a class="dropdown-item" href="">
+                      Create Account
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
 
+            <li class="nav-item dropdown mega-dropdown">
+              <a
+                class="nav-link dropdown-toggle mega-dropdown-toggle"
+                href=""
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                title="St. Jude Cloud Mega Menu"
+              >
+                <div class="nav-menu-icon"></div>
+              </a>
+              <div
+                class="dropdown-menu mega-dropdown-menu"
+                aria-labelledby="mega-dropdown-toggle"
+                id="dropdown-main"
+              >
+                <div class="container mega-menu-container">
+                  <div class="row">
+                    <div class="col-md-3 order-md-2 mega-dropdown-col">
+                      <div class="mega-menu-title">
+                        Research Domains
+                      </div>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="https://stjude.cloud/pediatric-cancer.html"
+                            >Pediatric Cancer</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://stjude.cloud/cancer-survivorship.html"
+                            >Cancer Survivorship</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://stjude.cloud/noncancerous-diseases.html"
+                            >Noncancerous Diseases</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 order-md-3 mega-dropdown-col">
+                      <div class="mega-menu-title">
+                        Apps
+                      </div>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            href="https://platform.stjude.cloud"
+                            class="app-title"
+                          >
+                            <img
+                              class="app-title__icon"
+                              src="https://s7d2.scene7.com/is/image/stjude/PlatformIcon?fmt=png-alpha&amp;"
+                              alt="Genomics Platform Icon"
+                            />
+                            <span>
+                              Genomics Platform
+                              <div class="genomics-platform-subtext">Data &amp; Tools</div>
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://pecan.stjude.cloud/"
+                            class="app-title"
+                          >
+                            <img
+                              class="app-title__icon"
+                              src="https://s7d2.scene7.com/is/image/stjude/PeCanIcon?fmt=png-alpha&amp;"
+                              alt="PeCan Icon"
+                            />
+                            <span>
+                              PeCan
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://viz.stjude.cloud"
+                            class="app-title"
+                          >
+                            <img
+                              class="app-title__icon"
+                              src="https://s7d2.scene7.com/is/image/stjude/VisualizationIcon?fmt=png-alpha&amp;"
+                              alt="Vizualization Community Icon"
+                            />
+                            <span>
+                              Visualization Community
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://stjude.cloud/apps.html"
+                            class="text-primary"
+                          >
+                            View All Apps
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 order-md-1 mega-dropdown-col d-flex">
+                      <div class="featured-study">
+                        <a
+                          href="https://stjude.cloud/studies/clinical-genomics.html"
+                          target="_blank"
+                        >
+                          <img
+                            class="featured-study__image"
+                            src="https://s7d2.scene7.com/is/image/stjude/mcleod-clay-newman-scott-00198894-116-2?fit=crop&amp;wid=1000"
+                            alt="Featured Study Image"
+                          />
+                        </a>
+                        <div>
+                          <div class="featured-study__title">Featured Study</div>
+                          <ul class="list-unstyled">
+                            <li>
+                              <a
+                                href="https://stjude.cloud/studies/clinical-genomics.html"
+                                target="_blank"
+                              >
+                                Real-time Clinical Genomics
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://stjude.cloud/studies.html"
+                                class="text-primary"
+                              >
+                                View All Studies
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 order-md-4 mega-dropdown-col">
+                      <div class="mega-menu-title">
+                        Support
+                      </div>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            href="https://www.stjude.cloud/docs/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Help Guides</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.stjude.cloud/docs/faq/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >FAQs</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://hospital.stjude.org/apps/forms/fb/st-jude-cloud-contact/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Contact Us</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
         </nav>
       </div>
 
       <nav class="navbar navbar-expand-md sjc-subnav">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#guide-subnav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span><span class="site-nav-label">Site Menu</span>
-        </button>
+        <div class="sub-menu-text">
+          Sub Menu
+        </div>
+        <a
+          class="navbar-toggler collapsed"
+          role="button"
+          data-toggle="collapse"
+          data-target="#sj-subnav"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="nav-menu-icon bg-secondary"></div>
+        </a>
 
-        <div class="collapse navbar-collapse" id="guide-subnav">
+        <div class="collapse navbar-collapse" id="sj-subnav">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
@@ -98,7 +269,6 @@
           </ul>
         </div>
       </nav>
-
     </header>
 
 
@@ -125,19 +295,19 @@
           <div class="col">
             <div class="alert alert-warning">
               <h4 class="alert-heading">Warning!</h4>
-              <p class="mb-0">A simple warning alert-check it out!</a>.</p>
+              <p class="mb-0">A simple warning alert - check it out!</p>
             </div>
           </div>
           <div class="col">
             <div class="alert alert-danger">
               <h4 class="alert-heading">Danger</h4>
-              <p class="mb-0">Something broke-fix it!</a>.</p>
+              <p class="mb-0">Something broke - fix it!</p>
             </div>
           </div>
           <div class="col">
             <div class="alert alert-success">
               <h4 class="alert-heading">Success</h4>
-              <p class="mb-0">A simple success alert-good job!</a>.</p>
+              <p class="mb-0">A simple success alert - good job!</p>
             </div>
           </div>
         </div>
@@ -184,7 +354,7 @@
               <button type="button" class="btn btn-info m-2">Info</button>
               <button type="button" class="btn btn-warning m-2">Warning</button>
               <button type="button" class="btn btn-danger m-2">Danger</button>
-              <button type="button" class="btn btn-link m-2">Link</button>      
+              <button type="button" class="btn btn-link m-2">Link</button>
             </div>
             <div class="row mb-2">
               <button type="button" class="btn btn-primary disabled m-2">Primary</button>
@@ -193,7 +363,7 @@
               <button type="button" class="btn btn-info disabled m-2">Info</button>
               <button type="button" class="btn btn-warning disabled m-2">Warning</button>
               <button type="button" class="btn btn-danger disabled m-2">Danger</button>
-              <button type="button" class="btn btn-link disabled m-2">Link</button>      
+              <button type="button" class="btn btn-link disabled m-2">Link</button>
             </div>
             <div class="row mb-2">
               <button type="button" class="btn btn-outline-primary m-2">Primary</button>
@@ -341,41 +511,41 @@
                 <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled="">
               </fieldset>
             </div>
-            
+
             <div class="form-group">
               <fieldset>
                 <label class="control-label" for="readOnlyInput">Readonly input</label>
                 <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here…" readonly="">
               </fieldset>
             </div>
-            
+
             <div class="form-group has-success">
               <label class="form-control-label" for="inputSuccess1">Valid input</label>
               <input type="text" value="correct value" class="form-control is-valid" id="inputValid">
               <div class="valid-feedback">Success! You've done it.</div>
             </div>
-            
+
             <div class="form-group has-danger">
               <label class="form-control-label" for="inputDanger1">Invalid input</label>
               <input type="text" value="wrong value" class="form-control is-invalid" id="inputInvalid">
               <div class="invalid-feedback">Sorry, that username's taken. Try another?</div>
             </div>
-            
+
             <div class="form-group">
               <label class="col-form-label col-form-label-lg" for="inputLarge">Large input</label>
               <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" id="inputLarge">
             </div>
-            
+
             <div class="form-group">
               <label class="col-form-label" for="inputDefault">Default input</label>
               <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
             </div>
-            
+
             <div class="form-group">
               <label class="col-form-label col-form-label-sm" for="inputSmall">Small input</label>
               <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" id="inputSmall">
             </div>
-            
+
             <div class="form-group">
               <label class="control-label">Input addons</label>
               <div class="form-group">
@@ -442,7 +612,6 @@
 
     <footer class="footer">
       <div class="container-fluid">
-
         <p class="copyright">© Copyright 2020. St. Jude Children's Research Hospital, a not-for-profit, section 501(c)(3).
           <a href="https://www.stjude.org"
              target="_blank" rel="noopener noreferrer">www.stjude.org</a> |
@@ -451,28 +620,22 @@
            <a href="https://stjude.cloud/terms-of-use">Terms and Conditions</a>
         </p>
         <ul class="nav justify-content-center">
-
           <li>
             <a target="_blank" rel="noopener noreferrer" href="https://www.stjude.org/legal/u-s-privacy-policy-statement.html" title="U.S. Privacy Policy Statement">U.S. Privacy Policy Statement</a>
           </li>
-
           <li>
             <a target="_blank" rel="noopener noreferrer" href="https://www.stjude.org/legal.html" title="Disclaimer / Registrations / Copyright Statement">Disclaimer / Registrations / Copyright Statement</a>
           </li>
-
           <li>
             <a target="_blank" rel="noopener noreferrer" href="https://www.stjude.org/legal/linking-policy.html" title="Linking Policy">Linking Policy</a>
           </li>
-
           <li>
             <a target="_blank" rel="noopener noreferrer" href="https://www.stjude.org/legal/notice-of-privacy-practices.html" title="Notice of Privacy Practices (HIPAA)">Notice of Privacy Practices (HIPAA)</a>
           </li>
-
           <li>
             <a target="_blank" rel="noopener noreferrer" href="https://www.stjude.org/legal/notice-of-non-discrimination.html" title="Notice of Non-Discrimination">Notice of Non-Discrimination</a>
           </li>
         </ul>
-
 
         <ul class="social-media">
           <li>
