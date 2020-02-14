@@ -24,11 +24,8 @@
     margin-right: 10px;
   }
 
-  .global-icons i {
-    font-size: 20px;
-  }
-
-  .global-icons a:hover {
+  .profile-dropdown-toggle:hover,
+  .mega-dropdown-toggle:hover {
     opacity: .85;
   }
 
@@ -95,18 +92,22 @@
     background: #f4f8fc;
     border-radius: 0;
     box-shadow: $box-shadow-sm;
+  }
 
-    a {
-      color: $blue-dark;
-    }
+  .dropdown-menu a,
+  .dropdown-item {
+    color: $blue-dark;
 
-    a:hover {
+    &:focus,
+    &:hover {
       color: $blue-dark;
+      text-decoration: underline;
+      background-color: transparent;
     }
   }
 
   .profile-dropdown-menu {
-    top: 49px;
+    top: 50px;
   }
 
   .profile-dropdown-menu,
@@ -151,7 +152,7 @@
     padding: 1rem 3.5rem;
   }
 
-  .mega-dropdown-col li {
+  li {
     display: flex;
     align-items: center;
     height: 40px;
@@ -183,7 +184,6 @@
 
   .genomics-platform-subtext {
     font-size: 12px;
-    color: $gray-600;
   }
 
   /* Media Query Overrides ****************************************/
