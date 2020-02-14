@@ -1,5 +1,5 @@
 /* Omnibar - Global Top Bar */
-.omnibar {
+.sjc-omnibar {
   .navbar {
     height: 65px;
     padding: .5rem;
@@ -8,12 +8,7 @@
   }
 
   .navbar-brand {
-    display: flex;
     margin-right: 0;
-  }
-
-  .navbar-brand a {
-    display: inline-block;
   }
 
   .global-icons .nav-link {
@@ -25,6 +20,7 @@
   }
 
   .global-icons {
+    justify-content: center;
     margin-right: 10px;
   }
 
@@ -32,65 +28,24 @@
     font-size: 20px;
   }
 
-.omnibar .navbar-brand {
-  display: flex;
-}
+  .global-icons a:hover {
+    opacity: .85;
+  }
 
-  .nav-item.dropdown.show > .nav-link { // stylelint-disable-line
+  .dropdown.show > .nav-link {
     text-align: center;
     background-color: lighten($primary, 10%);
-    border-radius: 5px; // stylelint-disable-line
+    border-radius: 5px;
   }
-
-  .dropdown-menu {
-    position: absolute;
-    top: 125%;
-    left: auto;
-    padding: 1.5rem 0;
-    margin-top: 0;
-    color: $white;
-    background: lighten($primary, 10%);
-    border-bottom: 3px solid darken($primary, 10%);
-    border-radius: 0; // stylelint-disable-line
-    box-shadow: $box-shadow-sm;
-  }
-
-.navbar-brand {
-  margin-right: 0;
-}
-
-.global-icons {
-  margin-right: 10px;
-}
-
-.global-icons i {
-  font-size: 20px;
-}
-
-  .dropdown-toggle::after {
-    content: none;
-  }
-
-body .omnibar .dropdown-menu  {
-  position: absolute;
-  left: -115px;
-  margin-top: 0;
-  background: $white;
-  border-bottom: 3px solid $primary;
-  @include border-radius(0);
-  box-shadow: $box-shadow-sm;
-}
 
   .logo {
-    position: static;
     display: inline-block;
-    width: 60px;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding: 20px 30px;
     color: $white;
-    text-align: center;
-    text-decoration: none;
-    border-color: lighten($primary, 30%);
+    background-image: url("#{$stjude-images-path}/stjude-logo-child.svg");
+    background-position: 3px 6px;
+    background-size: 72px;
+    border-color: #99c4f4;
     border-right: 1px solid;
   }
 
@@ -109,21 +64,16 @@ body .omnibar .dropdown-menu  {
     font-weight: 800;
     color: $white;
     outline: none;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
-.sjc-title {
-  display: inline-block;
-  padding: 0 0 0 10px;
-  margin: 0;
-  font-size: 20px;
-  font-weight: 800;
-  color: #fff;
-  outline: none;
-}
-
-  .site-title {
+  .portal-title {
     display: inline-block;
     padding-left: 8px;
+    margin-right: auto;
     font-size: 20px;
     font-weight: 200;
     line-height: 1.2rem;
@@ -131,115 +81,238 @@ body .omnibar .dropdown-menu  {
     text-decoration: none;
   }
 
-.site-title {
-  display: inline-block;
-  padding-left: 5px;
-  font-size: 20px;
-  font-weight: 200;
-  line-height: 1.2rem;
-  color: lighten($primary, 30%);
-  text-decoration: none;
-}
-
-.site-title em {
-  font-style: normal;
-}
-
-  .nav-flex-fill {
-    //flex: 1 1 auto !important;
-    flex: 1 1 auto;
-    min-width: 125px;
-    padding: 0 .75rem;
-    border-right: 2px solid darken($primary, 5%);
+  .user-icon {
+    padding: 10px 8px 9px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%22-42%200%20512%20512.002%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cstyle%3Epath%7Bfill%3A%23fff%3B%7D%3C%2Fstyle%3E%3Cpath%20d%3D%22m210.351562%20246.632812c33.882813%200%2063.222657-12.152343%2087.195313-36.128906%2023.972656-23.972656%2036.125-53.304687%2036.125-87.191406%200-33.875-12.152344-63.210938-36.128906-87.191406-23.976563-23.96875-53.3125-36.121094-87.191407-36.121094-33.886718%200-63.21875%2012.152344-87.191406%2036.125s-36.128906%2053.308594-36.128906%2087.1875c0%2033.886719%2012.15625%2063.222656%2036.132812%2087.195312%2023.976563%2023.96875%2053.3125%2036.125%2087.1875%2036.125zm0%200%22%2F%3E%3Cpath%20d%3D%22m426.128906%20393.703125c-.691406-9.976563-2.089844-20.859375-4.148437-32.351563-2.078125-11.578124-4.753907-22.523437-7.957031-32.527343-3.308594-10.339844-7.808594-20.550781-13.371094-30.335938-5.773438-10.15625-12.554688-19-20.164063-26.277343-7.957031-7.613282-17.699219-13.734376-28.964843-18.199219-11.226563-4.441407-23.667969-6.691407-36.976563-6.691407-5.226563%200-10.28125%202.144532-20.042969%208.5-6.007812%203.917969-13.035156%208.449219-20.878906%2013.460938-6.707031%204.273438-15.792969%208.277344-27.015625%2011.902344-10.949219%203.542968-22.066406%205.339844-33.039063%205.339844-10.972656%200-22.085937-1.796876-33.046874-5.339844-11.210938-3.621094-20.296876-7.625-26.996094-11.898438-7.769532-4.964844-14.800782-9.496094-20.898438-13.46875-9.75-6.355468-14.808594-8.5-20.035156-8.5-13.3125%200-25.75%202.253906-36.972656%206.699219-11.257813%204.457031-21.003906%2010.578125-28.96875%2018.199219-7.605469%207.28125-14.390625%2016.121094-20.15625%2026.273437-5.558594%209.785157-10.058594%2019.992188-13.371094%2030.339844-3.199219%2010.003906-5.875%2020.945313-7.953125%2032.523437-2.058594%2011.476563-3.457031%2022.363282-4.148437%2032.363282-.679688%209.796875-1.023438%2019.964844-1.023438%2030.234375%200%2026.726562%208.496094%2048.363281%2025.25%2064.320312%2016.546875%2015.746094%2038.441406%2023.734375%2065.066406%2023.734375h246.53125c26.625%200%2048.511719-7.984375%2065.0625-23.734375%2016.757813-15.945312%2025.253906-37.585937%2025.253906-64.324219-.003906-10.316406-.351562-20.492187-1.035156-30.242187zm0%200%22%2F%3E%3C%2Fsvg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
-  .nav-flex-fill:first-child {
+  .dropdown-menu {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: $blue-dark;
+    background: #f4f8fc;
+    border-radius: 0;
+    box-shadow: $box-shadow-sm;
+
+    a {
+      color: $blue-dark;
+    }
+
+    a:hover {
+      color: $blue-dark;
+    }
+  }
+
+  .profile-dropdown-menu {
+    top: 49px;
+  }
+
+  .profile-dropdown-menu,
+  .mega-dropdown-menu {
+    display: block;
+    overflow: hidden;
+    transition: transform .25s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+
+  .show .profile-dropdown-menu,
+  .show .mega-dropdown-menu {
+    transform: scaleY(1);
+  }
+
+  .profile-dropdown-menu > ul,
+  .mega-menu-container {
+    transition: transform .25s ease-in-out;
+    transform: translateY(calc(-100% - 65px));
+  }
+
+  .mega-menu-container {
+    padding: 1.5rem 0;
+  }
+
+  .show .profile-dropdown-menu > ul,
+  .show .mega-menu-container {
+    transform: translateY(0);
+  }
+
+  .mega-dropdown {
+    position: static;
+  }
+
+  .mega-dropdown-menu {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .mega-dropdown-col {
+    padding: 1rem 3.5rem;
+  }
+
+  .mega-dropdown-col li {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    height: 40px;
   }
 
-  .site-title {
-    padding-left: 10px;
-  }
-
-  .dropdown-item {
-    flex: 1 1 auto;
-    min-width: 10rem;
-    padding: .3rem 1rem;
-    color: $white;
-  }
-}
-
-@include media-breakpoint-down(sm) {
-
-  body {
-    min-width: 400px;
-  }
-
-  .site-title {
-    width: 180px;
-  }
-
-  .dropdown-column-header {
-    padding: .25rem .5rem;
-    margin: 0;
-    font-size: 16px;
+  .mega-menu-title,
+  .featured-study__title {
+    margin-bottom: .5rem;
     font-weight: 600;
+    color: $blue-dark;
+    text-transform: uppercase;
   }
 
-  .dropdown-item:hover {
-    color: $white;
-    background-color: darken($primary, 2%);
+  .featured-study__image {
+    width: 100%;
+    max-width: 14rem;
+    margin-bottom: .75rem;
+  }
+
+  .app-title {
+    display: flex;
+    align-items: center;
+  }
+
+  .app-title__icon {
+    width: 40px;
+    height: 30px;
+  }
+
+  .genomics-platform-subtext {
+    font-size: 12px;
+    color: $gray-600;
   }
 
   /* Media Query Overrides ****************************************/
+
+  @include media-breakpoint-down(sm) {
+    .featured-study__image {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-only(sm) {
+    .mega-dropdown-col {
+      padding: 1rem;
+    }
+  }
 
   @include media-breakpoint-down(md) {
     .sjc-title {
       display: none;
     }
+  }
 
-    .site-title {
-      padding-left: 10px;
+  @include media-breakpoint-only(md) {
+    .mega-dropdown-menu {
+      font-size: .75rem;
+      line-height: .9375rem;
     }
 
-    .site-title a {
-      color: $white;
+    .mega-dropdown-col {
+      padding: .75rem;
     }
 
-    .dropdown-column-header {
-      margin-top: .75rem;
-    }
-    .dropdown-item {
-      border: none;
+    .mega-dropdown-col li {
+      height: 30px;
     }
 
-    .nav-flex-fill {
-      border-right: none;
+    .mega-dropdown-col:last-child {
+      padding-left: 1.125rem;
+    }
+
+    .app-icon {
+      width: 30px;
+      height: 22.5px;
+    }
+
+    .sjcgp-subtext {
+      font-size: 9px;
     }
   }
 
-  @include media-breakpoint-down(sm) {
-    .site-title {
-      width: 180px;
+  @include media-breakpoint-up(md) {
+    .mega-dropdown-col:last-child {
+      padding-left: 1.5rem;
+      border-left: 1px solid #b3b3b3;
     }
 
-    .site-title a {
-      display: inline-block;
-      font-size: 16px;
-      color: $white;
+    .featured-study {
+      padding: 1.125rem 1rem;
+      background-color: $white;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .mega-dropdown-col {
+      padding: 1rem;
+    }
+  }
+}
+
+.nav-menu-icon {
+  .navbar-toggler &,
+  .dropdown & {
+    width: 1.25rem;
+    height: 3px;
+    margin: 8px -2px;
+    content: "";
+    background-color: $white;
+    border-radius: 5rem;
+
+    &::before,
+    &::after {
+      position: relative;
+      display: block;
+      width: 1.25rem;
+      height: 3px;
+      content: "";
+      background-color: $white;
+      border-radius: 5rem;
+    }
+  }
+
+  .navbar-toggler &.bg-secondary {
+    background-color: $secondary;
+    &::before,
+    &::after {
+      background-color: $secondary;
+    }
+  }
+
+  .navbar-toggler.collapsed &,
+  .dropdown & {
+    transition: transform .22s cubic-bezier(.55, .055, .675, .19);
+
+    &::before {
+      top: -7px;
+      transition: top .1s ease-in .25s;
     }
 
-    .dropdown {
-      position: static;
+    &::after {
+      bottom: -4px;
+      transition: bottom .1s ease-in .25s, transform .22s cubic-bezier(.55, .055, .675, .19);
     }
 
-    .dropdown-menu {
-      top: 100%;
-      right: 0;
-      width: 100%;
+  }
+
+  .navbar-toggler:not(.collapsed) &,
+  .dropdown.show & {
+    transition: transform .22s cubic-bezier(.215, .61, .355, 1) .12s;
+    transform: rotate(225deg);
+
+    &::before {
+      top: 0;
+      transition: top .1s ease-out;
+    }
+
+    &::after {
+      bottom: 3px;
+      transition: bottom .1s ease-out, transform .22s cubic-bezier(.215, .61, .355, 1) .12s;
+      transform: rotate(-90deg);
     }
   }
 }
