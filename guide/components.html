@@ -18,22 +18,18 @@
 
     <!-- Load Customized St. Jude Bootstrap Theme -->
     <link href="css/styles.css" rel="stylesheet">
-
-    <!-- jQuery first, then Popper.js. Boostrap is included with St. Jude Bootstrap Theme-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="js/navbar.js"></script>
   </head>
 
   <body id="home">
 
     <header>
+      
       <!-- Global Omnibar -->
       <div class="omnibar">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar">
           <a class="navbar-brand" href="https://stjude.cloud">
             <span class="logo">
-              <img src="images/stjude-logo-child.png" alt="St. Jude Cloud" title="St. Jude Cloud" />
+              <img src="../dist/images/stjude-logo-child.svg" alt="St. Jude Cloud" title="St. Jude Cloud" />
             </span>
           </a>
 
@@ -45,31 +41,46 @@
           </span>
 
           <ul class="nav justify-content-center global-icons">
-            <li class="nav-item active" id="icon-platform" title="About St. Jude Cloud">
-              <a class="nav-link" href="https://stjude.github.io/sjcloud-docs/index.html">
-                <i class="fa fa-info-circle"></i>
-              </a>
-            </li>
+            
             <li class="nav-item nav-item-apps dropdown">
               <a class="nav-link dropdown-toggle" href="/" id="nav-item-icon-apps" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="St. Jude Cloud Apps">
-                <i class="fa fa-th"></i>
+                <i class="fas fa-bars"></i>
               </a>
-              <div class="dropdown-menu" aria-labelledby="nav-item-icon-apps">
-                <a class="dropdown-item" href="http://cstn-ui.azurewebsites.net">CSTN</a>
-                <a class="dropdown-item" href="http://nbtp-dev.azurewebsites.net">NBTP</a>
-                <a class="dropdown-item" href="https://pecan.stjude.cloud">Pecan</a>
-                <a class="dropdown-item" href="http://sicklecelldev.azurewebsites.net">Sickle Cell</a>
-              </div>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-main" aria-labelledby="nav-item-icon-waffle" id="dropdown-main">
+                <div class="d-flex flex-column flex-lg-row">
+                  <div class="nav-flex-fill">
+                    <a class="dropdown-item dropdown-main-options" href="https://www.stjude.cloud/data"><img alt="data-icon" class="icon-nav" src="../dist/images/icon-nav-data.png">Data Browser</a>
+                    <a class="dropdown-item dropdown-main-options" href="https://www.stjude.cloud/tools"><img alt="tools-icon" class="icon-nav" src="../dist/images/icon-nav-tools.png">Analysis Tools</a>
+                    <a class="dropdown-item dropdown-main-options" href="https://www.stjude.cloud/visualizations"><img alt="visualizations-icon" class="icon-nav" src="../dist/images/icon-nav-visualization.png">Curated Visualizations</a>
+                  </div>
+                  <div class="nav-flex-fill">
+                    <a class="dropdown-column-header dropdown-item" href="">Apps</a>
+                    <a class="dropdown-item" href="https://pecan.stjude.cloud">PeCan</a>
+                    <a class="dropdown-item" href="https://platform.stjude.cloud">Platform</a>
+                    <a class="dropdown-column-header dropdown-item" href="">Studies</a>
+                  </div>
+                  <div class="nav-flex-fill">
+                    <p class="dropdown-column-header">Help</p>
+                    <a class="dropdown-item" href="https://www.stjude.cloud/docs/" target="_blank" rel="noopener noreferrer">User Guides</a>
+                    <a class="dropdown-item" href="https://www.stjude.cloud/faq">FAQ</a>
+                    <a class="dropdown-item" href="https://www.stjude.cloud/contact" target="_blank" rel="noopener noreferrer">Contact Us</a>
+                  </div>
+                </div>
+             </div>
             </li>
+            
             <li class="nav-item nav-item-user dropdown">
               <a class="nav-link dropdown-toggle" href="/" id="nav-item-icon-user" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="User Info">
                 <i class="fa fa-user"></i>
               </a>
-              <div class="dropdown-menu" aria-labelledby="nav-item-icon-user">
-                <a class="dropdown-item" href="/oauth_login">Sign In</a>
-                <a class="dropdown-item" href="/user/details">Create Account</a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-profile" aria-labelledby="nav-item-icon-user" id="dropdown-user">
+                <div class="nav-flex-fill">
+                  <a class="dropdown-item profile-menu-dropdown-item" href="">Sign In</a>
+                  <a class="dropdown-item profile-menu-dropdown-item" href="">Create Account</a>
+                </div>
               </div>
             </li>
+
           </ul>
         </nav>
       </div>
@@ -493,6 +504,12 @@
 
       </div>
     </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/navbar.js"></script>
 
   </body>
 
