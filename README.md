@@ -92,9 +92,9 @@ Since the compiled CSS from the theme includes all of default Bootstrap and St. 
 
 **When selectively importing components from the theme,** it's important to note that certain features may require additional components from Bootstrap.
 
-## Fonts
+## Fonts and Images
 
-To correctly include font families for a project, override the default `$stjude-sans-font-path` variable.
+To correctly include font families for a project as well as images, override the default `$stjude-sans-font-path` and `$stjude-images-path` variable.
 
 ## Versioning
 

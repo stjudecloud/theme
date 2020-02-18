@@ -7,15 +7,15 @@
 $font-family-sans-serif: "St. Jude Sans", "Open Sans", "Helvetica Neue",
   "Helvetica", arial, sans-serif !default;
 
-$stjude-sans-font-path: "../dist/fonts/stjude-sans" !default;
+$stjude-sans-font-path: "../../dist/fonts/stjude-sans" !default;
+$stjude-images-path: "../../dist/images" !default;
 
 $font-size-base: 1.125rem !default; // 18px
+$line-height-base: 1.5 !default;
 $h1-font-size: $font-size-base * 2.55 !default;
 $h2-font-size: $font-size-base * 2 !default;
 $h3-font-size: $font-size-base * 1.67 !default;
 $h4-font-size: $font-size-base * 1.33 !default;
-
-$line-height: 1.5 !default;
 
 /* Monochromatic - Grays - Bootstrap Defaults ****************/
 
@@ -90,3 +90,20 @@ $btn-padding-y-lg: .5rem !default;
 $btn-padding-x-lg: 2rem !default;
 $btn-padding-y-sm: .2rem !default;
 $btn-padding-x-sm: 1.75rem !default;
+
+/* SJC Navbar Overrides ***************************************/
+
+$navbar-nav-link-padding-x: 1.25rem !default;
+$navbar-light-color: $blue-dark !default;
+$navbar-light-hover-color: $black !default;
+$navbar-light-active-color: $black !default;
+$navbar-light-disabled-color: rgba($blue-dark, .3) !default;
+$navbar-light-toggler-border-color: rgba($blue-dark, .1) !default;
+
+$navbar-dark-color: $blue-dark !default;
+$navbar-dark-hover-color: $black !default;
+$navbar-dark-active-color: $black !default;
+$navbar-dark-disabled-color: rgba($blue-dark, .25) !default;
+$navbar-dark-toggler-border-color: rgba($blue-dark, .1) !default;
+
+$enable-caret: false !default;

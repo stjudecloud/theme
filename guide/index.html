@@ -13,78 +13,246 @@
 
     <title>St. Jude Cloud Developer Guide</title>
 
-    <!-- Load Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-    <!-- Load Customized St. Jude Bootstrap Theme -->
     <link href="css/styles.css" rel="stylesheet">
-
-    <!-- jQuery first, then Popper.js. Boostrap is included with St. Jude Bootstrap Theme-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="js/navbar.js"></script>
   </head>
 
-  <body id="home">
-
+  <body>
     <header>
-      <!-- Global Omnibar -->
-      <div class="omnibar">
-        <nav class="navbar navbar-expand-lg">
+      <div class="sjc-omnibar">
+        <nav class="navbar">
           <a class="navbar-brand" href="https://stjude.cloud">
-            <span class="logo">
-              <img src="images/stjude-logo-child.png" alt="St. Jude Cloud" title="St. Jude Cloud" />
-            </span>
+            <span class="logo"></span>
           </a>
-
-          <span class="sjc-title">
-            <a href="https://stjude.cloud">St. Jude Cloud</a>
-          </span>
-          <span class="site-title mr-auto">
-            <span>Designer and Developer Guide</span>
+          <a class="sjc-title" href="https://stjude.cloud">St. Jude Cloud</a>
+          <span class="portal-title">
+            Portal Title
           </span>
 
-          <ul class="nav justify-content-center global-icons">
-            <li class="nav-item active" id="icon-platform" title="About St. Jude Cloud">
-              <a class="nav-link" href="https://stjude.github.io/sjcloud-docs/index.html">
-                <i class="fa fa-info-circle"></i>
+          <ul class="nav global-icons">
+            <li class="nav-item user-dropdown dropdown">
+              <a
+                class="nav-link dropdown-toggle profile-dropdown-toggle"
+                href=""
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                title="User Info"
+              >
+                <span class="user-icon"></i>
               </a>
-            </li>
-            <li class="nav-item nav-item-apps dropdown">
-              <a class="nav-link dropdown-toggle" href="/" id="nav-item-icon-apps" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="St. Jude Cloud Apps">
-                <i class="fa fa-th"></i>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="nav-item-icon-apps">
-                <a class="dropdown-item" href="http://cstn-ui.azurewebsites.net">CSTN</a>
-                <a class="dropdown-item" href="http://nbtp-dev.azurewebsites.net">NBTP</a>
-                <a class="dropdown-item" href="https://pecan.stjude.cloud">Pecan</a>
-                <a class="dropdown-item" href="http://sicklecelldev.azurewebsites.net">Sickle Cell</a>
+              <div
+                class="dropdown-menu dropdown-menu-right profile-dropdown-menu"
+                aria-labelledby="profile-dropdown-toggle"
+              >
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="dropdown-item" href="">
+                      Sign In
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="">
+                      Create Account
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
-            <li class="nav-item nav-item-user dropdown">
-              <a class="nav-link dropdown-toggle" href="/" id="nav-item-icon-user" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="User Info">
-                <i class="fa fa-user"></i>
+
+            <li class="nav-item dropdown mega-dropdown">
+              <a
+                class="nav-link dropdown-toggle mega-dropdown-toggle"
+                href=""
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                title="St. Jude Cloud Mega Menu"
+              >
+                <div class="nav-menu-icon"></div>
               </a>
-              <div class="dropdown-menu" aria-labelledby="nav-item-icon-user">
-                <a class="dropdown-item" href="/oauth_login">Sign In</a>
-                <a class="dropdown-item" href="/user/details">Create Account</a>
+              <div
+                class="dropdown-menu mega-dropdown-menu"
+                aria-labelledby="mega-dropdown-toggle"
+                id="dropdown-main"
+              >
+                <div class="container mega-menu-container">
+                  <div class="row">
+                    <div class="col-md-3 order-md-2 mega-dropdown-col">
+                      <div class="mega-menu-title">
+                        Research Domains
+                      </div>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="https://stjude.cloud/pediatric-cancer.html"
+                            >Pediatric Cancer</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://stjude.cloud/cancer-survivorship.html"
+                            >Cancer Survivorship</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://stjude.cloud/noncancerous-diseases.html"
+                            >Non-cancerous Diseases</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 order-md-3 mega-dropdown-col">
+                      <div class="mega-menu-title">
+                        Apps
+                      </div>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            href="https://platform.stjude.cloud"
+                            class="app-title"
+                          >
+                            <img
+                              class="app-title__icon"
+                              src="../../dist/images/icon-genomics-platform.png"
+                              alt="Genomics Platform Icon"
+                            />
+                            <span>
+                              Genomics Platform
+                              <div class="genomics-platform-subtext">Data &amp; Tools</div>
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://pecan.stjude.cloud/"
+                            class="app-title"
+                          >
+                            <img
+                              class="app-title__icon"
+                              src="../../dist/images/icon-pecan.png"
+                              alt="PeCan Icon"
+                            />
+                            <span>
+                              PeCan
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://viz.stjude.cloud"
+                            class="app-title"
+                          >
+                            <img
+                              class="app-title__icon"
+                              src="../../dist/images/icon-viz.png"
+                              alt="Vizualization Community Icon"
+                            />
+                            <span>
+                              Visualization Community
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://stjude.cloud/apps.html"
+                            class="text-primary"
+                          >
+                            View All Apps
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 order-md-1 mega-dropdown-col d-flex">
+                      <div class="featured-study">
+                        <a href="https://stjude.cloud/studies/clinical-genomics.html">
+                          <img
+                            class="featured-study__image"
+                            src="../../dist/images/featured-study.jpg"
+                            alt="Featured Study Image"
+                          />
+                        </a>
+                        <div>
+                          <div class="featured-study__title">Featured Study</div>
+                          <ul class="list-unstyled">
+                            <li>
+                              <a href="https://stjude.cloud/studies/clinical-genomics.html">
+                                Real-time Clinical Genomics
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://stjude.cloud/studies.html"
+                                class="text-primary"
+                              >
+                                View All Studies
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 order-md-4 mega-dropdown-col">
+                      <div class="mega-menu-title">
+                        Support
+                      </div>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            href="https://www.stjude.cloud/docs/"
+                            target="_blank"
+                            rel="noopener"
+                            >Help Guides</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.stjude.cloud/docs/faq/"
+                            target="_blank"
+                            rel="noopener"
+                            >FAQs</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://hospital.stjude.org/apps/forms/fb/st-jude-cloud-contact/"
+                            target="_blank"
+                            rel="noopener"
+                            >Contact Us</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </li>
           </ul>
         </nav>
       </div>
 
-      <!-- Start Portal Nav -->
-      <nav class="navbar navbar-expand-md navbar-light site-nav">
+      <nav class="navbar navbar-expand-md sjc-subnav">
+        <div class="sub-menu-text">
+          Sub Menu
+        </div>
+        <a
+          class="navbar-toggler collapsed"
+          role="button"
+          data-toggle="collapse"
+          data-target="#sj-subnav"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="nav-menu-icon bg-secondary"></div>
+        </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#siteSpecificNavigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span><span class="site-nav-label">Site Menu</span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="siteSpecificNavigation">
+        <div class="collapse navbar-collapse" id="sj-subnav">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="components.html">Components</a>
@@ -92,11 +260,9 @@
             <li class="nav-item">
               <a class="nav-link" href="color-palette.html">Color Palette</a>
             </li>
-
           </ul>
         </div>
       </nav>
-
     </header>
 
     <!-- Start Banner-->
@@ -128,7 +294,7 @@
           </ul>
         </div>
       </div>
-      <div class="container-fluid jumbotron py-4 mb-4 mt-4 bg-secondary">
+      <div class="container-fluid jumbotron py-4 mb-4 mt-4 bg-secondary rounded-0">
         <div class="container">
 
           <h2 class="text-light">St. Jude Cloud App Examples</h2>
@@ -199,10 +365,8 @@
 
     </div><!-- /.container-main -->
 
-    <!-- Start Footer-->
     <footer class="footer">
       <div class="container-fluid">
-
         <p class="copyright">© Copyright 2020. St. Jude Children's Research Hospital, a not-for-profit, section 501(c)(3).
           <a href="https://www.stjude.org"
              target="_blank" rel="noopener noreferrer">www.stjude.org</a> |
@@ -211,28 +375,22 @@
            <a href="https://stjude.cloud/terms-of-use">Terms and Conditions</a>
         </p>
         <ul class="nav justify-content-center">
-
           <li>
             <a target="_blank" rel="noopener noreferrer" href="https://www.stjude.org/legal/u-s-privacy-policy-statement.html" title="U.S. Privacy Policy Statement">U.S. Privacy Policy Statement</a>
           </li>
-
           <li>
             <a target="_blank" rel="noopener noreferrer" href="https://www.stjude.org/legal.html" title="Disclaimer / Registrations / Copyright Statement">Disclaimer / Registrations / Copyright Statement</a>
           </li>
-
           <li>
             <a target="_blank" rel="noopener noreferrer" href="https://www.stjude.org/legal/linking-policy.html" title="Linking Policy">Linking Policy</a>
           </li>
-
           <li>
             <a target="_blank" rel="noopener noreferrer" href="https://www.stjude.org/legal/notice-of-privacy-practices.html" title="Notice of Privacy Practices (HIPAA)">Notice of Privacy Practices (HIPAA)</a>
           </li>
-
           <li>
             <a target="_blank" rel="noopener noreferrer" href="https://www.stjude.org/legal/notice-of-non-discrimination.html" title="Notice of Non-Discrimination">Notice of Non-Discrimination</a>
           </li>
         </ul>
-
 
         <ul class="social-media">
           <li>
@@ -251,11 +409,12 @@
             <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/MyStJude" class="fab fa-youtube"></a>
           </li>
         </ul>
-
-
       </div>
     </footer>
 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
-
 </html>

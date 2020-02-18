@@ -1,12 +1,11 @@
 @charset "UTF-8";
 
-// Apply our site-specific overrides
-@import "../../scss/variables";
-@import "site-variables";
+// stylelint-disable scss/dollar-variable-default
+$stjude-sans-font-path: "../../dist/fonts/stjude-sans";
+$stjude-image-path: "../../dist/images";
 
 // Import SJC Theme, this includes bootstrap
 @import "../../scss/stjude-cloud-theme";
 
 // Apply our site-specific components and other CSS
 @import "site-config";
-@import "site-nav";

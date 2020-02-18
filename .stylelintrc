@@ -3,13 +3,6 @@
     "stylelint-config-twbs-bootstrap/scss"
   ],
   "rules": {
-    "property-blacklist": [
-      "border-radius",
-      "border-top-left-radius",
-      "border-top-right-radius",
-      "border-bottom-right-radius",
-      "border-bottom-left-radius",
-      "transition"
-    ]
+    "selector-class-pattern": "^[a-z][a-z0-9\\-_]*[a-z0-9]$"
   }
 }
