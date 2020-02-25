@@ -1,4 +1,4 @@
-name: Deploy Test
+name: Lint
 
 on: 
   push:
@@ -12,8 +12,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js
+    - name: Setup Node.js
       uses: actions/setup-node@v1.1.0
     - run: npm install
     - run: npm run css-lint
-      
