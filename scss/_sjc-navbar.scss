@@ -15,6 +15,12 @@
     padding: .25rem 1rem;
     font-size: 14px;
     line-height: 14px;
+
+    &:hover {
+      color: $white;
+      /* stylelint-disable-next-line scss/at-function-named-arguments */
+      background-color: scale-color($primary, $lightness: 20%);
+    }
   }
 
   .global-icons .nav-link {
