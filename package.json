@@ -36,7 +36,7 @@
     "scss/**/*.scss"
   ],
   "author": "St. Jude",
-  "homepage": "https://stjude.cloud/",
+  "homepage": "http://stjudecloud.github.io/theme",
   "peerDependencies": {
     "bootstrap": "4.3.1"
   },
