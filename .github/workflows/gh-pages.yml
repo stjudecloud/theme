@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
+
+      - name: Setup Debug Session
+        uses: csexton/debugger-action@master
       
       - name: Copy file
         uses: canastro/copy-action@0.0.2
