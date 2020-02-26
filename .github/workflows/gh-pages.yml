@@ -11,15 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup Debug Session
-        uses: csexton/debugger-action@master
-      
-      - name: Copy file
-        uses: canastro/copy-action@0.0.2
-        with:
-          source: '/dist'
-          target: '/guide/dist'
-
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
@@ -32,9 +23,18 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-
-      - run: npm install
-      - run: npm run css-compile
+      
+      - name: Install dependencies
+        run:  npm install
+        
+      - name: Compile CSS
+        run:  npm run css-compile
+      
+      - name: Create dist directory for guide
+        run:  mkdir guide/dist
+        
+      - name: Copy assets to guide/dist
+        run:  cp -a dist/. guide/dist
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
