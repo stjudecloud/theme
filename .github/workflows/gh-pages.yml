@@ -10,6 +10,12 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Copy file
+        uses: canastro/copy-action@0.0.2
+        with:
+          source: 'dist'
+          target: 'guide/dist'
 
       - name: Setup Node
         uses: actions/setup-node@v1
