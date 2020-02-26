@@ -14,8 +14,8 @@ jobs:
       - name: Copy file
         uses: canastro/copy-action@0.0.2
         with:
-          source: 'dist'
-          target: 'guide/dist'
+          source: '/dist/*'
+          target: '/guide/dist'
 
       - name: Setup Node
         uses: actions/setup-node@v1
