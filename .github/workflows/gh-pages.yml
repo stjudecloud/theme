@@ -40,3 +40,10 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./guide
+      
+      - name: Add/Update preview URL to PR 
+        uses: marocchino/sticky-pull-request-comment@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          message: |
+            Release ${{ github.sha }} to <https://stjudecloud.github.io/theme>
