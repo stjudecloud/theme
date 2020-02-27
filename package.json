@@ -1,8 +1,11 @@
 {
-  "name": "stjude-cloud-theme",
-  "version": "4.3.10",
+  "name": "@stjudecloud/theme",
+  "version": "4.3.11",
   "description": "St. Jude Cloud Theme and Guidelines",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "css-compile": "npm-run-all css-compile-main css-compile-guide css-minify",
     "css-compile-main": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js --output-style expanded --source-map true --source-map-contents true --precision 6 scss/stjude-cloud-theme.scss dist/css/stjude-cloud-theme.css",
