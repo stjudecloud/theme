@@ -1,9 +1,8 @@
 name: github pages
 
 on:
-  push:
-    branches:
-      - continuous_deployment
+  pull_request:
+    types: [opened, synchronize]
 
 jobs:
   deploy:
