@@ -9771,7 +9771,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: inline-block;
   padding: 20px 30px;
   color: #fff;
-  background-image: url("../../dist/images/stjude-logo-child.svg");
+  background-image: url("../images/stjude-logo-child.svg");
   background-position: 3px 6px;
   background-size: 72px;
   border-color: #99c4f4;
@@ -9812,7 +9812,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .sjc-omnibar .user-icon {
   padding: 10px;
-  background-image: url("../../dist/images/user-icon.svg");
+  background-image: url("../images/user-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
