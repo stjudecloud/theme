@@ -1,4 +1,4 @@
-name: github pages
+name: PR Deploy
 
 on:
   pull_request:
