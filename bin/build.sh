@@ -27,7 +27,7 @@ git fetch --all
 BRANCHES=()
 while IFS= read -r line; do
     BRANCHES+=( "$line" )
-done < <( git branch --list --all | sed 's,\*,,g' | xargs -n1 | grep "remotes/origin" | sed 's,remotes/origin/,,g' | sort | uniq )
+done < <( git branch --list --all | sed 's,\*,,g' | xargs -n1 | grep "remotes/origin" | sed 's,remotes/origin/,,g' | sort | uniq | grep -v 'gh-pages')
 
 # Loop through branches, build and copy each to output dir
 echo "== Build Branches =="
