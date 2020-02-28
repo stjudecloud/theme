@@ -14,6 +14,9 @@
     "css-lint": "npm-run-all --continue-on-error --parallel css-lint-*",
     "css-lint-main": "stylelint \"scss/**/*.scss\" --cache --cache-location .cache/.stylelintcache",
     "css-lint-guide": "stylelint \"guide/scss/**/*.scss\" --cache --cache-location .cache/.stylelintcache",
+    "prepare-guide": "npm-run-all css-compile-guide prepare-guide-images prepare-guide-fonts",
+    "prepare-guide-images": "cp -a dist/images/. guide/images",
+    "prepare-guide-fonts": "cp -a dist/fonts/. guide/fonts",
     "watch": "nodemon --watch \"scss/\" --watch \"guide/scss/\" --ext scss --exec \"npm run css-compile\"",
     "watch-css-main": "nodemon --watch \"scss/\" --ext scss --exec \"npm run css-compile-main\"",
     "watch-css-guide": "nodemon --watch \"guide/scss/\" --ext scss --exec \"npm run css-compile-guide\""
