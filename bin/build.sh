@@ -9,9 +9,6 @@ function build() {
 
   echo "  [*] Building ${_BRANCH} to ${_DIR}"
   git checkout "${_BRANCH}"
-
-  npm install
-  npm run css-compile
   
   cp -p -R guide/* "${_DIR}"
   cp -p -R dist/images/* "${_DIR}/images"
