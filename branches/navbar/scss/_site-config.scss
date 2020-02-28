@@ -1,0 +1,400 @@
+/* Body */
+
+h1 {
+	margin-bottom: ($spacer * 1.5);
+}
+
+h2 {
+	margin-bottom: ($spacer * 1.25);
+}
+
+h3 {
+	margin-bottom: ($spacer / 2);
+}
+
+b, strong {
+	font-weight: 600;
+}
+
+/* Main Content */
+
+#content-main {
+	padding-bottom: 3em;
+	padding-top: 2em;
+}
+
+.jumbotron.main-banner h1 {
+	color: #fff;
+	text-align: center;
+	line-height: 150%;
+	margin-bottom: 0;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.jumbotron.main-banner {
+	background: url('../images/dna-bg.jpg') 60% center;
+	background-size: 100%;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+.jumbotron.code-examples {
+	color: $purple;
+}
+
+.container-fluid.banner {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.card .icon {
+	padding-top: 15px;
+}
+
+.card {
+	text-align: center;
+}
+
+.card-header {
+	background-color: $primary;
+	color: #fff;
+}
+
+.card img {
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.card img.icon {
+	max-width: 50%;
+	width: auto;
+}
+
+.jumbotron.branding {
+	background: #444;
+	color: white;
+}
+
+.colors span {
+	display: block; padding: 20px;
+	color: white;
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+	font-size: 90%;
+	font-weight: bold;
+	width: 106px;
+}
+
+h3 {
+	color: $blue;
+	font-weight: 600;
+}
+
+/* Colors */
+
+.blue {
+	background: $blue;	
+}
+
+.blue-90 {
+	background-color: rgba($blue, .9);
+}
+
+.blue-80 {
+	background-color: rgba($blue, .8);
+}
+
+.blue-70 {
+	background-color: rgba($blue, .7);
+}
+
+.blue-60 {
+	background-color: rgba($blue, .6);
+}
+
+.blue-50 {
+	background-color: rgba($blue, .5);
+}
+
+.blue-40 {
+	background-color: rgba($blue, .4);
+}
+
+.blue-30 {
+	background-color: rgba($blue, .3);
+}
+
+.blue-20 {
+	background-color: rgba($blue, .2);
+}
+
+.blue-10 {
+	background-color: rgba($blue, .1);
+}
+
+.green-dark {
+	background-color: $green-dark;
+}
+
+.green-dark-90 {
+	background-color: rgba($green-dark, .9);
+}
+
+.green-dark-80 {
+	background-color: rgba($green-dark, .8);
+}
+
+.green-dark-70 {
+	background-color: rgba($green-dark, .7);
+}
+
+.green-dark-60 {
+	background-color: rgba($green-dark, .6);
+}
+
+.green-dark-50 {
+	background-color: rgba($green-dark, .5);
+}
+
+.green-dark-40 {
+	background-color: rgba($green-dark, .4);
+}
+
+.green-dark-30 {
+	background-color: rgba($green-dark, .3);
+}
+
+.green-dark-20 {
+	background-color: rgba($green-dark, .2);
+}
+
+.green-dark-10 {
+	background-color: rgba($green-dark, .1);
+}
+
+.aqua {
+	background-color: $aqua;
+}
+
+.aqua-90 {
+	background-color: rgba($aqua, .9);
+}
+
+.aqua-80 {
+	background-color: rgba($aqua, .8);
+}
+
+.aqua-70 {
+	background-color: rgba($aqua, .7);
+}
+
+.aqua-60 {
+	background-color: rgba($aqua, .6);
+}
+
+.aqua-50 {
+	background-color: rgba($aqua, .5);
+}
+
+.aqua-40 {
+	background-color: rgba($aqua, .4);
+}
+
+.aqua-30 {
+	background-color: rgba($aqua, .3);
+}
+
+.aqua-20 {
+	background-color: rgba($aqua, .2);
+}
+
+.aqua-10 {
+	background-color: rgba($aqua, .1);
+}
+
+.aqua-dark {
+	background-color: $aqua-dark;
+}
+
+.aqua-dark-90 {
+	background-color: rgba($aqua-dark, .9);
+}
+
+.aqua-dark-80 {
+	background-color: rgba($aqua-dark, .8);
+}
+
+.aqua-dark-70 {
+	background-color: rgba($aqua-dark, .7);
+}
+
+.aqua-dark-60 {
+	background-color: rgba($aqua-dark, .6);
+}
+
+.aqua-dark-50 {
+	background-color: rgba($aqua-dark, .5);
+}
+
+.aqua-dark-40 {
+	background-color: rgba($aqua-dark, .4);
+}
+
+.aqua-dark-30 {
+	background-color: rgba($aqua-dark, .3);
+}
+
+.aqua-dark-20 {
+	background-color: rgba($aqua-dark, .2);
+}
+
+.aqua-dark-10 {
+	background-color: rgba($aqua-dark, .1);
+}
+
+.yellow-dark {
+	background: $yellow-dark;
+}
+
+.yellow-dark-90 {
+	background-color: rgba($yellow-dark, .9);
+}
+
+.yellow-dark-80 {
+	background-color: rgba($yellow-dark, .8);
+}
+
+.yellow-dark-70 {
+	background-color: rgba($yellow-dark, .7);
+}
+
+.yellow-dark-60 {
+	background-color: rgba($yellow-dark, .6);
+}
+
+.yellow-dark-50 {
+	background-color: rgba($yellow-dark, .5);
+}
+
+.yellow-dark-40 {
+	background-color: rgba($yellow-dark, .4);
+}
+
+.yellow-dark-30 {
+	background-color: rgba($yellow-dark, .3);
+}
+
+.yellow-dark-20 {
+	background-color: rgba($yellow-dark, .2);
+}
+
+.yellow-dark-10 {
+	background-color: rgba($yellow-dark, .1);
+}
+
+.purple {
+	background-color: $purple;
+}
+
+.purple-90 {
+	background-color: rgba($purple, .9);
+}
+
+.purple-80 {
+	background-color: rgba($purple, .8);
+}
+
+.purple-70 {
+	background-color: rgba($purple, .7);
+}
+
+.purple-60 {
+	background-color: rgba($purple, .6);
+}
+
+.purple-50 {
+	background-color: rgba($purple, .5);
+}
+
+.purple-40 {
+	background-color: rgba($purple, .4);
+}
+
+.purple-30 {
+	background-color: rgba($purple, .3);
+}
+
+.purple-20 {
+	background-color: rgba($purple, .2);
+}
+
+.purple-10 {
+	background-color: rgba($purple, .1);
+}
+
+.gray-dark {
+	background-color: $gray-dark;
+}
+
+.gray-dark-90 {
+	background-color: rgba($gray-dark, .9);
+}
+
+.gray-dark-80 {
+	background-color: rgba($gray-dark, .8);
+}
+
+.gray-dark-70 {
+	background-color: rgba($gray-dark, .7);
+}
+
+.gray-dark-60 {
+	background-color: rgba($gray-dark, .6);
+}
+
+.gray-dark-50 {
+	background-color: rgba($gray-dark, .5);
+}
+
+.gray-dark-40 {
+	background-color: rgba($gray-dark, .4);
+}
+
+.gray-dark-30 {
+	background-color: rgba($gray-dark, .3);
+}
+
+.gray-dark-20 {
+	background-color: rgba($gray-dark, .2);
+}
+
+.gray-dark-10 {
+	background-color: rgba($gray-dark, .1);
+}
+
+.orange {
+	background: $orange;
+}
+
+.red {
+	background: $red;
+}
+
+.red-dark {
+	background: $red-dark;
+}
+
+
+
+@include media-breakpoint-down(sm) {
+
+	.jumbotron.main-banner {
+		background-size: auto;
+	}
+}

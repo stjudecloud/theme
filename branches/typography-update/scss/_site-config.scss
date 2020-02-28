@@ -1,0 +1,81 @@
+/* Body */
+
+h1 {
+  margin-bottom: ($spacer * 1.5);
+}
+
+h2 {
+  margin-bottom: ($spacer * 1.25);
+  font-weight: 800;
+}
+
+h3 {
+  margin-bottom: ($spacer / 2);
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+/* Main Content */
+
+.content-main {
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+.jumbotron.main-banner h1 {
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 150%;
+  color: #fff;
+  text-align: center;
+}
+
+.jumbotron.main-banner {
+  height: 25rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 0;
+  background: url("../images/data-points.jpg");
+  background-position: center top;
+  background-size: cover;
+  @include border-radius(0);
+}
+
+.jumbotron.code-examples {
+  color: $purple;
+}
+
+.container-fluid.banner {
+  height: 25rem;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.jumbotron.branding {
+  color: #fff;
+  background: #444;
+}
+
+.colors span {
+  display: block;
+  float: left;
+  width: 106px;
+  padding: 20px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 90%;
+  font-weight: $font-weight-bold;
+  color: #fff;
+  text-align: center;
+}
+
+@include media-breakpoint-down(sm) {
+
+  .jumbotron.main-banner {
+    background-size: auto;
+  }
+}
