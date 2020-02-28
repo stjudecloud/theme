@@ -1,6 +1,6 @@
 name: Continuous Deployment
 
-on: push
+on: [push, delete]
 
 jobs:
   deploy:
