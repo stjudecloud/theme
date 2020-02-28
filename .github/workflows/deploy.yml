@@ -9,26 +9,26 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Setup Node
-          uses: actions/setup-node@v1
-          with:
-            node-version: '10.x'
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
 
       - name: Cache dependencies
-          uses: actions/cache@v1
-          with:
-            path: ~/.npm
-            key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-            restore-keys: |
-              ${{ runner.os }}-node-
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
       
       - name: Build
-          run: bash bin/build.sh
+        run: bash bin/build.sh
         
       - name: Deploy
-          uses: peaceiris/actions-gh-pages@v3
-          with:
-            deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-            publish_dir: ./build
-            user_name: "St. Jude Cloud"
-            user_email: support@stjude.cloud
-            commit_message: "Deployed from ${{ github.event.head_commit.message }}"
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./build
+          user_name: "St. Jude Cloud"
+          user_email: support@stjude.cloud
+          commit_message: "Deployed from ${{ github.event.head_commit.message }}"
