@@ -1,3 +1,6 @@
-$stjude-sans-font-path: "../node_modules/@stjudecloud/theme/dist/fonts/stjude-sans";
-$stjude-images-path: "../node_modules/@stjudecloud/theme/dist/images";
-@import "@stjudecloud/theme/scss/stjude-cloud-theme";
+// Import from the project root instead of the installed node_modules directory
+// as an effort to ease developement.
+
+$stjude-sans-font-path: "../../../dist/fonts/stjude-sans";
+$stjude-images-path: "../../../dist/images";
+@import "../../../scss/stjude-cloud-theme";
