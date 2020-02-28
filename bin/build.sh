@@ -42,4 +42,4 @@ for CURRENT_BRANCH in "${BRANCHES[@]}"; do
   build "${CURRENT_BRANCH}" "${BRANCH_DIR}"
 done
 
-git checkout "${STARTING_BRANCH_NAME}"
+git checkout -f "${STARTING_BRANCH_NAME}"
