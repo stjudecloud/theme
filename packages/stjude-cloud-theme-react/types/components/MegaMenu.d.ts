@@ -1,7 +1,7 @@
 import * as React from "react";
 
-export interface MegaMenuProps {}
+export interface FooterProps {}
 
-declare class MegaMenu extends React.Component<MegaMenuProps> {}
+declare class Footer extends React.Component<FooterProps> {}
 
-export default MegaMenu;
+export default Footer;
