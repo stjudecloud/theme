@@ -8,8 +8,11 @@ function build() {
   mkdir -p "${_DIR}"
 
   echo "  [*] Building ${_BRANCH} to ${_DIR}"
-  git checkout "${_BRANCH}"
-  
+  git checkout -f "${_BRANCH}"
+
+  npm install
+  npm run css-compile
+
   cp -p -R guide/* "${_DIR}"
   cp -p -R dist/images/* "${_DIR}/images"
   cp -p -R dist/fonts/* "${_DIR}/fonts"
