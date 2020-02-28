@@ -5,7 +5,7 @@ const execa = require("execa");
 const cherryPick = require("cherry-pick").default;
 
 const srcRoot = path.join(__dirname, "src");
-
+const typesRoot = path.join(__dirname, "types");
 const libRoot = path.join(__dirname, "lib");
 const cjsRoot = path.join(libRoot, "cjs");
 const esRoot = path.join(libRoot, "esm");
@@ -25,12 +25,15 @@ const shell = cmd =>
 
 const has = t => !targets.length || targets.includes(t);
 
+const copyTypes = dest => shell(`cpy ${typesRoot}/components/*.d.ts ${dest}`);
+
 /**
  * Run babel over the src directory and output
  * compiled common js files to ./lib.
  */
 const buildLib = build("commonjs modules", async () => {
   await shell(`npx babel ${srcRoot} --out-dir ${cjsRoot} --env-name "cjs"`);
+  await copyTypes(libRoot);
 });
 
 /**
@@ -39,6 +42,7 @@ const buildLib = build("commonjs modules", async () => {
  */
 const buildEsm = build("es modules", async () => {
   await shell(`npx babel ${srcRoot} --out-dir ${esRoot} --env-name "esm"`);
+  await copyTypes(esRoot);
 });
 
 const buildDirectories = build("Linking directories", () =>
