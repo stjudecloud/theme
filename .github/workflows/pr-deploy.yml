@@ -1,8 +1,6 @@
-name: PR Deploy
+name: Continuous Deployment
 
-on:
-  pull_request:
-    types: [opened, synchronize]
+on: push
 
 jobs:
   deploy:
@@ -11,33 +9,26 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: '10.x'
+          uses: actions/setup-node@v1
+          with:
+            node-version: '12.x'
 
       - name: Cache dependencies
-        uses: actions/cache@v1
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          uses: actions/cache@v1
+          with:
+            path: ~/.npm
+            key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+            restore-keys: |
+              ${{ runner.os }}-node-
       
-      - name: Install dependencies
-        run:  npm install
+      - name: Build
+          run: bash bin/build.sh
         
-      - name: Prepare Guide
-        run:  npm run prepare-guide
-        
-      - name: Deploy Guide
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./guide
-      
-      - name: Add/Update preview URL to PR 
-        uses: marocchino/sticky-pull-request-comment@v1
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          message: |
-            Release ${{ github.sha }} to <https://stjudecloud.github.io/theme>
+      - name: Deploy
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+            deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+            publish_dir: ./build
+            user_name: "St. Jude Cloud"
+            user_email: support@stjude.cloud
+            commit_message: "Deployed from ${{ github.event.head_commit.message }}"
