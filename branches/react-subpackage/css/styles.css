@@ -9731,6 +9731,12 @@ a.text-dark:hover, a.text-dark:focus {
   line-height: 14px;
 }
 
+.sjc-omnibar .login-btn:hover {
+  color: #fff;
+  /* stylelint-disable-next-line scss/at-function-named-arguments */
+  background-color: #3f8fea;
+}
+
 .sjc-omnibar .global-icons .nav-link {
   display: flex;
   width: 40px;
