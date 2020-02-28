@@ -1,8 +1,11 @@
 {
   "name": "@stjudecloud/theme-react",
-  "version": "1.0.0",
+  "version": "4.3.11",
   "description": "React implementation for St. Jude Cloud Theme components",
   "main": "lib/cjs/index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "module": "lib/esm/index.js",
   "files": [
     "lib",
@@ -17,8 +20,11 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stjudecloud/theme.git"
+  },
+  "author": "St. Jude",
   "peerDependencies": {
     "@stjudecloud/theme": "=4.3.11",
     "file-loader": ">=5.1.0",
