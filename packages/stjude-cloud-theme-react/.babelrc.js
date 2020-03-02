@@ -51,7 +51,6 @@ module.exports = api => {
       [require("@babel/plugin-transform-runtime"), { useESModules: !modules }],
       require("babel-plugin-dev-expression"),
       modules && require("babel-plugin-add-module-exports"),
-      // removePropTypes && [
       !dev && [
         require("babel-plugin-transform-react-remove-prop-types"),
         {
