@@ -15,7 +15,7 @@ function build() {
 
   cp -p -R guide/* "${_DIR}"
   cp -p -R dist/images/* "${_DIR}/images"
-  cp -p -R dist/fonts/* "${_DIR}/fonts"
+  cp -p -R dist/fonts "${_DIR}/fonts"
 }
 
 # Stash starting branch name
