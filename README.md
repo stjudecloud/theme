@@ -1,4 +1,5 @@
 # St. Jude Cloud Theme
+![Continuous Deployment](https://github.com/stjudecloud/theme/workflows/Continuous%20Deployment/badge.svg)
 
 This repository provides theme guidelines and plug-n-play style components for St. Jude web portal use.
 
@@ -46,7 +47,7 @@ By default, the compiled CSS contains all of default Bootstrap with St. Jude the
 // Import SJC Theme variables
 @import "~stjude-cloud-theme/scss/variables";
 
-// Apply your site-specific theme
+// Apply your site-specific variables
 @import "site-variables";
 
 // Require the rest of the theme (includes bootstrap)
@@ -70,7 +71,7 @@ Alternatively, you can choose to selectively import certain components from the 
 // Import SJC Theme variables
 @import "~stjude-cloud-theme/scss/variables";
 
-// Apply your site-specific theme
+// Apply your site-specific variables
 @import "site-variables";
 
 // Add all of bootstrap or selectively choose components you need:
