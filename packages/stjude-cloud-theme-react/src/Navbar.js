@@ -51,7 +51,7 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig}) {
       [Link === "a" ? "href" : "to"]: loginConfig.loginLink
     };
     loginButton = (
-      <div class="d-flex align-items-center">
+      <div className="d-flex align-items-center">
         <Button
           as={Link}
           variant="outline-light"
