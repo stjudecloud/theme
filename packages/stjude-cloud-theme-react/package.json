@@ -4,9 +4,6 @@
   "description": "React implementation for St. Jude Cloud Theme components",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "files": [
     "lib"
   ],
