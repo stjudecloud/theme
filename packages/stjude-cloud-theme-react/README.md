@@ -23,5 +23,4 @@ Ready-to-use React components available for St. Jude Cloud React apps!
 Simply `npm install` and you can get started.
 
 - Build the library locally with `npm run build`
-- Run the test suite with `npm test`. [This is NYI.]
 - View and development components via storybook with `npm run storybook`
