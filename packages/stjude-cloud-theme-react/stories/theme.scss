@@ -1,0 +1,13 @@
+// Import from the project root instead of the installed node_modules directory
+// as an effort to ease developement.
+$stjude-sans-font-path: "../../../dist/fonts/stjude-sans";
+$stjude-images-path: "../../../dist/images";
+@import "../../../scss/stjude-cloud-theme";
+
+// Include fontawesome just to have some freely available
+// icons to use in demo components
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/brands";
