@@ -128,7 +128,6 @@
     &:hover {
       color: $blue-dark;
       text-decoration: underline;
-      background-color: transparent;
     }
   }
 
@@ -198,8 +197,9 @@
   }
 
   .app-title__icon {
-    width: 40px;
+    width: 30px;
     height: 30px;
+    margin-right: .75rem;
   }
 
   .genomics-platform-subtext {
