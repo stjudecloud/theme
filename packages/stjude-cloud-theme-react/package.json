@@ -1,6 +1,6 @@
 {
   "name": "@stjudecloud/theme-react",
-  "version": "4.3.11",
+  "version": "4.3.12",
   "description": "React implementation for St. Jude Cloud Theme components",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -20,7 +20,7 @@
   },
   "author": "St. Jude",
   "peerDependencies": {
-    "@stjudecloud/theme": "=4.3.11",
+    "@stjudecloud/theme": "^4.3.12",
     "react": ">=16.8.0",
     "react-bootstrap": ">=1.0.0-beta.16",
     "react-dom": ">=16.8.0"

@@ -2988,7 +2988,7 @@ input[type="button"].btn-block {
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #1874dc;
+  background-color: rgba(24, 116, 220, 0.15);
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
@@ -9843,7 +9843,6 @@ a.text-dark:hover, a.text-dark:focus {
 .sjc-omnibar .dropdown-item:hover {
   color: #002856;
   text-decoration: underline;
-  background-color: transparent;
 }
 
 .sjc-omnibar .profile-dropdown-menu {
@@ -9912,8 +9911,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .sjc-omnibar .app-title__icon {
-  width: 40px;
+  width: 30px;
   height: 30px;
+  margin-right: .75rem;
 }
 
 .sjc-omnibar .genomics-platform-subtext {
