@@ -25,7 +25,7 @@ function MegaMenu() {
               </a>
             </li>
             <li>
-              <a href="https://stjude.cloud/noncancerous-diseases.html">
+              <a href="https://stjude.cloud/non-cancerous-diseases.html">
                 Non-cancerous Diseases
               </a>
             </li>
@@ -64,7 +64,7 @@ function MegaMenu() {
                 <img
                   className="app-title__icon"
                   src={VizCommIcon}
-                  alt="Vizualization Community Icon"
+                  alt="Visualization Community Icon"
                 />
                 <span>Visualization Community</span>
               </a>
