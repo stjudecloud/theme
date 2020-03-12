@@ -9715,6 +9715,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .sjc-omnibar .navbar {
+  flex-wrap: unset !important;
   height: 65px;
   padding: .5rem;
   line-height: 1rem;
@@ -9752,6 +9753,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .sjc-omnibar .global-icons {
+  flex-wrap: unset !important;
   justify-content: center;
   margin-right: 10px;
 }
@@ -9803,11 +9805,14 @@ a.text-dark:hover, a.text-dark:focus {
   display: inline-block;
   padding-left: 8px;
   margin-right: auto;
+  overflow: hidden;
   font-size: 20px;
   font-weight: 200;
-  line-height: 1.2rem;
+  line-height: 1.75rem;
   color: #99c4f4;
   text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .sjc-omnibar .user-icon {
