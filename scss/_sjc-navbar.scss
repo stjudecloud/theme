@@ -1,6 +1,7 @@
 /* Omnibar - Global Top Bar */
 .sjc-omnibar {
   .navbar {
+    flex-wrap: unset !important;
     height: 65px;
     padding: .5rem;
     line-height: 1rem;
@@ -39,6 +40,7 @@
   }
 
   .global-icons {
+    flex-wrap: unset !important;
     justify-content: center;
     margin-right: 10px;
   }
@@ -90,11 +92,14 @@
     display: inline-block;
     padding-left: 8px;
     margin-right: auto;
+    overflow: hidden;
     font-size: 20px;
     font-weight: 200;
-    line-height: 1.2rem;
+    line-height: 1.75rem;
     color: lighten($primary, 30%);
     text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .user-icon {
