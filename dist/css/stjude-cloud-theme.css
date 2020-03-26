@@ -9715,6 +9715,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .sjc-omnibar .navbar {
+  flex-wrap: unset !important;
   height: 65px;
   padding: .5rem;
   line-height: 1rem;
@@ -9752,6 +9753,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .sjc-omnibar .global-icons {
+  flex-wrap: unset !important;
   justify-content: center;
   margin-right: 10px;
 }
@@ -9803,11 +9805,14 @@ a.text-dark:hover, a.text-dark:focus {
   display: inline-block;
   padding-left: 8px;
   margin-right: auto;
+  overflow: hidden;
   font-size: 20px;
   font-weight: 200;
-  line-height: 1.2rem;
+  line-height: 1.75rem;
   color: #99c4f4;
   text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .sjc-omnibar .user-icon {
@@ -10106,69 +10111,92 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* Footer */
 footer {
-  padding: 20px 10px 0;
-  clear: both;
-  font-size: .9em;
+  background-color: #002856;
+  border: 0;
+  padding: 30px 0 0 0;
+}
+
+footer .logo {
+  display: inline-block;
+  padding: 20px 30px;
+  color: #fff;
+  background-image: url("../../dist/images/stjude-logo-child.svg");
+  background-position: 3px 6px;
+  background-size: 72px;
+  border-color: #99c4f4;
+  border-right: 1px solid;
+}
+
+footer .sjc-title {
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top: 12px;
+}
+
+footer .sjc-title:hover {
+  text-decoration: none;
+}
+
+footer h6 {
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+footer ul {
+  font-size: 12px;
+  line-height: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li a {
+  color: #eff5fc;
+}
+
+footer ul li a:hover {
+  color: #fff;
+}
+
+footer .footer-social h6 {
+  color: #eff5fc;
+}
+
+footer .footer-social .fab {
+  background-color: #002044;
+  border-radius: 20px;
+  color: #fff;
+  height: 40px;
+  padding: 11px 0 0 1px;
   text-align: center;
-  background: #f2f2f2;
-  border-top: 4px solid #fff;
+  width: 40px;
 }
 
-footer p {
-  margin-bottom: 10px;
-  color: #333;
+footer .sub-footer {
+  background-color: #002044;
+  color: #9EC0E7;
+  font-size: 12px;
+  margin-top: 20px;
+  padding: 10px 0 3px 0;
 }
 
-footer .copyright {
-  font-weight: 400;
+footer .sub-footer a {
+  color: #9EC0E7;
 }
 
-/* stylelint-disable selector-max-type */
-footer .nav li {
+footer .sub-footer p {
+  padding-top: 6px;
+}
+
+footer .sub-footer ul {
+  margin: 0;
+}
+
+footer .sub-footer ul li {
   display: inline-block;
-  line-height: 120%;
-}
-
-footer .nav li a,
-footer .nav li a:active,
-footer .nav li a:visited {
-  color: #333;
-  text-decoration: underline;
-  background: none;
-}
-
-footer .nav > li > a {
-  padding: 5px 15px;
-}
-
-footer .nav > li > a:hover {
-  background: none;
-}
-
-/* stylelint-enable */
-footer .social-media {
-  margin-bottom: 0;
-}
-
-.social-media {
-  padding-left: 0;
-  list-style-type: none;
-}
-
-.social-media li {
-  display: inline-block;
-  padding: 10px;
-  font-size: 24px;
-}
-
-.social-media a {
-  color: #333;
-  text-decoration: none;
-}
-
-.social-media li a:hover {
-  color: #1874dc;
-  text-decoration: none;
 }
 
 h2 {

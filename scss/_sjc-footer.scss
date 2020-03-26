@@ -1,67 +1,93 @@
 /* Footer */
-
 footer {
-  padding: 20px 10px 0;
-  clear: both;
-  font-size: .9em;
-  text-align: center;
-  background: #f2f2f2;
-  border-top: 4px solid #fff;
-}
+  background-color: $blue-dark;
+  border: 0;
+  padding: 30px 0 0 0;
 
-footer p {
-  margin-bottom: 10px;
-  color: #333;
-}
+  .logo {
+    display: inline-block;
+    padding: 20px 30px;
+    color: $white;
+    background-image: url("#{$stjude-images-path}/stjude-logo-child.svg");
+    background-position: 3px 6px;
+    background-size: 72px;
+    border-color: #99c4f4;
+    border-right: 1px solid;
+  }
 
-footer .copyright {
-  font-weight: $font-weight-normal;
-}
+  .sjc-title {
+    color: $white;
+    font-weight: bold;
+    position: absolute;
+    top: 12px;
 
-/* stylelint-disable selector-max-type */
-footer .nav li {
-  display: inline-block;
-  line-height: 120%;
-}
+    &:hover {
+      text-decoration: none;
+    }
+  }
 
-footer .nav li a,
-footer .nav li a:active,
-footer .nav li a:visited {
-  color: #333;
-  text-decoration: underline;
-  background: none;
-}
+  h6 {
+    color: $white;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
 
-footer .nav > li > a {
-  padding: 5px 15px;
-}
+  ul {
+    font-size: 12px;
+    line-height: 30px;
+    list-style: none;
+    padding: 0;
 
-footer .nav > li > a:hover {
-  background: none;
-}
-/* stylelint-enable */
+    li {
+      a {
+        color: $blue-light;
 
-footer .social-media {
-  margin-bottom: 0;
-}
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
 
-.social-media {
-  padding-left: 0;
-  list-style-type: none;
-}
+  .footer-social {
 
-.social-media li {
-  display: inline-block;
-  padding: 10px;
-  font-size: 24px;
-}
+    h6 {
+      color: $blue-light;
+    }
 
-.social-media a {
-  color: #333;
-  text-decoration: none;
-}
+    .fab {
+      background-color: $blue-darkest;
+      border-radius: 20px;
+      color: $white;
+      height: 40px;
+      padding: 11px 0 0 1px;
+      text-align: center;
+      width: 40px;
+    }
+  }
 
-.social-media li a:hover {
-  color: $primary;
-  text-decoration: none;
+  .sub-footer {
+    background-color: $blue-darkest;
+    color: $blue-lightest;
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 10px 0 3px 0;
+
+    a {
+      color: $blue-lightest;
+    }
+
+    p {
+      padding-top: 6px;
+    }
+
+    ul {
+      margin: 0;
+      li {
+        display: inline-block;
+      }
+    }
+  }
 }
