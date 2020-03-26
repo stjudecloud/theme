@@ -2,15 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Button, Image } from "react-bootstrap";
 
-//import ErrorImage from "~@stjudecloud/theme/dist/images/404.png";
-import ErrorImage from "../../../dist/images/404.png";
+import NotFoundImage from "~@stjudecloud/theme/dist/images/404.png";
 
 function ErrorComponent({ variant }) {
   return (
     <div className="d-flex">
       <div className="sjc-error">
         {variant === "notFound" && (
-          <Image className="error-image" src={ErrorImage} />
+          <Image className="error-image" src={NotFoundImage} />
         )}
 
         <div className="error-list-container">
