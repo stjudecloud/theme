@@ -29,15 +29,9 @@ function ErrorComponent({ variant }) {
             Here are some helpful links instead.
           </p>
           <div className="error-links-list">
-            <a href="https://www.stjude.cloud/data">Request Data</a>
+            <a href="https://www.stjude.cloud/">St. Jude Cloud Home</a>
             <br />
-            <a href="https://www.stjude.cloud/tools">Run Tools</a>
-            <br />
-            <a href="https://www.stjude.cloud/visualizations">
-              View Visualizations
-            </a>
-            <br />
-            <a href="https://stjude.cloud/docs/">View Guides</a>
+            <a href="https://stjude.cloud/docs/">Documentation</a>
             <br />
             <a
               href="https://stjude.cloud/contact"
