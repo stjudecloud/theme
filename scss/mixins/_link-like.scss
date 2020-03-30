@@ -1,0 +1,22 @@
+@mixin link-like(
+  $font-weight: normal,
+  $hover: scale-color($primary, $lightness: -7.5%),
+  $active: scale-color($primary, $lightness: -10%)
+) {
+  font-weight: $font-weight;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:not(.btn) {
+    color: $primary;
+
+    &:hover {
+      color: $hover;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $active;
+    }
+  }
+}

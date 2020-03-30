@@ -6,9 +6,11 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
 // St. Jude components
+@import "mixins";
 @import "button";
 @import "sjc-card";
 @import "sjc-navbar";
 @import "sjc-footer";
+@import "sjc-error";
 @import "typography";
 @import "caret";
