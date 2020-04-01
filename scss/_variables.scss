@@ -35,10 +35,11 @@ $black: #000 !default;
 /* Main Brand Colors *****************************************/
 
 $blue: #1874dc !default; // Interface, Hyperlinks, UI Button
-$blue-dark: #002856 !default;
-$blue-darkest: #002044 !default;
+$blue-dark: $navy !default;
 $blue-light: #eff5fc !default;
-$blue-lightest: #9EC0E7 !default;
+$navy: #002856 !default;
+$navy-dark: #002044 !default;
+$navy-light: #9EC0E7 !default;
 $purple: #8332a7 !default;
 $purple-dark: #490e67 !default;
 $red: #c10f3a !default; // Accent, Alert, St. Jude Logo

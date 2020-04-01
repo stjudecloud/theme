@@ -8,10 +8,6 @@
     background-color: $primary;
   }
 
-  .navbar-brand {
-    margin-right: 0;
-  }
-
   .login-btn {
     padding: .25rem 1rem;
     font-size: 14px;
@@ -72,20 +68,6 @@
     height: 40px;
     padding: 0;
     border: none;
-  }
-
-  .sjc-title {
-    display: inline-block;
-    padding: 0 0 0 10px;
-    margin: 0;
-    font-size: 20px;
-    font-weight: 800;
-    color: $white;
-    outline: none;
-
-    &:hover {
-      text-decoration: none;
-    }
   }
 
   .portal-title {
