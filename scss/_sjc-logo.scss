@@ -10,12 +10,17 @@
   margin: 0;
   outline: none;
   padding: 0 0 0 10px;
-  position: absolute;
-  top: 12px;
   white-space: nowrap;
 
   &:hover {
     color: $white;
     text-decoration: none;
+  }
+}
+
+footer {
+  .sjc-title {
+    position: absolute;
+    top: 12px;
   }
 }
