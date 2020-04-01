@@ -9709,6 +9709,26 @@ a.text-dark:hover, a.text-dark:focus {
   padding-top: 15px;
 }
 
+.navbar-brand {
+  margin-right: 0;
+}
+
+.sjc-title {
+  display: inline-block;
+  padding: 0 0 0 10px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  outline: none;
+  white-space: nowrap;
+}
+
+.sjc-title:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 /* Omnibar - Global Top Bar */
 .sjc-omnibar {
   /* Media Query Overrides ****************************************/
@@ -9720,10 +9740,6 @@ a.text-dark:hover, a.text-dark:focus {
   padding: .5rem;
   line-height: 1rem;
   background-color: #1874dc;
-}
-
-.sjc-omnibar .navbar-brand {
-  margin-right: 0;
 }
 
 .sjc-omnibar .login-btn {
@@ -9785,20 +9801,6 @@ a.text-dark:hover, a.text-dark:focus {
   height: 40px;
   padding: 0;
   border: none;
-}
-
-.sjc-omnibar .sjc-title {
-  display: inline-block;
-  padding: 0 0 0 10px;
-  margin: 0;
-  font-size: 20px;
-  font-weight: 800;
-  color: #fff;
-  outline: none;
-}
-
-.sjc-omnibar .sjc-title:hover {
-  text-decoration: none;
 }
 
 .sjc-omnibar .portal-title {
@@ -10128,14 +10130,9 @@ footer .logo {
 }
 
 footer .sjc-title {
-  color: #fff;
-  font-weight: bold;
   position: absolute;
   top: 12px;
-}
-
-footer .sjc-title:hover {
-  text-decoration: none;
+  white-space: nowrap;
 }
 
 footer h6 {
@@ -10244,9 +10241,6 @@ footer .sub-footer ul li {
   footer .sub-footer ul li {
     display: block;
     text-align: center;
-  }
-  footer .sub-footer ul li a {
-    color: #fff;
   }
   footer .sub-footer ul li span {
     display: none;

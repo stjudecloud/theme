@@ -15,17 +15,6 @@ footer {
     border-right: 1px solid;
   }
 
-  .sjc-title {
-    color: $white;
-    font-weight: bold;
-    position: absolute;
-    top: 12px;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
   h6 {
     color: $white;
     font-size: 11px;
@@ -124,10 +113,6 @@ footer {
         @include media-breakpoint-down(md) {
           display: block;
           text-align: center;
-
-          a {
-            color: $white;
-          }
 
           span {
             display: none;
