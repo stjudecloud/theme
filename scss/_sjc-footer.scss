@@ -1,6 +1,6 @@
 /* Footer */
 footer {
-  background-color: $blue-dark;
+  background-color: $navy;
   border: 0;
   padding: 30px 0 0 0;
 
@@ -61,7 +61,7 @@ footer {
     }
 
     .fab {
-      background-color: $blue-darkest;
+      background-color: $navy-dark;
       border-radius: 20px;
       color: $white;
       height: 40px;
@@ -77,8 +77,8 @@ footer {
   }
 
   .sub-footer {
-    background-color: $blue-darkest;
-    color: $blue-lightest;
+    background-color: $navy-dark;
+    color: $navy-light;
     font-size: 12px;
     margin-top: 20px;
     padding: 10px 0 3px 0;
@@ -89,7 +89,7 @@ footer {
     }
 
     a {
-      color: $blue-lightest;
+      color: $navy-light;
     }
 
     p {
