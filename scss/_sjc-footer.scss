@@ -73,6 +73,10 @@ footer {
       &:hover {
         background-color: $primary;
       }
+
+      &.react-version {
+        padding: 11px;
+      }
     }
   }
 

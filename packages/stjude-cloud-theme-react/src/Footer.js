@@ -1,5 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Navbar } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookSquare, faTwitter, faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -101,36 +103,56 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.facebook.com/stjuderesearch"
-                className="fab fa-facebook"
-              />
+              >
+                <FontAwesomeIcon
+                  icon={faFacebookSquare}
+                  className="fab react-version"
+                />
+              </a>
 
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://twitter.com/StJudeResearch"
-                className="fab fa-twitter"
-              />
+              >
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  className="fab react-version"
+                />
+              </a>
 
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/stjuderesearch/"
-                className="fab fa-instagram"
-              />
+              >
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="fab react-version"
+                />
+              </a>
 
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/company/st-jude-childrens-research-hospital/"
-                className="fab fa-linkedin"
-              />
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className="fab react-version"
+                />
+              </a>
 
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.youtube.com/user/MyStJude"
-                className="fab fa-youtube"
-              />
+              >
+                <FontAwesomeIcon
+                  icon={faYoutube}
+                  className="fab react-version"
+                />
+              </a>
             </div>
           </Col>
         </Row>
