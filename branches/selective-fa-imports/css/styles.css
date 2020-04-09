@@ -10180,7 +10180,7 @@ footer .footer-social h6 {
   }
 }
 
-footer .footer-social .fab {
+footer .footer-social .social-icon {
   background-color: #002044;
   border-radius: 20px;
   color: #fff;
@@ -10191,11 +10191,11 @@ footer .footer-social .fab {
   width: 40px;
 }
 
-footer .footer-social .fab:hover {
+footer .footer-social .social-icon:hover {
   background-color: #1874dc;
 }
 
-footer .footer-social .fab.react-version {
+footer .footer-social .social-icon.social-icon-react {
   padding: 11px;
 }
 
