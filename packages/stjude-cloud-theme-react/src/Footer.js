@@ -2,8 +2,7 @@ import React from "react";
 import { Container, Row, Col, Navbar } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faFacebookSquare, faTwitter, faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { fab, faFacebookSquare, faTwitter, faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 library.add(fab, faFacebookSquare, faTwitter, faInstagram, faLinkedin, faYoutube)
 
