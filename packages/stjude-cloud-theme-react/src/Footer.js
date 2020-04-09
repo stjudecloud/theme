@@ -148,7 +148,7 @@ function Footer() {
                     href="https://www.stjude.org/legal/u-s-privacy-policy-statement.html"
                     title="U.S. Privacy Policy Statement"
                   >
-                    Privacy Policy
+                    Privacy
                   </a>{" "}
                   <span>&#8226;</span>
                 </li>{" "}
@@ -159,9 +159,19 @@ function Footer() {
                     href="https://www.stjude.org/legal.html"
                     title="Disclaimer / Registrations / Copyright Statement"
                   >
-                    Disclaimer, Registrations, and Copyright
+                    Disclaimer / Registrations / Copyright
                   </a>{" "}
                   <span>&#8226;</span>
+                  <li>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.stjude.org/legal/linking-policy.html"
+                      title="Linking Policy"
+                    >
+                      Linking
+                    </a>{" "}
+                    <span>&#8226;</span>
                 </li>{" "}
                 <li>
                   <a
