@@ -60,7 +60,7 @@ footer {
       }
     }
 
-    .fab {
+    .social-icon {
       background-color: $navy-dark;
       border-radius: 20px;
       color: $white;
@@ -74,7 +74,7 @@ footer {
         background-color: $primary;
       }
 
-      &.react-version {
+      &.social-icon-react {
         padding: 11px;
       }
     }
