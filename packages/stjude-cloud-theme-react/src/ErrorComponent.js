@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Button, Image } from "react-bootstrap";
-
-import NotFoundImage from "~@stjudecloud/theme/dist/images/404.png";
+import NotFoundImage from "@stjudecloud/theme/dist/images/404.png";
 
 function ErrorComponent({ variant }) {
   return (
