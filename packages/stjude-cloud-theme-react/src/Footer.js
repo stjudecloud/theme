@@ -1,10 +1,24 @@
 import React from "react";
 import { Container, Row, Col, Navbar } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab, faFacebookSquare, faTwitter, faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  fab,
+  faFacebookSquare,
+  faTwitter,
+  faInstagram,
+  faLinkedin,
+  faYoutube
+} from "@fortawesome/free-brands-svg-icons";
 
-library.add(fab, faFacebookSquare, faTwitter, faInstagram, faLinkedin, faYoutube)
+library.add(
+  fab,
+  faFacebookSquare,
+  faTwitter,
+  faInstagram,
+  faLinkedin,
+  faYoutube
+);
 
 function Footer() {
   return (
@@ -108,7 +122,7 @@ function Footer() {
                 href="https://www.facebook.com/stjuderesearch"
               >
                 <FontAwesomeIcon
-                  icon={['fab', 'facebook-square']}
+                  icon={["fab", "facebook-square"]}
                   className="social-icon social-icon-react"
                 />
               </a>
@@ -119,7 +133,7 @@ function Footer() {
                 href="https://twitter.com/StJudeResearch"
               >
                 <FontAwesomeIcon
-                  icon={['fab', 'twitter']}
+                  icon={["fab", "twitter"]}
                   className="social-icon social-icon-react"
                 />
               </a>
@@ -130,7 +144,7 @@ function Footer() {
                 href="https://www.instagram.com/stjuderesearch/"
               >
                 <FontAwesomeIcon
-                  icon={['fab', 'instagram']}
+                  icon={["fab", "instagram"]}
                   className="social-icon social-icon-react"
                 />
               </a>
@@ -141,7 +155,7 @@ function Footer() {
                 href="https://www.linkedin.com/company/st-jude-childrens-research-hospital/"
               >
                 <FontAwesomeIcon
-                  icon={['fab', 'linkedin']}
+                  icon={["fab", "linkedin"]}
                   className="social-icon social-icon-react"
                 />
               </a>
@@ -152,7 +166,7 @@ function Footer() {
                 href="https://www.youtube.com/user/MyStJude"
               >
                 <FontAwesomeIcon
-                  icon={['fab', 'youtube']}
+                  icon={["fab", "youtube"]}
                   className="social-icon social-icon-react"
                 />
               </a>
@@ -187,16 +201,17 @@ function Footer() {
                     Disclaimer / Registrations / Copyright
                   </a>{" "}
                   <span>&#8226;</span>
-                  <li>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://www.stjude.org/legal/linking-policy.html"
-                      title="Linking Policy"
-                    >
-                      Linking
-                    </a>{" "}
-                    <span>&#8226;</span>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.stjude.org/legal/linking-policy.html"
+                    title="Linking Policy"
+                  >
+                    Linking
+                  </a>{" "}
+                  <span>&#8226;</span>
                 </li>{" "}
                 <li>
                   <a
