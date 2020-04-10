@@ -9714,14 +9714,14 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .sjc-title {
-  color: #fff;
   display: inline-block;
+  padding: 0 0 0 10px;
+  margin: 0;
   font-size: 20px;
   font-weight: 800;
-  margin: 0;
-  outline: none;
-  padding: 0 0 0 10px;
+  color: #fff;
   white-space: nowrap;
+  outline: none;
 }
 
 .sjc-title:hover {
@@ -10118,9 +10118,9 @@ footer .sjc-title {
 
 /* Footer */
 footer {
+  padding: 30px 0 0;
   background-color: #002856;
   border: 0;
-  padding: 30px 0 0 0;
 }
 
 footer .logo {
@@ -10135,18 +10135,18 @@ footer .logo {
 }
 
 footer h6 {
-  color: #fff;
   font-size: 11px;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-weight: 700;
+  color: #fff;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 footer ul {
+  padding: 0;
   font-size: 12px;
   line-height: 30px;
   list-style: none;
-  padding: 0;
 }
 
 footer ul li a {
@@ -10158,7 +10158,8 @@ footer ul li a:hover {
 }
 
 @media (max-width: 1199.98px) {
-  footer .footer-about, footer .footer-apps {
+  footer .footer-about,
+  footer .footer-apps {
     padding: 20px 0;
     text-align: center;
   }
@@ -10166,7 +10167,7 @@ footer ul li a:hover {
 
 @media (max-width: 1199.98px) {
   footer .footer-social {
-    padding: 10px 0 30px 0;
+    padding: 10px 0 30px;
   }
 }
 
@@ -10181,14 +10182,14 @@ footer .footer-social h6 {
 }
 
 footer .footer-social .social-icon {
-  background-color: #002044;
-  border-radius: 20px;
-  color: #fff;
+  width: 40px;
   height: 40px;
   padding: 11px 0 0 1px;
+  color: #fff;
   text-align: center;
   text-decoration: none;
-  width: 40px;
+  background-color: #002044;
+  border-radius: 20px;
 }
 
 footer .footer-social .social-icon:hover {
@@ -10200,22 +10201,22 @@ footer .footer-social .social-icon.social-icon-react {
 }
 
 footer .sub-footer {
-  background-color: #002044;
-  color: #9EC0E7;
-  font-size: 12px;
+  padding: 10px 0 3px;
   margin-top: 20px;
-  padding: 10px 0 3px 0;
+  font-size: 12px;
+  color: #9ec0e7;
+  background-color: #002044;
 }
 
 @media (max-width: 1199.98px) {
   footer .sub-footer {
-    padding: 30px 0 23px 0;
+    padding: 30px 0 23px;
     text-align: center;
   }
 }
 
 footer .sub-footer a {
-  color: #9EC0E7;
+  color: #9ec0e7;
 }
 
 footer .sub-footer p {
@@ -10252,13 +10253,12 @@ footer .sub-footer ul li {
 
 .sjc-error {
   max-width: 400px;
-  margin: 1rem auto;
+  margin: 4rem auto;
 }
 
 .sjc-error .error-image {
   width: 100%;
   height: 16rem;
-  margin-top: 1rem;
   background-color: #fff;
 }
 
