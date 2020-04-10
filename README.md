@@ -13,6 +13,10 @@ This repository provides theme guidelines and plug-n-play style components for S
 
 `npm run watch` is also provided for continuous compilation during development.
 
+## Contributing
+
+**You do not need to commit changes to `dist/css/*` or `guide/css/*` as part of your pull request.** These directories will be updated on release.
+
 ## What's Included
 
 ```text
