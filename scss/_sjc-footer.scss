@@ -1,67 +1,128 @@
 /* Footer */
-
 footer {
-  padding: 20px 10px 0;
-  clear: both;
-  font-size: .9em;
-  text-align: center;
-  background: #f2f2f2;
-  border-top: 4px solid #fff;
-}
+  background-color: $navy;
+  border: 0;
+  padding: 30px 0 0 0;
 
-footer p {
-  margin-bottom: 10px;
-  color: #333;
-}
+  .logo {
+    display: inline-block;
+    padding: 20px 30px;
+    color: $white;
+    background-image: url("#{$stjude-images-path}/stjude-logo-child.svg");
+    background-position: 3px 6px;
+    background-size: 72px;
+    border-color: #99c4f4;
+    border-right: 1px solid;
+  }
 
-footer .copyright {
-  font-weight: $font-weight-normal;
-}
+  h6 {
+    color: $white;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
 
-/* stylelint-disable selector-max-type */
-footer .nav li {
-  display: inline-block;
-  line-height: 120%;
-}
+  ul {
+    font-size: 12px;
+    line-height: 30px;
+    list-style: none;
+    padding: 0;
 
-footer .nav li a,
-footer .nav li a:active,
-footer .nav li a:visited {
-  color: #333;
-  text-decoration: underline;
-  background: none;
-}
+    li {
+      a {
+        color: $blue-light;
 
-footer .nav > li > a {
-  padding: 5px 15px;
-}
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
 
-footer .nav > li > a:hover {
-  background: none;
-}
-/* stylelint-enable */
+  .footer-about, .footer-apps {
+    @include media-breakpoint-down(lg) {
+      padding: 20px 0;
+      text-align: center;
+    }
+  }
 
-footer .social-media {
-  margin-bottom: 0;
-}
+  .footer-social {
+    @include media-breakpoint-down(lg) {
+      padding: 10px 0 30px 0;
+    }
 
-.social-media {
-  padding-left: 0;
-  list-style-type: none;
-}
+    h6 {
+      color: $blue-light;
 
-.social-media li {
-  display: inline-block;
-  padding: 10px;
-  font-size: 24px;
-}
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
 
-.social-media a {
-  color: #333;
-  text-decoration: none;
-}
+    .social-icon {
+      background-color: $navy-dark;
+      border-radius: 20px;
+      color: $white;
+      height: 40px;
+      padding: 11px 0 0 1px;
+      text-align: center;
+      text-decoration: none;
+      width: 40px;
 
-.social-media li a:hover {
-  color: $primary;
-  text-decoration: none;
+      &:hover {
+        background-color: $primary;
+      }
+
+      &.social-icon-react {
+        padding: 11px;
+      }
+    }
+  }
+
+  .sub-footer {
+    background-color: $navy-dark;
+    color: $navy-light;
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 10px 0 3px 0;
+
+    @include media-breakpoint-down(lg) {
+      padding: 30px 0 23px 0;
+      text-align: center;
+    }
+
+    a {
+      color: $navy-light;
+    }
+
+    p {
+      padding-top: 5px;
+    }
+
+    .order-last {
+      order: 0;
+    }
+
+    ul {
+      margin: 1px;
+
+      @include media-breakpoint-down(lg) {
+        padding-bottom: 10px;
+      }
+
+      li {
+        display: inline-block;
+
+        @include media-breakpoint-down(md) {
+          display: block;
+          text-align: center;
+
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
