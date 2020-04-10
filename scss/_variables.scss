@@ -37,7 +37,7 @@ $navy: #002856 !default;
 $navy-dark: #002044 !default;
 $navy-light: #9ec0e7 !default;
 $blue: #1874dc !default; // Interface, Hyperlinks, UI Button
-$blue-dark: $navy; // stylelint-disable scss/dollar-variable-default
+$blue-dark: $navy !default;
 $blue-light: #eff5fc !default;
 $purple: #8332a7 !default;
 $purple-dark: #490e67 !default;
