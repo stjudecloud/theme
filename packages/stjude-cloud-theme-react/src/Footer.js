@@ -201,7 +201,7 @@ function Footer() {
                     Disclaimer / Registrations / Copyright
                   </a>{" "}
                   <span>&#8226;</span>
-                </li>
+                </li>{" "}
                 <li>
                   <a
                     target="_blank"
