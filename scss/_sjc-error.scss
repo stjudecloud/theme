@@ -1,11 +1,10 @@
 .sjc-error {
   max-width: 400px;
-  margin: map-get($spacers, 3) auto;
+  margin: 4rem auto;
 
   .error-image {
     width: 100%;
     height: 16rem;
-    margin-top: 1rem;
     background-color: $white;
   }
 
