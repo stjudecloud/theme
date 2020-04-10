@@ -1,7 +1,7 @@
 /* Omnibar - Global Top Bar */
 .sjc-omnibar {
   .navbar {
-    flex-wrap: unset !important;
+    flex-wrap: unset !important; // stylelint-disable declaration-no-important
     height: 65px;
     padding: .5rem;
     line-height: 1rem;
