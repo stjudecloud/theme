@@ -112,7 +112,7 @@ function MegaMenu() {
               <a
                 href="https://www.stjude.cloud/docs/"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 Help Guides
               </a>
@@ -121,16 +121,16 @@ function MegaMenu() {
               <a
                 href="https://www.stjude.cloud/docs/faq/"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 FAQs
               </a>
             </li>
             <li>
               <a
-                href="https://hospital.stjude.org/apps/forms/fb/st-jude-cloud-contact/"
+                href="https://stjude.cloud/contact"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 Contact Us
               </a>
