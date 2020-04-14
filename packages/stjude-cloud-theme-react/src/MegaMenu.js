@@ -15,17 +15,17 @@ function MegaMenu() {
           <div className="mega-menu-title">Research Domains</div>
           <ul className="list-unstyled">
             <li>
-              <a href="https://stjude.cloud/pediatric-cancer.html">
+              <a href="https://stjude.cloud/research-domains/pediatric-cancer">
                 Pediatric Cancer
               </a>
             </li>
             <li>
-              <a href="https://stjude.cloud/cancer-survivorship.html">
+              <a href="https://stjude.cloud/research-domains/cancer-survivorship">
                 Cancer Survivorship
               </a>
             </li>
             <li>
-              <a href="https://stjude.cloud/non-cancerous-diseases.html">
+              <a href="https://stjude.cloud/research-domains/non-cancerous-diseases">
                 Non-cancerous Diseases
               </a>
             </li>
@@ -70,7 +70,7 @@ function MegaMenu() {
               </a>
             </li>
             <li>
-              <a href="https://stjude.cloud/apps.html" className="text-primary">
+              <a href="https://stjude.cloud/apps" className="text-primary">
                 View All Apps
               </a>
             </li>
@@ -78,7 +78,7 @@ function MegaMenu() {
         </Col>
         <Col md={{ span: 3, order: 1 }} className="mega-dropdown-col d-flex">
           <div className="featured-study">
-            <a href="https://stjude.cloud/studies/clinical-genomics.html">
+            <a href="https://stjude.cloud/studies/clinical-genomics">
               <img
                 className="featured-study__image"
                 src={FeaturedImage}
@@ -89,13 +89,13 @@ function MegaMenu() {
               <div className="featured-study__title">Featured Study</div>
               <ul className="list-unstyled">
                 <li>
-                  <a href="https://stjude.cloud/studies/clinical-genomics.html">
+                  <a href="https://stjude.cloud/studies/clinical-genomics">
                     Real-time Clinical Genomics
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://stjude.cloud/studies.html"
+                    href="https://stjude.cloud/studies"
                     className="text-primary"
                   >
                     View All Studies
