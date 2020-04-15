@@ -1,6 +1,6 @@
 {
   "name": "@stjudecloud/theme",
-  "version": "4.3.17",
+  "version": "4.3.18",
   "description": "St. Jude Cloud Theme and Guidelines",
   "main": "index.js",
   "scripts": {
