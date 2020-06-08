@@ -5,7 +5,7 @@ on:
     types: [opened, reopened]
 
 env:
-  BASE_URL: https://cdn-theme-prod-eastus.azureedge.net/theme-assets/branches
+  BASE_URL: https://themestagingeastus.azureedge.net/theme-assets/branches
 
 jobs:
   preview:
