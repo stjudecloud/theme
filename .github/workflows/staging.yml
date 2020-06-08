@@ -41,9 +41,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: Run Build
-        run: |
-          npm install
-          npm run css-compile
+        run: bash bin/build.sh
 
       - name: Azure Login
         uses: azure/login@v1
