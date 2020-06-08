@@ -1,0 +1,25 @@
+name: Preview
+
+on:
+  pull_request:
+    types: [opened, reopened]
+
+env:
+  BASE_URL: https://cdn-theme-prod-eastus.azureedge.net/theme-assets/branches
+
+jobs:
+  preview:
+    name: Preview
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Preview Link
+        uses: actions/github-script@0.9.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '${{ env.BASE_URL }}/${{ github.head_ref }}'
+            })
