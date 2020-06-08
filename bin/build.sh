@@ -35,7 +35,7 @@ done < <( git branch --list --all | sed 's,\*,,g' | xargs -n1 | grep "remotes/or
 # Loop through branches, build and copy each to output dir
 echo "== Build Branches =="
 for CURRENT_BRANCH in "${BRANCHES[@]}"; do 
-  BRANCH_DIR="${BUILD_DIR}/branches/${CURRENT_BRANCH}"
+  BRANCH_DIR="${BUILD_DIR}/branch/${CURRENT_BRANCH}"
   if [[ "${CURRENT_BRANCH}" == "master" ]]; then
     BRANCH_DIR="${BUILD_DIR}/"
   fi
