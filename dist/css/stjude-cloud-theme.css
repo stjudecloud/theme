@@ -19,7 +19,7 @@
   --orange: #fd7e14;
   --yellow: #ffd100;
   --green: #c4d82e;
-  --teal: #20c997;
+  --teal: #35a7d3;
   --cyan: #17a2b8;
   --white: #fff;
   --gray: #6c757d;
@@ -10252,56 +10252,96 @@ footer .sub-footer ul li {
   }
 }
 
-.sjc-error {
-  max-width: 400px;
-  margin: 4rem auto;
-}
-
-.sjc-error .error-image {
-  width: 100%;
-  height: 16rem;
-  background-color: #fff;
-}
-
-.sjc-error .error-list-container {
-  margin-top: 2rem;
-}
-
-.sjc-error .error-header {
-  margin-top: 0;
-  font-weight: 700;
+.not-found {
+  background-color: #eff5fc;
+  background-position: center -600px;
+  height: 90vh;
+  overflow: hidden;
+  padding-bottom: 50px;
+  padding-top: 40px;
+  position: relative;
   text-align: center;
 }
 
-.sjc-error .error-subheader {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  text-align: center;
+.not-found::before {
+  background-color: #002856;
+  background-image: url("../../dist/images/bg-404.png");
+  background-repeat: no-repeat;
+  background-position: right 70%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  content: "";
+  height: 100%;
+  left: -10%;
+  position: absolute;
+  top: -30%;
+  width: 120%;
+  z-index: 0;
 }
 
-.sjc-error .error-links-list {
-  padding: 0;
-  text-align: center;
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .not-found::before {
+    background-image: url("../../dist/images/bg-404@2x.png");
+  }
 }
 
-.sjc-error .error-links-list a {
-  font-weight: normal;
-  text-decoration: none;
-  cursor: pointer;
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .not-found::before {
+    background-size: 50%;
+  }
 }
 
-.sjc-error .error-links-list a:not(.btn) {
-  color: #1874dc;
+@media (max-width: 991.98px) {
+  .not-found::before {
+    background-position: top right;
+    height: 60vh;
+    top: 0;
+  }
 }
 
-.sjc-error .error-links-list a:not(.btn):hover {
-  color: #166bcc;
-  text-decoration: underline;
+@media only screen and (max-width: 991.98px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 991.98px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 991.98px) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (max-width: 991.98px) and (min-device-pixel-ratio: 2), only screen and (max-width: 991.98px) and (min-resolution: 192dpi), only screen and (max-width: 991.98px) and (min-resolution: 2dppx) {
+  .not-found::before {
+    background-size: 70%;
+  }
 }
 
-.sjc-error .error-links-list a:not(.btn):active {
-  color: #1668c6;
+@media (min-width: 768px) {
+  .not-found::before {
+    background-position: top right;
+    top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .not-found::before {
+    background-position: center right;
+    top: -30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .not-found {
+    height: 80vh;
+  }
+  .not-found h2 {
+    padding: 200px 0 0 0;
+  }
+}
+
+.not-found h2 {
+  color: #35a7d3;
+  font-size: 184px;
+  padding: 80px 0 0 0;
+}
+
+.not-found h4 {
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+.not-found .btn {
+  font-weight: bold;
+  padding: 15px 30px;
 }
 
 @font-face {
