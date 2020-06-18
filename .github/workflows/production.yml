@@ -11,7 +11,7 @@ env:
   AZURE_RESOURCE_GROUP: rg-theme-prod-eastus
   NODE_ENV: production
   NODE_VERSION: 13.x
-  SOURCE_DIRECTORY: build
+  SOURCE_DIRECTORY: guide
   STORAGE_ACCOUNT: stgthemeprodeastus
   STORAGE_CONTAINER: \$web
 
@@ -41,7 +41,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: Run Build
-        run: bash bin/build.sh
+        run: npm run build
 
       - name: Azure Login
         uses: azure/login@v1
@@ -77,7 +77,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./build
+          publish_dir: ./guide
           user_name: "St. Jude Cloud"
           user_email: support@stjude.cloud
           commit_message: "Deployed from ${{ github.event.head_commit.message }}"

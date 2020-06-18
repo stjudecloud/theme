@@ -10,7 +10,7 @@ env:
   AZURE_RESOURCE_GROUP: rg-theme-staging-eastus
   NODE_ENV: staging
   NODE_VERSION: 13.x
-  SOURCE_DIRECTORY: build
+  SOURCE_DIRECTORY: guide
   STORAGE_ACCOUNT: stgthemestagingeastus
   STORAGE_CONTAINER: \$web
 
@@ -40,7 +40,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: Run Build
-        run: bash bin/build.sh
+        run: npm run build
 
       - name: Azure Login
         uses: azure/login@v1

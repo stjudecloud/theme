@@ -5,7 +5,7 @@ on:
     types: [opened, reopened]
 
 env:
-  BASE_URL: https://themestagingeastus.azureedge.net/theme-assets/branches
+  BASE_URL: https://stgthemestagingeastus.z13.web.core.windows.net/branches
 
 jobs:
   preview:
