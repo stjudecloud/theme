@@ -12,7 +12,7 @@ env:
   NODE_VERSION: 13.x
   SOURCE_DIRECTORY: build
   STORAGE_ACCOUNT: stgthemestagingeastus
-  STORAGE_CONTAINER: \theme-assets
+  STORAGE_CONTAINER: \$web
 
 jobs:
   deploy:
@@ -21,7 +21,6 @@ jobs:
     env:
       CI: true
     steps:
-
       - name: Checkout Repository
         uses: actions/checkout@v2.0.0
 
