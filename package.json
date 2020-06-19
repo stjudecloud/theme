@@ -41,7 +41,7 @@
   "peerDependencies": {
     "bootstrap": "4.3.1"
   },
-  "devDependencies": {
+  "dependencies": {
     "bootstrap": "4.3.1",
     "clean-css-cli": "^4.3.0",
     "node-sass": "^4.13.1",
