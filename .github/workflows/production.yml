@@ -43,6 +43,7 @@ jobs:
       - name: Run Build
         run: |
           npm install
+          npm install npm-run-all
           npm run build
 
       - name: Azure Login
