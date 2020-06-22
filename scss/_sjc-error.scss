@@ -2,7 +2,7 @@
 .not-found {
   background-color: $blue-light;
   background-position: center -600px;
-  height: 90vh;
+  height: 900px;
   overflow: hidden;
   padding-bottom: 50px;
   padding-top: 40px;
@@ -35,7 +35,7 @@
       @include retina {
         background-size: 70%;
       }
-      height: 60vh;
+      height: 600px;
       top: 0;
     }
 
@@ -51,7 +51,7 @@
   }
 
   @include media-breakpoint-up(md) {
-    height: 80vh;
+    height: 800px;
 
     h2 {
       padding: 200px 0 0 0;
