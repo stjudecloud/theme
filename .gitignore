@@ -1,2 +1,6 @@
 node_modules
 .cache
+!dist
+guide/images
+guide/fonts
+guide/css
