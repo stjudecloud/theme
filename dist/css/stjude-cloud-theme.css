@@ -10182,14 +10182,24 @@ footer .footer-social h6 {
 }
 
 footer .footer-social .social-icon {
-  width: 40px;
-  height: 40px;
-  padding: 11px 0 0 1px;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
   background-color: #002044;
   border-radius: 20px;
+  color: #fff;
+  display: block;
+  height: 39px;
+  padding: 12px 0 0 1px;
+  text-align: center;
+  text-decoration: none;
+  width: 40px;
+}
+
+footer .footer-social .social-icon span {
+  /* hide text but not icon */
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
 }
 
 footer .footer-social .social-icon:hover {

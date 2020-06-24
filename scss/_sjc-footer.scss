@@ -62,14 +62,23 @@ footer {
     }
 
     .social-icon {
-      width: 40px;
-      height: 40px;
-      padding: 11px 0 0 1px;
-      color: $white;
-      text-align: center;
-      text-decoration: none;
       background-color: $navy-dark;
       border-radius: 20px;
+      color: $white;
+      display: block;
+      height: 39px;
+      padding: 12px 0 0 1px;
+      text-align: center;
+      text-decoration: none;
+      width: 40px;
+      
+      span { /* hide text but not icon */
+        height: 1px;
+        width: 1px;
+        position: absolute;
+        overflow: hidden;
+        top: -10px;
+      }
 
       &:hover {
         background-color: $primary;
