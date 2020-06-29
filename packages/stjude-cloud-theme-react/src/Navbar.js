@@ -69,7 +69,7 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig}) {
     userDropdown = (
       <Dropdown className="user-dropdown" title="User Info">
         <Dropdown.Toggle as={Nav.Link} className="profile-dropdown-toggle">
-          <span className="user-icon" />
+          <span className="user-icon text-hide">Account</span>
         </Dropdown.Toggle>
         <Dropdown.Menu className="profile-dropdown-menu" alignRight show={show}>
           <ul className="list-unstyled">
@@ -88,10 +88,10 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig}) {
   return (
     <header className="sjc-omnibar">
       <BSNavbar variant="">
-        <BSNavbar.Brand href="https://stjude.cloud">
-          <span className="logo"></span>
+        <BSNavbar.Brand href="https://stjude.cloud" title="St. Jude Cloud" alt="St. Jude Cloud">
+          <span className="logo hide-text">St. Jude Cloud</span>
         </BSNavbar.Brand>
-        <a className="sjc-title" href="https://stjude.cloud">
+        <a className="sjc-title" href="https://stjude.cloud" title="St. Jude Cloud">
           St. Jude Cloud
         </a>
         {portalElement}
@@ -103,7 +103,7 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig}) {
 
           <Dropdown className="mega-dropdown" title="St. Jude Cloud Mega Menu">
             <Dropdown.Toggle as={Nav.Link} className="profile-dropdown-toggle">
-              <div className="nav-menu-icon" />
+              <div className="nav-menu-icon text-hide">Menu</div>
             </Dropdown.Toggle>
             <Dropdown.Menu className="mega-dropdown-menu" show={show}>
               <MegaMenu />
