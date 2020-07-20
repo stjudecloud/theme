@@ -1,1 +1,22 @@
 @import "mixins/link-like";
+
+// Retina screen query
+@mixin retina {
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+// Retina CSS Background-image @1x & @2x, must use url("img/__filename__")
+@mixin bg2x($img, $img2x) {
+  background-image: $img;
+
+  @include retina {
+    background-image: $img2x;
+  }
+}
