@@ -53,6 +53,7 @@ $aqua: #7ad0e4 !default;
 $aqua-dark: #17818f !default;
 $gray: #f2f2f2 !default;
 $gray-dark: #aeb2b5 !default;
+$teal: #35a7d3;
 
 $primary: $blue !default;
 $secondary: $blue-dark !default;
@@ -87,11 +88,11 @@ $swatch-7-dark: $peach-dark !default;
 $btn-border-radius: 5rem !default;
 $btn-border-radius-lg: 5rem !default;
 $btn-border-radius-sm: 5rem !default;
-$btn-padding-y: .25rem !default;
+$btn-padding-y: 0.25rem !default;
 $btn-padding-x: 2.2rem !default;
-$btn-padding-y-lg: .5rem !default;
+$btn-padding-y-lg: 0.5rem !default;
 $btn-padding-x-lg: 2rem !default;
-$btn-padding-y-sm: .2rem !default;
+$btn-padding-y-sm: 0.2rem !default;
 $btn-padding-x-sm: 1.75rem !default;
 
 /* SJC Navbar Overrides ***************************************/
@@ -100,15 +101,15 @@ $navbar-nav-link-padding-x: 1.25rem !default;
 $navbar-light-color: $blue-dark !default;
 $navbar-light-hover-color: $black !default;
 $navbar-light-active-color: $black !default;
-$navbar-light-disabled-color: rgba($blue-dark, .3) !default;
-$navbar-light-toggler-border-color: rgba($blue-dark, .1) !default;
+$navbar-light-disabled-color: rgba($blue-dark, 0.3) !default;
+$navbar-light-toggler-border-color: rgba($blue-dark, 0.1) !default;
 
 $navbar-dark-color: $blue-dark !default;
 $navbar-dark-hover-color: $black !default;
 $navbar-dark-active-color: $black !default;
-$navbar-dark-disabled-color: rgba($blue-dark, .25) !default;
-$navbar-dark-toggler-border-color: rgba($blue-dark, .1) !default;
+$navbar-dark-disabled-color: rgba($blue-dark, 0.25) !default;
+$navbar-dark-toggler-border-color: rgba($blue-dark, 0.1) !default;
 
 $enable-caret: false !default;
 
-$dropdown-link-active-bg: rgba($primary, .15) !default;
+$dropdown-link-active-bg: rgba($primary, 0.15) !default;
