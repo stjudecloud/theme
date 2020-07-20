@@ -120,55 +120,70 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.facebook.com/stjuderesearch"
+                title="Facebook"
+                alt="Facebook"
               >
                 <FontAwesomeIcon
                   icon={["fab", "facebook-square"]}
                   className="social-icon social-icon-react"
                 />
+                <span>Facebook</span>
               </a>
 
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://twitter.com/StJudeResearch"
+                title="Twitter"
+                alt="Twiter"
               >
                 <FontAwesomeIcon
                   icon={["fab", "twitter"]}
                   className="social-icon social-icon-react"
                 />
+                <span>Twitter</span>
               </a>
 
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/stjuderesearch/"
+                title="Instagram"
+                alt="Instagram"
               >
                 <FontAwesomeIcon
                   icon={["fab", "instagram"]}
                   className="social-icon social-icon-react"
                 />
+                <span>Instagram</span>
               </a>
 
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/company/st-jude-childrens-research-hospital/"
+                title="LinkedIn"
+                alt="LinkedIn"
               >
                 <FontAwesomeIcon
                   icon={["fab", "linkedin"]}
                   className="social-icon social-icon-react"
                 />
+                <span>LinkedIn</span>
               </a>
 
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.youtube.com/user/MyStJude"
+                title="YouTube"
+                alt="YouTube"
               >
                 <FontAwesomeIcon
                   icon={["fab", "youtube"]}
                   className="social-icon social-icon-react"
                 />
+                <span>YouTube</span>
               </a>
             </div>
           </Col>
