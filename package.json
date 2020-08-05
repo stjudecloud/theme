@@ -17,7 +17,10 @@
     "prepare-guide-fonts": "cp -a dist/fonts/. guide/fonts",
     "watch": "nodemon --watch \"scss/\" --watch \"guide/scss/\" --ext scss --exec \"npm run css-compile\"",
     "watch-css-main": "nodemon --watch \"scss/\" --ext scss --exec \"npm run css-compile-main\"",
-    "watch-css-guide": "nodemon --watch \"guide/scss/\" --ext scss --exec \"npm run css-compile-guide\""
+    "watch-css-guide": "nodemon --watch \"guide/scss/\" --ext scss --exec \"npm run css-compile-guide\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fractal:start": "fractal start --sync",
+    "fractal:build": "fractal build"
   },
   "repository": {
     "type": "git",
@@ -50,5 +53,9 @@
     "npm-run-all": "^4.1.5",
     "stylelint": "^10.1.0",
     "stylelint-config-twbs-bootstrap": "^0.4.0"
+  },
+  "devDependencies": {
+    "@frctl/fractal": "^1.3.0",
+    "@frctl/mandelbrot": "^1.4.0"
   }
 }
