@@ -1,21 +1,59 @@
 .card {
   text-align: center;
-  box-shadow: 0 0 6px #000;
+  border-radius: 6px;
+  @include box-shadow(0, 0, 6px, 1px, rgba($gray-500, 0.9));
+  @include transition($trantype: box-shadow, $trantime: 0.3s);
+  overflow: hidden;
+
+  &:hover {
+    @include box-shadow(0, 5px, 6px, 1px, rgba($gray-500, 0.2));
+    @include transition($trantype: box-shadow);
+
+    .icon, .photo {
+      opacity: .9;
+    }
+  }
+
+  &.no-shadow {
+    box-shadow: none !important;
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .icon {
+    width: auto;
+    max-width: 50%;
+    padding-top: 15px;
+  }
+
+  .photo {
+    margin: -20px 0 0 -40px;
+    width: calc(100% + 80px);
+    max-width: calc(100% + 80px);
+  }
+  
+  .card-header {
+    color: $blue-dark;
+    background-color: $primary;
+    background-color: transparent;
+    border-bottom: 1px solid $gray-100;
+    border-top: 6px solid $blue-dark;
+    padding-top: 20px;
+  }
+
+  .card-footer {
+    background-color: transparent;
+    border-top: 1px solid $gray-100;
+    text-align: center;
+
+    &.blank {
+      border-top: 0;
+      padding: 26px 0;
+    }
+  }
 }
 
-.card-header {
-  color: #fff;
-  background-color: $primary;
-}
-
-.card img {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.card .icon {
-  width: auto;
-  max-width: 50%;
-  padding-top: 15px;
-}

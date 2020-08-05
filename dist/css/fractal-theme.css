@@ -1,3 +1,9 @@
+.Header {
+  background-color: #1874dc;
+  /* Navy/Dark Blue #002856; */
+}
+
+/* St. Jude Cloud Theme CSS */
 /* Typography ************************************************/
 /* Monochromatic - Grays - Bootstrap Defaults ****************/
 /* Main Brand Colors *****************************************/
@@ -9859,7 +9865,7 @@ footer .sjc-title {
   display: inline-block;
   padding: 20px 30px;
   color: #fff;
-  background-image: url("../../dist/images/stjude-logo-child.svg");
+  background-image: url("../images/stjude-logo-child.svg");
   background-position: 3px 6px;
   background-size: 72px;
   border-color: #99c4f4;
@@ -9889,7 +9895,7 @@ footer .sjc-title {
 
 .sjc-omnibar .user-icon {
   padding: 10px;
-  background-image: url("../../dist/images/user-icon.svg");
+  background-image: url("../images/user-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -10192,7 +10198,7 @@ footer .logo {
   display: inline-block;
   padding: 20px 30px;
   color: #fff;
-  background-image: url("../../dist/images/stjude-logo-child.svg");
+  background-image: url("../images/stjude-logo-child.svg");
   background-position: 3px 6px;
   background-size: 72px;
   border-color: #99c4f4;
@@ -10346,7 +10352,7 @@ footer .sub-footer ul li {
 
 .not-found::before {
   background-color: #002856;
-  background-image: url("../../dist/images/bg-404.png");
+  background-image: url("../images/bg-404.png");
   background-repeat: no-repeat;
   background-position: right 70%;
   border-bottom-left-radius: 100%;
@@ -10362,7 +10368,7 @@ footer .sub-footer ul li {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .not-found::before {
-    background-image: url("../../dist/images/bg-404@2x.png");
+    background-image: url("../images/bg-404@2x.png");
   }
 }
 
@@ -10428,54 +10434,54 @@ footer .sub-footer ul li {
 @font-face {
   font-family: "St. Jude Sans";
   font-weight: 300;
-  src: url("../../dist/fonts/stjude-sans/sjs-light.eot");
-  src: url("../../dist/fonts/stjude-sans/sjs-light.woff2") format("woff2"), url("../../dist/fonts/stjude-sans/sjs-light.woff") format("woff"), url("../../dist/fonts/stjude-sans/sjs-light.ttf") format("truetype");
+  src: url("../fonts/stjude-sans/sjs-light.eot");
+  src: url("../fonts/stjude-sans/sjs-light.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-light.woff") format("woff"), url("../fonts/stjude-sans/sjs-light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "St. Jude Sans";
   font-style: italic;
   font-weight: 300;
-  src: url("../../dist/fonts/stjude-sans/sjs-light-italic.eot");
-  src: url("../../dist/fonts/stjude-sans/sjs-light-italic.woff2") format("woff2"), url("../../dist/fonts/stjude-sans/sjs-light-italic.woff") format("woff");
+  src: url("../fonts/stjude-sans/sjs-light-italic.eot");
+  src: url("../fonts/stjude-sans/sjs-light-italic.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-light-italic.woff") format("woff");
 }
 
 @font-face {
   font-family: "St. Jude Sans";
   font-weight: 400;
-  src: url("../../dist/fonts/stjude-sans/sjs-regular.eot");
-  src: url("../../dist/fonts/stjude-sans/sjs-regular.woff2") format("woff2"), url("../../dist/fonts/stjude-sans/sjs-regular.woff") format("woff"), url("../../dist/fonts/stjude-sans/sjs-regular.ttf") format("truetype");
+  src: url("../fonts/stjude-sans/sjs-regular.eot");
+  src: url("../fonts/stjude-sans/sjs-regular.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-regular.woff") format("woff"), url("../fonts/stjude-sans/sjs-regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "St. Jude Sans";
   font-style: italic;
   font-weight: 400;
-  src: url("../../dist/fonts/stjude-sans/sjs-regular-italic.eot");
-  src: url("../../dist/fonts/stjude-sans/sjs-regular-italic.woff2") format("woff2"), url("../../dist/fonts/stjude-sans/sjs-regular-italic.woff") format("woff"), url("../../dist/fonts/stjude-sans/sjs-regular-italic.ttf") format("truetype");
+  src: url("../fonts/stjude-sans/sjs-regular-italic.eot");
+  src: url("../fonts/stjude-sans/sjs-regular-italic.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-regular-italic.woff") format("woff"), url("../fonts/stjude-sans/sjs-regular-italic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "St. Jude Sans";
   font-weight: 700;
-  src: url("../../dist/fonts/stjude-sans/sjs-bold.eot");
-  src: url("../../dist/fonts/stjude-sans/sjs-bold.woff2") format("woff2"), url("../../dist/fonts/stjude-sans/sjs-bold.woff") format("woff"), url("../../dist/fonts/stjude-sans/sjs-bold.ttf") format("truetype");
+  src: url("../fonts/stjude-sans/sjs-bold.eot");
+  src: url("../fonts/stjude-sans/sjs-bold.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-bold.woff") format("woff"), url("../fonts/stjude-sans/sjs-bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "St. Jude Sans";
   font-style: italic;
   font-weight: 700;
-  src: url("../../dist/fonts/stjude-sans/sjs-bold-italic.eot");
-  src: url("../../dist/fonts/stjude-sans/sjs-bold-italic.woff2") format("woff2"), url("../../dist/fonts/stjude-sans/sjs-bold-italic.woff") format("woff"), url("../../dist/fonts/stjude-sans/sjs-bold-italic.ttf") format("truetype");
+  src: url("../fonts/stjude-sans/sjs-bold-italic.eot");
+  src: url("../fonts/stjude-sans/sjs-bold-italic.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-bold-italic.woff") format("woff"), url("../fonts/stjude-sans/sjs-bold-italic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "St. Jude Sans";
   font-weight: 100;
-  src: url("../../dist/fonts/stjude-sans/sjs-light.eot");
+  src: url("../fonts/stjude-sans/sjs-light.eot");
   /* IE9 Compat Modes */
-  src: url("../../dist/fonts/stjude-sans/sjs-light.woff2") format("woff2"), url("../../dist/fonts/stjude-sans/sjs-light.woff") format("woff"), url("../../dist/fonts/stjude-sans/sjs-light.ttf") format("truetype");
+  src: url("../fonts/stjude-sans/sjs-light.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-light.woff") format("woff"), url("../fonts/stjude-sans/sjs-light.ttf") format("truetype");
   /* Safari, Android, iOS */
   font-display: fallback;
 }
@@ -10484,9 +10490,9 @@ footer .sub-footer ul li {
   font-family: "St. Jude Sans";
   font-style: italic;
   font-weight: 100;
-  src: url("../../dist/fonts/stjude-sans/sjs-light.eot");
+  src: url("../fonts/stjude-sans/sjs-light.eot");
   /* IE9 Compat Modes */
-  src: url("../../dist/fonts/stjude-sans/sjs-light.woff2") format("woff2"), url("../../dist/fonts/stjude-sans/sjs-light.woff") format("woff"), url("../../dist/fonts/stjude-sans/sjs-light.ttf") format("truetype");
+  src: url("../fonts/stjude-sans/sjs-light.woff2") format("woff2"), url("../fonts/stjude-sans/sjs-light.woff") format("woff"), url("../fonts/stjude-sans/sjs-light.ttf") format("truetype");
   /* Safari, Android, iOS */
   font-display: fallback;
 }
@@ -10502,4 +10508,4 @@ footer .sub-footer ul li {
   border-left: 0.3em solid transparent;
 }
 
-/*# sourceMappingURL=stjude-cloud-theme.css.map */
+/*# sourceMappingURL=fractal-theme.css.map */

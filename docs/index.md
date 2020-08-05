@@ -4,10 +4,13 @@
 
 ## Getting Started
 1. If you need to mockup or prototype, you can start by downloading our Sketch DSM - <a href="https://www.sketch.com/s/5f06f430-fa20-4aaf-ad60-6898bbda3de3">Sketch Design System</a>
+
 2. If you are using the theme in your project or prototype simply install the <a href="https://github.com/stjudecloud/theme" target="_blank">theme NPM packages</a>:
 
   * https://github.com/stjudecloud/theme
   * https://github.com/stjudecloud/theme/packages/140741
+
+3. We use <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> as the base for the St. Jude Cloud theme.
 
 <br />
 

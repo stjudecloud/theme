@@ -16,7 +16,7 @@ fractal.docs.set('path', __dirname + '/docs');
 fractal.web.set('static.path', __dirname + '/dist');
 
 /* Set the static HTML build destination */
-fractal.web.set('builder.dest', __dirname + '/dist');
+fractal.web.set('builder.dest', __dirname + '/fractal-build');
 
 // require the Mandelbrot theme module
 const mandelbrot = require('@frctl/mandelbrot');
@@ -26,14 +26,14 @@ const myCustomisedTheme = mandelbrot({
     skin: 'blue',
     styles: [
       'default',
-      'css/stjude-cloud-theme.css'
+      '/css/fractal-theme.css'
     ],
-    favicon: '../dist/images/favicon.ico',
+    favicon: '/images/favicon.ico',
     // any other theme configuration values here
 });
 
-fractal.web.set('static.path', __dirname + '/dist');
-// public/bar/foo.css will be served at http://localhost:3000/bar/foo.css
+// specify a directory to hold the theme override templates
+myCustomisedTheme.addLoadPath(__dirname + '/dist');
 
 // specify a directory to hold the theme override templates
 //myCustomisedTheme.addLoadPath(__dirname + '/sjds-theme');
