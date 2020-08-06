@@ -9415,6 +9415,21 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.btn-primary.btn-white {
+  background-color: #fff;
+  border-color: #fff;
+  color: #1874dc;
+}
+
+.btn-secondary.btn-white {
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.btn-secondary.btn-white:hover {
+  background-color: transparent;
+}
+
 .btn-primary {
   color: #f2f2f2;
   background-color: #1874dc;
@@ -9714,17 +9729,17 @@ a.text-dark:hover, a.text-dark:focus {
 .card {
   text-align: center;
   border-radius: 6px;
-  -webkit-box-shadow: 0 0 6px 1px rgba(173, 181, 189, 0.9);
-  -moz-box-shadow: 0 0 6px 1px rgba(173, 181, 189, 0.9);
-  box-shadow: 0 0 6px 1px rgba(173, 181, 189, 0.9);
+  -webkit-box-shadow: 0 0 6px 1px rgba(173, 181, 189, 0.4);
+  -moz-box-shadow: 0 0 6px 1px rgba(173, 181, 189, 0.4);
+  box-shadow: 0 0 6px 1px rgba(173, 181, 189, 0.4);
   transition: box-shadow 0.3s ease-in;
   overflow: hidden;
 }
 
 .card:hover {
-  -webkit-box-shadow: 0 5px 6px 1px rgba(173, 181, 189, 0.2);
-  -moz-box-shadow: 0 5px 6px 1px rgba(173, 181, 189, 0.2);
-  box-shadow: 0 5px 6px 1px rgba(173, 181, 189, 0.2);
+  -webkit-box-shadow: 0 5px 6px 1px rgba(173, 181, 189, 0.8);
+  -moz-box-shadow: 0 5px 6px 1px rgba(173, 181, 189, 0.8);
+  box-shadow: 0 5px 6px 1px rgba(173, 181, 189, 0.8);
   transition: box-shadow 0.2s ease-in;
 }
 

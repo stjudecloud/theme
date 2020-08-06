@@ -1,7 +1,24 @@
 // St. Jude Cloud Theme Custom Buttons
 // Customizes the button-variant bootstrap mixin to darken on hover while maintaining text colors
 // Button colors/sizing/border-radius is managed in variables.scss
+.btn-primary {
+  &.btn-white {
+    background-color: $white;
+    border-color: $white;
+    color: $primary;
+  }
+}
 
+.btn-secondary {
+  &.btn-white {
+    background-color: transparent;
+    border-color: $white;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
     color: $gray;

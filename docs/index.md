@@ -1,6 +1,4 @@
-# Welcome to design.stjude.cloud!
-
-### Design.stjude.cloud provides everything you need to quickly design, build, and ship apps across St. Jude Cloud.
+<img src="{{ path '/images/design-cover-img@2x.jpg' }}" alt="Welcome to design.stjude.cloud!" width="1280px" height="320px" style="max-width: unset"/>
 
 ## Getting Started
 1. If you need to mockup or prototype, you can start by downloading our Sketch DSM - <a href="https://www.sketch.com/s/5f06f430-fa20-4aaf-ad60-6898bbda3de3">Sketch Design System</a>
