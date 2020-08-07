@@ -34,17 +34,16 @@ https://www.fontspring.com/support/how-do-i-install-fonts-on-my-mac
 # Now you’re ready to go! (Try and be excited ;P ). You can start with one of our templates on sketch.cloud:
 
 ### Using screen size templates (w/ header and footer)
-	1.	These templates have a header and footer included.
-  #### You MUST save your file as a duplicate, so you don’t write-over our templates on sjetch.cloud. Good luck!
+1.	These templates have a header and footer included.
+#### You MUST save your file as a duplicate, so you don’t write-over our templates on sjetch.cloud. Good luck!
 
-  - XS: https://sketch.cloud/s/lEwm4
-  - SM: https://sketch.cloud/s/oJgAx
-  - MD: https://sketch.cloud/s/KmWog
-  - LG: https://sketch.cloud/s/aQVrv
-  - XL: https://sketch.cloud/s/kj8O9
-  - ALL SIZES: https://sketch.cloud/s/wa1Vq
+- XS: https://sketch.cloud/s/lEwm4
+- SM: https://sketch.cloud/s/oJgAx
+- MD: https://sketch.cloud/s/KmWog
+- LG: https://sketch.cloud/s/aQVrv
+- XL: https://sketch.cloud/s/kj8O9
+- ALL SIZES: https://sketch.cloud/s/wa1Vq
 
-
-	2.	Lastly, you can email <a href="mailto:James.Madson@stjude.org">James</a> or <a href="mailto:Stephanie.Wiggins@stjude.org"Stephanie</a> with any questions.
+2.	Lastly, you can email <a href="mailto:James.Madson@stjude.org">James</a> or <a href="mailto:Stephanie.Wiggins@stjude.org">Stephanie</a> with any questions.
 
 

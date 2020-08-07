@@ -10,9 +10,7 @@
 
 3. We use <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> as the base for the St. Jude Cloud theme.
 
-<br />
-
-We use <a href="https://fractal.build/" target="_blank">Fractal</a> for design.stjude.cloud:
+4. We use <a href="https://fractal.build/" target="_blank">Fractal</a> for design.stjude.cloud:
 
 ## Setup & Install
 1. ```git clone https://github.com/stjudecloud/design-system.git```
