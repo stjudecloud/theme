@@ -4,4 +4,4 @@ node_modules
 guide/images
 guide/fonts
 guide/css
-fractal-build
+build

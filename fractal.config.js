@@ -16,7 +16,7 @@ fractal.docs.set('path', __dirname + '/docs');
 fractal.web.set('static.path', __dirname + '/dist');
 
 /* Set the static HTML build destination */
-fractal.web.set('builder.dest', __dirname + '/fractal-build');
+fractal.web.set('builder.dest', __dirname + '/build');
 
 // require the Mandelbrot theme module
 const mandelbrot = require('@frctl/mandelbrot');
