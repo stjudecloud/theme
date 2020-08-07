@@ -10,7 +10,7 @@ env:
   AZURE_RESOURCE_GROUP: rg-theme-staging-eastus
   NODE_ENV: staging
   NODE_VERSION: 13.x
-  SOURCE_DIRECTORY: guide
+  SOURCE_DIRECTORY: fractal-build
   STORAGE_ACCOUNT: stgthemestagingeastus
   STORAGE_CONTAINER: \$web
 

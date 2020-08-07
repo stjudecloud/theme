@@ -11,7 +11,6 @@
     "css-minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/stjude-cloud-theme.min.css dist/css/stjude-cloud-theme.css",
     "css-lint": "npm-run-all -- --continue-on-error --parallel css-lint-*",
     "css-lint-main": "stylelint \"scss/**/*.scss\" --cache --cache-location .cache/.stylelintcache",
-    "css-lint-guide": "stylelint \"guide/scss/**/*.scss\" --cache --cache-location .cache/.stylelintcache",
     "watch": "nodemon --watch \"scss/\" --watch \"guide/scss/\" --ext scss --exec \"npm run css-compile\"",
     "watch-css-main": "nodemon --watch \"scss/\" --ext scss --exec \"npm run css-compile-main\"",
     "test": "echo \"Error: no test specified\" && exit 1",
