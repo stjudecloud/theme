@@ -1,0 +1,54 @@
+// St. Jude Cloud Theme Custom Badges
+
+.badge {
+  font-size: 9px;
+  letter-spacing: 2px;
+  padding: .35rem .6rem;
+  text-transform: uppercase;
+
+  .badge-icon {
+    color: $white;
+    opacity: .75;
+  }
+
+  .badge-icon:hover {
+    opacity: 1;
+    text-decoration: none;
+  }
+}
+
+.badge-darkest {
+  background-color: $gray-darkest;
+  color: $white;
+}
+
+.badge-pediatric-cancer {
+  background-color: $pediatric-cancer;
+  color: $white;
+}
+
+.badge-cancer-survivorship {
+  background-color: $cancer-survivorship;
+  color: $white;
+}
+
+.badge-non-cancerous-diseases {
+  background-color: $non-cancerous-diseases;
+  color: $white;
+}
+
+.badge-multiple {
+  .badge {
+    border-radius: 0;
+  }
+
+  .badge:first-child {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .badge:last-child {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+}

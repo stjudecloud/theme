@@ -42,7 +42,7 @@ $blue-light: #eff5fc !default;
 $purple: #8332a7 !default;
 $purple-dark: #490e67 !default;
 $red: #c10f3a !default; // Accent, Alert, St. Jude Logo
-$red-dark: #911938 !default;
+$red-dark: #911938 !default; //St. Jude Red Dark
 $peach: #fd5339 !default;
 $peach-dark: #eb4e36 !default; // Error Message
 $yellow: #ffd100 !default; // Warning
@@ -54,6 +54,12 @@ $aqua-dark: #17818f !default;
 $gray: #f2f2f2 !default;
 $gray-dark: #aeb2b5 !default;
 $teal: #35a7d3;
+
+$pediatric-cancer: $green-dark;
+$cancer-survivorship: $peach-dark;
+$non-cancerous-diseases: $purple;
+
+$gray-darkest: #333333;
 
 $tan: #efeeea; // For BG's, like Viz.stjude.cloud, allows for cards to stand apart from BG
 
