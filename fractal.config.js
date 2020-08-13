@@ -23,13 +23,14 @@ const mandelbrot = require('@frctl/mandelbrot');
 
 // create a new instance with custom config options
 const myCustomisedTheme = mandelbrot({
-    skin: 'blue',
-    styles: [
-      'default',
-      '/css/fractal-theme.css'
-    ],
-    favicon: '/images/favicon.ico',
-    // any other theme configuration values here
+  skin: 'blue',
+  styles: [
+    'default',
+    '/css/fractal-theme.css'
+  ],
+  favicon: '/images/favicon.ico',
+  panels: ['html', 'view', 'info', 'notes'],
+  // any other theme configuration values here
 });
 
 // specify a directory to hold the theme override templates
