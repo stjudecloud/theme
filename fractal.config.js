@@ -1,9 +1,9 @@
 'use strict';
-
 /* Create a new Fractal instance and export it for use elsewhere if required */
 const fractal = module.exports = require('@frctl/fractal').create();
 
-/* Set the title of the project */
+fractal.set('project.version', 'v1.0');
+fractal.set('project.author', 'St. Jude Design System');
 fractal.set('project.title', 'design.stjude.cloud');
 
 /* Tell Fractal where the components will live */
@@ -24,12 +24,13 @@ const mandelbrot = require('@frctl/mandelbrot');
 // create a new instance with custom config options
 const myCustomisedTheme = mandelbrot({
   skin: 'blue',
+  nav: ['search', 'docs', 'components', 'information'],
   styles: [
     'default',
     '/css/fractal-theme.css'
   ],
   favicon: '/images/favicon.ico',
-  panels: ['html', 'view', 'info', 'notes'],
+  panels: ['html', 'info', 'notes'], //'view' will hsow the handlebars template
   // any other theme configuration values here
 });
 
