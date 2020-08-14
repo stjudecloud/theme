@@ -26,7 +26,7 @@
 .not-found:before {
   background-color: $navy-dark;
   background-size: cover;
-  background-image: url('/images/error-texture.png');
+  background-image: url('#{$stjude-images-path}/error-texture.png');
   background-repeat: no-repeat;
   background-position: center;
   content: '';
