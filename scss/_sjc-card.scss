@@ -55,5 +55,85 @@
       padding: 26px 0;
     }
   }
+
+  .text-dark {
+    color: $gray-darkest !important;
+  }
+
+  &.bg-navy {
+    background-color: $navy;
+  }
+  &.bg-navy-dark {
+    background-color: $navy-dark;
+  }
+  &.bg-navy-light {
+    background-color: $navy-light;
+  }
+  &.bg-blue {
+    background-color: $blue;
+  }
+  &.bg-blue-dark {
+    background-color: $blue-dark;
+  }
+  &.bg-blue-light {
+    background-color: $blue-light;
+  }
+  &.bg-purple {
+    background-color: $purple;
+  }
+  &.bg-purple-dark {
+    background-color: $purple-dark;
+  }
+  &.bg-purple-light {
+    background-color: $purple-light;
+  }
+  &.bg-red {
+    background-color: $red;
+  }
+  &.bg-red-dark {
+    background-color: $red-dark;
+  }
+  &.bg-peach {
+    background-color: $peach;
+  }
+  &.bg-peach-dark {
+    background-color: $peach-dark;
+  }
+  &.bg-yellow {
+    background-color: $yellow;
+  }
+  &.bg-yellow-dark {
+    background-color: $yellow-dark;
+  }
+  &.bg-yellow-light {
+    background-color: $yellow-light;
+  }
+  &.bg-green {
+    background-color: $green;
+  }
+  &.bg-green-dark {
+    background-color: $green-dark;
+  }
+  &.bg-aqua {
+    background-color: $aqua;
+  }
+  &.bg-aqua-dark {
+    background-color: $aqua-dark;
+  }
+  &.bg-gray {
+    background-color: $gray;
+  }
+  &.bg-gray-dark {
+    background-color: $gray-dark;
+  }
+  &.bg-gray-darkest {
+    background-color: $gray-darkest;
+  }
+  &.bg-teal {
+    background-color: $teal;
+  }
+  &.bg-tan {
+    background-color: $tan;
+  }
 }
 
