@@ -99,3 +99,23 @@
 @mixin scale($scale) {
   @include transform(scale($scale));
 }
+
+// Wavy Section
+@mixin wavy-bottom($shape-color: $primary) {
+  background-color: $shape-color;
+  bottom: -199px;
+  mask: url("#{$stjude-images-path}/bottom-shape.svg") no-repeat;
+  -webkit-mask: url("#{$stjude-images-path}/bottom-shape.svg") no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-type: alpha;
+  -webkit-mask-type: alpha;
+  min-height: 200px;
+  position: absolute;
+  width: 100%;
+
+  @include media-breakpoint-up(xl) {
+    mask-size: cover;
+    -webkit-mask-size: cover;
+  }
+}

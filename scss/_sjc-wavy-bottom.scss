@@ -1,0 +1,7 @@
+.wavy-container {
+  position: relative; // This allows the wavy SVG shape to sit at the bottom of, and be the entire width of the container.
+
+  .wavy-bottom {
+    @include wavy-bottom($primary); // just change the color variable to match that of the container above.
+  }
+}
