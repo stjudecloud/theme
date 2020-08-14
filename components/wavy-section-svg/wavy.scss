@@ -1,0 +1,29 @@
+// Wavy Section Shape MIXIN
+@mixin wavy-bottom($shape-color: $primary) {
+  background-color: $shape-color;
+  bottom: -199px;
+  mask: url("#{$stjude-images-path}/bottom-shape.svg") no-repeat;
+  -webkit-mask: url("#{$stjude-images-path}/bottom-shape.svg") no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-type: alpha;
+  -webkit-mask-type: alpha;
+  min-height: 200px;
+  position: absolute;
+  width: 100%;
+
+  @include media-breakpoint-up(xl) {
+    mask-size: cover;
+    -webkit-mask-size: cover;
+  }
+}
+
+
+// Wavy SCSS
+.wavy-container {
+  position: relative; // This allows the wavy SVG shape to sit at the bottom of, and be the entire width of the container.
+
+  .wavy-bottom {
+    @include wavy-bottom($primary); // just change the color variable to match that of the container above.
+  }
+}
