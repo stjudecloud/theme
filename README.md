@@ -7,9 +7,11 @@ This repository provides theme guidelines and plug-n-play style components for S
 
 - Clone the repository: `git clone https://github.com/stjudecloud/theme.git`
 - Install dependencies: `npm install`
+- Install the Fractal CLI: `npm i -g @frctl/fractal`
 - Make your changes
 - Compile SASS: `npm run css-compile`
 - Lint your changes: `npm run css-lint`
+- Run the local Fractal server: `fractal start --sync`
 
 `npm run watch` is also provided for continuous compilation during development.
 
