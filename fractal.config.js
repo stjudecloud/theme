@@ -30,7 +30,7 @@ const myCustomisedTheme = mandelbrot({
     '/css/fractal-theme.css'
   ],
   favicon: '/images/favicon.ico',
-  panels: ['html', 'resources', 'info', 'notes'], //'view' will hsow the handlebars template
+  panels: ['html', 'resources', 'info', 'notes'], //'view' will show the handlebars template, 'config' removed
   // any other theme configuration values here
 });
 

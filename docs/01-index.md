@@ -23,7 +23,7 @@
 8. ```fractal start --sync```
 
 ## Contributing
-You do not need to commit changes to ```dist/css/*``` or ```guide/css/*``` as part of your pull request. These directories will be updated on release.
+You do not need to commit changes to ```dist/css/*``` as part of your pull request. This directory will be updated on release.
 
 ## Getting Help
 Need help? <a href="https://github.com/stjudecloud/design-system/issues/new" target="_blank">Open an issue</a>. We’ll be happy to help.

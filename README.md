@@ -17,7 +17,7 @@ This repository provides theme guidelines and plug-n-play style components for S
 
 ## Contributing
 
-**You do not need to commit changes to `dist/css/*` or `guide/css/*` as part of your pull request.** These directories will be updated on release.
+**You do not need to commit changes to `dist/css/*` as part of your pull request.** This directory will be updated on release.
 
 ## What's Included
 
