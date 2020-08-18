@@ -35,15 +35,13 @@ https://www.fontspring.com/support/how-do-i-install-fonts-on-my-mac
 
 ### Using screen size templates (w/ header and footer)
 1.	These templates have a header and footer included.
-#### You MUST save your file as a duplicate, so you don’t write-over our templates on sjetch.cloud. Good luck!
+#### You MUST save your file as a duplicate, so you don’t write-over our templates on sketch.cloud. Good luck!
 
-- XS: https://sketch.cloud/s/lEwm4
-- SM: https://sketch.cloud/s/oJgAx
-- MD: https://sketch.cloud/s/KmWog
-- LG: https://sketch.cloud/s/aQVrv
-- XL: https://sketch.cloud/s/kj8O9
-- ALL SIZES: https://sketch.cloud/s/wa1Vq
+- XS: https://www.sketch.com/s/aa64ec2f-3b96-44f8-a589-f8b080630696
+- SM: https://www.sketch.com/s/8e5b327c-abc4-4120-b7d1-e90a8a4a28e7
+- MD: https://www.sketch.com/s/c6046ced-22f7-4b81-b9b2-fe9f7cbb1c3a
+- LG: https://www.sketch.com/s/290d4363-f9ec-4c81-ac67-0dce037c65a8
+- XL: https://www.sketch.com/s/39a627ea-ed6c-4b3e-9da0-c8c0b03aa71c
+- ALL SIZES: https://www.sketch.com/s/3ba8bb68-7ec1-4255-87a8-0dd64230ee19
 
 2.	Lastly, you can email <a href="mailto:James.Madson@stjude.org">James</a> or <a href="mailto:Stephanie.Wiggins@stjude.org">Stephanie</a> with any questions.
-
-
