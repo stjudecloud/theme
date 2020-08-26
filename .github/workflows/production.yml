@@ -11,7 +11,7 @@ env:
   AZURE_RESOURCE_GROUP: rg-theme-prod-eastus
   NODE_ENV: production
   NODE_VERSION: 13.x
-  SOURCE_DIRECTORY: guide
+  SOURCE_DIRECTORY: fractal-build
   STORAGE_ACCOUNT: stgthemeprodeastus
   STORAGE_CONTAINER: \$web
 

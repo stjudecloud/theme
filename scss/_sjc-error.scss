@@ -1,76 +1,38 @@
 // Hero
 .not-found {
-  background-color: $blue-light;
-  background-position: center -600px;
-  height: 900px;
+  background-color: $navy-dark;
+  height: 500px;
   overflow: hidden;
-  padding-bottom: 50px;
-  padding-top: 40px;
   position: relative;
   text-align: center;
 
-  &::before {
-    background-color: $blue-dark;
-    @include bg2x(
-      url("#{$stjude-images-path}/bg-404.png"),
-      url("#{$stjude-images-path}/bg-404@2x.png")
-    );
-    @include retina {
-      background-size: 50%;
-    }
-    background-repeat: no-repeat;
-    background-position: right 70%;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-    content: "";
-    height: 100%;
-    left: -10%;
-    position: absolute;
-    top: -30%;
-    width: 120%;
-    z-index: 0;
-
-    @include media-breakpoint-down(md) {
-      background-position: top right;
-      @include retina {
-        background-size: 70%;
-      }
-      height: 600px;
-      top: 0;
-    }
-
-    @include media-breakpoint-up(md) {
-      background-position: top right;
-      top: 0;
-    }
-
-    @include media-breakpoint-up(lg) {
-      background-position: center right;
-      top: -30%;
-    }
-  }
-
-  @include media-breakpoint-up(md) {
-    height: 800px;
-
-    h2 {
-      padding: 200px 0 0 0;
-    }
+  .btn {
+    font-weight: bold;
+    padding: 15px 30px;
   }
 
   h2 {
-    color: $teal;
+    color: $white;
     font-size: 184px;
-    padding: 80px 0 0 0;
+    padding-top: 3rem;
   }
 
   h4 {
     color: $white;
     padding-bottom: 30px;
   }
+}
 
-  .btn {
-    font-weight: bold;
-    padding: 15px 30px;
-  }
+.not-found:before {
+  background-color: $navy-dark;
+  background-size: cover;
+  background-image: url('#{$stjude-images-path}/error-texture.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  opacity: 0.4;
+  width: 100%;
 }

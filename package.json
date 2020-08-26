@@ -4,20 +4,18 @@
   "description": "St. Jude Cloud Theme and Guidelines",
   "main": "index.js",
   "scripts": {
-    "build": "npm-run-all css-lint css-compile prepare-guide",
-    "css-compile": "npm-run-all css-compile-main css-compile-guide css-minify",
+    "build": "npm-run-all css-lint css-compile fractal:build",
+    "css-compile": "npm-run-all css-compile-main css-compile-fractal css-minify",
+    "css-compile-fractal": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js --output-style expanded --source-map true --source-map-contents true --precision 6 scss/fractal-theme.scss dist/css/fractal-theme.css",
     "css-compile-main": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js --output-style expanded --source-map true --source-map-contents true --precision 6 scss/stjude-cloud-theme.scss dist/css/stjude-cloud-theme.css",
-    "css-compile-guide": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js --output-style expanded --source-map true --source-map-contents true --precision 6 guide/scss/styles.scss guide/css/styles.css",
     "css-minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/stjude-cloud-theme.min.css dist/css/stjude-cloud-theme.css",
     "css-lint": "npm-run-all -- --continue-on-error --parallel css-lint-*",
     "css-lint-main": "stylelint \"scss/**/*.scss\" --cache --cache-location .cache/.stylelintcache",
-    "css-lint-guide": "stylelint \"guide/scss/**/*.scss\" --cache --cache-location .cache/.stylelintcache",
-    "prepare-guide": "npm-run-all css-compile-guide prepare-guide-images prepare-guide-fonts",
-    "prepare-guide-images": "cp -a dist/images/. guide/images",
-    "prepare-guide-fonts": "cp -a dist/fonts/. guide/fonts",
     "watch": "nodemon --watch \"scss/\" --watch \"guide/scss/\" --ext scss --exec \"npm run css-compile\"",
     "watch-css-main": "nodemon --watch \"scss/\" --ext scss --exec \"npm run css-compile-main\"",
-    "watch-css-guide": "nodemon --watch \"guide/scss/\" --ext scss --exec \"npm run css-compile-guide\""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fractal:start": "fractal start --sync",
+    "fractal:build": "fractal build"
   },
   "repository": {
     "type": "git",
@@ -26,6 +24,9 @@
   "keywords": [
     "St. Jude",
     "St. Jude Cloud",
+    "Design System",
+    "Pattern Library",
+    "Fractal",
     "Bootstrap Theme",
     "css",
     "sass"
@@ -50,5 +51,9 @@
     "npm-run-all": "^4.1.5",
     "stylelint": "^10.1.0",
     "stylelint-config-twbs-bootstrap": "^0.4.0"
+  },
+  "devDependencies": {
+    "@frctl/fractal": "^1.3.0",
+    "@frctl/mandelbrot": "^1.4.0"
   }
 }
