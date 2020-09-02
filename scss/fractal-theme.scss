@@ -1,10 +1,11 @@
-.Header {
-  background-color: #1874dc;
+.header {
+  background-color: #1874DC;
+
   /* Navy/Dark Blue #002856; */
 }
 
-$stjude-sans-font-path: "../fonts/stjude-sans";
-$stjude-images-path: "../images";
+$stjude-sans-font-path: '../fonts/stjude-sans' !default;
+$stjude-images-path: '../images' !default;
 
 /* St. Jude Cloud Theme CSS */
-@import "stjude-cloud-theme";
+@import 'stjude-cloud-theme';
