@@ -1,0 +1,38 @@
+<svg height="26" viewBox="0 0 45 26" width="95" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd" transform="translate(0 -1)">
+    <path class="platform-line-1" d="m29.9326 7.9765h-20.93c-1.918 0-3.488-1.57-3.488-3.488 0-1.919 1.57-3.489 3.488-3.489h20.93c1.918 0 3.488 1.57 3.488 3.489 0 1.918-1.57 3.488-3.488 3.488" fill="#23afe5">
+      
+    </path>
+    <path d="m18.2276 17.2964h-14.739c-1.919 0-3.489-1.569-3.489-3.488s1.57-3.488 3.489-3.488h14.739c1.918 0 3.488 1.569 3.488 3.488s-1.57 3.488-3.488 3.488" fill="#23afe5">
+      <animate attributeName="fill" values="#35A7D3;#1774DB;#1774DB;#35A7D3;#35A7D3" dur="1.5s" repeatCount="indefinite" />
+    </path>
+    <path d="m41.5117 17.2964h-14.813c-1.918 0-3.488-1.569-3.488-3.488s1.57-3.488 3.488-3.488h14.813c1.918 0 3.488 1.569 3.488 3.488s-1.57 3.488-3.488 3.488" fill="#1774db">
+      <animate attributeName="fill" values="#1774DB;#35A7D3;#35A7D3;#1774DB;#1774DB" dur="1.5s" repeatCount="indefinite" />
+    </path>
+    <path class="platform-line-2" d="m36.4302 26.6167h-20.93c-1.918 0-3.488-1.57-3.488-3.488 0-1.919 1.57-3.489 3.488-3.489h20.93c1.918 0 3.488 1.57 3.488 3.489 0 1.918-1.57 3.488-3.488 3.488" fill="#23afe5">
+
+    </path>
+  </g>
+  <style>
+      .platform-line-1 {
+        animation: xAxis1 1.5s infinite ease-in-out;
+      }
+
+      @keyframes xAxis1 {
+        50% {
+          animation-timing-function: ease-in-out;
+          transform: translateX(9px);
+        }
+      }
+      .platform-line-2 {
+        animation: xAxis2 1.5s infinite ease-in-out;
+      }
+
+      @keyframes xAxis2 {
+        50% {
+          animation-timing-function: ease-in-out;
+          transform: translateX(-9px);
+        }
+      }
+    </style>
+</svg>

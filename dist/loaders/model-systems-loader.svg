@@ -1,0 +1,22 @@
+<svg height="29" viewBox="0 0 61 29" width="61" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <path d="m12.699 6.349c0 3.507-2.843 6.35-6.35 6.35-3.506 0-6.349-2.843-6.349-6.35s2.843-6.349 6.349-6.349c3.507 0 6.35 2.842 6.35 6.349" fill="#35A7D3">
+      <animate attributeName="fill" values="#35A7D3;#1774DB;rgba(255,255,255,0);#35A7D3" dur="3s" repeatCount="indefinite" />
+    </path>
+    <path d="m28.4861 6.349c0 3.507-2.843 6.35-6.35 6.35-3.505 0-6.348-2.843-6.348-6.35s2.843-6.349 6.348-6.349c3.507 0 6.35 2.842 6.35 6.349" fill="#35A7D3">
+      <animate attributeName="fill" values="#35A7D3;#1774DB;#35A7D3;#35A7D3" dur="3s" repeatCount="indefinite" />
+    </path>
+    <path d="m44.2742 6.349c0 3.507-2.843 6.35-6.35 6.35-3.506 0-6.349-2.843-6.349-6.35s2.843-6.349 6.349-6.349c3.507 0 6.35 2.842 6.35 6.349" fill="#1774DB">
+      <animate attributeName="fill" values="#1774DB;#35A7D3;#1774DB;#1774DB" dur="3s" repeatCount="indefinite" />
+    </path>
+    <path d="m12.699 22.3085c0 3.506-2.843 6.349-6.35 6.349-3.506 0-6.349-2.843-6.349-6.349 0-3.507 2.843-6.35 6.349-6.35 3.507 0 6.35 2.843 6.35 6.35" fill="#1774DB">
+      <animate attributeName="fill" values="#1774DB;#1774DB;#35A7D3;#1774DB" dur="3s" repeatCount="indefinite" />
+    </path>
+    <path d="m28.4861 22.3085c0 3.506-2.843 6.349-6.35 6.349-3.505 0-6.348-2.843-6.348-6.349 0-3.507 2.843-6.35 6.348-6.35 3.507 0 6.35 2.843 6.35 6.35" fill="#35A7D3">
+      <animate attributeName="fill" values="#35A7D3;rgba(255,255,255,0);#1774DB;#35A7D3" dur="3s" repeatCount="indefinite" />
+    </path>
+    <path d="m44.2742 22.3085c0 3.506-2.843 6.349-6.35 6.349-3.506 0-6.349-2.843-6.349-6.349 0-3.507 2.843-6.35 6.349-6.35 3.507 0 6.35 2.843 6.35 6.35" fill="#35A7D3">
+      <animate attributeName="fill" values="#35A7D3;#35A7D3;rgba(255,255,255,0);#35A7D3" dur="3s" repeatCount="indefinite" />
+    </path>
+  </g>
+</svg>
