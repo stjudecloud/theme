@@ -1,5 +1,4 @@
 # St. Jude Cloud Theme
-![Continuous Deployment](https://github.com/stjudecloud/theme/workflows/Continuous%20Deployment/badge.svg)
 
 This repository provides theme guidelines and plug-n-play style components for St. Jude web portal use.
 
