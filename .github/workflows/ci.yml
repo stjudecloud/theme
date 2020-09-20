@@ -26,3 +26,6 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: fractal-build
           cname: design.stjude.cloud
+          user_name: St. Jude Cloud
+          user_email: support@stjude.cloud
+          commit_message: ${{ github.event.head_commit.message }}
