@@ -23,7 +23,7 @@ jobs:
       - run: npm run build
       - uses: peaceiris/actions-gh-pages@v3.6.4
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
           publish_dir: fractal-build
           cname: design.stjude.cloud
           user_name: St. Jude Cloud
