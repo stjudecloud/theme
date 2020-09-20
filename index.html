@@ -1,464 +1,841 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/ico">
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="St. Jude Cloud Development Framework guidelines, tips and code snippets.">
-    <meta name="author" content="">
-    <meta name="keywords" content="st. jude, stjude, stjude cloud, st. jude cloud, genomics">
-    <link rel="icon" href="./images/favicon.ico">
+<link rel="stylesheet" href="themes/mandelbrot/css/blue.css?cachebust=1.4.0" type="text/css">
 
-    <title>St. Jude Cloud Developer Guide</title>
+<link rel="stylesheet" href="css/fractal-theme.css?cachebust=1.4.0" type="text/css">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link href="./css/styles.css" rel="stylesheet">
-  </head>
+<link rel="stylesheet" href="themes/mandelbrot/css/highlight.css?cachebust=1.4.0" type="text/css">
 
-  <body>
-    <header>
-      <div class="sjc-omnibar">
-        <nav class="navbar">
-          <a class="navbar-brand" href="https://stjude.cloud">
-            <span class="logo"></span>
-          </a>
-          <a class="sjc-title" href="https://stjude.cloud">St. Jude Cloud</a>
-          <span class="portal-title">
-            Designer and Developer Guide
-          </span>
 
-          <ul class="nav global-icons">
-            <li class="nav-item user-dropdown dropdown">
-              <a
-                class="nav-link dropdown-toggle profile-dropdown-toggle"
-                href=""
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                title="User Info"
-              >
-                <span class="user-icon"></i>
-              </a>
-              <div
-                class="dropdown-menu dropdown-menu-right profile-dropdown-menu"
-                aria-labelledby="profile-dropdown-toggle"
-              >
-              <ul class="list-unstyled">
-                <li>
-                  <a class="dropdown-item" href="">
-                    Sign In
-                  </a>
-                </li>
-                  <li>
-                    <a class="dropdown-item" href="">
-                      Create Account
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+<title>Overview | design.stjude.cloud</title>
 
-            <li class="nav-item dropdown mega-dropdown">
-              <a
-                class="nav-link dropdown-toggle mega-dropdown-toggle"
-                href=""
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                title="St. Jude Cloud Mega Menu"
-              >
-                <div class="nav-menu-icon"></div>
-              </a>
-              <div
-                class="dropdown-menu mega-dropdown-menu"
-                aria-labelledby="mega-dropdown-toggle"
-                id="dropdown-main"
-              >
-                <div class="container mega-menu-container">
-                  <div class="row">
-                    <div class="col-md-3 order-md-2 mega-dropdown-col">
-                      <div class="mega-menu-title">
-                        Research Domains
-                      </div>
-                      <ul class="list-unstyled">
-                        <li>
-                          <a href="https://stjude.cloud/research-domains/pediatric-cancer"
-                            >Pediatric Cancer</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="https://stjude.cloud/research-domains/cancer-survivorship"
-                            >Cancer Survivorship</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="https://stjude.cloud/research-domains/non-cancerous-diseases"
-                            >Non-cancerous Diseases</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-3 order-md-3 mega-dropdown-col">
-                      <div class="mega-menu-title">
-                        Apps
-                      </div>
-                      <ul class="list-unstyled">
-                        <li>
-                          <a
-                            href="https://platform.stjude.cloud"
-                            class="app-title"
-                          >
-                            <img
-                              class="app-title__icon"
-                              src="./images/icon-genomics-platform.png"
-                              alt="Genomics Platform Icon"
-                            />
-                            <span>
-                              Genomics Platform
-                              <div class="genomics-platform-subtext">Data &amp; Tools</div>
-                            </span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://pecan.stjude.cloud/"
-                            class="app-title"
-                          >
-                            <img
-                              class="app-title__icon"
-                              src="./images/icon-pecan.png"
-                              alt="PeCan Icon"
-                            />
-                            <span>
-                              PeCan
-                            </span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://viz.stjude.cloud"
-                            class="app-title"
-                          >
-                            <img
-                              class="app-title__icon"
-                              src="./images/icon-viz.png"
-                              alt="Visualization Community Icon"
-                            />
-                            <span>
-                              Visualization Community
-                            </span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://stjude.cloud/apps"
-                            class="text-primary"
-                          >
-                            View All Apps
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-3 order-md-1 mega-dropdown-col d-flex">
-                      <div class="featured-study">
-                        <a href="https://stjude.cloud/studies/clinical-genomics">
-                          <img
-                            class="featured-study__image"
-                            src="./images/featured-study.jpg"
-                            alt="Featured Study Image"
-                          />
-                        </a>
-                        <div>
-                          <div class="featured-study__title">Featured Study</div>
-                          <ul class="list-unstyled">
-                            <li>
-                              <a href="https://stjude.cloud/studies/clinical-genomics">
-                                Real-time Clinical Genomics
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="https://stjude.cloud/studies"
-                                class="text-primary"
-                              >
-                                View All Studies
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 order-md-4 mega-dropdown-col">
-                      <div class="mega-menu-title">
-                        Support
-                      </div>
-                      <ul class="list-unstyled">
-                        <li>
-                          <a
-                            href="https://www.stjude.cloud/docs/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >Help Guides</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="https://www.stjude.cloud/docs/faq/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >FAQs</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="https://stjude.cloud/contact"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >Contact Us</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </div>
+</head>
+<body>
 
-      <nav class="navbar navbar-expand-md sjc-subnav">
-        <div class="sub-menu-text">
-          Sub Menu
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+        <div class="Header-navToggleIcon Header-navToggleIcon--open">
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
         </div>
-        <a
-          class="navbar-toggler collapsed"
-          role="button"
-          data-toggle="collapse"
-          data-target="#sj-subnav"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <div class="nav-menu-icon bg-secondary"></div>
-        </a>
+        <div class="Header-navToggleIcon Header-navToggleIcon--closed">
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
 
-        <div class="collapse navbar-collapse" id="sj-subnav">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./components.html">Components</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./color-palette.html">Color Palette</a>
-            </li>
-          </ul>
         </div>
-      </nav>
-    </header>
+    </button>
+    <a href="" class="Header-title" data-pjax>design.stjude.cloud</a>
+</div>
 
-    <!-- Start Banner-->
-
-    <div class="container-fluid banner">
-      <div class="jumbotron main-banner">
-        <div class="container">
-          <h1>Designer &amp; Developer Guide for St. Jude Cloud</h1>
-        </div>
-      </div>
     </div>
 
-    <!-- Start Main Content-->
+    <div class="Frame-body" data-role="body">
 
-    <div class="content-main">
-      <div class="container">
-        <h2>Ready to start building apps within St. Jude Cloud?</h2>
-        <p class="mb-4"> The guidelines below outline the brand standards for building St. Jude Cloud applications, including global elements (such as header and footer), colors, fonts, etc. </p>
-      </div>
-      <div class="container">
-        <div class="alert-primary p-4">
-          <h2>Goals</h2>
-          <p>We aim to create a consistent and easy-to-use framework for designers and developers with a mindset of a responsive and device-compatible front-end design.</p>
-          <p><strong>In support of the <a href="https://home.stjude.org/information-services/Pages/strategic-plan.aspx">Information Services Strategic Plan</a>, our goals are:</strong></p>
-          <ul>
-            <li>Seek ways to increase efficiences while reducing technology complexities</li>
-            <li>Continue our mobile-first approach to application deployment</li>
-            <li>Expand our process-improvement effort</li>
-          </ul>
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+<div class="Document">
+
+    <div class="Document-header">
+        
+        <h1 class="Document-title">Overview</h1>
+        
+
+
+        
+    </div>
+
+    <div class="Document-content">
+
+    
+
+<div class="Prose">
+
+
+
+    
+    
+    <img src="images/design-cover-img@2x.jpg" alt="Welcome to design.stjude.cloud!" width="1280px" height="320px" style="max-width: unset"/>
+
+<h2 id="getting-started">Getting Started</h2>
+<ol>
+<li><p>If you need to mockup or prototype, you can start by downloading our Sketch DSM - <a href="https://www.sketch.com/s/5f06f430-fa20-4aaf-ad60-6898bbda3de3">Sketch Design System</a></p>
+</li>
+<li><p>If you are using the theme in your project or prototype simply install the <a href="https://github.com/stjudecloud/theme" target="_blank">theme NPM packages</a>:</p>
+<ul>
+<li><a href="https://github.com/stjudecloud/theme">https://github.com/stjudecloud/theme</a></li>
+<li><a href="https://github.com/stjudecloud/theme/packages/140741">https://github.com/stjudecloud/theme/packages/140741</a></li>
+</ul>
+</li>
+<li><p>We use <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> as the base for the St. Jude Cloud theme.</p>
+</li>
+<li><p>We use <a href="https://fractal.build/" target="_blank">Fractal</a> for design.stjude.cloud:</p>
+</li>
+</ol>
+<h2 id="setup--install">Setup &amp; Install</h2>
+<ol>
+<li><code>git clone https://github.com/stjudecloud/design-system.git</code></li>
+<li><code>npm install</code></li>
+<li><code>npm i -g @frctl/fractal</code></li>
+<li>Make your changes</li>
+<li>Compile SASS: <code>npm run css-compile</code></li>
+<li>Lint your changes: <code>npm run css-lint</code></li>
+<li><code>npm run watch</code> is also provided for continuous compilation during development.</li>
+<li><code>fractal start --sync</code></li>
+</ol>
+<h2 id="contributing">Contributing</h2>
+<p>You do not need to commit changes to <code>dist/css/*</code> as part of your pull request. This directory will be updated on release.</p>
+<h2 id="getting-help">Getting Help</h2>
+<p>Need help? <a href="https://github.com/stjudecloud/design-system/issues/new" target="_blank">Open an issue</a>. We’ll be happy to help.</p>
+
+    
+
+
+</div>
+
+
+
+    </div>
+
+</div>
+
+
+            </div>
         </div>
-      </div>
-      <div class="container-fluid jumbotron py-4 mb-4 mt-4 bg-secondary rounded-0">
-        <div class="container">
 
-          <h2 class="text-light">St. Jude Cloud App Examples</h2>
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="card mb-4">
-                <div class="card-body">
-                  <a href="https://platform.stjude.cloud/data/diseases" target="_blank" rel="noopener noreferrer"><img class="card-image-top" src="./images/dna-code.jpg" alt="" target="_blank" rel="noopener noreferrer"/></a>
-                  <h4 class="card-title mt-4">St. Jude Cloud Platform</h4>
-                  <p>Explore unique next-generation sequencing data and analysis tools for pediatric cancer and other life-threatening diseases. </p>
-                  <p><a class="btn btn-primary mr-2" href="https://platform.stjude.cloud/data/diseases">Go to St. Jude Cloud Platform &raquo;</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="card mb-4">
-                <div class="card-body">
-                  <a href="http://sickle-cell.stjude.cloud/" target="_blank" rel="noopener noreferrer"><img class="card-image-top" src="./images/researchers-1446503301786.jpg" alt="" /></a>
-                  <h4 class="card-title mt-4">Sickle Cell Disease Portal</h4>
-                  <p>The Sickle Cell Disease Portal shares rich genomic and clinical data from large cohorts of individuals with sickle cell disease.</p>
-                  <p><a class="btn btn-primary mr-2" href="http://sickle-cell.stjude.cloud/">Go to Sickle Cell Disease Portal &raquo;</a></p>
-                </div>
-              </div>
-            </div>
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </div><!-- /.container-fluid -->
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
 
-      <div class="container">
-        <h2 id="global-elements">Branding &amp; Global Elements Overview</h2>
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+    
+        <div class="Navigation-group Navigation-search">
+    <form action="" class="Search" data-behaviour="search">
+        <label class="Search-label" for="search-input">Search</label>
+        <input class="Search-input" id="search-input" type="search" placeholder="Search…" data-role="input">
+        <button type="button" data-behaviour="clear-search" class="Search-clearButton" aria-label="Clear search" hidden>
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
 
+        </button>
+    </form>
+</div>
 
-        <h3>Global Top Bar - The "Omnibar"</h3>
-        <p>The "Omnibar" - top navigation area - is a consistent unifying element which must be present across all St. Jude Cloud apps and contains St. Jude Cloud logo, global icons and access to St. Jude Cloud applications. <em><strong>Refer to the top header section in this demo site as a visual guide</strong></em><strong>.</strong></p>
-        <ul>
-          <li><strong>The St. Jude Cloud logo </strong>is composed of a logo symbol (child graphic)  followed by a vertical separator and a logotype. This configuration must be  used together as a core identity for St. Jude Cloud products and should not be  altered. Check with the design team for any questions, specifications or if you  need image assets for your application. </li>
-          <li><strong>St. Jude Cloud global icons</strong> - TBA</li>
-          <li><strong>St. Jude Cloud apps </strong>dropdown menu - TBA</li>
-        </ul>
-        <h3>Site-Specific Navigation</h3>
-        <p>Secondary navigation (located right below the top global bar) is designed to house site-specific navigation.</p>
-        <h3>Global Footer</h3>
+    
+        
+<div class="Navigation-group">
 
-        <p>The global footer must appear on all St. Jude Cloud applications and contains copyright information, global links and social media icons. <strong><em>Refer to the footer information in this demo as a visual guide</em>.</strong></p>
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <div class="Tree-header">
+        <h3 class="Tree-title">documentation</h3>
 
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
 
-        <h3>Fonts</h3>
-        <p><strong>Typography  Primary </strong></p>
-        <p>To protect our brand and underscore our distinctive approach to  everything we do, we have created our own customized brand font, <em>St. Jude Sans</em>. With its choice of font  weights, <em>St. Jude Sans</em> can be used  for everything from bold headlines and large-scale messaging to elegant body  copy. </p>
-        <p><strong>Typography  – Alternative</strong><br>
-          Use <em>Arial</em> when the brand font  is not available.</p>
-        <h3>Icons</h3>
-        <p>We currently use <a href="http://fontawesome.com/">Font Awesome</a> Icons as our base icon set. </p>
-
-        <h3>Colors</h3>
-        <p>The &quot;<span class="text-primary">St. Jude Cloud Blue</span>&quot; in the top navigation area is the most recognizable branding element for St. Jude Cloud applications. In addition, the colors below are officially-approved St. Jude brand colors. For more detailed information and <strong>print</strong> color versions, see the <a href="https://home.stjude.org/biomedical-communications/Documents/brand-quick-reference-guide.pdf#search=brand%20standards"><strong>St. Jude Branding Guide</strong></a>.</p>
-
-        <p><a href="./color-palette.html" class="btn btn-primary">View SJC Branding Colors</a></p>
-
-
-      </div><!-- /.container -->
-
-      <div class="container">
-        <h2>Support and Resources</h2>
-        <p>For any  questions about this guide or support resources, contact the St. Jude Cloud team.</p>
-      </div>
-
-    </div><!-- /.container-main -->
-
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-6 col-lg-3 col-md-4 offset-xl-0 offset-lg-5 offset-md-4 offset-3">
-            <a class="navbar-brand" href="https://stjude.cloud">
-              <span class="logo"></span>
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Overview</span>
+                
             </a>
-            <a class="sjc-title" href="https://stjude.cloud">St. Jude Cloud</a>
-          </div>
-          <div class="col-md-3 col-6 offset-xl-0 offset-md-2 footer-about">
-            <h6>About</h6>
-            <ul>
-              <li>
-                <a href="https://stjude.cloud" title="St. Jude Cloud Home">Home</a>
-              </li>
-              <li>
-                <a href="https://stjude.cloud/contact" title="Contact">Contact</a>
-              </li>
-              <li>
-                <a href="https://stjude.cloud/privacy-policy" title="Privacy Policy">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="https://stjude.cloud/terms-of-use" title="Terms of Use">Terms of Use</a>
-              </li>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="docs/brand-guidelines.html" data-pjax>
+                <span>Brand Guidelines</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="docs/frameworks-and-tools.html" data-pjax>
+                <span>Frameworks And Tools</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="docs/sketch-design-system.html" data-pjax>
+                <span>Sketch Design System</span>
+                
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+    
+        
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <div class="Tree-header">
+        <h3 class="Tree-title">components</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/404.html" data-pjax>
+                <span>404</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/alerts.html" data-pjax>
+                <span>Alerts</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-badges">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-badges-items">
+                Badges
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-badges-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/badges-icon.html" data-pjax>
+                <span>Badges Icon</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/badges-multiple.html" data-pjax>
+                <span>Badges Multiple</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/badges-primary.html" data-pjax>
+                <span>Badges Primary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/badges-rounded.html" data-pjax>
+                <span>Badges Rounded</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
             </ul>
-          </div>
-          <div class="col-md-3 col-6 offset-xl-0 offset-md-2 footer-apps">
-            <h6>Apps</h6>
-            <ul>
-              <li>
-                <a href="https://platform.stjude.cloud" title="Genomics Platform">Genomics Platform</a>
-              </li>
-              <li>
-                <a href="https://pecan.stjude.cloud" title="Pediatric Cancer Portal (PeCan)">Pediatric Cancer Portal (PeCan)</a>
-              </li>
-              <li>
-                <a href="https://viz.stjude.cloud" title="Visualization Community">Visualization Community</a>
-              </li>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-buttons">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-buttons-items">
+                Buttons
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-buttons-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/button-white.html" data-pjax>
+                <span>Button White</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/buttons-primary.html" data-pjax>
+                <span>Buttons Primary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/buttons-secondary.html" data-pjax>
+                <span>Buttons Secondary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
             </ul>
-          </div>
-          <div class="col-xl-3 col-lg-6 col-8 offset-xl-0 offset-lg-3 offset-2 footer-social">
-            <h6>Follow Us</h6>
-            <div class="d-flex justify-content-between">
-              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/stjuderesearch" class="fab fa-facebook social-icon" title="Facebook"></a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/cards.html" data-pjax>
+                <span>Cards</span>
+                
 
-              <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/StJudeResearch" class="fab fa-twitter social-icon" title="Twitter"></a>
+<div class="Status Status--unlabelled">
 
-              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/stjuderesearch/" class="fab fa-instagram social-icon" title="Instagram"></a>
+<div class="Status-dots">
 
-              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/st-jude-childrens-research-hospital/" class="fab fa-linkedin social-icon" title="LinkedIn"></a>
 
-              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/MyStJude" class="fab fa-youtube social-icon" title="Youtube"></a>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/colors.html" data-pjax>
+                <span>Colors</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/footer.html" data-pjax>
+                <span>Footer</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/forms.html" data-pjax>
+                <span>Forms</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/layout-example.html" data-pjax>
+                <span>Layout Example</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-logos">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-logos-items">
+                Logos
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-logos-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/genomics-platform.html" data-pjax>
+                <span>Genomics Platform</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/model-systems.html" data-pjax>
+                <span>Model Systems</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/pecan.html" data-pjax>
+                <span>Pecan</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/st-jude-cloud.html" data-pjax>
+                <span>St Jude Cloud</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/visualization-community.html" data-pjax>
+                <span>Visualization Community</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/omnibar.html" data-pjax>
+                <span>Omnibar</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/typography.html" data-pjax>
+                <span>Typography</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/wavy-section-svg.html" data-pjax>
+                <span>Wavy Section Svg</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+    
+        <div class="Navigation-group">
+    <div class="Tree">
+        <div class="Tree-header">
+            <div class="Tree-title">
+                Information
             </div>
-          </div>
         </div>
-      </div>
-
-      <div class="sub-footer container-fluid">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-6 col-lg-12 order-last">
-              <ul>
-                <li>
-                  <a target="_blank" rel="noopener noreferrer" href="https://www.stjude.org/legal/u-s-privacy-policy-statement.html" title="U.S. Privacy Policy Statement">Privacy</a>
-                  <span>&#8226;</span>
-                </li>
-                <li>
-                  <a target="_blank" rel="noopener noreferrer" href="https://www.stjude.org/legal.html" title="Disclaimer / Registrations / Copyright Statement">Disclaimer /  Registrations / Copyright</a>
-                  <span>&#8226;</span>
-                </li>
-                <li>
-                  <a target="_blank" rel="noopener noreferrer" href="https://www.stjude.org/legal/linking-policy.html" title="Linking Policy">Linking</a>
-                  <span>&#8226;</span>
-                </li>
-                <li>
-                  <a target="_blank" rel="noopener noreferrer" href="https://www.stjude.org/legal/notice-of-privacy-practices.html" title="Notice of Privacy Practices (HIPAA)">Privacy (HIPAA)</a>
-                  <span>&#8226;</span>
-                </li>
-                <li>
-                  <a target="_blank" rel="noopener noreferrer" href="https://www.stjude.org/legal/notice-of-non-discrimination.html" title="Notice of Non-Discrimination">Non-Discrimination</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-xl-6 col-md-12 col-8 offset-md-0 offset-2">
-              <p>
-              &copy; Copyright 2020 <a href="https://www.stjude.org" title="St. Jude Children's Research Hospital" target="_blank">St. Jude Children's Research Hospital</a>, a not-for-profit, section 501(c)(3).</p>
-            </div>
-          </div>
+        <div class="Tree-aside">
+            Built on:
+            <time datetime="2020-09-20T16:33:01.428Z">
+                9/20/2020
+            </time>
         </div>
-      </div>
-    </footer>
+    </div>
+</div>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="themes/mandelbrot/js/mandelbrot.js?cachebust=1.4.0"></script>
+
+
+
+</body>
 </html>
