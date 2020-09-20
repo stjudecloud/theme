@@ -1,5 +1,7 @@
 # St. Jude Cloud Theme
 
+[![CI Status](https://github.com/stjudecloud/theme/workflows/CI/badge.svg)](https://github.com/stjudecloud/theme/actions)
+
 This repository provides theme guidelines and plug-n-play style components for St. Jude web portal use.
 
 ## Development Quick Start
