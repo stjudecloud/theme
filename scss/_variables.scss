@@ -4,11 +4,11 @@
 
 /* Typography ************************************************/
 
-$font-family-sans-serif: "St. Jude Sans", "Open Sans", "Helvetica Neue",
-  "Helvetica", arial, sans-serif !default;
+$font-family-sans-serif: 'St. Jude Sans', 'Open Sans', 'Helvetica Neue',
+  'Helvetica', arial, sans-serif !default;
 
-$stjude-sans-font-path: "../../dist/fonts/stjude-sans" !default;
-$stjude-images-path: "../../dist/images" !default;
+$stjude-sans-font-path: '../../dist/fonts/stjude-sans' !default;
+$stjude-images-path: '../../dist/images' !default;
 
 $font-size-base: 1rem !default;
 $line-height-base: 1.5 !default;
@@ -20,50 +20,50 @@ $h5-font-size: $font-size-base * 1.125 !default;
 
 /* Monochromatic - Grays - Bootstrap Defaults ****************/
 
-$white: #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
+$white: #FFFFFF !default;
+$gray-100: #F8F9FA !default;
+$gray-200: #E9ECEF !default;
+$gray-300: #DEE2E6 !default;
+$gray-400: #CED4DA !default;
+$gray-500: #ADB5BD !default;
+$gray-600: #6C757D !default;
 $gray-700: #495057 !default;
-$gray-800: #343a40 !default;
+$gray-800: #343A40 !default;
 $gray-900: #212529 !default;
-$black: #000 !default;
+$black: #000000 !default;
 
 /* Main Brand Colors *****************************************/
 $navy: #002856 !default;
 $navy-dark: #002044 !default;
-$navy-light: #9ec0e7 !default;
-$blue: #1874dc !default; // Interface, Hyperlinks, UI Button
+$navy-light: #9EC0E7 !default;
+$blue: #1874DC !default; // Interface, Hyperlinks, UI Button
 $blue-dark: $navy !default;
-$blue-light: #eff5fc !default;
-$purple: #8332a7 !default;
-$purple-dark: #490e67 !default;
+$blue-light: #EFF5FC !default;
+$purple: #8332A7 !default;
+$purple-dark: #490E67 !default;
 $purple-light: #F2EBF4 !default;
-$red: #c10f3a !default; // Accent, Alert, St. Jude Logo
+$red: #C10F3A !default; // Accent, Alert, St. Jude Logo
 $red-dark: #911938 !default; //St. Jude Red Dark
-$peach: #fd5339 !default;
-$peach-dark: #eb4e36 !default; // Error Message
-$yellow: #ffd100 !default; // Warning
-$yellow-dark: #ffc32c !default;
+$peach: #FD5339 !default;
+$peach-dark: #EB4E36 !default; // Error Message
+$yellow: #FFD100 !default; // Warning
+$yellow-dark: #FFC32C !default;
 $yellow-light: #FEF7E8 !default;
-$green: #62bb46 !default;
-$green-dark: #5ca132 !default; // Success, Action Button
-$aqua: #7ad0e4 !default;
-$aqua-dark: #17818f !default;
-$gray: #f2f2f2 !default;
-$gray-dark: #aeb2b5 !default;
+$green: #62BB46 !default;
+$green-dark: #5CA132 !default; // Success, Action Button
+$aqua: #7AD0E4 !default;
+$aqua-dark: #17818F !default;
+$gray: #F2F2F2 !default;
+$gray-dark: #AEB2B5 !default;
 $gray-darkest: #333333 !default;
-$teal: #35a7d3 !default;
+$teal: #35A7D3 !default;
 $teal-light: #EAF6FA !default;
 
-$pediatric-cancer: $green-dark;
-$cancer-survivorship: $peach-dark;
-$non-cancerous-diseases: $purple;
+$pediatric-cancer: $green-dark !default;
+$cancer-survivorship: $peach-dark !default;
+$non-cancerous-diseases: $purple !default;
 
-$tan: #efeeea; // For BG's, like Viz.stjude.cloud, allows for cards to stand apart from BG
+$tan: #EFEEEA !default; // For BG's, like Viz.stjude.cloud, allows for cards to stand apart from BG
 
 $primary: $blue !default;
 $secondary: $blue-dark !default;
