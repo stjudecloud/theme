@@ -1,4 +1,4 @@
-@import "mixins/link-like";
+@import 'mixins/link-like';
 
 // Retina screen query
 @mixin retina {
@@ -12,11 +12,11 @@
   }
 }
 
-// Retina CSS Background-image @1x & @2x, must use url("img/__filename__")
+// Retina CSS Background-image @1x & @2x, must use url('img/__filename__')
 @mixin bg2x($img, $img2x) {
   background-image: $img;
 
-  @include retina {
+  @include retina() {
     background-image: $img2x;
   }
 }
@@ -41,22 +41,28 @@
   $start-percent: 0%,
   $end-percent: 100%
 ) {
-  background-image: -webkit-linear-gradient(
-    top,
-    $start-color $start-percent,
-    $end-color $end-percent
-  ); // Safari 5.1-6, Chrome 10+
-  background-image: -o-linear-gradient(
-    top,
-    $start-color $start-percent,
-    $end-color $end-percent
-  ); // Opera 12
-  background-image: linear-gradient(
-    to bottom,
-    $start-color $start-percent,
-    $end-color $end-percent
-  ); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0); // IE9 and down
+
+  background-image:
+    -webkit-linear-gradient(
+      top,
+      $start-color $start-percent,
+      $end-color $end-percent
+    ); // Safari 5.1-6, Chrome 10+
+
+  background-image:
+    -o-linear-gradient(
+      top,
+      $start-color $start-percent,
+      $end-color $end-percent
+    ); // Opera 12
+
+  background-image:
+    linear-gradient(
+      to bottom,
+      $start-color $start-percent,
+      $end-color $end-percent
+    ); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0); // IE9 and down
   background-repeat: repeat-x;
 }
 
@@ -67,18 +73,23 @@
   $start-percent: 0%,
   $end-percent: 100%
 ) {
-  background-image: -webkit-linear-gradient(
-    left,
-    color-stop($start-color $start-percent),
-    color-stop($end-color $end-percent)
-  ); // Safari 5.1-6, Chrome 10+
-  background-image: linear-gradient(
-    to right,
-    $start-color $start-percent,
-    $end-color $end-percent
-  ); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+
+  background-image:
+    -webkit-linear-gradient(
+      left,
+      color-stop($start-color $start-percent),
+      color-stop($end-color $end-percent)
+    ); // Safari 5.1-6, Chrome 10+
+
+  background-image:
+    linear-gradient(
+      to right,
+      $start-color $start-percent,
+      $end-color $end-percent
+    ); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1); // IE9 and down
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1); // IE9 and down
 }
 
 // Transform
@@ -104,18 +115,18 @@
 @mixin wavy-bottom($shape-color: $primary) {
   background-color: $shape-color;
   bottom: -199px;
-  mask: url("#{$stjude-images-path}/bottom-shape.svg") no-repeat;
-  -webkit-mask: url("#{$stjude-images-path}/bottom-shape.svg") no-repeat;
-  mask-size: contain;
+  -webkit-mask: url('#{$stjude-images-path}/bottom-shape.svg') no-repeat;
+  mask: url('#{$stjude-images-path}/bottom-shape.svg') no-repeat;
   -webkit-mask-size: contain;
-  mask-type: alpha;
+  mask-size: contain;
   -webkit-mask-type: alpha;
+  mask-type: alpha;
   min-height: 200px;
   position: absolute;
   width: 100%;
 
   @include media-breakpoint-up(xl) {
-    mask-size: cover;
     -webkit-mask-size: cover;
+    mask-size: cover;
   }
 }

@@ -3,12 +3,12 @@
 .badge {
   font-size: 9px;
   letter-spacing: 2px;
-  padding: .35rem .6rem;
+  padding: 0.35rem 0.6rem;
   text-transform: uppercase;
 
   .badge-icon {
     color: $white;
-    opacity: .75;
+    opacity: 0.75;
   }
 
   .badge-icon:hover {
@@ -38,6 +38,7 @@
 }
 
 .badge-multiple {
+
   .badge {
     border-radius: 0;
   }
