@@ -1,18 +1,24 @@
 
-### Laravel
-  * [Account](http://account.stjude.cloud) / [Github](https://github.com/stjudecloud/account)
-  * [Viz Community](https://viz.stjude.cloud) / [Github](https://github.com/stjude/viz)
+### [Laravel](https://laravel.com/)
+  * [Account](http://account.stjude.cloud) / [Github](https://github.com/stjudecloud/account) / `In Development`
+  * [Viz Community](https://viz.stjude.cloud) / [Github](https://github.com/stjude/viz) / `Uses Vue for Front-End`
   * [PeCan](https://pecan.stjude.cloud) / [Github](https://github.com/stjude/pecan) / `Uses Vue for Front-End`
-  * Vanguard / [Github](https://github.com/stjudecloud/vanguard) / `In Development`
-  * Intro to Genomics / [Github](https://github.com/stjude/introduction-to-genomics-for-engineers) / `In Development`
 
-### React
-  * [Platform](https://platform.stjude.cloud) / [Github](https://github.com/stjude/genomics-platform)
+### [React](https://reactjs.org/)
+
   * [St. Jude Cloud](https://stjude.cloud) / [Github](https://github.com/stjude/stjude.cloud) / `Gatsby`
-  * [Docs](https://design.stjude.cloud/docs) / [Github](https://github.com/stjudecloud/docs) / `Gatsby`
+  * Intro to Genomics / [Github](https://github.com/stjude/introduction-to-genomics-for-engineers) / `In Development` / `Gatsby`
+  * [Genomics Platform](https://platform.stjude.cloud) / [Github](https://github.com/stjude/genomics-platform)
 
-### Vue
+### [Vue](https://vuejs.org/)
   * [Viz Community](https://viz.stjude.cloud) / [Github](https://github.com/stjude/viz)
+  * [PeCan](https://pecan.stjude.cloud) / [Github](https://github.com/stjude/pecan) 
 
-### Fractal
+### [Ruby on Rails](https://rubyonrails.org/)
+  * [Genomics Platform](https://platform.stjude.cloud) / [Github](https://github.com/stjude/genomics-platform) / `Uses React for Front-End`
+
+### [Fractal](https://fractal.build/)
   * [design.stjude.cloud](https://design.stjude.cloud) / [Github](https://github.com/stjudecloud/theme)
+
+### [MKDOCS](https://www.mkdocs.org/)
+* [Docs](https://stjude.cloud/docs) / [Github](https://github.com/stjudecloud/docs)
