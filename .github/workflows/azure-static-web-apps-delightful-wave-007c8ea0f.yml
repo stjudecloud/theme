@@ -2,12 +2,10 @@ name: Azure Static Web Apps CI/CD
 
 on:
   push:
-    branches:
-      - master
+    branches: [ $default-branch ]
   pull_request:
     types: [opened, synchronize, reopened, closed]
-    branches:
-      - master
+    branches: [ $default-branch ]
 
 jobs:
   build_and_deploy_job:
@@ -15,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
         with:
           submodules: true
       - name: Build And Deploy
