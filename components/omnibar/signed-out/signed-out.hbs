@@ -10,37 +10,6 @@
           </span>
 
           <ul class="nav global-icons">
-            <li class="nav-item user-dropdown dropdown">
-              <a
-                class="nav-link dropdown-toggle profile-dropdown-toggle"
-                href=""
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                title="User Info"
-              >
-                <span class="user-icon"></i>
-              </a>
-              <div
-                class="dropdown-menu dropdown-menu-right profile-dropdown-menu"
-                aria-labelledby="profile-dropdown-toggle"
-              >
-              <ul class="list-unstyled">
-                <li>
-                  <a class="dropdown-item" href="">
-                    Sign In
-                  </a>
-                </li>
-                  <li>
-                    <a class="dropdown-item" href="">
-                      Create Account
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
             <li class="nav-item dropdown mega-dropdown">
               <a
                 class="nav-link dropdown-toggle mega-dropdown-toggle"
@@ -58,7 +27,7 @@
                 aria-labelledby="mega-dropdown-toggle"
                 id="dropdown-main"
               >
-                <div class="container mega-menu-container">
+                <div class="container-fluid mega-menu-container">
                   <div class="row">
                     <div class="col-md-3 order-md-2 mega-dropdown-col">
                       <div class="mega-menu-title">
@@ -101,7 +70,7 @@
                             />
                             <span>
                               Genomics Platform
-                              <div class="genomics-platform-subtext">Data &amp; Tools</div>
+                              <div class="app-subtext">Data &amp; Tools</div>
                             </span>
                           </a>
                         </li>
@@ -117,6 +86,7 @@
                             />
                             <span>
                               PeCan
+                              <div class="app-subtext">Variant Knowledgebase</div>
                             </span>
                           </a>
                         </li>
@@ -132,6 +102,7 @@
                             />
                             <span>
                               Visualization Community
+                              <div class="app-subtext">Curated Visualizations</div>
                             </span>
                           </a>
                         </li>
@@ -144,35 +115,6 @@
                           </a>
                         </li>
                       </ul>
-                    </div>
-                    <div class="col-md-3 order-md-1 mega-dropdown-col d-flex">
-                      <div class="featured-study">
-                        <a href="https://stjude.cloud/studies/clinical-genomics">
-                          <img
-                            class="featured-study__image"
-                            src="{{ path '/images/featured-study.jpg' }}"
-                            alt="Featured Study Image"
-                          />
-                        </a>
-                        <div>
-                          <div class="featured-study__title">Featured Study</div>
-                          <ul class="list-unstyled">
-                            <li>
-                              <a href="https://stjude.cloud/studies/clinical-genomics">
-                                Real-time Clinical Genomics
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="https://stjude.cloud/studies"
-                                class="text-primary"
-                              >
-                                View All Studies
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
                     </div>
                     <div class="col-md-3 order-md-4 mega-dropdown-col">
                       <div class="mega-menu-title">
@@ -207,6 +149,37 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </li>
+
+            <li class="nav-item user-dropdown dropdown">
+              <a
+                class="nav-link dropdown-toggle profile-dropdown-toggle"
+                href=""
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                title="User Info"
+              >
+                <span class="user-icon"></i>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right profile-dropdown-menu"
+                aria-labelledby="profile-dropdown-toggle"
+              >
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="dropdown-item" href="">
+                      Sign In
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="">
+                      Create Account
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>

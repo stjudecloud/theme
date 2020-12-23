@@ -103,7 +103,7 @@
     li {
       display: flex;
       align-items: center;
-      height: 40px;
+      max-height: 80px;
     }
   }
 
@@ -114,12 +114,64 @@
     &:focus,
     &:hover {
       color: $blue-dark;
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 
   .profile-dropdown-menu {
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
     top: 50.4px;
+
+    .dropdown-divider {
+      border-top: 1px solid $gray-400;
+      height: 0;
+      margin-top: 4px;
+    }
+
+    li {
+      color: $blue-dark;
+      padding: 0;
+
+      a {
+        padding: .5rem 1.5rem;
+      }
+
+      &:focus,
+      &:hover {
+        background-color: $primary;
+
+        .dropdown-item {
+          background-color: $primary;
+          color: $white;
+        }
+      }
+
+      &.user-info {
+        padding: 2rem 0;
+
+        .dropdown-item {
+          font-weight: 700;
+          padding: 2.5rem 1.5rem;
+
+          small {
+            color: $gray-600;
+            font-weight: 300;
+          }
+        }
+
+        &:focus,
+        &:hover {
+          background-color: $blue-light;
+          color: $blue-dark;
+
+          .dropdown-item {
+            background-color: transparent;
+            color: $blue-dark;
+          }
+        }
+      }
+    }
   }
 
   .profile-dropdown-menu,
@@ -162,35 +214,48 @@
 
   .mega-dropdown-col {
     padding: 1rem 3.5rem;
+
+    li {
+      padding: 1rem 2rem 1rem 0;
+    }
   }
 
-  .mega-menu-title,
-  .featured-study__title {
+  .mega-menu-title {
     margin-bottom: .5rem;
-    font-weight: 600;
-    color: $blue-dark;
+    font-size: .75rem;
+    font-weight: 700;
+    color: $gray-600;
+    letter-spacing: 1px;
     text-transform: uppercase;
   }
 
-  .featured-study__image {
-    width: 100%;
-    max-width: 14rem;
-    margin-bottom: .75rem;
-  }
-
   .app-title {
+    background-color: $gray-100;
     display: flex;
     align-items: center;
+    font-weight: bold;
+    padding: 1rem 0 1rem 1rem;
+    transition: 0.3s ease-in-out;
+    width: 90%;
+
+    &:hover {
+      text-decoration: none;
+      background-color: $white;
+      border-radius: 1rem;
+      box-shadow: $box-shadow-sm;
+    }
   }
 
   .app-title__icon {
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     margin-right: .75rem;
   }
 
-  .genomics-platform-subtext {
+  .app-subtext {
+    color: $gray-600;
     font-size: 12px;
+    font-weight: 400;
   }
 
   /* Media Query Overrides ****************************************/
