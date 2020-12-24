@@ -27,33 +27,31 @@
                 aria-labelledby="mega-dropdown-toggle"
                 id="dropdown-main"
               >
-                <div class="container-fluid mega-menu-container">
+                <div class="container mega-menu-container">
                   <div class="row">
-                    <div class="col-md-4 order-md-2 mega-dropdown-col">
+                    <div class="col-md-4 order-md-1 mega-dropdown-col">
                       <div class="mega-menu-title">
                         Research Domains
                       </div>
                       <ul class="list-unstyled">
-                        <li>
-                          <a href="https://stjude.cloud/research-domains/pediatric-cancer"
-                            >Pediatric Cancer</a
-                          >
+                        <li class="domain pediatric-cancer">
+                          <a href="https://stjude.cloud/research-domains/pediatric-cancer">
+                            Pediatric Cancer
+                          </a>
                         </li>
-                        <li>
-                          <a
-                            href="https://stjude.cloud/research-domains/cancer-survivorship"
-                            >Cancer Survivorship</a
-                          >
+                        <li class="domain cancer-survivorship">
+                          <a href="https://stjude.cloud/research-domains/cancer-survivorship">
+                            Cancer Survivorship
+                          </a>
                         </li>
-                        <li>
-                          <a
-                            href="https://stjude.cloud/research-domains/non-cancerous-diseases"
-                            >Non-cancerous Diseases</a
-                          >
+                        <li class="domain non-cancerous-diseases">
+                          <a href="https://stjude.cloud/research-domains/non-cancerous-diseases">
+                            Non-cancerous Diseases
+                            </a>
                         </li>
                       </ul>
                     </div>
-                    <div class="col-md-4 order-md-3 mega-dropdown-col">
+                    <div class="col-md-5 order-md-2 mega-dropdown-col">
                       <div class="mega-menu-title">
                         Apps
                       </div>
@@ -108,7 +106,7 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="col-md-4 order-md-4 mega-dropdown-col">
+                    <div class="col-md-3 order-md-3 mega-dropdown-col">
                       <div class="mega-menu-title">
                         Support
                       </div>
@@ -148,7 +146,7 @@
 
             <li class="nav-item user-dropdown dropdown">
               <a
-                class="nav-link dropdown-toggle profile-dropdown-toggle"
+                class="nav-link dropdown-toggle profile-dropdown-toggle user-avatar"
                 href=""
                 role="button"
                 data-toggle="dropdown"
@@ -156,7 +154,13 @@
                 aria-expanded="false"
                 title="User Info"
               >
-                <span class="user-icon"></i>
+                <!--
+                  <span class="user-icon"></i>
+                -->
+                <span>
+                  JM
+                  <!-- This is the user's initials, but we could add profile images later -->
+                </span>
               </a>
               <div
                 class="dropdown-menu dropdown-menu-right profile-dropdown-menu"
@@ -174,7 +178,7 @@
                   <li class="dropdown-divider"></li>
                   <li>
                     <a class="dropdown-item" href="">
-                      Account Admin
+                      Account
                     </a>
                   </li>
                   <li>

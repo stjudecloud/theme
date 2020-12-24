@@ -10020,6 +10020,11 @@ footer .sjc-title {
   margin-right: 10px;
 }
 
+.sjc-omnibar .profile-dropdown-toggle.user-avatar {
+  background-color: #002856;
+  border-radius: 100%;
+}
+
 .sjc-omnibar .profile-dropdown-toggle:hover,
 .sjc-omnibar .mega-dropdown-toggle:hover {
   opacity: .85;
@@ -10029,6 +10034,11 @@ footer .sjc-title {
   text-align: center;
   background-color: #3d8eea;
   border-radius: 5px;
+}
+
+.sjc-omnibar .dropdown.show > .nav-link.user-avatar {
+  background-color: #002044;
+  border-radius: 100%;
 }
 
 .sjc-omnibar .logo {
@@ -10089,6 +10099,15 @@ footer .sjc-title {
 .sjc-omnibar .dropdown-menu a,
 .sjc-omnibar .dropdown-item {
   color: #002856;
+}
+
+.sjc-omnibar .dropdown-menu a .fas,
+.sjc-omnibar .dropdown-item .fas {
+  color: #9EC0E7;
+  font-size: 12px;
+  padding-left: 4px;
+  position: relative;
+  top: -1px;
 }
 
 .sjc-omnibar .dropdown-menu a:focus, .sjc-omnibar .dropdown-menu a:hover,
@@ -10173,7 +10192,51 @@ footer .sjc-title {
 }
 
 .sjc-omnibar .mega-menu-container {
-  padding: 1.5rem 0;
+  padding: .5rem 0 0 0;
+}
+
+.sjc-omnibar .mega-menu-container .domain {
+  display: block;
+  font-weight: 700;
+  margin: .25rem 0 0 0;
+  padding: 1.75rem 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.sjc-omnibar .mega-menu-container .domain:first-of-type {
+  margin-top: 12px;
+}
+
+.sjc-omnibar .mega-menu-container .domain:hover {
+  text-decoration: none;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.sjc-omnibar .mega-menu-container .domain small {
+  color: #6C757D;
+  display: block;
+}
+
+.sjc-omnibar .mega-menu-container .domain a {
+  border-radius: 20px;
+  padding: .5rem 1rem;
+}
+
+.sjc-omnibar .mega-menu-container .domain.pediatric-cancer a {
+  color: #5CA132;
+  background-color: rgba(92, 161, 50, 0.1);
+}
+
+.sjc-omnibar .mega-menu-container .domain.cancer-survivorship a {
+  color: #EB4E36;
+  background-color: rgba(235, 78, 54, 0.1);
+}
+
+.sjc-omnibar .mega-menu-container .domain.non-cancerous-diseases a {
+  color: #8332A7;
+  background-color: rgba(131, 50, 167, 0.1);
 }
 
 .sjc-omnibar .show .profile-dropdown-menu > ul,
@@ -10198,12 +10261,17 @@ footer .sjc-title {
   padding: 1rem 2rem 1rem 0;
 }
 
+.sjc-omnibar .mega-dropdown-col.order-md-3 .mega-menu-title {
+  padding: 0;
+}
+
 .sjc-omnibar .mega-menu-title {
   margin-bottom: .5rem;
   font-size: .75rem;
   font-weight: 700;
   color: #6C757D;
   letter-spacing: 1px;
+  padding-left: 1rem;
   text-transform: uppercase;
 }
 
@@ -10254,6 +10322,16 @@ footer .sjc-title {
   }
 }
 
+@media (max-width: 991.98px) {
+  .sjc-omnibar .mega-dropdown-menu .mega-dropdown-col li {
+    padding-right: 0;
+    width: 100%;
+  }
+  .sjc-omnibar .mega-dropdown-menu .mega-dropdown-col li a {
+    width: 100%;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   .sjc-omnibar .mega-dropdown-menu {
     font-size: .75rem;
@@ -10263,7 +10341,22 @@ footer .sjc-title {
     padding: .75rem;
   }
   .sjc-omnibar .mega-dropdown-col li {
-    height: 30px;
+    max-height: 60px;
+  }
+  .sjc-omnibar .mega-dropdown-col li a {
+    padding: .25rem;
+  }
+  .sjc-omnibar .mega-dropdown-col li a:hover {
+    border-radius: .5rem;
+  }
+  .sjc-omnibar .mega-dropdown-col li.domain {
+    padding: 1rem .5rem;
+  }
+  .sjc-omnibar .mega-dropdown-col li.domain:hover {
+    border-radius: .25rem;
+  }
+  .sjc-omnibar .mega-dropdown-col li.domain a {
+    border-radius: 20px;
   }
   .sjc-omnibar .mega-dropdown-col:last-child {
     padding-left: 1.125rem;
@@ -10280,7 +10373,7 @@ footer .sjc-title {
 @media (min-width: 768px) {
   .sjc-omnibar .mega-dropdown-col:last-child {
     padding-left: 1.5rem;
-    border-left: 1px solid #b3b3b3;
+    border-left: 1px solid rgba(158, 192, 231, 0.25);
   }
   .sjc-omnibar .featured-study {
     padding: 1.125rem 1rem;
