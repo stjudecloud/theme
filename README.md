@@ -16,6 +16,11 @@ This repository provides theme guidelines and plug-n-play style components for S
 
 `npm run watch` is also provided for continuous compilation during development.
 
+### To View React Components in Storybook
+- Navigate to the React packages folder: `cd packages/stjude-cloud-theme-react`
+- Install Storybook: `npm install`
+- Start Storybook: `npm run storybook`
+
 ## Contributing
 
 **You do not need to commit changes to `dist/css/*` as part of your pull request.** This directory will be updated on release.
