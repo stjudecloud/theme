@@ -110,7 +110,7 @@ function MegaMenu() {
           <ul className="list-unstyled">
             <li>
               <a
-                href="https://www.stjude.cloud/docs/"
+                href="https://university.stjude.cloud/docs/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -119,7 +119,7 @@ function MegaMenu() {
             </li>
             <li>
               <a
-                href="https://www.stjude.cloud/docs/faq/"
+                href="https://university.stjude.cloud/docs/faq/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
