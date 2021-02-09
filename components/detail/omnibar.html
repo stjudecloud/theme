@@ -10,12 +10,19 @@
     </script>
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
     <link rel="shortcut icon" href="../../images/favicon.ico" type="image/ico">
+<style>
+    :root {
+        
+        
+        
+    }
+</style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/blue.css?cachebust=1.4.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/blue.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../css/fractal-theme.css?cachebust=1.4.0" type="text/css">
+<link rel="stylesheet" href="../../css/fractal-theme.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.4.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.7.0" type="text/css">
 
 
 <title>Omnibar | design.stjude.cloud</title>
@@ -66,7 +73,7 @@
 
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
-        <a class="Pen-previewLink" href="../preview/omnibar.html" title="Component preview">
+        <a class="Pen-previewLink" href="../preview/omnibar.html" title="Preview">
             Omnibar
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -75,6 +82,9 @@
 
         </a>
     </h1>
+
+    <span class="Pen-preview-size" data-role="preview-size"></span>
+
     
 
 <div class="Status Status--tag">
@@ -117,7 +127,9 @@
         
         
         <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
-            <a href="#browser-98d2a83a10e74c8474943a9c09e3ec87-panel-html">HTML</a>
+            <a href="#browser-98d2a83a10e74c8474943a9c09e3ec87-panel-html">
+                HTML
+            </a>
         </li>
         
         
@@ -133,13 +145,17 @@
         
         
         <li class="Browser-tab Browser-tab--info" data-role="tab">
-            <a href="#browser-98d2a83a10e74c8474943a9c09e3ec87-panel-info">Info</a>
+            <a href="#browser-98d2a83a10e74c8474943a9c09e3ec87-panel-info">
+                Info
+            </a>
         </li>
         
         
         
         <li class="Browser-tab Browser-tab--notes" data-role="tab">
-            <a href="#browser-98d2a83a10e74c8474943a9c09e3ec87-panel-notes">Notes</a>
+            <a href="#browser-98d2a83a10e74c8474943a9c09e3ec87-panel-notes">
+                Notes
+            </a>
         </li>
         
         
@@ -152,31 +168,31 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-98d2a83a10e74c8474943a9c09e3ec87-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"margin-top: -40px;"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sjc-omnibar"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-brand"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stjude.cloud"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"logo"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;margin-top: -40px;&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sjc-omnibar&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar-brand&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stjude.cloud&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;logo&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sjc-title"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stjude.cloud"</span>&gt;</span>St. Jude Cloud<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"portal-title"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sjc-title&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stjude.cloud&quot;</span>&gt;</span>St. Jude Cloud<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;portal-title&quot;</span>&gt;</span>
                 App
             <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
-            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav global-icons"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item user-dropdown dropdown"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link dropdown-toggle profile-dropdown-toggle"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"User Info"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"user-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav global-icons&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item user-dropdown dropdown&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link dropdown-toggle profile-dropdown-toggle&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;User Info&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;user-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu dropdown-menu-right profile-dropdown-menu"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"profile-dropdown-toggle"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu dropdown-menu-right profile-dropdown-menu&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;profile-dropdown-toggle&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-unstyled&quot;</span>&gt;</span>
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
                                     Sign In
                                 <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
                                     Create Account
                                 <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
@@ -184,81 +200,81 @@
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item dropdown mega-dropdown"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link dropdown-toggle mega-dropdown-toggle"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"St. Jude Cloud Mega Menu"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-menu-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item dropdown mega-dropdown&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link dropdown-toggle mega-dropdown-toggle&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;dropdown&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;St. Jude Cloud Mega Menu&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-menu-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu mega-dropdown-menu"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"mega-dropdown-toggle"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dropdown-main"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mega-menu-container"</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-3 order-md-2 mega-dropdown-col"</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mega-menu-title"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown-menu mega-dropdown-menu&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;mega-dropdown-toggle&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;dropdown-main&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container mega-menu-container&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-3 order-md-2 mega-dropdown-col&quot;</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mega-menu-title&quot;</span>&gt;</span>
                                         Research Domains
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-unstyled&quot;</span>&gt;</span>
                                         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stjude.cloud/research-domains/pediatric-cancer"</span>&gt;</span>Pediatric Cancer<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stjude.cloud/research-domains/pediatric-cancer&quot;</span>&gt;</span>Pediatric Cancer<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                                         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stjude.cloud/research-domains/cancer-survivorship"</span>&gt;</span>Cancer Survivorship<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stjude.cloud/research-domains/cancer-survivorship&quot;</span>&gt;</span>Cancer Survivorship<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                                         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stjude.cloud/research-domains/non-cancerous-diseases"</span>&gt;</span>Non-cancerous Diseases<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stjude.cloud/research-domains/non-cancerous-diseases&quot;</span>&gt;</span>Non-cancerous Diseases<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
                                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-3 order-md-3 mega-dropdown-col"</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mega-menu-title"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-3 order-md-3 mega-dropdown-col&quot;</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mega-menu-title&quot;</span>&gt;</span>
                                         Apps
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-unstyled&quot;</span>&gt;</span>
                                         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://platform.stjude.cloud"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"app-title"</span>&gt;</span>
-                                                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"app-title__icon"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../images/icon-genomics-platform.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Genomics Platform Icon"</span> /&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://platform.stjude.cloud&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;app-title&quot;</span>&gt;</span>
+                                                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;app-title__icon&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../images/icon-genomics-platform.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Genomics Platform Icon&quot;</span> /&gt;</span>
                                                 <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>
                                                     Genomics Platform
-                                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"genomics-platform-subtext"</span>&gt;</span>Data <span class="hljs-symbol">&amp;amp;</span> Tools<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;genomics-platform-subtext&quot;</span>&gt;</span>Data <span class="hljs-symbol">&amp;amp;</span> Tools<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                                                 <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                                             <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                                         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://pecan.stjude.cloud/"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"app-title"</span>&gt;</span>
-                                                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"app-title__icon"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../images/icon-pecan.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"PeCan Icon"</span> /&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://pecan.stjude.cloud/&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;app-title&quot;</span>&gt;</span>
+                                                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;app-title__icon&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../images/icon-pecan.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;PeCan Icon&quot;</span> /&gt;</span>
                                                 <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>
                                                     PeCan
                                                 <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                                             <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                                         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://viz.stjude.cloud"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"app-title"</span>&gt;</span>
-                                                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"app-title__icon"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../images/icon-viz.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Visualization Community Icon"</span> /&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://viz.stjude.cloud&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;app-title&quot;</span>&gt;</span>
+                                                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;app-title__icon&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../images/icon-viz.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Visualization Community Icon&quot;</span> /&gt;</span>
                                                 <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>
                                                     Visualization Community
                                                 <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                                             <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                                         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stjude.cloud/apps"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-primary"</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stjude.cloud/apps&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-primary&quot;</span>&gt;</span>
                                                 View All Apps
                                             <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
                                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-3 order-md-1 mega-dropdown-col d-flex"</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"featured-study"</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stjude.cloud/studies/clinical-genomics"</span>&gt;</span>
-                                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"featured-study__image"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../images/featured-study.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Featured Study Image"</span> /&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-3 order-md-1 mega-dropdown-col d-flex&quot;</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;featured-study&quot;</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stjude.cloud/studies/clinical-genomics&quot;</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;featured-study__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../images/featured-study.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Featured Study Image&quot;</span> /&gt;</span>
                                         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                         <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"featured-study__title"</span>&gt;</span>Featured Study<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                                            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled"</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;featured-study__title&quot;</span>&gt;</span>Featured Study<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-unstyled&quot;</span>&gt;</span>
                                                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stjude.cloud/studies/clinical-genomics"</span>&gt;</span>
+                                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stjude.cloud/studies/clinical-genomics&quot;</span>&gt;</span>
                                                         Real-time Clinical Genomics
                                                     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                                                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stjude.cloud/studies"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-primary"</span>&gt;</span>
+                                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stjude.cloud/studies&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-primary&quot;</span>&gt;</span>
                                                         View All Studies
                                                     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
@@ -266,19 +282,19 @@
                                         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-3 order-md-4 mega-dropdown-col"</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mega-menu-title"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-3 order-md-4 mega-dropdown-col&quot;</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mega-menu-title&quot;</span>&gt;</span>
                                         Support
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-unstyled"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-unstyled&quot;</span>&gt;</span>
                                         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://www.stjude.cloud/docs/"</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"noopener noreferrer"</span>&gt;</span>Help Guides<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.stjude.cloud/docs/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener noreferrer&quot;</span>&gt;</span>Help Guides<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                                         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://www.stjude.cloud/docs/faq/"</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"noopener noreferrer"</span>&gt;</span>FAQs<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.stjude.cloud/docs/faq/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener noreferrer&quot;</span>&gt;</span>FAQs<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                                         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stjude.cloud/contact"</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"noopener noreferrer"</span>&gt;</span>Contact Us<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stjude.cloud/contact&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener noreferrer&quot;</span>&gt;</span>Contact Us<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
                                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -290,24 +306,24 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar navbar-expand-md sjc-subnav"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sub-menu-text"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar navbar-expand-md sjc-subnav&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sub-menu-text&quot;</span>&gt;</span>
             Sub Menu
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-toggler collapsed"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#sj-subnav"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"navbarSupportedContent"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Toggle navigation"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-menu-icon bg-secondary"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar-toggler collapsed&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;collapse&quot;</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#sj-subnav&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;navbarSupportedContent&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Toggle navigation&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-menu-icon bg-secondary&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collapse navbar-collapse"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sj-subnav"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-nav mr-auto"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>Link 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;collapse navbar-collapse&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;sj-subnav&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar-nav mr-auto&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Link 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>Link 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Link 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>Link 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Link 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -346,105 +362,105 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-JavaScript FileBrowser-code hljs">
-                                <pre><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">"react"</span>;
-<span class="hljs-keyword">import</span> PropTypes <span class="hljs-keyword">from</span> <span class="hljs-string">"prop-types"</span>;
-<span class="hljs-keyword">import</span> { Container, Row, Col } <span class="hljs-keyword">from</span> <span class="hljs-string">"react-bootstrap"</span>;
+                                <pre><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
+<span class="hljs-keyword">import</span> PropTypes <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;prop-types&quot;</span>;
+<span class="hljs-keyword">import</span> { Container, Row, Col } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-bootstrap&quot;</span>;
 
-<span class="hljs-keyword">import</span> FeaturedImage <span class="hljs-keyword">from</span> <span class="hljs-string">"@stjudecloud/theme/dist/images/featured-study.jpg"</span>;
-<span class="hljs-keyword">import</span> GenomicsPlatformIcon <span class="hljs-keyword">from</span> <span class="hljs-string">"@stjudecloud/theme/dist/images/icon-genomics-platform.png"</span>;
-<span class="hljs-keyword">import</span> PeCanIcon <span class="hljs-keyword">from</span> <span class="hljs-string">"@stjudecloud/theme/dist/images/icon-pecan.png"</span>;
-<span class="hljs-keyword">import</span> VizCommIcon <span class="hljs-keyword">from</span> <span class="hljs-string">"@stjudecloud/theme/dist/images/icon-viz.png"</span>;
+<span class="hljs-keyword">import</span> FeaturedImage <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@stjudecloud/theme/dist/images/featured-study.jpg&quot;</span>;
+<span class="hljs-keyword">import</span> GenomicsPlatformIcon <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@stjudecloud/theme/dist/images/icon-genomics-platform.png&quot;</span>;
+<span class="hljs-keyword">import</span> PeCanIcon <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@stjudecloud/theme/dist/images/icon-pecan.png&quot;</span>;
+<span class="hljs-keyword">import</span> VizCommIcon <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@stjudecloud/theme/dist/images/icon-viz.png&quot;</span>;
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MegaMenu</span>(<span class="hljs-params"></span>) </span>{
   <span class="hljs-keyword">return</span> (
-    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"mega-menu-container"</span>&gt;</span>
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;mega-menu-container&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">Row</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">md</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">span:</span> <span class="hljs-attr">3</span>, <span class="hljs-attr">order:</span> <span class="hljs-attr">2</span> }} <span class="hljs-attr">className</span>=<span class="hljs-string">"mega-dropdown-col"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"mega-menu-title"</span>&gt;</span>Research Domains<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"list-unstyled"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">md</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">span:</span> <span class="hljs-attr">3</span>, <span class="hljs-attr">order:</span> <span class="hljs-attr">2</span> }} <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;mega-dropdown-col&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;mega-menu-title&quot;</span>&gt;</span>Research Domains<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;list-unstyled&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stjude.cloud/research-domains/pediatric-cancer"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stjude.cloud/research-domains/pediatric-cancer&quot;</span>&gt;</span>
                 Pediatric Cancer
               <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stjude.cloud/research-domains/cancer-survivorship"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stjude.cloud/research-domains/cancer-survivorship&quot;</span>&gt;</span>
                 Cancer Survivorship
               <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stjude.cloud/research-domains/non-cancerous-diseases"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stjude.cloud/research-domains/non-cancerous-diseases&quot;</span>&gt;</span>
                 Non-cancerous Diseases
               <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">md</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">span:</span> <span class="hljs-attr">3</span>, <span class="hljs-attr">order:</span> <span class="hljs-attr">3</span> }} <span class="hljs-attr">className</span>=<span class="hljs-string">"mega-dropdown-col"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"mega-menu-title"</span>&gt;</span>Apps<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"list-unstyled"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">md</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">span:</span> <span class="hljs-attr">3</span>, <span class="hljs-attr">order:</span> <span class="hljs-attr">3</span> }} <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;mega-dropdown-col&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;mega-menu-title&quot;</span>&gt;</span>Apps<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;list-unstyled&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://platform.stjude.cloud"</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"app-title"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://platform.stjude.cloud&quot;</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;app-title&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
-                  <span class="hljs-attr">className</span>=<span class="hljs-string">"app-title__icon"</span>
+                  <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;app-title__icon&quot;</span>
                   <span class="hljs-attr">src</span>=<span class="hljs-string">{GenomicsPlatformIcon}</span>
-                  <span class="hljs-attr">alt</span>=<span class="hljs-string">"Genomics Platform Icon"</span>
+                  <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Genomics Platform Icon&quot;</span>
                 /&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>
                   Genomics Platform
-                  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"genomics-platform-subtext"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;genomics-platform-subtext&quot;</span>&gt;</span>
                     Data <span class="hljs-symbol">&amp;amp;</span> Tools
                   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://pecan.stjude.cloud/"</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"app-title"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://pecan.stjude.cloud/&quot;</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;app-title&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
-                  <span class="hljs-attr">className</span>=<span class="hljs-string">"app-title__icon"</span>
+                  <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;app-title__icon&quot;</span>
                   <span class="hljs-attr">src</span>=<span class="hljs-string">{PeCanIcon}</span>
-                  <span class="hljs-attr">alt</span>=<span class="hljs-string">"PeCan Icon"</span>
+                  <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;PeCan Icon&quot;</span>
                 /&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>PeCan<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://viz.stjude.cloud"</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"app-title"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://viz.stjude.cloud&quot;</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;app-title&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
-                  <span class="hljs-attr">className</span>=<span class="hljs-string">"app-title__icon"</span>
+                  <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;app-title__icon&quot;</span>
                   <span class="hljs-attr">src</span>=<span class="hljs-string">{VizCommIcon}</span>
-                  <span class="hljs-attr">alt</span>=<span class="hljs-string">"Visualization Community Icon"</span>
+                  <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Visualization Community Icon&quot;</span>
                 /&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Visualization Community<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stjude.cloud/apps"</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"text-primary"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stjude.cloud/apps&quot;</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;text-primary&quot;</span>&gt;</span>
                 View All Apps
               <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">md</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">span:</span> <span class="hljs-attr">3</span>, <span class="hljs-attr">order:</span> <span class="hljs-attr">1</span> }} <span class="hljs-attr">className</span>=<span class="hljs-string">"mega-dropdown-col d-flex"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"featured-study"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stjude.cloud/studies/clinical-genomics"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">md</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">span:</span> <span class="hljs-attr">3</span>, <span class="hljs-attr">order:</span> <span class="hljs-attr">1</span> }} <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;mega-dropdown-col d-flex&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;featured-study&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stjude.cloud/studies/clinical-genomics&quot;</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
-                <span class="hljs-attr">className</span>=<span class="hljs-string">"featured-study__image"</span>
+                <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;featured-study__image&quot;</span>
                 <span class="hljs-attr">src</span>=<span class="hljs-string">{FeaturedImage}</span>
-                <span class="hljs-attr">alt</span>=<span class="hljs-string">"Featured Study Image"</span>
+                <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Featured Study Image&quot;</span>
               /&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"featured-study__title"</span>&gt;</span>Featured Study<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"list-unstyled"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;featured-study__title&quot;</span>&gt;</span>Featured Study<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;list-unstyled&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stjude.cloud/studies/clinical-genomics"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stjude.cloud/studies/clinical-genomics&quot;</span>&gt;</span>
                     Real-time Clinical Genomics
                   <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
-                    <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stjude.cloud/studies"</span>
-                    <span class="hljs-attr">className</span>=<span class="hljs-string">"text-primary"</span>
+                    <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stjude.cloud/studies&quot;</span>
+                    <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;text-primary&quot;</span>
                   &gt;</span>
                     View All Studies
                   <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -453,32 +469,32 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">md</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">span:</span> <span class="hljs-attr">3</span>, <span class="hljs-attr">order:</span> <span class="hljs-attr">4</span> }} <span class="hljs-attr">className</span>=<span class="hljs-string">"mega-dropdown-col"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"mega-menu-title"</span>&gt;</span>Support<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"list-unstyled"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">md</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">span:</span> <span class="hljs-attr">3</span>, <span class="hljs-attr">order:</span> <span class="hljs-attr">4</span> }} <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;mega-dropdown-col&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;mega-menu-title&quot;</span>&gt;</span>Support<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;list-unstyled&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
-                <span class="hljs-attr">href</span>=<span class="hljs-string">"https://www.stjude.cloud/docs/"</span>
-                <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span>
-                <span class="hljs-attr">rel</span>=<span class="hljs-string">"noopener noreferrer"</span>
+                <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.stjude.cloud/docs/&quot;</span>
+                <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener noreferrer&quot;</span>
               &gt;</span>
                 Help Guides
               <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
-                <span class="hljs-attr">href</span>=<span class="hljs-string">"https://www.stjude.cloud/docs/faq/"</span>
-                <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span>
-                <span class="hljs-attr">rel</span>=<span class="hljs-string">"noopener noreferrer"</span>
+                <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.stjude.cloud/docs/faq/&quot;</span>
+                <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener noreferrer&quot;</span>
               &gt;</span>
                 FAQs
               <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
-                <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stjude.cloud/contact"</span>
-                <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span>
-                <span class="hljs-attr">rel</span>=<span class="hljs-string">"noopener noreferrer"</span>
+                <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stjude.cloud/contact&quot;</span>
+                <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>
+                <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener noreferrer&quot;</span>
               &gt;</span>
                 Contact Us
               <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -490,7 +506,7 @@
   );
 }
 
-MegaMenu.displayName = <span class="hljs-string">"St. Jude Cloud Navbar MegaMenu"</span>;
+MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar MegaMenu&quot;</span>;
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> MegaMenu;
 </pre>
@@ -580,7 +596,7 @@ MegaMenu.displayName = <span class="hljs-string">"St. Jude Cloud Navbar MegaMenu
     <span class="hljs-attribute">display</span>: inline-block;
     <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">30px</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-    <span class="hljs-attribute">background-image</span>: url(<span class="hljs-string">"#{$stjude-images-path}/stjude-logo-child.svg"</span>);
+    <span class="hljs-attribute">background-image</span>: url(<span class="hljs-string">&quot;#{$stjude-images-path}/stjude-logo-child.svg&quot;</span>);
     <span class="hljs-attribute">background-position</span>: <span class="hljs-number">3px</span> <span class="hljs-number">6px</span>;
     <span class="hljs-attribute">background-size</span>: <span class="hljs-number">72px</span>;
     <span class="hljs-attribute">border-color</span>: <span class="hljs-number">#99c4f4</span>;
@@ -610,7 +626,7 @@ MegaMenu.displayName = <span class="hljs-string">"St. Jude Cloud Navbar MegaMenu
 
   <span class="hljs-selector-class">.user-icon</span> {
     <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
-    <span class="hljs-attribute">background-image</span>: url(<span class="hljs-string">"#{$stjude-images-path}/user-icon.svg"</span>);
+    <span class="hljs-attribute">background-image</span>: url(<span class="hljs-string">&quot;#{$stjude-images-path}/user-icon.svg&quot;</span>);
     <span class="hljs-attribute">background-repeat</span>: no-repeat;
     <span class="hljs-attribute">background-position</span>: center;
   }
@@ -789,7 +805,7 @@ MegaMenu.displayName = <span class="hljs-string">"St. Jude Cloud Navbar MegaMenu
   <span class="hljs-selector-class">.dropdown</span> &amp; {
     <span class="hljs-attribute">width</span>: <span class="hljs-number">1.25rem</span>;
     <span class="hljs-attribute">height</span>: <span class="hljs-number">3px</span>;
-    <span class="hljs-attribute">content</span>: <span class="hljs-string">""</span>;
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
     <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5rem</span>;
 
@@ -799,7 +815,7 @@ MegaMenu.displayName = <span class="hljs-string">"St. Jude Cloud Navbar MegaMenu
       <span class="hljs-attribute">display</span>: block;
       <span class="hljs-attribute">width</span>: <span class="hljs-number">1.25rem</span>;
       <span class="hljs-attribute">height</span>: <span class="hljs-number">3px</span>;
-      <span class="hljs-attribute">content</span>: <span class="hljs-string">""</span>;
+      <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
       <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
       <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5rem</span>;
     }
@@ -893,7 +909,7 @@ MegaMenu.displayName = <span class="hljs-string">"St. Jude Cloud Navbar MegaMenu
     <span class="hljs-selector-class">.nav-link</span> {
       &amp;<span class="hljs-selector-pseudo">::after</span> {
         <span class="hljs-attribute">display</span>: block;
-        <span class="hljs-attribute">content</span>: <span class="hljs-string">""</span>;
+        <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
         <span class="hljs-attribute">border-bottom</span>: solid <span class="hljs-number">2px</span> <span class="hljs-variable">$blue-dark</span>;
         <span class="hljs-attribute">transition</span>: transform .<span class="hljs-number">25s</span> ease-in-out;
         <span class="hljs-attribute">transform</span>: scaleX(<span class="hljs-number">0</span>);
@@ -1127,8 +1143,11 @@ MegaMenu.displayName = <span class="hljs-string">"St. Jude Cloud Navbar MegaMenu
 
     
         
-<div class="Navigation-group">
 
+    
+    
+    <div class="Navigation-group">
+        
 <div class="Tree" data-behaviour="tree" id="tree-components">
     <div class="Tree-header">
         <h3 class="Tree-title">components</h3>
@@ -1190,15 +1209,17 @@ MegaMenu.displayName = <span class="hljs-string">"St. Jude Cloud Navbar MegaMenu
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-badges">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-badges-items">
-                Badges
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-badges-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-badges">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-badges-items">
+                    Badges
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-badges-items">
+                
+                
+                
+                
     
         
         
@@ -1297,20 +1318,23 @@ MegaMenu.displayName = <span class="hljs-string">"St. Jude Cloud Navbar MegaMenu
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-buttons">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-buttons-items">
-                Buttons
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-buttons-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-buttons">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-buttons-items">
+                    Buttons
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-buttons-items">
+                
+                
+                
+                
     
         
         
@@ -1385,8 +1409,9 @@ MegaMenu.displayName = <span class="hljs-string">"St. Jude Cloud Navbar MegaMenu
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -1558,26 +1583,30 @@ MegaMenu.displayName = <span class="hljs-string">"St. Jude Cloud Navbar MegaMenu
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-logos">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-logos-items">
-                Logos
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-logos-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-logos">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-logos-items">
+                    Logos
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-logos-items">
+                
+                
+                
+                
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-app-icons">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-app-icons-items">
-                App Icons
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-app-icons-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-app-icons">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-app-icons-items">
+                    App Icons
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-app-icons-items">
+                
+                
+                
+                
     
         
         
@@ -1676,20 +1705,23 @@ MegaMenu.displayName = <span class="hljs-string">"St. Jude Cloud Navbar MegaMenu
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-genomics-platform-workflow-icons">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-genomics-platform-workflow-icons-items">
-                Genomics Platform Workflow Icons
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-genomics-platform-workflow-icons-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-genomics-platform-workflow-icons">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-genomics-platform-workflow-icons-items">
+                    Genomics Platform Workflow Icons
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-genomics-platform-workflow-icons-items">
+                
+                
+                
+                
     
         
         
@@ -1932,20 +1964,23 @@ MegaMenu.displayName = <span class="hljs-string">"St. Jude Cloud Navbar MegaMenu
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-partners">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-partners-items">
-                Partners
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-partners-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-partners">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-partners-items">
+                    Partners
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-partners-items">
+                
+                
+                
+                
     
         
         
@@ -1996,20 +2031,23 @@ MegaMenu.displayName = <span class="hljs-string">"St. Jude Cloud Navbar MegaMenu
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-st-jude-childrens">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-st-jude-childrens-items">
-                St Jude Childrens
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-st-jude-childrens-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-st-jude-childrens">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-st-jude-childrens-items">
+                    St Jude Childrens
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-st-jude-childrens-items">
+                
+                
+                
+                
     
         
         
@@ -2060,20 +2098,23 @@ MegaMenu.displayName = <span class="hljs-string">"St. Jude Cloud Navbar MegaMenu
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-st-jude-cloud">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-st-jude-cloud-items">
-                St Jude Cloud
-            </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-st-jude-cloud-items">
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-st-jude-cloud">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-st-jude-cloud-items">
+                    St Jude Cloud
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-st-jude-cloud-items">
+                
+                
+                
+                
     
         
         
@@ -2124,13 +2165,15 @@ MegaMenu.displayName = <span class="hljs-string">"St. Jude Cloud Navbar MegaMenu
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
@@ -2209,25 +2252,36 @@ MegaMenu.displayName = <span class="hljs-string">"St. Jude Cloud Navbar MegaMenu
     </ul>
 </div>
 
-</div>
+    </div>
+    
 
 
     
-        <div class="Navigation-group">
+        
+<div class="Navigation-group">
     <div class="Tree">
         <div class="Tree-header">
-            <div class="Tree-title">
+            <h3 class="Tree-title">
                 Information
-            </div>
+            </h3>
         </div>
-        <div class="Tree-aside">
-            Built on:
-            <time datetime="2021-02-09T19:33:33.866Z">
-                2/9/2021
-            </time>
-        </div>
+        <dl class="Tree-aside">
+            
+                <div>
+                    <dt class="Tree-asideTerm">Built on:</dt>
+                    <dd class="Tree-asideDescription">
+                        
+                            <time datetime="2021-02-09T19:39:28.137Z">
+                                2/9/2021
+                            </time>
+                        
+                    </dd>
+                </div>
+            
+        </dl>
     </div>
 </div>
+
 
     
 </nav>
@@ -2239,7 +2293,7 @@ MegaMenu.displayName = <span class="hljs-string">"St. Jude Cloud Navbar MegaMenu
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.4.0"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.7.0"></script>
 
 
 
