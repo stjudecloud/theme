@@ -89,7 +89,7 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig}) {
     <header className="sjc-omnibar">
       <BSNavbar variant="">
         <BSNavbar.Brand href="https://stjude.cloud" title="St. Jude Cloud" alt="St. Jude Cloud">
-          <span className="logo hide-text">St. Jude Cloud</span>
+          <span className="logo"></span>
         </BSNavbar.Brand>
         <a className="sjc-title" href="https://stjude.cloud" title="St. Jude Cloud">
           St. Jude Cloud
