@@ -10031,8 +10031,9 @@ footer .sjc-title {
   padding: 20px 30px;
   color: #FFFFFF;
   background-image: url("../../dist/images/stjude-logo-child.svg");
-  background-position: 3px 6px;
-  background-size: 72px;
+  background-position: 0px 3px;
+  background-repeat: no-repeat;
+  background-size: 55px;
   border-color: #99c4f4;
   border-right: 1px solid;
 }
@@ -10364,8 +10365,9 @@ footer .logo {
   padding: 20px 30px;
   color: #FFFFFF;
   background-image: url("../../dist/images/stjude-logo-child.svg");
-  background-position: 3px 6px;
-  background-size: 72px;
+  background-position: 0px 3px;
+  background-repeat: no-repeat;
+  background-size: 55px;
   border-color: #99C4F4;
   border-right: 1px solid;
 }
