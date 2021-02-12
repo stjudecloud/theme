@@ -257,7 +257,7 @@ function Footer() {
               xl={6}
             >
               <p>
-                &copy; Copyright 2020 St. Jude Children's Research Hospital, a
+                &copy; Copyright {new Date().getFullYear()} St. Jude Children's Research Hospital, a
                 not-for-profit, section 501(c)(3).
               </p>
             </Col>
