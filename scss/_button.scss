@@ -22,7 +22,9 @@
     }
   }
 }
+
 @each $color, $value in $theme-colors {
+
   .btn-#{$color} {
     color: $gray;
     @include gradient-bg($value);
