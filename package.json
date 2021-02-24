@@ -4,7 +4,7 @@
   "description": "St. Jude Cloud Theme and Guidelines",
   "main": "index.js",
   "scripts": {
-    "build": "npm-run-all css-lint css-compile fractal:build",
+    "build": "npm-run-all css-compile fractal:build",
     "css-compile": "npm-run-all css-compile-main css-compile-fractal css-minify",
     "css-compile-fractal": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js --output-style expanded --source-map true --source-map-contents true --precision 6 scss/fractal-theme.scss dist/css/fractal-theme.css",
     "css-compile-main": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js --output-style expanded --source-map true --source-map-contents true --precision 6 scss/stjude-cloud-theme.scss dist/css/stjude-cloud-theme.css",
