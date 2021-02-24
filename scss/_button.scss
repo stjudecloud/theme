@@ -1,7 +1,9 @@
 // St. Jude Cloud Theme Custom Buttons
 // Customizes the button-variant bootstrap mixin to darken on hover while maintaining text colors
 // Button colors/sizing/border-radius is managed in variables.scss
+
 .btn-primary {
+
   &.btn-white {
     background-color: $white;
     border-color: $white;
@@ -10,6 +12,7 @@
 }
 
 .btn-secondary {
+
   &.btn-white {
     background-color: transparent;
     border-color: $white;
@@ -36,13 +39,14 @@
     &.focus {
       // Avoid using mixin so we can pass custom focus shadow properly
       @if $enable-shadows {
-        box-shadow: $btn-box-shadow, 0 0 0 $btn-focus-width rgba(mix(color-yiq($value), $value, 15%), .5);
+        box-shadow: $btn-box-shadow, 0 0 0 $btn-focus-width rgba(mix(color-yiq($value), $value, 15%), 0.5);
       } @else {
-        box-shadow: 0 0 0 $btn-focus-width rgba(mix(color-yiq($value), $value, 15%), .5);
+        box-shadow: 0 0 0 $btn-focus-width rgba(mix(color-yiq($value), $value, 15%), 0.5);
       }
     }
 
     // Disabled comes first so active can properly restyle
+
     &.disabled,
     &:disabled {
       color: $gray;
@@ -54,8 +58,8 @@
       }
     }
 
-    &:not(:disabled):not(.disabled):active,
-    &:not(:disabled):not(.disabled).active,
+    &:not( :disabled ):not( .disabled ):active,
+    &:not( :disabled ):not( .disabled ).active,
     .show > &.dropdown-toggle {
       color: $gray;
       background-color: lighten($value, 15%);
@@ -67,9 +71,9 @@
       &:focus {
         // Avoid using mixin so we can pass custom focus shadow properly
         @if $enable-shadows and $btn-active-box-shadow != none {
-          box-shadow: $btn-active-box-shadow, 0 0 0 $btn-focus-width rgba(mix(color-yiq($value), $value, 15%), .5);
+          box-shadow: $btn-active-box-shadow, 0 0 0 $btn-focus-width rgba(mix(color-yiq($value), $value, 15%), 0.5);
         } @else {
-          box-shadow: 0 0 0 $btn-focus-width rgba(mix(color-yiq($value), $value, 15%), .5);
+          box-shadow: 0 0 0 $btn-focus-width rgba(mix(color-yiq($value), $value, 15%), 0.5);
         }
       }
     }

@@ -2,6 +2,6 @@
   display: inline-block;
   margin-left: $caret-spacing;
   vertical-align: $caret-vertical-align;
-  content: "";
+  content: '';
   @include caret-down ();
 }
