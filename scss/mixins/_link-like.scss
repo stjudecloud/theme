@@ -7,7 +7,7 @@
   text-decoration: none;
   cursor: pointer;
 
-  &:not(.btn) {
+  &:not( .btn ) {
     color: $primary;
 
     &:hover {

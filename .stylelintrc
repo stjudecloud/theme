@@ -28,7 +28,7 @@
     "media-feature-range-operator-space-before": "always",
     "media-feature-range-operator-space-after": "always",
     "media-feature-colon-space-after": "always",
-    "selector-class-pattern": "^[A-Z][a-z0-9\\-_]*[a-z0-9]$",
+    "selector-class-pattern": "^[a-z][a-z0-9\\-_]*[a-z0-9]$",
     "value-no-vendor-prefix": null,
     "media-feature-name-no-vendor-prefix": null,
     "media-feature-name-no-unknown": null,

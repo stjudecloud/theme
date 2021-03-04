@@ -1,19 +1,19 @@
 // Bootstrap Overrides
 
-@import "~bootstrap/scss/functions";
-@import "variables";
+@import '~bootstrap/scss/functions';
+@import 'variables';
 
-@import "~bootstrap/scss/bootstrap.scss";
+@import '~bootstrap/scss/bootstrap.scss';
 
 // St. Jude components
-@import "mixins";
-@import "badge";
-@import "button";
-@import "sjc-card";
-@import "sjc-logo";
-@import "sjc-navbar";
-@import "sjc-footer";
-@import "sjc-error";
-@import "sjc-wavy-bottom";
-@import "typography";
-@import "caret";
+@import 'mixins';
+@import 'badge';
+@import 'button';
+@import 'sjc-card';
+@import 'sjc-logo';
+@import 'sjc-navbar';
+@import 'sjc-footer';
+@import 'sjc-error';
+@import 'sjc-wavy-bottom';
+@import 'typography';
+@import 'caret';
