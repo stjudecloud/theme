@@ -9983,13 +9983,13 @@ footer .sjc-title {
 .sjc-omnibar .navbar {
   flex-wrap: unset !important;
   height: 65px;
-  padding: .5rem;
+  padding: 0.5rem;
   line-height: 1rem;
   background-color: #1874DC;
 }
 
 .sjc-omnibar .login-btn {
-  padding: .25rem 1rem;
+  padding: 0.25rem 1rem;
   font-size: 14px;
   line-height: 14px;
 }
@@ -10005,7 +10005,7 @@ footer .sjc-title {
   width: 40px;
   height: 40px;
   padding: 0;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   color: #FFFFFF;
   text-align: center;
 }
@@ -10022,7 +10022,7 @@ footer .sjc-title {
 
 .sjc-omnibar .profile-dropdown-toggle:hover,
 .sjc-omnibar .mega-dropdown-toggle:hover {
-  opacity: .85;
+  opacity: 0.85;
 }
 
 .sjc-omnibar .dropdown.show > .nav-link {
@@ -10036,10 +10036,10 @@ footer .sjc-title {
   padding: 20px 30px;
   color: #FFFFFF;
   background-image: url("../images/stjude-logo-child.svg");
-  background-position: 0px 3px;
+  background-position: 0 3px;
   background-repeat: no-repeat;
   background-size: 55px;
-  border-color: #99c4f4;
+  border-color: #99C4F4;
   border-right: 1px solid;
 }
 
@@ -10075,7 +10075,7 @@ footer .sjc-title {
   font-size: 1rem;
   line-height: 1.25rem;
   color: #002856;
-  background: #f4f8fc;
+  background: #F4F8FC;
   border-top: none;
   border-radius: 0;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
@@ -10107,7 +10107,7 @@ footer .sjc-title {
 .sjc-omnibar .mega-dropdown-menu {
   display: block;
   overflow: hidden;
-  transition: transform .25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
   transform: scaleY(0);
   transform-origin: top;
 }
@@ -10119,7 +10119,7 @@ footer .sjc-title {
 
 .sjc-omnibar .profile-dropdown-menu > ul,
 .sjc-omnibar .mega-menu-container {
-  transition: transform .25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
   transform: translateY(calc(-100% - 65px));
 }
 
@@ -10147,7 +10147,7 @@ footer .sjc-title {
 
 .sjc-omnibar .mega-menu-title,
 .sjc-omnibar .featured-study__title {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-weight: 600;
   color: #002856;
   text-transform: uppercase;
@@ -10156,7 +10156,7 @@ footer .sjc-title {
 .sjc-omnibar .featured-study__image {
   width: 100%;
   max-width: 14rem;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .sjc-omnibar .app-title {
@@ -10167,7 +10167,7 @@ footer .sjc-title {
 .sjc-omnibar .app-title__icon {
   width: 30px;
   height: 30px;
-  margin-right: .75rem;
+  margin-right: 0.75rem;
 }
 
 .sjc-omnibar .genomics-platform-subtext {
@@ -10194,11 +10194,11 @@ footer .sjc-title {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .sjc-omnibar .mega-dropdown-menu {
-    font-size: .75rem;
-    line-height: .9375rem;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
   }
   .sjc-omnibar .mega-dropdown-col {
-    padding: .75rem;
+    padding: 0.75rem;
   }
   .sjc-omnibar .mega-dropdown-col li {
     height: 30px;
@@ -10218,7 +10218,7 @@ footer .sjc-title {
 @media (min-width: 768px) {
   .sjc-omnibar .mega-dropdown-col:last-child {
     padding-left: 1.5rem;
-    border-left: 1px solid #b3b3b3;
+    border-left: 1px solid #B3B3B3;
   }
   .sjc-omnibar .featured-study {
     padding: 1.125rem 1rem;
@@ -10236,19 +10236,19 @@ footer .sjc-title {
 .dropdown .nav-menu-icon {
   width: 1.25rem;
   height: 3px;
-  content: "";
+  content: '';
   background-color: #FFFFFF;
   border-radius: 5rem;
 }
 
-.navbar-toggler .nav-menu-icon::before, .navbar-toggler .nav-menu-icon::after,
-.dropdown .nav-menu-icon::before,
-.dropdown .nav-menu-icon::after {
+.navbar-toggler .nav-menu-icon:before, .navbar-toggler .nav-menu-icon:after,
+.dropdown .nav-menu-icon:before,
+.dropdown .nav-menu-icon:after {
   position: relative;
   display: block;
   width: 1.25rem;
   height: 3px;
-  content: "";
+  content: '';
   background-color: #FFFFFF;
   border-radius: 5rem;
 }
@@ -10257,7 +10257,7 @@ footer .sjc-title {
   background-color: #002856;
 }
 
-.navbar-toggler .nav-menu-icon.bg-secondary::before, .navbar-toggler .nav-menu-icon.bg-secondary::after {
+.navbar-toggler .nav-menu-icon.bg-secondary:before, .navbar-toggler .nav-menu-icon.bg-secondary:after {
   background-color: #002856;
 }
 
@@ -10266,14 +10266,14 @@ footer .sjc-title {
   transition: transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-.navbar-toggler.collapsed .nav-menu-icon::before,
-.dropdown .nav-menu-icon::before {
+.navbar-toggler.collapsed .nav-menu-icon:before,
+.dropdown .nav-menu-icon:before {
   top: -7px;
-  transition: top .1s ease-in .25s;
+  transition: top 0.1s ease-in 0.25s;
 }
 
-.navbar-toggler.collapsed .nav-menu-icon::after,
-.dropdown .nav-menu-icon::after {
+.navbar-toggler.collapsed .nav-menu-icon:after,
+.dropdown .nav-menu-icon:after {
   bottom: -4px;
   transition: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
@@ -10284,14 +10284,14 @@ footer .sjc-title {
   transform: rotate(225deg);
 }
 
-.navbar-toggler:not(.collapsed) .nav-menu-icon::before,
-.dropdown.show .nav-menu-icon::before {
+.navbar-toggler:not(.collapsed) .nav-menu-icon:before,
+.dropdown.show .nav-menu-icon:before {
   top: 0;
-  transition: top .1s ease-out;
+  transition: top 0.1s ease-out;
 }
 
-.navbar-toggler:not(.collapsed) .nav-menu-icon::after,
-.dropdown.show .nav-menu-icon::after {
+.navbar-toggler:not(.collapsed) .nav-menu-icon:after,
+.dropdown.show .nav-menu-icon:after {
   bottom: 3px;
   transition: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
   transform: rotate(-90deg);
@@ -10339,17 +10339,17 @@ footer .sjc-title {
   .sjc-subnav .dropdown-menu {
     top: 117%;
   }
-  .sjc-subnav .nav-link::after {
+  .sjc-subnav .nav-link:after {
     display: block;
-    content: "";
+    content: '';
     border-bottom: solid 2px #002856;
-    transition: transform .25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
     transform: scaleX(0);
   }
-  .sjc-subnav .nav-link:hover::after {
+  .sjc-subnav .nav-link:hover:after {
     transform: scaleX(1);
   }
-  .sjc-subnav .nav-item.show .nav-link::after {
+  .sjc-subnav .nav-item.show .nav-link:after {
     transform: scaleX(1);
   }
 }
@@ -10370,7 +10370,7 @@ footer .logo {
   padding: 20px 30px;
   color: #FFFFFF;
   background-image: url("../images/stjude-logo-child.svg");
-  background-position: 0px 3px;
+  background-position: 0 3px;
   background-repeat: no-repeat;
   background-size: 55px;
   border-color: #99C4F4;
@@ -10644,7 +10644,7 @@ footer .sub-footer ul li {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
-  content: "";
+  content: '';
   border-top: 0.3em solid;
   border-right: 0.3em solid transparent;
   border-bottom: 0;
