@@ -2,6 +2,10 @@
   background-color: #1874DC;
 }
 
+.Tree-items, .Tree-collectionItems {
+  padding-left: 0;
+}
+
 $stjude-sans-font-path: '../fonts/stjude-sans' !default;
 $stjude-images-path: '../images' !default;
 
