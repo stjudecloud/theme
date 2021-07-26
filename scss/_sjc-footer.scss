@@ -59,8 +59,8 @@ footer {
   }
 
   .footer-social {
-    @include media-breakpoint-down(lxl) {
-      padding: 10px 0 30px;
+    @include media-breakpoint-down(xl) {
+      padding-bottom: 30px;
     }
 
     h6 {
