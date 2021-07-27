@@ -1,20 +1,23 @@
 /* Omnibar - Global Top Bar */
+
 .sjc-omnibar {
+
   .navbar {
     flex-wrap: unset !important; // stylelint-disable declaration-no-important
     height: 65px;
-    padding: .5rem;
+    padding: 0.5rem;
     line-height: 1rem;
     background-color: $primary;
   }
 
   .login-btn {
-    padding: .25rem 1rem;
+    padding: 0.25rem 1rem;
     font-size: 14px;
     line-height: 14px;
 
     &:hover {
       color: $white;
+
       /* stylelint-disable-next-line scss/at-function-named-arguments */
       background-color: scale-color($primary, $lightness: 20%);
     }
@@ -25,7 +28,7 @@
     width: 40px;
     height: 40px;
     padding: 0;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
     color: $white;
     text-align: center;
 
@@ -43,7 +46,7 @@
 
   .profile-dropdown-toggle:hover,
   .mega-dropdown-toggle:hover {
-    opacity: .85;
+    opacity: 0.85;
   }
 
   .dropdown.show > .nav-link {
@@ -56,10 +59,11 @@
     display: inline-block;
     padding: 20px 30px;
     color: $white;
-    background-image: url("#{$stjude-images-path}/stjude-logo-child.svg");
-    background-position: 3px 6px;
-    background-size: 72px;
-    border-color: #99c4f4;
+    background-image: url('#{$stjude-images-path}/stjude-logo-child.svg');
+    background-position: 0 3px;
+    background-repeat: no-repeat;
+    background-size: 55px;
+    border-color: #99C4F4;
     border-right: 1px solid;
   }
 
@@ -86,7 +90,7 @@
 
   .user-icon {
     padding: 10px;
-    background-image: url("#{$stjude-images-path}/user-icon.svg");
+    background-image: url('#{$stjude-images-path}/user-icon.svg');
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -95,7 +99,7 @@
     font-size: 1rem;
     line-height: 1.25rem;
     color: $blue-dark;
-    background: #f4f8fc;
+    background: #F4F8FC;
     border-top: none;
     border-radius: 0;
     box-shadow: $box-shadow-sm;
@@ -126,7 +130,7 @@
   .mega-dropdown-menu {
     display: block;
     overflow: hidden;
-    transition: transform .25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
     transform: scaleY(0);
     transform-origin: top;
   }
@@ -138,7 +142,7 @@
 
   .profile-dropdown-menu > ul,
   .mega-menu-container {
-    transition: transform .25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
     transform: translateY(calc(-100% - 65px));
   }
 
@@ -158,6 +162,9 @@
   .mega-dropdown-menu {
     width: 100%;
     margin-top: 0;
+    position: absolute;
+    left: 0;
+    top: 65px;
   }
 
   .mega-dropdown-col {
@@ -166,7 +173,7 @@
 
   .mega-menu-title,
   .featured-study__title {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     font-weight: 600;
     color: $blue-dark;
     text-transform: uppercase;
@@ -175,7 +182,7 @@
   .featured-study__image {
     width: 100%;
     max-width: 14rem;
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
   }
 
   .app-title {
@@ -186,7 +193,7 @@
   .app-title__icon {
     width: 30px;
     height: 30px;
-    margin-right: .75rem;
+    margin-right: 0.75rem;
   }
 
   .genomics-platform-subtext {
@@ -196,31 +203,35 @@
   /* Media Query Overrides ****************************************/
 
   @include media-breakpoint-down(sm) {
+
     .featured-study__image {
       display: none;
     }
   }
 
   @include media-breakpoint-only(sm) {
+
     .mega-dropdown-col {
       padding: 1rem;
     }
   }
 
   @include media-breakpoint-down(md) {
+
     .sjc-title {
       display: none;
     }
   }
 
   @include media-breakpoint-only(md) {
+
     .mega-dropdown-menu {
-      font-size: .75rem;
-      line-height: .9375rem;
+      font-size: 0.75rem;
+      line-height: 0.9375rem;
     }
 
     .mega-dropdown-col {
-      padding: .75rem;
+      padding: 0.75rem;
     }
 
     .mega-dropdown-col li {
@@ -242,9 +253,10 @@
   }
 
   @include media-breakpoint-up(md) {
+
     .mega-dropdown-col:last-child {
       padding-left: 1.5rem;
-      border-left: 1px solid #b3b3b3;
+      border-left: 1px solid #B3B3B3;
     }
 
     .featured-study {
@@ -254,6 +266,7 @@
   }
 
   @include media-breakpoint-up(lg) {
+
     .mega-dropdown-col {
       padding: 1rem;
     }
@@ -261,21 +274,22 @@
 }
 
 .nav-menu-icon {
+
   .navbar-toggler &,
   .dropdown & {
     width: 1.25rem;
     height: 3px;
-    content: "";
+    content: '';
     background-color: $white;
     border-radius: 5rem;
 
-    &::before,
-    &::after {
+    &:before,
+    &:after {
       position: relative;
       display: block;
       width: 1.25rem;
       height: 3px;
-      content: "";
+      content: '';
       background-color: $white;
       border-radius: 5rem;
     }
@@ -283,41 +297,42 @@
 
   .navbar-toggler &.bg-secondary {
     background-color: $secondary;
-    &::before,
-    &::after {
+
+    &:before,
+    &:after {
       background-color: $secondary;
     }
   }
 
   .navbar-toggler.collapsed &,
   .dropdown & {
-    transition: transform .22s cubic-bezier(.55, .055, .675, .19);
+    transition: transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 
-    &::before {
+    &:before {
       top: -7px;
-      transition: top .1s ease-in .25s;
+      transition: top 0.1s ease-in 0.25s;
     }
 
-    &::after {
+    &:after {
       bottom: -4px;
-      transition: bottom .1s ease-in .25s, transform .22s cubic-bezier(.55, .055, .675, .19);
+      transition: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     }
 
   }
 
-  .navbar-toggler:not(.collapsed) &,
+  .navbar-toggler:not( .collapsed ) &,
   .dropdown.show & {
-    transition: transform .22s cubic-bezier(.215, .61, .355, 1) .12s;
+    transition: transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
     transform: rotate(225deg);
 
-    &::before {
+    &:before {
       top: 0;
-      transition: top .1s ease-out;
+      transition: top 0.1s ease-out;
     }
 
-    &::after {
+    &:after {
       bottom: 3px;
-      transition: bottom .1s ease-out, transform .22s cubic-bezier(.215, .61, .355, 1) .12s;
+      transition: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
       transform: rotate(-90deg);
     }
   }
@@ -327,7 +342,13 @@
   font-size: 1rem;
   line-height: 1.5rem;
   background-color: $white;
-  border-bottom: rgba(0, 0, 0, .15) 1px solid;
+  border-bottom: rgba(0, 0, 0, 0.15) 1px solid;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  .navbar-toggler {
+    padding: 0.25rem 0.65rem;
+  }
 
   .dropdown-menu {
     border-radius: 0;
@@ -348,6 +369,7 @@
   }
 
   @include media-breakpoint-down(sm) {
+
     .dropdown-menu {
       border: 0;
     }
@@ -358,6 +380,7 @@
   }
 
   @include media-breakpoint-up(md) {
+
     .sub-menu-text {
       display: none;
     }
@@ -367,25 +390,22 @@
     }
 
     .nav-link {
-      &::after {
+
+      &:after {
         display: block;
-        content: "";
+        content: '';
         border-bottom: solid 2px $blue-dark;
-        transition: transform .25s ease-in-out;
+        transition: transform 0.25s ease-in-out;
         transform: scaleX(0);
       }
 
-      &:hover::after {
+      &:hover:after {
         transform: scaleX(1);
       }
     }
 
-    .nav-item.show .nav-link::after {
+    .nav-item.show .nav-link:after {
       transform: scaleX(1);
     }
-  }
-
-  .navbar-nav .nav-item:first-child > .nav-link {
-    padding-left: 0;
   }
 }
