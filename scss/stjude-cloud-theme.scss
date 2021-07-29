@@ -16,3 +16,11 @@
 @import 'sjc-wavy-bottom';
 @import 'typography';
 @import 'caret';
+
+a {
+  text-decoration: none;
+}
+
+.text-dark {
+  color: $gray-darkest !important;
+}
