@@ -1,0 +1,48 @@
+{
+  "name": "theme-vue",
+  "author": "St. Jude Cloud",
+  "version": "1.0.0",
+  "description": "Vue implementation for St. Jude Cloud Theme components",
+  "main": "dist/stjudecloud-theme-vue.umd.min.js",
+  "unpkg": "dist/stjudecloud-theme-vue.umd.min.js",
+  "jsdelivr": "dist/stjudecloud-theme-vue.umd.min.js",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "homepage": "https://stjude.cloud",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stjudecloud/theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stjudecloud/theme/issues"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name stjudecloud-theme-vue src/main.js",
+    "prepare": "$npm_execpath run build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/test-utils": "^2.0.0-0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.0.0",
+    "prettier": "^2.2.1",
+    "typescript": "~3.9.3",
+    "vue-jest": "^5.0.0-0"
+  }
+}
