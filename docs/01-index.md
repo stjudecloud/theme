@@ -11,7 +11,7 @@ We use Figma for mockups and prototypes on the St. Jude Cloud project. Once you 
 | Javascript Framework | CSS Framework | NPM Package                                      |
 | -------------------- | ------------- | ------------------------------------------------ |
 | React                | Bootstrap     | See the [official React package][react-package]. |
-<!-- | Vue                  | TailwindCSS   | See the [official Vue package][vue-package].     | -->
+| <!--                 | Vue           | TailwindCSS                                      | See the [official Vue package][vue-package]. | --> |
 
 We use [Fractal][fractal] for [design.stjude.cloud]. See the `README.md` on the [theme repo][readme] for more details on developing, installing, and contributing to our theme.
 
