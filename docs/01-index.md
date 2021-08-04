@@ -6,7 +6,7 @@ We use Figma for mockups and prototypes on the St. Jude Cloud project. Once you 
 
 ## Development
 
-[design.stjude.cloud] and the corresponding source at the [St. Jude Cloud theme repo][theme-repo] represent the production ready version of the design system. Updates to the design system are governed through pull requests that are worked on by multiple teams, and the packages packages listed below are updated in sync to ensure the look and feel remains consistent across the ecosystem.
+[design.stjude.cloud] and the corresponding source at the [St. Jude Cloud theme repo][theme-repo] represent the production ready version of the design system. Updates to the design system are governed through pull requests that are worked on by multiple teams, and the packages listed below are updated in sync to ensure the look and feel remains consistent across the ecosystem.
 
 | Javascript Framework | CSS Framework | NPM Package                                      |
 | -------------------- | ------------- | ------------------------------------------------ |
