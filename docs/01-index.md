@@ -18,7 +18,7 @@ We use [Fractal][fractal] for [design.stjude.cloud]. See the `README.md` on the 
 
 If you'd like to suggest modifications to the design system or add new components, here is the process we follow.
 
-### Protyping
+### Prototyping
 
 To start, you'll need to **prototype** your idea using Figma and share it with the [#stjudecloud-design] Slack channel for feedback from the other designers.
 
