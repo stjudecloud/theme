@@ -19,14 +19,26 @@ We use [Fractal][fractal] for [design.stjude.cloud]. See the `README.md` on the 
 
 If you'd like to suggest modifications to the design system or add new components, here is the process we follow.
 
-1. To start, you'll need to **prototype** your idea using Figma and share it with the [#stjudecloud-design] Slack channel for feedback from the other designers.
-2. Once you've built sufficient support from the design team for your idea, you should **integrate** your changes into the [St. Jude Cloud Design System][figma-dsm] project in Figma. Once you have completed this, work with others in [#stjudecloud-design] to ensure that your component is configured correctly and can be used by other designers.
-3. Getting your ideas into the production design system requires **developing** a PR with the following pieces.
-  - First, create a live rendered version that lives within an appropriate component on [design.stjude.cloud] (the Fractal site). Show [#stjudecloud-design] and ensure that there is agreement that your changes look and behave as expected.
-  - Next, create your component in the Javascript framework your team uses (React or Vue). You only need to create the version which is relevant to your team.
-  - After the first framework is implemented, you can create a draft PR and tag maintainers on the other Javascript frameworks we support to implement their version.
-  - Last, merge the PR when the changes are incorporated into both frameworks. This should trigger releases to both NPM packages at the same time.
-4. Finally, the libraries can be updated in each application. If changes are site wide and need to be synced (e.g., changes to the Omnibar), it's up to the individual who led the PR to ensure all of the product teams **release** the change on the same date. If the changes are optional and not used in every project, updates can be rolled out separately.
+### Protyping
+
+To start, you'll need to **prototype** your idea using Figma and share it with the [#stjudecloud-design] Slack channel for feedback from the other designers.
+
+### Integrate into Figma
+
+Once you've built sufficient support from the design team for your idea, you should **integrate** your changes into the [St. Jude Cloud Design System][figma-dsm] project in Figma. Work with others in [#stjudecloud-design] to ensure that your component is configured correctly and can be used by other designers.
+
+### Create a PR on the theme repo
+
+Getting your ideas into the production design system requires **developing** a PR with the following pieces.
+
+1. First, create a live rendered version that lives within an appropriate component on [design.stjude.cloud] (the Fractal site). Show [#stjudecloud-design] and ensure that there is agreement that your changes look and behave as expected.
+2. Next, create your component in the Javascript framework your team uses (React or Vue). You only need to create the version which is relevant to your team.
+3. After the first framework is implemented, you can create a draft PR and tag maintainers on the other Javascript frameworks we support to implement their version.
+4. Last, merge the PR when the changes are incorporated into both frameworks. This should trigger releases to both NPM packages at the same time.
+
+### Release changes to Apps
+
+Finally, the libraries can be updated in each application. If changes are site wide and need to be synced (e.g., changes to the Omnibar), it's up to the individual who led the PR to ensure all of the product teams **release** the change on the same date. If the changes are optional and not used in every project, updates can be rolled out separately.
 
 [fractal]: https://fractal.build
 [figma-dsm]: https://www.figma.com/file/SggB3UbUHRylKMZkikdZUB/St.-Jude-Cloud-Design-System
