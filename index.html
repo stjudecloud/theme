@@ -87,37 +87,40 @@
     <img src="./images/design-cover-img@2x.jpg" alt="Welcome to design.stjude.cloud!" width="1280px" height="320px" style="max-width: unset"/>
 
 <h2 id="getting-started">Getting Started</h2>
+<p>We use Figma for mockups and prototypes on the St. Jude Cloud project. Once you are added to the St. Jude Cloud Figma group, you may visit the <a href="https://www.figma.com/file/SggB3UbUHRylKMZkikdZUB/St.-Jude-Cloud-Design-System">St. Jude Cloud Design System project</a>. The instructions to get started with the design system are on the <a href="https://www.figma.com/file/SggB3UbUHRylKMZkikdZUB/St.-Jude-Cloud-Design-System?node-id=155%3A29310">Getting Started</a> page in the Figma project. Note that the Figma file may contain experimental components and does not represent the official, production version of our design system.</p>
+<h2 id="development">Development</h2>
+<p><a href="https://design.stjude.cloud">design.stjude.cloud</a> and the corresponding source at the <a href="https://github.com/stjudecloud/theme">St. Jude Cloud theme repo</a> represent the production ready version of the design system. Updates to the design system are governed through pull requests that are worked on by multiple teams, and the packages listed below are updated in sync to ensure the look and feel remains consistent across the ecosystem.</p>
+<table>
+<thead>
+<tr>
+<th>Javascript Framework</th>
+<th>CSS Framework</th>
+<th>NPM Package</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>React</td>
+<td>Bootstrap</td>
+<td>See the <a href="https://www.npmjs.com/package/@stjudecloud/theme-react">official React package</a>.</td>
+</tr>
+</tbody></table>
+<p>We use <a href="https://fractal.build">Fractal</a> for <a href="https://design.stjude.cloud">design.stjude.cloud</a>. See the <code>README.md</code> on the <a href="https://github.com/stjudecloud/theme#readme">theme repo</a> for more details on developing, installing, and contributing to our theme.</p>
+<h2 id="process-checklist">Process Checklist</h2>
+<p>If you’d like to suggest modifications to the design system or add new components, here is the process we follow.</p>
+<h3 id="prototyping">Prototyping</h3>
+<p>To start, you’ll need to <strong>prototype</strong> your idea using Figma and share it with the <a href="https://stjude.slack.com/messages/stjudecloud-design">#stjudecloud-design</a> Slack channel for feedback from the other designers.</p>
+<h3 id="integrate-into-figma">Integrate into Figma</h3>
+<p>Once you’ve built sufficient support from the design team for your idea, you should <strong>integrate</strong> your changes into the <a href="https://www.figma.com/file/SggB3UbUHRylKMZkikdZUB/St.-Jude-Cloud-Design-System">St. Jude Cloud Design System</a> project in Figma. Work with others in <a href="https://stjude.slack.com/messages/stjudecloud-design">#stjudecloud-design</a> to ensure that your component is configured correctly and can be used by other designers.</p>
+<h3 id="create-a-pr-on-the-theme-repo">Create a PR on the theme repo</h3>
+<p>Getting your ideas into the production design system requires <strong>developing</strong> a PR on the theme repo for your Javascript and CSS framework of choice. The process for developing and merging your PR should follow these steps:</p>
 <ol>
-<li><p>If you need to mockup or prototype, you can start by downloading our Sketch DSM - <a href="https://www.sketch.com/s/5f06f430-fa20-4aaf-ad60-6898bbda3de3">Sketch Design System</a></p>
-</li>
-<li><p>If you are using the theme in your project or prototype simply install the <a href="https://github.com/stjudecloud/theme" target="_blank">theme NPM packages</a>:</p>
-</li>
+<li>First, create a live rendered version that lives within an appropriate component on <a href="https://design.stjude.cloud">design.stjude.cloud</a> (the Fractal site). Show <a href="https://stjude.slack.com/messages/stjudecloud-design">#stjudecloud-design</a> and ensure that there is agreement that your changes look and behave as expected.</li>
+<li>Next, create your component in the Javascript and CSS frameworks that your team uses (React/Bootstrap or Vue/Tailwind). You only need to create the version which is relevant to your team.</li>
+<li>Once the change has been code reviewed, you may merge the PR in. This should trigger releases to both the relevant Javascript and CSS NPM packages.</li>
 </ol>
-<ul>
-<li><a href="https://github.com/stjudecloud/theme">https://github.com/stjudecloud/theme</a></li>
-<li><a href="https://github.com/stjudecloud/theme/packages/140741">https://github.com/stjudecloud/theme/packages/140741</a></li>
-</ul>
-<ol start="3">
-<li><p>We use <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> as the base for the St. Jude Cloud theme.</p>
-</li>
-<li><p>We use <a href="https://fractal.build/" target="_blank">Fractal</a> for design.stjude.cloud:</p>
-</li>
-</ol>
-<h2 id="setup--install">Setup &amp; Install</h2>
-<ol>
-<li><code>git clone https://github.com/stjudecloud/design-system.git</code></li>
-<li><code>npm install</code></li>
-<li><code>npm i -g @frctl/fractal</code></li>
-<li>Make your changes</li>
-<li>Compile SASS: <code>npm run css-compile</code></li>
-<li>Lint your changes: <code>npm run css-lint</code></li>
-<li><code>npm run watch</code> is also provided for continuous compilation during development.</li>
-<li><code>fractal start --sync</code></li>
-</ol>
-<h2 id="contributing">Contributing</h2>
-<p>You do not need to commit changes to <code>dist/css/*</code> as part of your pull request. This directory will be updated on release.</p>
-<h2 id="getting-help">Getting Help</h2>
-<p>Need help? <a href="https://github.com/stjudecloud/design-system/issues/new" target="_blank">Open an issue</a>. We’ll be happy to help.</p>
+<p>At the current time, we don’t require that components or changes be incorporated in both Vue/Tailwind or React/Bootstrap at the same time—they can be implemented in each library on an “as needed” basis.</p>
+<h3 id="release-changes-to-apps">Release changes to Apps</h3>
+<p>Finally, the libraries can be updated in each application. If changes are site-wide and need to be synced (e.g., changes to the Omnibar), it’s up to the individual who led the PR to ensure all of the product teams <strong>release</strong> the change on the same date. If the changes are optional and not used in every project, updates can be rolled out separately.</p>
 
     
 
@@ -202,18 +205,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="./docs/apps-and-frameworks.html" data-role="tree-link" data-pjax data-handle="">
                 <span>Apps And Frameworks</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="./docs/sketch-design-system.html" data-role="tree-link" data-pjax data-handle="">
-                <span>Sketch Design System</span>
                 
             </a>
         </li>
@@ -1468,8 +1459,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-07-31T19:38:04.048Z">
-                                7/31/2021
+                            <time datetime="2021-08-04T23:57:36.646Z">
+                                8/4/2021
                             </time>
                         
                     </dd>
