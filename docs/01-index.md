@@ -28,16 +28,17 @@ Once you've built sufficient support from the design team for your idea, you sho
 
 ### Create a PR on the theme repo
 
-Getting your ideas into the production design system requires **developing** a PR with the following pieces.
+Getting your ideas into the production design system requires **developing** a PR on the theme repo for your Javascript and CSS framework of choice. The process for developing and merging your PR should follow these steps:
 
 1. First, create a live rendered version that lives within an appropriate component on [design.stjude.cloud] (the Fractal site). Show [#stjudecloud-design] and ensure that there is agreement that your changes look and behave as expected.
-2. Next, create your component in the Javascript framework your team uses (React or Vue). You only need to create the version which is relevant to your team.
-3. After the first framework is implemented, you can create a draft PR and tag maintainers on the other Javascript frameworks we support to implement their version.
-4. Last, merge the PR when the changes are incorporated into both frameworks. This should trigger releases to both NPM packages at the same time.
+2. Next, create your component in the Javascript and CSS frameworks that your team uses (React/Bootstrap or Vue/Tailwind). You only need to create the version which is relevant to your team.
+3. Once the change has been code reviewed, you may merge the PR in. This should trigger releases to both the relevant Javascript and CSS NPM packages.
+
+At the current time, we don't require that components or changes be incorporated in both Vue/Tailwind or React/Bootstrap at the same time—they can be implemented in each library on an "as needed" basis.
 
 ### Release changes to Apps
 
-Finally, the libraries can be updated in each application. If changes are site wide and need to be synced (e.g., changes to the Omnibar), it's up to the individual who led the PR to ensure all of the product teams **release** the change on the same date. If the changes are optional and not used in every project, updates can be rolled out separately.
+Finally, the libraries can be updated in each application. If changes are site-wide and need to be synced (e.g., changes to the Omnibar), it's up to the individual who led the PR to ensure all of the product teams **release** the change on the same date. If the changes are optional and not used in every project, updates can be rolled out separately.
 
 [fractal]: https://fractal.build
 [figma-dsm]: https://www.figma.com/file/SggB3UbUHRylKMZkikdZUB/St.-Jude-Cloud-Design-System
