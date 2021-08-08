@@ -1,0 +1,13 @@
+{
+  "name": "@stjudecloud/assets",
+  "version": "1.0.0-rc.0",
+  "description": "Assets for the St. Jude Cloud design system.",
+  "files": [
+    "fonts/**/*",
+    "images/**/*",
+    "loaders/**/*",
+    "pdfs/**/*"
+  ],
+  "author": "St. Jude Cloud <support@stjude.cloud>",
+  "license": "UNLICENSED"
+}
