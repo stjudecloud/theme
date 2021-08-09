@@ -5,39 +5,49 @@ import Navbar from "../src/Navbar";
 
 export default {
   title: "Navbar",
-  component: Navbar
+  component: Navbar,
+  argTypes: {
+    appName: {
+      name: 'App Name',
+      defaultValue: "Portal Name",
+      description: "Name of the application the Navbar is rendered on.",
+      control: {
+        type: 'text'
+      }
+    }
+  }
 };
 
-export const NoUserDropdowns = () => (
+export const NoUserDropdowns = ({appName}) => (
   <StaticRouter>
     <Navbar
-      portalConfig={{portalTitle: "Storybook Sample", portalLink: "/"}}
+      portalConfig={{portalTitle: appName, portalLink: "/"}}
     />
   </StaticRouter>
 );
 
-export const UserLoggedOut = () => (
+export const UserLoggedOut = ({appName}) => (
   <StaticRouter>
     <Navbar
-      portalConfig={{portalTitle: "Storybook Sample", portalLink: "/"}}
+      portalConfig={{portalTitle: appName, portalLink: "/"}}
       loginConfig={{loginLink: "/", show: true}}
     />
   </StaticRouter>
 );
 
-export const UserLoggedIn = () => (
+export const UserLoggedIn = ({appName}) => (
   <StaticRouter>
     <Navbar
-      portalConfig={{portalTitle: "Storybook Sample", portalLink: "/"}}
+      portalConfig={{portalTitle: appName, portalLink: "/"}}
       userDropdownConfig={{logoutLink: "/", show: true}}
     />
   </StaticRouter>
 );
 
-export const UserLoggedInDropdownWithAdditionalItems = () => (
+export const UserLoggedInDropdownWithAdditionalItems = ({appName}) => (
   <StaticRouter>
     <Navbar
-      portalConfig={{portalTitle: "Storybook Sample", portalLink: "/"}}
+      portalConfig={{portalTitle: appName, portalLink: "/"}}
       userDropdownConfig={{logoutLink: "/", show: true, additionalItems: (
         <>
           <li>
@@ -58,7 +68,7 @@ export const UserLoggedInDropdownWithAdditionalItems = () => (
 );
 
 
-export const CustomDropdown = () => {
+export const CustomDropdown = ({appName}) => {
   // Force react-bootstrap to render the dropdown markdown so CSS can animate
   // the slide on toggle. After setting `show`, immediately unset to allow
   // dropdowns to function normally and independently.
@@ -70,7 +80,7 @@ export const CustomDropdown = () => {
   return (
     <StaticRouter>
       <Navbar
-        portalConfig={{portalTitle: "Storybook Sample", portalLink: "/"}}
+        portalConfig={{portalTitle: appName, portalLink: "/"}}
         userDropdownConfig={{logoutLink: "/", show: true}}
       >
         <Dropdown className="user-dropdown" title="Custom Dropdown">

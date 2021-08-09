@@ -1,9 +1,14 @@
 const path = require("path");
 
-// Export a function. Accept the base config as the only param.
 module.exports = {
-  stories: ["../stories/**/*.stories.js"],
-  addons: ["@storybook/addon-actions", "@storybook/addon-links"],
+  "stories": [
+    "../stories/**/*.stories.mdx",
+    "../stories/**/*.stories.@(js|jsx|ts|tsx)"
+  ],
+  "addons": [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials"
+  ],
   webpackFinal: async config => {
     // Automatically include St. Jude Cloud theme.
     config.entry.push("./stories/theme.scss");

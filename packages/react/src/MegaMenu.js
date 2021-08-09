@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Container, Row, Col } from "react-bootstrap";
 
-import FeaturedImage from "@stjudecloud/theme-bootstrap/assets/images/featured-study.jpg";
-import GenomicsPlatformIcon from "@stjudecloud/theme-bootstrap/assets/images/icon-genomics-platform.png";
-import PeCanIcon from "@stjudecloud/theme-bootstrap/assets/images/icon-pecan.png";
-import VizCommIcon from "@stjudecloud/theme-bootstrap/assets/images/icon-viz.png";
+import FeaturedImage from "@stjudecloud/assets/images/featured-study.jpg";
+import GenomicsPlatformIcon from "@stjudecloud/assets/images/icon-genomics-platform.png";
+import PeCanIcon from "@stjudecloud/assets/images/icon-pecan.png";
+import VizCommIcon from "@stjudecloud/assets/images/icon-viz.png";
 
 function MegaMenu() {
   return (
