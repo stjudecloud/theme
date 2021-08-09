@@ -69,7 +69,7 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig}) {
     userDropdown = (
       <Dropdown className="user-dropdown" title="User Info">
         <Dropdown.Toggle as={Nav.Link} className="profile-dropdown-toggle">
-          <span className="user-icon text-hide">Account</span>
+          <span className="user-icon" alt="Account Information"></span>
         </Dropdown.Toggle>
         <Dropdown.Menu className="profile-dropdown-menu" alignRight show={show}>
           <ul className="list-unstyled">
@@ -103,7 +103,7 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig}) {
 
           <Dropdown className="mega-dropdown" title="St. Jude Cloud Mega Menu">
             <Dropdown.Toggle as={Nav.Link} className="profile-dropdown-toggle">
-              <div className="nav-menu-icon text-hide">Menu</div>
+              <span className="nav-menu-icon" alt="Menu"></span>
             </Dropdown.Toggle>
             <Dropdown.Menu className="mega-dropdown-menu" show={show}>
               <MegaMenu />
