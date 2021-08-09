@@ -45,17 +45,18 @@
   "dependencies": {
     "bootstrap": "5.0.2",
     "clean-css-cli": "^4.3.0",
-    "node-sass": "^6.0.0",
     "node-sass-package-importer": "^5.3.1",
     "nodemon": "^1.19.4",
     "npm-run-all": "^4.1.5",
-    "sass": "^1.35.2",
-    "stylelint": "^13.11.0",
+    "stylelint": "^13.13.1",
     "stylelint-config-twbs-bootstrap": "^0.4.0"
   },
   "devDependencies": {
-    "@frctl/fractal": "^1.5.4",
-    "@frctl/mandelbrot": "^1.8.1",
-    "stylelint-order": "^4.1.0"
+    "@frctl/fractal": "^1.5.11",
+    "@frctl/mandelbrot": "^1.9.4",
+    "sass": "^1.37.5",
+    "sass-loader": "^10",
+    "stylelint-order": "^4.1.0",
+    "webpack": "^5.49.0"
   }
 }
