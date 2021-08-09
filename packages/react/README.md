@@ -2,10 +2,10 @@
 Ready-to-use React components available for St. Jude Cloud React apps!
 
 ## Using this package
-`npm add @stjudecloud/theme-react`
+`npm add @stjudecloud/theme-bootstrap-react`
 
 ```javascript
-  import {Navbar} from '@stjudecloud/theme-react';
+  import {Navbar} from '@stjudecloud/theme-bootstrap-react';
 
   function MyComponent() {
     return (
