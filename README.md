@@ -1,8 +1,16 @@
-# St. Jude Cloud Theme
+<p align="center">
+  <a href="https://github.com/stjudecloud/theme"><img src="./assets/images/github-header.png" width="800" title="St. Jude Cloud Theme Repo"></a>
+  <br />
+  <br />
+  <a href="https://github.com/stjudecloud/theme/actions">
+    <img alt="Build Status" src="https://github.com/stjudecloud/theme/workflows/CI/badge.svg" />
+  </a>
+  <a href="https://design.stjude.cloud" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+</p>
 
-[![CI Status](https://github.com/stjudecloud/theme/workflows/CI/badge.svg)](https://github.com/stjudecloud/theme/actions)
-
-This repository provides theme guidelines and plug-n-play style components for St. Jude web portal use.
+> This repository provides theme guidelines and plug-n-play style components for St. Jude web portal use.
 
 ## Development Quick Start
 
