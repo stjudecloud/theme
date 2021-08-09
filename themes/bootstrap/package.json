@@ -1,0 +1,65 @@
+{
+  "name": "@stjudecloud/theme-bootstrap",
+  "version": "4.3.22-rc.4",
+  "description": "Bootstrap Sass/CSS theme for the St. Jude Cloud project.",
+  "scripts": {
+    "build": "npm-run-all clean build:dev build:prod",
+    "build:dev": "npx parcel build --target development --no-cache",
+    "build:prod": "npx parcel build --target production --no-cache",
+    "clean": "npx rimraf dist/",
+    "lint": "npx stylelint '**/*.scss'",
+    "prepublishOnly": "npm-run-all lint build",
+    "watch": "npx parcel watch --target development --no-cache"
+  },
+  "keywords": [
+    "St. Jude",
+    "St. Jude Cloud",
+    "Design System",
+    "Pattern Library",
+    "Bootstrap Theme",
+    "CSS",
+    "Sass"
+  ],
+  "homepage": "https://design.stjude.cloud",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stjudecloud/theme.git"
+  },
+  "license": "UNLICENSED",
+  "author": "St. Jude Cloud <support@stjude.cloud>",
+  "files": [
+    "dist/*",
+    "scss/**/*.scss"
+  ],
+  "dependencies": {
+    "@stjudecloud/assets": "^1.0.0-rc.0",
+    "bootstrap": "4.3.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.0.0-rc.0",
+    "rimraf": "^3.0.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-config-twbs-bootstrap": "^2.2.3",
+    "stylelint-order": "^4.1.0"
+  },
+  "peerDependencies": {
+    "bootstrap": "4.3.1"
+  },
+  "development": "stjude-cloud-theme.css",
+  "production": "stjude-cloud-theme.min.css",
+  "targets": {
+    "production": {
+      "source": "scss/stjude-cloud-theme.scss",
+      "distDir": "dist/"
+    },
+    "development": {
+      "source": "scss/stjude-cloud-theme.scss",
+      "distDir": "dist/",
+      "optimize": false
+    }
+  }
+}
