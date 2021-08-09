@@ -8,6 +8,7 @@
     "build:prod": "npx parcel build --target production --no-cache",
     "clean": "npx rimraf dist/",
     "lint": "npx stylelint '**/*.scss'",
+    "start": "$npm_execpath run watch",
     "prepublishOnly": "npm-run-all lint build",
     "watch": "npx parcel watch --target development --no-cache"
   },
