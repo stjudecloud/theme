@@ -1,0 +1,8 @@
+{
+  "name": "@stjudecloud/theme",
+  "private": true,
+  "scripts": {
+    "lint:bootstrap": "cd themes/bootstrap && npm install && npm run lint",
+    "lint": "$npm_execpath run lint:bootstrap"
+  }
+}
