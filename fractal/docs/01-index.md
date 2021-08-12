@@ -8,9 +8,12 @@ We use Figma for mockups and prototypes on the St. Jude Cloud project. Once you 
 
 [design.stjude.cloud] and the corresponding source at the [St. Jude Cloud theme repo][theme-repo] represent the production ready version of the design system. Updates to the design system are governed through pull requests that are worked on by multiple teams, and the packages listed below are updated in sync to ensure the look and feel remains consistent across the ecosystem.
 
-| Javascript Framework | CSS Framework | NPM Package                                      |
-| -------------------- | ------------- | ------------------------------------------------ |
-| React                | Bootstrap     | See the [official React package][react-package]. |
+|              Package               |                  Folder                  | Published to NPM | Description                                                                                                                                                                      |
+| :--------------------------------: | :--------------------------------------: | :--------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|       `@stjudecloud/assets`        |          [`assets/`](https://github.com/stjudecloud/theme/tree/main/assets)           |       YES        | Contains all, non-minified assets used on the St. Jude Cloud project.                                                                                                            |
+|   `@stjudecloud/theme-bootstrap`   | [`themes/bootstrap`](https://github.com/stjudecloud/theme/tree/main/themes/bootstrap) |       YES        | Both production-ready and development files for the Bootstrap St. Jude Cloud theme                                                                                               |
+|      `@stjudecloud/ui-react`       |   [`packages/react`](https://github.com/stjudecloud/theme/tree/main/packages/react)   |       YES        | Production-ready React component library for the St. Jude Cloud design system. Note that CSS from `@stjudecloud/theme-bootstrap` must be loaded for elements to render properly. |
+| `@stjudecloud/design.stjude.cloud` |         [`fractal/`](https://github.com/stjudecloud/theme/tree/main/fractal)          |        NO        | Fractal source code for rendering [https://design.stjude.cloud](https://design.stjude.cloud)                                                                                     |
 
 We use [Fractal][fractal] for [design.stjude.cloud]. See the `README.md` on the [theme repo][readme] for more details on developing, installing, and contributing to our theme.
 
