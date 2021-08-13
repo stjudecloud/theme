@@ -3,11 +3,15 @@ import PropTypes from "prop-types";
 import { Navbar as BSNavbar, Nav, Dropdown, Button } from "react-bootstrap";
 
 let Link;
-try {
-  Link = require("react-router-dom").Link;
-} catch (err) {
-  Link = "a";
-}
+Link = "a";
+// Invariant failed: You should not use <Link> outside a <Router>
+// ^^ This was the error we saw after upgrading to the latest React.
+// 
+//try {
+  //Link = require("react-router-dom").Link;
+//} catch (err) {
+  //Link = "a";
+//}
 
 import MegaMenu from "./MegaMenu";
 
