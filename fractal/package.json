@@ -16,6 +16,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@frctl/mandelbrot": "^1.9.4",
     "@stjudecloud/assets": "^1.0.0-rc.0",
     "@stjudecloud/theme-bootstrap": "^4.3.22-rc.4",
     "@stjudecloud/ui-react": "^4.3.22-rc.0"
