@@ -1,13 +1,13 @@
-name: Azure Static Web Apps CI/CD
+name: Preview Branches
 
 on:
   push:
     branches:
-      - master
+      - main 
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
-      - master
+      - main 
   workflow_dispatch:
 
 jobs:
