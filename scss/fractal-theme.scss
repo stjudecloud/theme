@@ -6,6 +6,10 @@
   padding-left: 0;
 }
 
+.Tree-collectionItems { // stylelint-disable-line selector-class-pattern
+  padding-left: 0;
+}
+
 $stjude-sans-font-path: '../fonts/stjude-sans' !default;
 $stjude-images-path: '../images' !default;
 
