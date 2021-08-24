@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Navbar as BSNavbar, Nav, Dropdown, Button } from "react-bootstrap";
 
-let Link;
-Link = "a";
+let Link = "a";
 try {
   Link = require("react-router-dom").Link;
 } catch (err) {
