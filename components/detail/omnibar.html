@@ -534,22 +534,25 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-comment">/* Omnibar - Global Top Bar */</span>
+
 <span class="hljs-selector-class">.sjc-omnibar</span> {
+
   <span class="hljs-selector-class">.navbar</span> {
     <span class="hljs-attribute">flex-wrap</span>: unset <span class="hljs-meta">!important</span>; <span class="hljs-comment">// stylelint-disable declaration-no-important</span>
     <span class="hljs-attribute">height</span>: <span class="hljs-number">65px</span>;
-    <span class="hljs-attribute">padding</span>: .<span class="hljs-number">5rem</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.5rem</span>;
     <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1rem</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$primary</span>;
   }
 
   <span class="hljs-selector-class">.login-btn</span> {
-    <span class="hljs-attribute">padding</span>: .<span class="hljs-number">25rem</span> <span class="hljs-number">1rem</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.25rem</span> <span class="hljs-number">1rem</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
     <span class="hljs-attribute">line-height</span>: <span class="hljs-number">14px</span>;
 
     &amp;<span class="hljs-selector-pseudo">:hover</span> {
       <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+
       <span class="hljs-comment">/* stylelint-disable-next-line scss/at-function-named-arguments */</span>
       <span class="hljs-attribute">background-color</span>: scale-color(<span class="hljs-variable">$primary</span>, <span class="hljs-variable">$lightness</span>: <span class="hljs-number">20%</span>);
     }
@@ -560,7 +563,7 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
     <span class="hljs-attribute">width</span>: <span class="hljs-number">40px</span>;
     <span class="hljs-attribute">height</span>: <span class="hljs-number">40px</span>;
     <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
-    <span class="hljs-attribute">margin-left</span>: .<span class="hljs-number">5rem</span>;
+    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">0.5rem</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
     <span class="hljs-attribute">text-align</span>: center;
 
@@ -578,7 +581,7 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
 
   <span class="hljs-selector-class">.profile-dropdown-toggle</span><span class="hljs-selector-pseudo">:hover</span>,
   <span class="hljs-selector-class">.mega-dropdown-toggle</span><span class="hljs-selector-pseudo">:hover</span> {
-    <span class="hljs-attribute">opacity</span>: .<span class="hljs-number">85</span>;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.85</span>;
   }
 
   <span class="hljs-selector-class">.dropdown</span><span class="hljs-selector-class">.show</span> &gt; <span class="hljs-selector-class">.nav-link</span> {
@@ -591,10 +594,11 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
     <span class="hljs-attribute">display</span>: inline-block;
     <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">30px</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-    <span class="hljs-attribute">background-image</span>: url(<span class="hljs-string">&quot;#{$stjude-images-path}/stjude-logo-child.svg&quot;</span>);
-    <span class="hljs-attribute">background-position</span>: <span class="hljs-number">3px</span> <span class="hljs-number">6px</span>;
-    <span class="hljs-attribute">background-size</span>: <span class="hljs-number">72px</span>;
-    <span class="hljs-attribute">border-color</span>: <span class="hljs-number">#99c4f4</span>;
+    <span class="hljs-attribute">background-image</span>: url(<span class="hljs-string">&#x27;#{$stjude-images-path}/stjude-logo-child.svg&#x27;</span>);
+    <span class="hljs-attribute">background-position</span>: <span class="hljs-number">0</span> <span class="hljs-number">3px</span>;
+    <span class="hljs-attribute">background-repeat</span>: no-repeat;
+    <span class="hljs-attribute">background-size</span>: <span class="hljs-number">55px</span>;
+    <span class="hljs-attribute">border-color</span>: <span class="hljs-number">#99C4F4</span>;
     <span class="hljs-attribute">border-right</span>: <span class="hljs-number">1px</span> solid;
   }
 
@@ -621,7 +625,7 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
 
   <span class="hljs-selector-class">.user-icon</span> {
     <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
-    <span class="hljs-attribute">background-image</span>: url(<span class="hljs-string">&quot;#{$stjude-images-path}/user-icon.svg&quot;</span>);
+    <span class="hljs-attribute">background-image</span>: url(<span class="hljs-string">&#x27;#{$stjude-images-path}/user-icon.svg&#x27;</span>);
     <span class="hljs-attribute">background-repeat</span>: no-repeat;
     <span class="hljs-attribute">background-position</span>: center;
   }
@@ -630,7 +634,7 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
     <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
     <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.25rem</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue-dark</span>;
-    <span class="hljs-attribute">background</span>: <span class="hljs-number">#f4f8fc</span>;
+    <span class="hljs-attribute">background</span>: <span class="hljs-number">#F4F8FC</span>;
     <span class="hljs-attribute">border-top</span>: none;
     <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0</span>;
     <span class="hljs-attribute">box-shadow</span>: <span class="hljs-variable">$box-shadow-sm</span>;
@@ -661,7 +665,7 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
   <span class="hljs-selector-class">.mega-dropdown-menu</span> {
     <span class="hljs-attribute">display</span>: block;
     <span class="hljs-attribute">overflow</span>: hidden;
-    <span class="hljs-attribute">transition</span>: transform .<span class="hljs-number">25s</span> ease-in-out;
+    <span class="hljs-attribute">transition</span>: transform <span class="hljs-number">0.25s</span> ease-in-out;
     <span class="hljs-attribute">transform</span>: scaleY(<span class="hljs-number">0</span>);
     <span class="hljs-attribute">transform-origin</span>: top;
   }
@@ -673,7 +677,7 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
 
   <span class="hljs-selector-class">.profile-dropdown-menu</span> &gt; <span class="hljs-selector-tag">ul</span>,
   <span class="hljs-selector-class">.mega-menu-container</span> {
-    <span class="hljs-attribute">transition</span>: transform .<span class="hljs-number">25s</span> ease-in-out;
+    <span class="hljs-attribute">transition</span>: transform <span class="hljs-number">0.25s</span> ease-in-out;
     <span class="hljs-attribute">transform</span>: translateY(calc(-<span class="hljs-number">100%</span> - <span class="hljs-number">65px</span>));
   }
 
@@ -693,6 +697,9 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
   <span class="hljs-selector-class">.mega-dropdown-menu</span> {
     <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
     <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">65px</span>;
   }
 
   <span class="hljs-selector-class">.mega-dropdown-col</span> {
@@ -701,7 +708,7 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
 
   <span class="hljs-selector-class">.mega-menu-title</span>,
   <span class="hljs-selector-class">.featured-study__title</span> {
-    <span class="hljs-attribute">margin-bottom</span>: .<span class="hljs-number">5rem</span>;
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0.5rem</span>;
     <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$blue-dark</span>;
     <span class="hljs-attribute">text-transform</span>: uppercase;
@@ -710,7 +717,7 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
   <span class="hljs-selector-class">.featured-study__image</span> {
     <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
     <span class="hljs-attribute">max-width</span>: <span class="hljs-number">14rem</span>;
-    <span class="hljs-attribute">margin-bottom</span>: .<span class="hljs-number">75rem</span>;
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0.75rem</span>;
   }
 
   <span class="hljs-selector-class">.app-title</span> {
@@ -721,7 +728,7 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
   <span class="hljs-selector-class">.app-title__icon</span> {
     <span class="hljs-attribute">width</span>: <span class="hljs-number">30px</span>;
     <span class="hljs-attribute">height</span>: <span class="hljs-number">30px</span>;
-    <span class="hljs-attribute">margin-right</span>: .<span class="hljs-number">75rem</span>;
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">0.75rem</span>;
   }
 
   <span class="hljs-selector-class">.genomics-platform-subtext</span> {
@@ -731,31 +738,35 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
   <span class="hljs-comment">/* Media Query Overrides ****************************************/</span>
 
   <span class="hljs-keyword">@include</span> media-breakpoint-down(sm) {
+
     <span class="hljs-selector-class">.featured-study__image</span> {
       <span class="hljs-attribute">display</span>: none;
     }
   }
 
   <span class="hljs-keyword">@include</span> media-breakpoint-only(sm) {
+
     <span class="hljs-selector-class">.mega-dropdown-col</span> {
       <span class="hljs-attribute">padding</span>: <span class="hljs-number">1rem</span>;
     }
   }
 
   <span class="hljs-keyword">@include</span> media-breakpoint-down(md) {
+
     <span class="hljs-selector-class">.sjc-title</span> {
       <span class="hljs-attribute">display</span>: none;
     }
   }
 
   <span class="hljs-keyword">@include</span> media-breakpoint-only(md) {
+
     <span class="hljs-selector-class">.mega-dropdown-menu</span> {
-      <span class="hljs-attribute">font-size</span>: .<span class="hljs-number">75rem</span>;
-      <span class="hljs-attribute">line-height</span>: .<span class="hljs-number">9375rem</span>;
+      <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.75rem</span>;
+      <span class="hljs-attribute">line-height</span>: <span class="hljs-number">0.9375rem</span>;
     }
 
     <span class="hljs-selector-class">.mega-dropdown-col</span> {
-      <span class="hljs-attribute">padding</span>: .<span class="hljs-number">75rem</span>;
+      <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.75rem</span>;
     }
 
     <span class="hljs-selector-class">.mega-dropdown-col</span> <span class="hljs-selector-tag">li</span> {
@@ -777,9 +788,10 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
   }
 
   <span class="hljs-keyword">@include</span> media-breakpoint-up(md) {
+
     <span class="hljs-selector-class">.mega-dropdown-col</span><span class="hljs-selector-pseudo">:last-child</span> {
       <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">1.5rem</span>;
-      <span class="hljs-attribute">border-left</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#b3b3b3</span>;
+      <span class="hljs-attribute">border-left</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#B3B3B3</span>;
     }
 
     <span class="hljs-selector-class">.featured-study</span> {
@@ -789,6 +801,7 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
   }
 
   <span class="hljs-keyword">@include</span> media-breakpoint-up(lg) {
+
     <span class="hljs-selector-class">.mega-dropdown-col</span> {
       <span class="hljs-attribute">padding</span>: <span class="hljs-number">1rem</span>;
     }
@@ -796,21 +809,22 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
 }
 
 <span class="hljs-selector-class">.nav-menu-icon</span> {
+
   <span class="hljs-selector-class">.navbar-toggler</span> &amp;,
   <span class="hljs-selector-class">.dropdown</span> &amp; {
     <span class="hljs-attribute">width</span>: <span class="hljs-number">1.25rem</span>;
     <span class="hljs-attribute">height</span>: <span class="hljs-number">3px</span>;
-    <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
     <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5rem</span>;
 
-    &amp;<span class="hljs-selector-pseudo">::before</span>,
-    &amp;<span class="hljs-selector-pseudo">::after</span> {
-      <span class="hljs-attribute">position</span>: relative;
+    &amp;:before,
+    &amp;:after {
+      position: relative;
       <span class="hljs-attribute">display</span>: block;
       <span class="hljs-attribute">width</span>: <span class="hljs-number">1.25rem</span>;
       <span class="hljs-attribute">height</span>: <span class="hljs-number">3px</span>;
-      <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
+      <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
       <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
       <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5rem</span>;
     }
@@ -818,41 +832,42 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
 
   <span class="hljs-selector-class">.navbar-toggler</span> &amp;<span class="hljs-selector-class">.bg-secondary</span> {
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$secondary</span>;
-    &amp;<span class="hljs-selector-pseudo">::before</span>,
-    &amp;<span class="hljs-selector-pseudo">::after</span> {
-      <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$secondary</span>;
+
+    &amp;:before,
+    &amp;:after {
+      background-color: <span class="hljs-variable">$secondary</span>;
     }
   }
 
   <span class="hljs-selector-class">.navbar-toggler</span><span class="hljs-selector-class">.collapsed</span> &amp;,
   <span class="hljs-selector-class">.dropdown</span> &amp; {
-    <span class="hljs-attribute">transition</span>: transform .<span class="hljs-number">22s</span> cubic-bezier(.<span class="hljs-number">55</span>, .<span class="hljs-number">055</span>, .<span class="hljs-number">675</span>, .<span class="hljs-number">19</span>);
+    <span class="hljs-attribute">transition</span>: transform <span class="hljs-number">0.22s</span> cubic-bezier(<span class="hljs-number">0.55</span>, <span class="hljs-number">0.055</span>, <span class="hljs-number">0.675</span>, <span class="hljs-number">0.19</span>);
 
-    &amp;<span class="hljs-selector-pseudo">::before</span> {
-      <span class="hljs-attribute">top</span>: -<span class="hljs-number">7px</span>;
-      <span class="hljs-attribute">transition</span>: top .<span class="hljs-number">1s</span> ease-in .<span class="hljs-number">25s</span>;
+    &amp;:before {
+      top: -<span class="hljs-number">7px</span>;
+      <span class="hljs-attribute">transition</span>: top <span class="hljs-number">0.1s</span> ease-in <span class="hljs-number">0.25s</span>;
     }
 
-    &amp;<span class="hljs-selector-pseudo">::after</span> {
-      <span class="hljs-attribute">bottom</span>: -<span class="hljs-number">4px</span>;
-      <span class="hljs-attribute">transition</span>: bottom .<span class="hljs-number">1s</span> ease-in .<span class="hljs-number">25s</span>, transform .<span class="hljs-number">22s</span> cubic-bezier(.<span class="hljs-number">55</span>, .<span class="hljs-number">055</span>, .<span class="hljs-number">675</span>, .<span class="hljs-number">19</span>);
+    &amp;:after {
+      bottom: -<span class="hljs-number">4px</span>;
+      <span class="hljs-attribute">transition</span>: bottom <span class="hljs-number">0.1s</span> ease-in <span class="hljs-number">0.25s</span>, transform <span class="hljs-number">0.22s</span> cubic-bezier(<span class="hljs-number">0.55</span>, <span class="hljs-number">0.055</span>, <span class="hljs-number">0.675</span>, <span class="hljs-number">0.19</span>);
     }
 
   }
 
-  <span class="hljs-selector-class">.navbar-toggler</span><span class="hljs-selector-pseudo">:not</span>(.collapsed) &amp;,
+  <span class="hljs-selector-class">.navbar-toggler</span><span class="hljs-selector-pseudo">:not</span>( .collapsed ) &amp;,
   <span class="hljs-selector-class">.dropdown</span><span class="hljs-selector-class">.show</span> &amp; {
-    <span class="hljs-attribute">transition</span>: transform .<span class="hljs-number">22s</span> cubic-bezier(.<span class="hljs-number">215</span>, .<span class="hljs-number">61</span>, .<span class="hljs-number">355</span>, <span class="hljs-number">1</span>) .<span class="hljs-number">12s</span>;
+    <span class="hljs-attribute">transition</span>: transform <span class="hljs-number">0.22s</span> cubic-bezier(<span class="hljs-number">0.215</span>, <span class="hljs-number">0.61</span>, <span class="hljs-number">0.355</span>, <span class="hljs-number">1</span>) <span class="hljs-number">0.12s</span>;
     <span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">225deg</span>);
 
-    &amp;<span class="hljs-selector-pseudo">::before</span> {
-      <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
-      <span class="hljs-attribute">transition</span>: top .<span class="hljs-number">1s</span> ease-out;
+    &amp;:before {
+      top: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">transition</span>: top <span class="hljs-number">0.1s</span> ease-out;
     }
 
-    &amp;<span class="hljs-selector-pseudo">::after</span> {
-      <span class="hljs-attribute">bottom</span>: <span class="hljs-number">3px</span>;
-      <span class="hljs-attribute">transition</span>: bottom .<span class="hljs-number">1s</span> ease-out, transform .<span class="hljs-number">22s</span> cubic-bezier(.<span class="hljs-number">215</span>, .<span class="hljs-number">61</span>, .<span class="hljs-number">355</span>, <span class="hljs-number">1</span>) .<span class="hljs-number">12s</span>;
+    &amp;:after {
+      bottom: <span class="hljs-number">3px</span>;
+      <span class="hljs-attribute">transition</span>: bottom <span class="hljs-number">0.1s</span> ease-out, transform <span class="hljs-number">0.22s</span> cubic-bezier(<span class="hljs-number">0.215</span>, <span class="hljs-number">0.61</span>, <span class="hljs-number">0.355</span>, <span class="hljs-number">1</span>) <span class="hljs-number">0.12s</span>;
       <span class="hljs-attribute">transform</span>: rotate(-<span class="hljs-number">90deg</span>);
     }
   }
@@ -862,7 +877,13 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
   <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5rem</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
-  <span class="hljs-attribute">border-bottom</span>: rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, .<span class="hljs-number">15</span>) <span class="hljs-number">1px</span> solid;
+  <span class="hljs-attribute">border-bottom</span>: rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.15</span>) <span class="hljs-number">1px</span> solid;
+  <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">1rem</span>;
+  <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">1rem</span>;
+
+  <span class="hljs-selector-class">.navbar-toggler</span> {
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.25rem</span> <span class="hljs-number">0.65rem</span>;
+  }
 
   <span class="hljs-selector-class">.dropdown-menu</span> {
     <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0</span>;
@@ -883,6 +904,7 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
   }
 
   <span class="hljs-keyword">@include</span> media-breakpoint-down(sm) {
+
     <span class="hljs-selector-class">.dropdown-menu</span> {
       <span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
     }
@@ -893,6 +915,7 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
   }
 
   <span class="hljs-keyword">@include</span> media-breakpoint-up(md) {
+
     <span class="hljs-selector-class">.sub-menu-text</span> {
       <span class="hljs-attribute">display</span>: none;
     }
@@ -902,26 +925,23 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
     }
 
     <span class="hljs-selector-class">.nav-link</span> {
-      &amp;<span class="hljs-selector-pseudo">::after</span> {
-        <span class="hljs-attribute">display</span>: block;
-        <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
+
+      &amp;:after {
+        display: block;
+        <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
         <span class="hljs-attribute">border-bottom</span>: solid <span class="hljs-number">2px</span> <span class="hljs-variable">$blue-dark</span>;
-        <span class="hljs-attribute">transition</span>: transform .<span class="hljs-number">25s</span> ease-in-out;
+        <span class="hljs-attribute">transition</span>: transform <span class="hljs-number">0.25s</span> ease-in-out;
         <span class="hljs-attribute">transform</span>: scaleX(<span class="hljs-number">0</span>);
       }
 
-      &amp;<span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">::after</span> {
-        <span class="hljs-attribute">transform</span>: scaleX(<span class="hljs-number">1</span>);
+      &amp;<span class="hljs-selector-pseudo">:hover</span>:after {
+        transform: scaleX(<span class="hljs-number">1</span>);
       }
     }
 
-    <span class="hljs-selector-class">.nav-item</span><span class="hljs-selector-class">.show</span> <span class="hljs-selector-class">.nav-link</span><span class="hljs-selector-pseudo">::after</span> {
-      <span class="hljs-attribute">transform</span>: scaleX(<span class="hljs-number">1</span>);
+    <span class="hljs-selector-class">.nav-item</span><span class="hljs-selector-class">.show</span> <span class="hljs-selector-class">.nav-link</span>:after {
+      transform: scaleX(<span class="hljs-number">1</span>);
     }
-  }
-
-  <span class="hljs-selector-class">.navbar-nav</span> <span class="hljs-selector-class">.nav-item</span><span class="hljs-selector-pseudo">:first</span>-child &gt; <span class="hljs-selector-class">.nav-link</span> {
-    <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0</span>;
   }
 }
 </pre>
@@ -940,7 +960,7 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">7 KB</span>
+                    <span class="Meta-value">7.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -2373,8 +2393,8 @@ MegaMenu.displayName = <span class="hljs-string">&quot;St. Jude Cloud Navbar Meg
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-08-12T16:20:52.858Z">
-                                8/12/2021
+                            <time datetime="2021-08-26T16:44:33.959Z">
+                                8/26/2021
                             </time>
                         
                     </dd>
