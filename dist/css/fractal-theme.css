@@ -3,6 +3,14 @@
   background-color: #1874DC;
 }
 
+.Tree-items {
+  padding-left: 0;
+}
+
+.Tree-collectionItems {
+  padding-left: 0;
+}
+
 /* St. Jude Cloud Theme CSS */
 /* Typography ************************************************/
 /* Monochromatic - Grays - Bootstrap Defaults ****************/
@@ -10713,22 +10721,22 @@ textarea.form-control-lg {
   text-decoration: none;
 }
 
-.badge-darkest {
+.badge.bg-darkest {
   background-color: #333333;
   color: #FFFFFF;
 }
 
-.badge-pediatric-cancer {
+.badge.bg-pediatric-cancer {
   background-color: #5CA132;
   color: #FFFFFF;
 }
 
-.badge-cancer-survivorship {
+.badge.bg-cancer-survivorship {
   background-color: #EB4E36;
   color: #FFFFFF;
 }
 
-.badge-non-cancerous-diseases {
+.badge.bg-non-cancerous-diseases {
   background-color: #8332A7;
   color: #FFFFFF;
 }
@@ -11152,8 +11160,8 @@ textarea.form-control-lg {
 }
 
 footer .sjc-title {
-  position: absolute;
-  top: 12px;
+  position: relative;
+  top: -12px;
 }
 
 /* Omnibar - Global Top Bar */
@@ -11296,6 +11304,9 @@ footer .sjc-title {
 .sjc-omnibar .mega-dropdown-menu {
   width: 100%;
   margin-top: 0;
+  position: absolute;
+  left: 0;
+  top: 65px;
 }
 .sjc-omnibar .mega-dropdown-col {
   padding: 1rem 3.5rem;
@@ -11429,6 +11440,11 @@ footer .sjc-title {
   line-height: 1.5rem;
   background-color: #FFFFFF;
   border-bottom: rgba(0, 0, 0, 0.15) 1px solid;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.sjc-subnav .navbar-toggler {
+  padding: 0.25rem 0.65rem;
 }
 .sjc-subnav .dropdown-menu {
   border-radius: 0;
@@ -11474,15 +11490,13 @@ footer .sjc-title {
     transform: scaleX(1);
   }
 }
-.sjc-subnav .navbar-nav .nav-item:first-child > .nav-link {
-  padding-left: 0;
-}
 
 /* Footer */
 footer {
   padding: 30px 0 0;
   background-color: #002856;
   border: 0;
+  position: relative;
 }
 footer .logo {
   display: inline-block;
@@ -11519,22 +11533,22 @@ footer ul li a {
 footer ul li a:hover {
   color: #FFFFFF;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   footer .footer-about,
 footer .footer-apps {
     padding: 20px 0;
     text-align: center;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   footer .footer-social {
-    padding: 10px 0 30px;
+    padding-bottom: 30px;
   }
 }
 footer .footer-social h6, footer .footer-social .h6 {
   color: #EFF5FC;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   footer .footer-social h6, footer .footer-social .h6 {
     display: none;
   }
@@ -11571,7 +11585,7 @@ footer .sub-footer {
   color: #9EC0E7;
   background-color: #002044;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   footer .sub-footer {
     padding: 30px 0 23px;
     text-align: center;
@@ -11590,7 +11604,7 @@ footer .sub-footer .order-last {
 footer .sub-footer ul {
   margin: 1px;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   footer .sub-footer ul {
     padding-bottom: 10px;
   }
@@ -11598,7 +11612,7 @@ footer .sub-footer ul {
 footer .sub-footer ul li {
   display: inline-block;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   footer .sub-footer ul li {
     display: block;
     text-align: center;
@@ -11618,15 +11632,21 @@ footer .sub-footer ul li {
 .not-found .btn {
   font-weight: 700;
   padding: 15px 30px;
+  position: relative;
+  z-index: 100;
 }
 .not-found h2, .not-found .h2 {
   color: #FFFFFF;
   font-size: 184px;
   padding-top: 3rem;
+  position: relative;
+  z-index: 100;
 }
 .not-found h4, .not-found .h4 {
   color: #FFFFFF;
   padding-bottom: 30px;
+  position: relative;
+  z-index: 100;
 }
 
 .not-found:before {
@@ -11641,6 +11661,7 @@ footer .sub-footer ul li {
   position: absolute;
   opacity: 0.4;
   width: 100%;
+  z-index: 1;
 }
 
 .wavy-container {
@@ -11733,6 +11754,14 @@ footer .sub-footer ul li {
   border-right: 0.3em solid transparent;
   border-bottom: 0;
   border-left: 0.3em solid transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-dark {
+  color: #333333 !important;
 }
 
 /*# sourceMappingURL=fractal-theme.css.map */

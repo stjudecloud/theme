@@ -1,6 +1,6 @@
 {
   "name": "@stjudecloud/theme-react",
-  "version": "4.3.21",
+  "version": "5.0.0",
   "description": "React implementation for St. Jude Cloud Theme components",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
