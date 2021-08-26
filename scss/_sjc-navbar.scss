@@ -162,6 +162,9 @@
   .mega-dropdown-menu {
     width: 100%;
     margin-top: 0;
+    position: absolute;
+    left: 0;
+    top: 65px;
   }
 
   .mega-dropdown-col {
@@ -340,6 +343,12 @@
   line-height: 1.5rem;
   background-color: $white;
   border-bottom: rgba(0, 0, 0, 0.15) 1px solid;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  .navbar-toggler {
+    padding: 0.25rem 0.65rem;
+  }
 
   .dropdown-menu {
     border-radius: 0;
@@ -398,9 +407,5 @@
     .nav-item.show .nav-link:after {
       transform: scaleX(1);
     }
-  }
-
-  .navbar-nav .nav-item:first-child > .nav-link {
-    padding-left: 0;
   }
 }

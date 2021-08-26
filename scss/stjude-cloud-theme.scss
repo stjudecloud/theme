@@ -1,9 +1,8 @@
 // Bootstrap Overrides
 
-@import '~bootstrap/scss/functions';
-@import 'variables';
+@import './variables';
 
-@import '~bootstrap/scss/bootstrap';
+@import '../node_modules/bootstrap/scss/bootstrap';
 
 // St. Jude components
 @import 'mixins';
@@ -17,3 +16,11 @@
 @import 'sjc-wavy-bottom';
 @import 'typography';
 @import 'caret';
+
+a {
+  text-decoration: none;
+}
+
+.text-dark {
+  color: $gray-darkest !important;
+}
