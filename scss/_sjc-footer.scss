@@ -18,6 +18,10 @@ footer {
     border-right: 1px solid;
   }
 
+  .logo-container {
+    white-space: nowrap;
+  }
+
   .navbar-brand {
     @include media-breakpoint-only(lg) {
       margin-left: -45px;
