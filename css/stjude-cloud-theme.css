@@ -11496,6 +11496,9 @@ footer .logo {
   border-color: #99C4F4;
   border-right: 1px solid;
 }
+footer .logo-container {
+  white-space: nowrap;
+}
 @media (min-width: 992px) and (max-width: 1199.98px) {
   footer .navbar-brand {
     margin-left: -45px;
