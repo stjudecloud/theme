@@ -30,6 +30,7 @@ function Footer() {
             md={{ span: 4, offset: 4 }}
             lg={{ span: 3, offset: 5 }}
             xl={{ offset: 0 }}
+            className="logo-container"
           >
             <Navbar.Brand href="https://stjude.cloud">
               <span className="logo"></span>

@@ -17,22 +17,22 @@
   }
 }
 
-.badge-darkest {
+.badge.bg-darkest {
   background-color: $gray-darkest;
   color: $white;
 }
 
-.badge-pediatric-cancer {
+.badge.bg-pediatric-cancer {
   background-color: $pediatric-cancer;
   color: $white;
 }
 
-.badge-cancer-survivorship {
+.badge.bg-cancer-survivorship {
   background-color: $cancer-survivorship;
   color: $white;
 }
 
-.badge-non-cancerous-diseases {
+.badge.bg-non-cancerous-diseases {
   background-color: $non-cancerous-diseases;
   color: $white;
 }
