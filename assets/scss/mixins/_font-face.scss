@@ -1,0 +1,53 @@
+
+/**
+ * Declaration for a custom font face. In this case, the default is
+ * to declare the "St. Jude Sans" font face.
+ *
+ * @param   $stjude-sans-font-path Path to the folder containing your font.
+ * @param   $font-file-prefix      Filename of the font you're declaring.
+ * @param   $font-weight           Weight of the font you're declaring.
+ * @param   $font-family:          Name of the font you're declaring (default: "St. Jude Sans").
+ */
+@mixin font-face(
+  $stjude-sans-font-path,
+  $font-file-prefix,
+  $font-weight,
+  $font-family: "St. Jude Sans"
+) {
+
+  $font-prefix: $stjude-sans-font-path + "/" + $font-file-prefix;
+
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    src: url($font-prefix + ".eot") format("eot");
+    src: url($font-prefix + ".woff2") format("woff2");
+    src: url($font-prefix + ".woff") format("woff");
+    src: url($font-prefix + ".ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: $font-family;
+    font-style: italic;
+    font-weight: $font-weight;
+    src: url($font-prefix + "-italic.eot") format("eot");
+    src: url($font-prefix + "-italic.woff2") format("woff2");
+    src: url($font-prefix + "-italic.woff") format("woff");
+    src: url($font-prefix + "-italic.ttf") format("truetype");
+  }
+
+}
+
+/**
+ * Imports all fonts needed for the St. Jude Cloud theme.
+
+ * @param  $stjude-sans-font-path Path to the folder containing your font.
+ */
+@mixin fonts($stjude-sans-font-path) {
+  // Preserved for backwards compatability with old SCSS.
+  @include font-face($stjude-sans-font-path, "sjs-light", 100);
+  @include font-face($stjude-sans-font-path, "sjs-light", 300);
+  @include font-face($stjude-sans-font-path, "sjs-regular", 400);
+  @include font-face($stjude-sans-font-path, "sjs-medium", 500);
+  @include font-face($stjude-sans-font-path, "sjs-bold", 700);
+}

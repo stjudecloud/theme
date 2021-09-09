@@ -1,0 +1,10 @@
+/** Import Open Sans, our backup font. **/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+/** Import St. Jude Sans, our preferred font. **/
+@import "mixins/font-face";
+@include fonts("../fonts/stjude-sans");
+
+body {
+    font-family: "St. Jude Sans", "Open Sans";
+}

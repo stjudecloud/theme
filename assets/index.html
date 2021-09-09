@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link rel="stylesheet" href="css/base.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="omnibar">
+          <div class="pinup">
+            <a class="brand" href="https://stjude.cloud">
+              <div
+                id="logo"
+                role="img"
+                alt="Logo of St. Jude Children's Research Hospital"
+                title="Logo of St. Jude Children's Research Hospital"
+              ></div>
+              <div id="title">St. Jude Cloud</div>
+            </a>
+            <a id="application-name" href="https://platform.stjude.cloud"
+              >Genomics Platform</a
+            >
+          </div>
+          <div class="actions">
+            <button id="signin" type="button">Sign In</button>
+            <button id="menu" class="hamburger hamburger--spin" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="megamenu" aria-hidden="true">
+          <div class="container">
+            <div class="content-grid">
+              <div id="featured-study" class="col">
+                <a
+                  class="height-unset"
+                  href="https://stjude.cloud/studies/clinical-genomics"
+                  target="_blank"
+                >
+                  <img src="./images/featured-study.jpg" />
+                </a>
+                <div id="title">Featured Study</div>
+                <a
+                  id="body"
+                  href="https://stjude.cloud/studies/clinical-genomics"
+                  >Real-time Clinical Genomics</a
+                >
+                <a class="cta" href="https://stjude.cloud/studies"
+                  >View All Studies</a
+                >
+              </div>
+              <div class="col">
+                <div id="title">Research Domains</div>
+                <a
+                  href="https://stjude.cloud/research-domains/pediatric-cancer"
+                >
+                  Pediatric Cancer
+                </a>
+                <a
+                  href="https://stjude.cloud/research-domains/cancer-survivorship"
+                >
+                  Cancer Survivorship
+                </a>
+                <a
+                  href="https://stjude.cloud/research-domains/non-cancerous-diseases"
+                >
+                  Non-cancerous Diseases
+                </a>
+              </div>
+              <div class="col">
+                <div id="title">Apps</div>
+                <a class="app-link" href="https://platform.stjude.cloud">
+                  <div class="app-icon">
+                    <img
+                      id="genomics-platform"
+                      src="images/icon-genomics-platform.svg"
+                    />
+                  </div>
+                  <div>
+                    <div>Genomics Platform</div>
+                    <div class="subtext">Data & Tools</div>
+                  </div>
+                </a>
+                <a class="app-link" href="https://pecan.stjude.cloud">
+                  <div class="app-icon">
+                    <img id="pecan" src="images/icon-pecan.svg" />
+                  </div>
+                  <div>PeCan</div>
+                </a>
+                <a class="app-link" href="https://viz.stjude.cloud">
+                  <div class="app-icon">
+                    <img id="viz" src="images/icon-viz.svg" />
+                  </div>
+                  <div>Visualization Community</div>
+                </a>
+                <a class="cta" href="https://stjude.cloud/apps"
+                style="margin-top: 16px"
+                  >View All Apps</a
+                >
+              </div>
+              <div class="col">
+                <div id="title">Support</div>
+                <a href="https://university.stjude.cloud/docs/">Help Guides</a>
+                <a href="https://university.stjude.cloud/docs/faq/">FAQs</a>
+                <a href="https://stjude.cloud/contact">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </main>
+  </body>
+  <script>
+    var $menu = $(".hamburger--spin");
+    $menu.click(function () {
+      $menu.toggleClass("is-active");
+      $(".megamenu")
+        .toggleClass("show")
+        .attr("aria-hidden", function (_, hidden) {
+          return hidden == "false" ? "true" : "false";
+        });
+    });
+  </script>
+</html>
