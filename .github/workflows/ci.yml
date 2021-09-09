@@ -19,12 +19,12 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - run: npm install
-      - run: npm run build
+      - run: npm install && npm run build
+        working-directory: fractal/
       - uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.DEPLOY_KEY }}
-          publish_dir: fractal-build
+          publish_dir: fractal/fractal-build
           cname: design.stjude.cloud
           user_name: St. Jude Cloud
           user_email: support@stjude.cloud
