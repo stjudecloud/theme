@@ -1,0 +1,46 @@
+{
+  "_args": [
+    [
+      "@stjudecloud/assets@1.0.0-rc.0",
+      "/home/runner/work/theme/theme/fractal"
+    ]
+  ],
+  "_from": "@stjudecloud/assets@1.0.0-rc.0",
+  "_id": "@stjudecloud/assets@1.0.0-rc.0",
+  "_inBundle": false,
+  "_integrity": "sha512-ayi16cn2C91ls59zzWnimFARSIswDMOaaSiSqGNeyA6It87zJHLbb9gXKttuyeyUYYNAXyRgTcmhwAkHwu/rLA==",
+  "_location": "/@stjudecloud/assets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@stjudecloud/assets@1.0.0-rc.0",
+    "name": "@stjudecloud/assets",
+    "escapedName": "@stjudecloud%2fassets",
+    "scope": "@stjudecloud",
+    "rawSpec": "1.0.0-rc.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0-rc.0"
+  },
+  "_requiredBy": [
+    "/",
+    "/@stjudecloud/theme-bootstrap"
+  ],
+  "_resolved": false,
+  "_spec": "1.0.0-rc.0",
+  "_where": "/home/runner/work/theme/theme/fractal",
+  "author": {
+    "name": "St. Jude Cloud",
+    "email": "support@stjude.cloud"
+  },
+  "description": "Assets for the St. Jude Cloud design system.",
+  "files": [
+    "fonts/**/*",
+    "images/**/*",
+    "loaders/**/*",
+    "pdfs/**/*"
+  ],
+  "license": "UNLICENSED",
+  "name": "@stjudecloud/assets",
+  "version": "1.0.0-rc.0"
+}

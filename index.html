@@ -20,7 +20,7 @@
 
 <link rel="stylesheet" href="./themes/mandelbrot/css/blue.css?cachebust=1.9.4" type="text/css">
 
-<link rel="stylesheet" href="./css/fractal-theme.css?cachebust=1.9.4" type="text/css">
+<link rel="stylesheet" href="./fractal-theme.css?cachebust=1.9.4" type="text/css">
 
 <link rel="stylesheet" href="./themes/mandelbrot/css/highlight.css?cachebust=1.9.4" type="text/css">
 
@@ -84,7 +84,7 @@
 
     
     
-    <img src="./images/design-cover-img@2x.jpg" alt="Welcome to design.stjude.cloud!" width="1280px" height="320px" style="max-width: unset"/>
+    <img src="./assets/images/design-cover-img@2x.jpg" alt="Welcome to design.stjude.cloud!" width="1280px" height="320px" style="max-width: unset"/>
 
 <h2 id="getting-started">Getting Started</h2>
 <p>We use Figma for mockups and prototypes on the St. Jude Cloud project. Once you are added to the St. Jude Cloud Figma group, you may visit the <a href="https://www.figma.com/file/SggB3UbUHRylKMZkikdZUB/St.-Jude-Cloud-Design-System">St. Jude Cloud Design System project</a>. The instructions to get started with the design system are on the <a href="https://www.figma.com/file/SggB3UbUHRylKMZkikdZUB/St.-Jude-Cloud-Design-System?node-id=155%3A29310">Getting Started</a> page in the Figma project. Note that the Figma file may contain experimental components and does not represent the official, production version of our design system.</p>
@@ -93,15 +93,35 @@
 <table>
 <thead>
 <tr>
-<th>Javascript Framework</th>
-<th>CSS Framework</th>
-<th>NPM Package</th>
+<th align="center">Package</th>
+<th align="center">Folder</th>
+<th align="center">Published to NPM</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>React</td>
-<td>Bootstrap</td>
-<td>See the <a href="https://www.npmjs.com/package/@stjudecloud/theme-react">official React package</a>.</td>
+<td align="center"><code>@stjudecloud/assets</code></td>
+<td align="center"><a href="https://github.com/stjudecloud/theme/tree/main/assets"><code>assets/</code></a></td>
+<td align="center">YES</td>
+<td>Contains all, non-minified assets used on the St. Jude Cloud project.</td>
+</tr>
+<tr>
+<td align="center"><code>@stjudecloud/theme-bootstrap</code></td>
+<td align="center"><a href="https://github.com/stjudecloud/theme/tree/main/themes/bootstrap"><code>themes/bootstrap</code></a></td>
+<td align="center">YES</td>
+<td>Both production-ready and development files for the Bootstrap St. Jude Cloud theme</td>
+</tr>
+<tr>
+<td align="center"><code>@stjudecloud/ui-react</code></td>
+<td align="center"><a href="https://github.com/stjudecloud/theme/tree/main/packages/react"><code>packages/react</code></a></td>
+<td align="center">YES</td>
+<td>Production-ready React component library for the St. Jude Cloud design system. Note that CSS from <code>@stjudecloud/theme-bootstrap</code> must be loaded for elements to render properly.</td>
+</tr>
+<tr>
+<td align="center"><code>@stjudecloud/design.stjude.cloud</code></td>
+<td align="center"><a href="https://github.com/stjudecloud/theme/tree/main/fractal"><code>fractal/</code></a></td>
+<td align="center">NO</td>
+<td>Fractal source code for rendering <a href="https://design.stjude.cloud">https://design.stjude.cloud</a></td>
 </tr>
 </tbody></table>
 <p>We use <a href="https://fractal.build">Fractal</a> for <a href="https://design.stjude.cloud">design.stjude.cloud</a>. See the <code>README.md</code> on the <a href="https://github.com/stjudecloud/theme#readme">theme repo</a> for more details on developing, installing, and contributing to our theme.</p>
@@ -1459,8 +1479,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-09-01T15:28:48.813Z">
-                                9/1/2021
+                            <time datetime="2021-09-09T22:09:20.251Z">
+                                9/9/2021
                             </time>
                         
                     </dd>
