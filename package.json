@@ -1,62 +1,8 @@
 {
   "name": "@stjudecloud/theme",
-  "version": "5.0.1",
-  "description": "St. Jude Cloud Theme and Guidelines",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "build": "npm-run-all css-compile fractal:build",
-    "css-compile": "npm-run-all css-compile-main css-compile-fractal css-minify",
-    "css-compile-fractal": "sass scss/fractal-theme.scss dist/css/fractal-theme.css",
-    "css-compile-main": "sass scss/stjude-cloud-theme.scss dist/css/stjude-cloud-theme.css",
-    "css-minify": "cleancss -O1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/stjude-cloud-theme.min.css dist/css/stjude-cloud-theme.css",
-    "css-lint": "npm run css-lint-main",
-    "css-lint-main": "stylelint \"scss/**/*.scss\" --cache --cache-location .cache/.stylelintcache",
-    "watch": "nodemon --watch \"scss/\" --watch \"guide/scss/\" --ext scss --exec \"npm run css-compile\"",
-    "watch-css-main": "nodemon --watch \"scss/\" --ext scss --exec \"npm run css-compile-main\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "fractal:start": "fractal start --sync",
-    "fractal:build": "fractal build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stjudecloud/theme.git"
-  },
-  "keywords": [
-    "St. Jude",
-    "St. Jude Cloud",
-    "Design System",
-    "Pattern Library",
-    "Fractal",
-    "Bootstrap Theme",
-    "css",
-    "sass"
-  ],
-  "files": [
-    "dist/css/*.{css,map}",
-    "dist/fonts/stjude-sans/*.{eot,otf,ttf,woff,woff2}",
-    "dist/images/*",
-    "scss/**/*.scss"
-  ],
-  "author": "St. Jude",
-  "homepage": "http://stjudecloud.github.io/theme",
-  "peerDependencies": {
-    "bootstrap": "5.0.2"
-  },
-  "dependencies": {
-    "bootstrap": "5.0.2",
-    "clean-css-cli": "^5.3.3",
-    "nodemon": "^2.0.12",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.3.6",
-    "stylelint": "^13.13.1",
-    "stylelint-config-twbs-bootstrap": "^2.2.3"
-  },
-  "devDependencies": {
-    "@frctl/fractal": "^1.5.11",
-    "@frctl/mandelbrot": "^1.9.4",
-    "sass": "^1.37.5",
-    "sass-loader": "^10",
-    "stylelint-order": "^4.1.0",
-    "webpack": "^5.49.0"
+    "lint:bootstrap": "cd themes/bootstrap && npm install && npm run lint",
+    "lint": "$npm_execpath run lint:bootstrap"
   }
 }

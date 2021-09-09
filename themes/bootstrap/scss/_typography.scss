@@ -1,0 +1,7 @@
+// St. Jude Cloud Theme Custom Fonts
+
+@include font-face('sjs-light', 100); // Preserved for backwards compatability with old SCSS.
+@include font-face('sjs-light', 300);
+@include font-face('sjs-regular', 400);
+@include font-face('sjs-medium', 400);
+@include font-face('sjs-bold', 700);
