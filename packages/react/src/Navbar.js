@@ -77,7 +77,7 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
         <Dropdown.Toggle as={Nav.Link} className="profile-dropdown-toggle">
           <span className="user-icon" alt="Account Information"></span>
         </Dropdown.Toggle>
-        <Dropdown.Menu className="profile-dropdown-menu" alignRight show={show}>
+        <Dropdown.Menu className="profile-dropdown-menu" show={show}>
           <ul className="list-unstyled">
             {userDropdownConfig.additionalItems}
             <li>
