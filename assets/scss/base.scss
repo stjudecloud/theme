@@ -1,13 +1,20 @@
 // (1) Reset all browsers to a reasonable default.
 @use 'normalize.css/normalize.css';
 
+// (2) Set border box sizing by default.
+* {
+  box-sizing: border-box;
+}
+
+// (3) Import hamburgers, which is used to animate the megamenu.
 @import "hamburgers";
 
-// (2) Import various variables needed before the parts of our
+// (4) Import various variables needed before the parts of our
 //     base theme are loaded.
 @import "colors";
 
-// (3) Load up the different parts of our base theme.
+// (5) Load up the different parts of our base theme.
 @import "containers";
 @import "navbar";
+@import "footer";
 @import "typography";

@@ -1,0 +1,101 @@
+.omnifooter {
+  color: $brand-white;
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 30px 0px;
+
+    h6 {
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $brand-navy-darker;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+
+        &:hover {
+          background-color: $brand-blue;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 7px;
+        }
+      }
+    }
+
+    ul {
+      color: #eff5fc;
+      list-style: none;
+      line-height: 30px;
+      font-size: 12px;
+      padding: 0px;
+
+      a {
+        color: #eff5fc;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .postamble {
+    padding: 10px 0px;
+    font-size: 12px;
+    color: #9ec0e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .links {
+
+      ul {
+        list-style: none;
+        padding: 0px;
+
+        li {
+          display: inline-block;
+
+          a {
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .copyright {
+      display: inline-block;
+    }
+  }
+}
+
+.navy-bg {
+  background-color: $brand-navy;
+}
+
+.dark-navy-bg {
+  background-color: $brand-navy-darker;
+}

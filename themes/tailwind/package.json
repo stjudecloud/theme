@@ -1,0 +1,31 @@
+{
+  "name": "@stjudecloud/theme-tailwind",
+  "version": "1.0.0-rc.5",
+  "description": "Tailwind theme for the St. Jude Cloud project.",
+  "scripts": {},
+  "keywords": [],
+  "homepage": "https://design.stjude.cloud",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stjudecloud/theme.git"
+  },
+  "license": "UNLICENSED",
+  "author": "St. Jude Cloud <support@stjude.cloud>",
+  "files": [
+    "postcss/**/*",
+    "tailwind.config.js"
+  ],
+  "peerDependencies": {
+    "@stjudecloud/assets": "^1.0.0-rc.3",
+    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.3.1",
+    "cssnano": "^5.0.7",
+    "postcss": "^8.3.6",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.7"
+  },
+  "dependencies": {
+    "prettier": "^2.3.2"
+  }
+}

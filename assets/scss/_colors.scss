@@ -1,1 +1,6 @@
-$stjudecloud-blue: #1874DC;
+@use "sass:color";
+
+$brand-blue: #1874DC;
+$brand-navy: #002856;
+$brand-navy-darker: color.scale($brand-navy, $lightness: -30%);
+$brand-white: #FFFFFF;
