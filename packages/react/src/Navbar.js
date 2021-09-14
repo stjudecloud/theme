@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { Navbar as BSNavbar, Nav, Dropdown, Button } from "react-bootstrap";
+import {
+  Navbar as BSNavbar,
+  Nav,
+  Dropdown,
+  Button,
+  Container,
+} from "react-bootstrap";
 
 let Link = "a";
 try {
@@ -29,7 +35,7 @@ const propTypes = {
   }),
 };
 
-function Navbar({ children, portalConfig, loginConfig, userDropdownConfig}) {
+function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
   // Force react-bootstrap to render the dropdown markdown so CSS can animate
   // the slide on toggle. After setting `show`, immediately unset to allow
   // dropdowns to function normally and independently.
@@ -67,7 +73,7 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig}) {
   let userDropdown;
   if (userDropdownConfig && userDropdownConfig.show) {
     userDropdown = (
-      <Dropdown className="user-dropdown" title="User Info">
+      <Dropdown className="user-dropdown" title="User Info" align="end">
         <Dropdown.Toggle as={Nav.Link} className="profile-dropdown-toggle">
           <span className="user-icon" alt="Account Information"></span>
         </Dropdown.Toggle>
@@ -88,28 +94,44 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig}) {
   return (
     <header className="sjc-omnibar">
       <BSNavbar variant="">
-        <BSNavbar.Brand href="https://stjude.cloud" title="St. Jude Cloud" alt="St. Jude Cloud">
-          <span className="logo"></span>
-        </BSNavbar.Brand>
-        <a className="sjc-title" href="https://stjude.cloud" title="St. Jude Cloud">
-          St. Jude Cloud
-        </a>
-        {portalElement}
+        <Container fluid>
+          <BSNavbar.Brand
+            href="https://stjude.cloud"
+            title="St. Jude Cloud"
+            alt="St. Jude Cloud"
+          >
+            <span className="logo"></span>
+          </BSNavbar.Brand>
+          <a
+            className="sjc-title"
+            href="https://stjude.cloud"
+            title="St. Jude Cloud"
+          >
+            St. Jude Cloud
+          </a>
+          {portalElement}
 
-        <Nav className="global-icons" as="ul">
-          {children}
-          {loginButton}
-          {userDropdown}
+          <Nav className="global-icons" as="ul">
+            {children}
+            {loginButton}
+            {userDropdown}
 
-          <Dropdown className="mega-dropdown" title="St. Jude Cloud Mega Menu">
-            <Dropdown.Toggle as={Nav.Link} className="profile-dropdown-toggle">
-              <span className="nav-menu-icon" alt="Menu"></span>
-            </Dropdown.Toggle>
-            <Dropdown.Menu className="mega-dropdown-menu" show={show}>
-              <MegaMenu />
-            </Dropdown.Menu>
-          </Dropdown>
-        </Nav>
+            <Dropdown
+              className="mega-dropdown"
+              title="St. Jude Cloud Mega Menu"
+            >
+              <Dropdown.Toggle
+                as={Nav.Link}
+                className="profile-dropdown-toggle"
+              >
+                <span className="nav-menu-icon" alt="Menu"></span>
+              </Dropdown.Toggle>
+              <Dropdown.Menu className="mega-dropdown-menu" show={show}>
+                <MegaMenu />
+              </Dropdown.Menu>
+            </Dropdown>
+          </Nav>
+        </Container>
       </BSNavbar>
     </header>
   );
