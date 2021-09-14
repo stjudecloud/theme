@@ -87,7 +87,7 @@ export const CustomDropdown = ({appName}) => {
           <Dropdown.Toggle as={Nav.Link} className="profile-dropdown-toggle">
             <i className="fa fa-user-shield fa-white" />
           </Dropdown.Toggle>
-          <Dropdown.Menu className="profile-dropdown-menu" alignRight show={show}>
+          <Dropdown.Menu className="profile-dropdown-menu" show={show}>
             <ul className="list-unstyled">
               <li>
                 <Dropdown.Item>
