@@ -83,7 +83,7 @@ export const CustomDropdown = ({appName}) => {
         portalConfig={{portalTitle: appName, portalLink: "/"}}
         userDropdownConfig={{logoutLink: "/", show: true}}
       >
-        <Dropdown className="user-dropdown" title="Custom Dropdown">
+        <Dropdown className="user-dropdown" title="Custom Dropdown" align="end">
           <Dropdown.Toggle as={Nav.Link} className="profile-dropdown-toggle">
             <i className="fa fa-user-shield fa-white" />
           </Dropdown.Toggle>
