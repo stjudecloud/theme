@@ -1,9 +1,9 @@
 // Bootstrap Overrides
 
-@import 'bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/functions';
 @import 'variables';
 
-@import 'bootstrap/scss/bootstrap';
+@import '../node_modules/bootstrap/scss/bootstrap';
 
 // St. Jude components
 @import 'mixins';
