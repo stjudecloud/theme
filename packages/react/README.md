@@ -49,7 +49,7 @@ npm install
 npm run build
 
 # Run a storybook instance to interactively develop components
-npm storybook
+npm run storybook
 ```
 
 ## Versioning
