@@ -4,12 +4,12 @@
   "description": "Bootstrap Sass/CSS theme for the St. Jude Cloud project.",
   "scripts": {
     "build": "npm-run-all clean build:dev build:prod",
-    "build:dev": "npx parcel scss/stjude-cloud-theme.scss",
-    "build:prod": "npx parcel build scss/stjude-cloud-theme.scss",
+    "build:dev": "npx parcel build scss/stjude-cloud-theme.scss --target development",
+    "build:prod": "npx parcel build scss/stjude-cloud-theme.scss --target production",
     "clean": "npx rimraf dist/",
     "lint": "npx stylelint '**/*.scss'",
     "start": "$npm_execpath run watch",
-    "prepublishOnly": "npm-run-all lint build",
+    "prepublishOnly": "npm-run-all lint clean build:prod",
     "watch": "npx parcel watch scss/stjude-cloud-theme.scss"
   },
   "keywords": [
