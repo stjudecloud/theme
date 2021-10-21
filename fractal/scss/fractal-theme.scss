@@ -3,5 +3,17 @@
   background-color: #1874dc;
 }
 
+.Tree-items {
+  padding-left: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.Tree-collectionItems {
+  padding-left: 0; 
+}
+
 /* St. Jude Cloud Theme CSS */
 @import '~@stjudecloud/theme-bootstrap/scss/stjude-cloud-theme';
