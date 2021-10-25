@@ -33,7 +33,7 @@
     "scss/**/*.scss"
   ],
   "dependencies": {
-    "@stjudecloud/assets": "^1.0.0-rc.0",
+    "@stjudecloud/assets": "^1.0.0-rc.3",
     "bootstrap": "^5.1.1"
   },
   "devDependencies": {
