@@ -1,6 +1,6 @@
 {
   "name": "@stjudecloud/assets",
-  "version": "1.0.0-rc.0",
+  "version": "1.0.0",
   "description": "Assets for the St. Jude Cloud design system.",
   "files": [
     "fonts/**/*",
