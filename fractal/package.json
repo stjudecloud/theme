@@ -16,8 +16,9 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@babel/preset-env": "7.13.8",
     "@frctl/mandelbrot": "^1.9.4",
-    "@stjudecloud/assets": "^1.0.0-rc.3",
+    "@stjudecloud/assets": "^1.0.0",
     "@stjudecloud/theme-bootstrap": "^5.1.3",
     "@stjudecloud/ui-react": "^5.1.2"
   },
