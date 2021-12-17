@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import FeaturedImage from "@stjudecloud/assets/images/featured-study.jpg";
 import GenomicsPlatformIcon from "@stjudecloud/assets/images/icon-genomics-platform.png";
+import ModelSystemsIcon from "@stjudecloud/assets/images/icon-model-systems.png";
 import PeCanIcon from "@stjudecloud/assets/images/icon-pecan.png";
 import VizCommIcon from "@stjudecloud/assets/images/icon-viz.png";
 
@@ -47,6 +48,16 @@ function MegaMenu() {
                     Data &amp; Tools
                   </div>
                 </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://models.stjude.cloud/" className="app-title">
+                <img
+                  className="app-title__icon"
+                  src={ModelSystemsIcon}
+                  alt="Model Systems Icon"
+                />
+                <span>Model Systems</span>
               </a>
             </li>
             <li>
