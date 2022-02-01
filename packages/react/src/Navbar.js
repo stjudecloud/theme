@@ -30,7 +30,7 @@ const propTypes = {
   }),
   userDropdownConfig: PropTypes.shape({
     show: PropTypes.bool,
-    logoutLink: PropTypes.string.isRequired,
+    logoutLink: PropTypes.string,
     additionalItems: PropTypes.node,
   }),
 };
@@ -80,11 +80,13 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
         <Dropdown.Menu className="profile-dropdown-menu" show={show}>
           <ul className="list-unstyled">
             {userDropdownConfig.additionalItems}
-            <li>
-              <Dropdown.Item as={Link} to={userDropdownConfig.logoutLink}>
-                {userDropdownConfig.logoutMessage || "Sign out"}
-              </Dropdown.Item>
-            </li>
+            {userDropdownConfig.logoutLink && (
+              <li>
+                <Dropdown.Item as={Link} to={userDropdownConfig.logoutLink}>
+                  {userDropdownConfig.logoutMessage || "Sign out"}
+                </Dropdown.Item>
+              </li>
+            )}
           </ul>
         </Dropdown.Menu>
       </Dropdown>
