@@ -97,6 +97,14 @@ function Footer() {
                 </a>
               </li>
               <li>
+                <a 
+                  href="https://models.stjude.cloud" 
+                  title="Model Systems"
+                >
+                    Model Systems
+                </a>
+              </li>
+              <li>
                 <a
                   href="https://pecan.stjude.cloud"
                   title="Pediatric Cancer Portal (PeCan)"
