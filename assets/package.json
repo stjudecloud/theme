@@ -1,72 +1,46 @@
 {
   "_args": [
     [
-      "@stjudecloud/assets@1.0.0-rc.3",
+      "@stjudecloud/assets@1.0.0",
       "/home/runner/work/theme/theme/fractal"
     ]
   ],
-  "_from": "@stjudecloud/assets@1.0.0-rc.3",
-  "_id": "@stjudecloud/assets@1.0.0-rc.3",
+  "_from": "@stjudecloud/assets@1.0.0",
+  "_id": "@stjudecloud/assets@1.0.0",
   "_inBundle": false,
-  "_integrity": "sha512-nG3B4oYwNgh8I9YzRa6/v0r7S1oCxPh2lbN0ybW/ypgfH8FLmM2B6JIHqLhZw0Y00pea1k8Pey/dqEHsIQaP3g==",
+  "_integrity": "sha512-Tmk/eJCha0+RPxCLoM0Fb1+pgs8xDISY/LIT2VlU3sisslqonzmAAUVIdGLYQZtcvhHckurW0mA29STqOMxYRg==",
   "_location": "/@stjudecloud/assets",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "@stjudecloud/assets@1.0.0-rc.3",
+    "raw": "@stjudecloud/assets@1.0.0",
     "name": "@stjudecloud/assets",
     "escapedName": "@stjudecloud%2fassets",
     "scope": "@stjudecloud",
-    "rawSpec": "1.0.0-rc.3",
+    "rawSpec": "1.0.0",
     "saveSpec": null,
-    "fetchSpec": "1.0.0-rc.3"
+    "fetchSpec": "1.0.0"
   },
   "_requiredBy": [
     "/",
     "/@stjudecloud/theme-bootstrap"
   ],
-  "_resolved": "https://registry.npmjs.org/@stjudecloud/assets/-/assets-1.0.0-rc.3.tgz",
-  "_spec": "1.0.0-rc.3",
+  "_resolved": "https://registry.npmjs.org/@stjudecloud/assets/-/assets-1.0.0.tgz",
+  "_spec": "1.0.0",
   "_where": "/home/runner/work/theme/theme/fractal",
   "author": {
     "name": "St. Jude Cloud",
     "email": "support@stjude.cloud"
   },
   "description": "Assets for the St. Jude Cloud design system.",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.0-rc.0",
-    "npm-run-all": "^4.1.5",
-    "parcel": "^2.0.0-rc.0"
-  },
-  "development": "stjudecloud-base.css",
   "files": [
     "fonts/**/*",
     "images/**/*",
     "loaders/**/*",
-    "pdfs/**/*",
-    "dist/**/*",
-    "scss/**/*"
+    "pdfs/**/*"
   ],
   "license": "UNLICENSED",
   "name": "@stjudecloud/assets",
-  "production": "stjudecloud-base.min.css",
-  "scripts": {
-    "build": "npm-run-all clean build:dev build:prod",
-    "build:dev": "npx parcel build --target development --no-cache",
-    "build:prod": "npx parcel build --target production --no-cache",
-    "clean": "npx rimraf dist/"
-  },
-  "targets": {
-    "production": {
-      "source": "scss/base.scss",
-      "distDir": "dist/"
-    },
-    "development": {
-      "source": "scss/base.scss",
-      "distDir": "dist/",
-      "optimize": false
-    }
-  },
-  "version": "1.0.0-rc.3"
+  "version": "1.0.0"
 }
