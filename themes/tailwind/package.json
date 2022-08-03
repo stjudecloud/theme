@@ -1,0 +1,18 @@
+{
+  "name": "@stjudecloud/theme-tailwind",
+  "author": "St. Jude Cloud <support@stjude.cloud>",
+  "version": "1.0.0-rc.7",
+  "description": "Tailwind theme for the St. Jude Cloud project.",
+  "scripts": {},
+  "keywords": [],
+  "homepage": "https://design.stjude.cloud",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stjudecloud/theme.git"
+  },
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/stjudecloud/theme/issues"
+  }
+}
