@@ -62,7 +62,7 @@
     "acorn": "^8.8.2",
     "babel-loader": "^8.3.0",
     "babel-plugin-add-module-exports": "^1.0.2",
-    "babel-plugin-dev-expression": "^0.2.2",
+    "babel-plugin-dev-expression": "^0.2.3",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "bootstrap": "^5.1.1",
     "chalk": "^3.0.0",
