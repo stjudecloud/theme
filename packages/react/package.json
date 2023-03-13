@@ -60,7 +60,7 @@
     "@storybook/addons": "^6.3.7",
     "@storybook/react": "^6.5.16",
     "acorn": "^8.8.2",
-    "babel-loader": "^8.0.6",
+    "babel-loader": "^8.3.0",
     "babel-plugin-add-module-exports": "^1.0.2",
     "babel-plugin-dev-expression": "^0.2.2",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
