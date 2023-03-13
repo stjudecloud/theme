@@ -49,7 +49,7 @@
     "stylelint-order": "^4.1.0"
   },
   "peerDependencies": {
-    "bootstrap": "^5.1.1"
+    "bootstrap": "^5.2.3"
   },
   "development": "stjude-cloud-theme.css",
   "production": "stjude-cloud-theme.min.css",
