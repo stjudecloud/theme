@@ -1,0 +1,42 @@
+// St. Jude Cloud Theme Custom Tags
+
+.tag {
+  @extend .badge;
+
+  .tag-icon {
+    color: inherit;
+  }
+  .tag-icon:hover {
+    text-decoration: none;
+  }
+}
+
+.tag.bg-status-primary {
+  background-color: $blue-light;
+  color: $blue;
+}
+
+.tag.bg-status-secondary {
+  background-color: $gray;
+  color: $gray-darkest;
+}
+
+.tag.bg-status-success {
+  background-color: $green-light;
+  color: $green;
+}
+
+.tag.bg-status-danger {
+  background-color: $peach-light;
+  color: $peach;
+}
+
+.tag.bg-status-warning {
+  background-color: $yellow-light;
+  color: $yellow-darkest;
+}
+
+.tag.bg-status-error {
+  background-color: $red-light;
+  color: $red-bright;
+}
