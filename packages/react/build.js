@@ -1,10 +1,22 @@
-const {green, cyan, red} = require("chalk");
-const path = require("path");
-const fse = require("fs-extra");
-const execa = require("execa");
-const cherryPick = require("cherry-pick").default;
+// const {chalk.green, chalk.cyan, chalk.red} = require("chalk");
+// const path = require("path");
+// const fse = require("fs-extra");
+// const execa = require("execa");
+// const cherryPick = require("cherry-pick").default;
 
-const srcRoot = path.join(__dirname, "src");
+import chalk from "chalk";
+import path from "path";
+import fse from "fs-extra";
+import execa from "execa";
+import cherryPick from "cherry-pick";
+
+import { fileURLToPath } from 'url';
+import { join, dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const srcRoot = join(__dirname, "src");
 const typesRoot = path.join(__dirname, "types");
 const libRoot = path.join(__dirname, "lib");
 const cjsRoot = path.join(libRoot, "cjs");
@@ -15,9 +27,9 @@ const targets = process.argv.slice(2);
 const clean = () => fse.existsSync(libRoot) && fse.removeSync(libRoot);
 
 const build = (name, fn) => async () => {
-  console.log(cyan("Building: ") + green(name));
+  console.log(chalk.cyan("Building: ") + chalk.green(name));
   await fn();
-  console.log(cyan("Built: ") + green(name));
+  console.log(chalk.cyan("Built: ") + chalk.green(name));
 };
 
 const shell = cmd =>
@@ -55,7 +67,7 @@ const buildDirectories = build("Linking directories", () =>
 );
 
 console.log(
-  green(`Building targets: ${targets.length ? targets.join(", ") : "all"}\n`)
+  chalk.green(`Building targets: ${targets.length ? targets.join(", ") : "all"}\n`)
 );
 
 clean();
@@ -63,6 +75,6 @@ clean();
 Promise.all([has("lib") && buildLib(), has("es") && buildEsm()])
   .then(buildDirectories)
   .catch(err => {
-    if (err) console.error(red(err.stack || err.toString()));
+    if (err) console.error(chalk.red(err.stack || err.toString()));
     process.exit(1);
   });
