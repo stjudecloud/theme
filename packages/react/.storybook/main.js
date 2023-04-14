@@ -1,9 +1,14 @@
-const path = require("path");
+const { resolve } = require("path");
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
-module.exports = {
+const __file = fileURLToPath(import.meta.url);
+const __dirname = dirname(__file);
+
+export default {
   "stories": [
     "../stories/**/*.stories.mdx",
-    "../stories/**/*.stories.@(js|jsx|ts|tsx)"
+    "../stories/**/*.stories.@(js|jsx|ts|tsx)",
   ],
   "addons": [
     "@storybook/addon-links",
@@ -15,9 +20,8 @@ module.exports = {
     config.module.rules.push({
       test: /\.scss$/,
       use: ["style-loader", "css-loader", "sass-loader"],
-      include: path.resolve(__dirname, "../")
+      include: resolve(__dirname, "../")
     });
-
     return config;
   }
 };

@@ -1,17 +1,3 @@
-const browserlist = [
-  ">= 1%",
-  "last 1 major version",
-  "not dead",
-  "Chrome >= 41",
-  "Firefox >= 38",
-  "Edge >= 12",
-  "Explorer >= 10",
-  "iOS >= 9",
-  "Safari >= 9",
-  "Android >= 4.4",
-  "Opera >= 30"
-];
-
 module.exports = api => {
   const env = api.env();
 
@@ -38,8 +24,11 @@ module.exports = api => {
           shippedProposals: true,
           include: ["proposal-object-rest-spread"],
           targets: {
-            browsers: browserlist
-          }
+            "edge": "17",
+            "firefox": "60",
+            "chrome": "67",
+            "safari": "11.1"
+          },
         }
       ],
       [require("@babel/preset-react"), { development: dev }]

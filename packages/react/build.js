@@ -1,20 +1,18 @@
-// const {chalk.green, chalk.cyan, chalk.red} = require("chalk");
-// const path = require("path");
-// const fse = require("fs-extra");
-// const execa = require("execa");
-// const cherryPick = require("cherry-pick").default;
-
 import chalk from "chalk";
 import path from "path";
 import fse from "fs-extra";
 import execa from "execa";
-import cherryPick from "cherry-pick";
 
 import { fileURLToPath } from 'url';
 import { join, dirname } from 'path';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+import ncp from 'ncp';
+import { promisify } from 'util';
+
+const ncpAsync = promisify(ncp);
+
+const __file = fileURLToPath(import.meta.url);
+const __dirname = dirname(__file);
 
 const srcRoot = join(__dirname, "src");
 const typesRoot = path.join(__dirname, "types");
@@ -57,14 +55,10 @@ const buildEsm = build("es modules", async () => {
   await copyTypes(esRoot);
 });
 
-const buildDirectories = build("Linking directories", () =>
-  cherryPick({
-    inputDir: "../src",
-    cjsDir: "cjs",
-    esmDir: "esm",
-    cwd: libRoot
-  })
-);
+const buildDirectories = build("Linking directories", async () => {
+  await ncpAsync(path.join(libRoot, "../src"), path.join(libRoot, "cjs")),
+  await ncpAsync(path.join(libRoot, "../src"), path.join(libRoot, "esm"))
+});
 
 console.log(
   chalk.green(`Building targets: ${targets.length ? targets.join(", ") : "all"}\n`)

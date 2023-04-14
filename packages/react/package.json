@@ -8,6 +8,7 @@
     "lib"
   ],
   "license": "UNLICENSED",
+  "type": "module",
   "scripts": {
     "prepublishOnly": "$npm_execpath run build",
     "build": "node build.js",
@@ -57,6 +58,7 @@
     "@storybook/addon-essentials": "^7.0.4",
     "@storybook/addon-links": "^7.0.4",
     "@storybook/addons": "^7.0.4",
+    "@storybook/cli": "^7.0.4",
     "@storybook/react": "^7.0.4",
     "acorn": "^8.8.2",
     "babel-loader": "^9.1.2",
@@ -65,10 +67,10 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "bootstrap": "^5.2.3",
     "chalk": "^5.2.0",
-    "cherry-pick": "^0.5.0",
     "cpy-cli": "^4.1.0",
     "execa": "^4.0.0",
     "fs-extra": "^11.1.1",
+    "ncp": "^2.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.3",
     "react-dom": "^18.2.0",
