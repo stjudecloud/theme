@@ -12,8 +12,8 @@
   "scripts": {
     "prepublishOnly": "$npm_execpath run build",
     "build": "node build.js",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "repository": {
     "type": "git",
@@ -57,9 +57,11 @@
     "@storybook/addon-actions": "^7.0.4",
     "@storybook/addon-essentials": "^7.0.4",
     "@storybook/addon-links": "^7.0.4",
+    "@storybook/addon-mdx-gfm": "^7.0.5",
     "@storybook/addons": "^7.0.4",
     "@storybook/cli": "^7.0.4",
     "@storybook/react": "^7.0.4",
+    "@storybook/react-webpack5": "^7.0.5",
     "acorn": "^8.8.2",
     "babel-loader": "^9.1.2",
     "babel-plugin-add-module-exports": "^1.0.2",
@@ -77,6 +79,8 @@
     "react-router-dom": "^6.10.0",
     "sass": "^1.60.0",
     "sass-loader": "^13.2.2",
-    "typescript": "^5.0.4"
+    "storybook": "^7.0.5",
+    "typescript": "^5.0.4",
+    "webpack": "^5.79.0"
   }
 }

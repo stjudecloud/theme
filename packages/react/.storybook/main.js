@@ -1,26 +1,37 @@
-const { resolve } = require("path");
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-
-const __file = fileURLToPath(import.meta.url);
-const __dirname = dirname(__file);
+import * as path from 'path';
 
 export default {
-  "stories": [
-    "../stories/**/*.stories.mdx",
-    "../stories/**/*.stories.@(js|jsx|ts|tsx)",
+  stories: [
+    {
+      directory: "../stories/",
+      files: "*.stories.@(js|jsx|ts|tsx)"
+    }
   ],
-  "addons": [
+  staticDir: [],
+  addons: [
     "@storybook/addon-links",
-    "@storybook/addon-essentials"
+    "@storybook/addon-essentials",
+    "@storybook/addon-mdx-gfm",
+    '@storybook/preset-create-react-app',
+    '@storybook/addon-interactions'
   ],
+  framework: {
+    name: "@storybook/react-webpack5",
+    options: {}
+  },
+  docs: {
+    autodocs: 'tag',
+  },
+  babel: async (options) => ({
+    // Update your babel configuration here
+    ...options,
+  }),
   webpackFinal: async config => {
-    // Automatically include St. Jude Cloud theme.
     config.entry.push("./stories/theme.scss");
     config.module.rules.push({
       test: /\.scss$/,
       use: ["style-loader", "css-loader", "sass-loader"],
-      include: resolve(__dirname, "../")
+      include: path.resolve(__dirname, '../'),
     });
     return config;
   }

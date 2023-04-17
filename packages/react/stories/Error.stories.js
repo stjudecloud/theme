@@ -1,10 +1,10 @@
 import React from "react";
-import ErrorComponent from "../src/ErrorComponent";
+import Error from "../src/Error";
 
 export default {
   title: "Error",
-  component: ErrorComponent
+  component: Error
 };
 
-export const Default = () => <ErrorComponent />;
-export const NotFound = () => <ErrorComponent variant="notFound" />;
+export const Default = () => <Error />;
+export const NotFound = () => <Error variant="notFound" />;

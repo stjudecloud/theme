@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
 
-const ErrorComponent = ({ variant }) => (
+const Error = ({ variant }) => (
   <div className="not-found">
     <div className="container">
       <div className="row">
@@ -36,7 +36,7 @@ export const propTypes = {
   variant: PropTypes.oneOf(['notFound', 'internalServerError']).isRequired,
 };
 
-ErrorComponent.defaultProps = defaultProps;
-ErrorComponent.propTypes = propTypes;
+Error.defaultProps = defaultProps;
+Error.propTypes = propTypes;
 
-export default ErrorComponent;
+export default Error;
