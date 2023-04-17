@@ -56,10 +56,17 @@
     opacity: 0.85;
   }
 
-  .dropdown.show>.nav-link {
-    text-align: center;
-    background-color: lighten($primary, 10%);
-    border-radius: 5px;
+  .dropdown.show {
+
+    .nav-link {
+      text-align: center;
+      background-color: lighten($primary, 10%);
+      border-radius: 5px;
+
+      &.user-initials {
+        color: $white;
+      }
+    }
   }
 
   .logo {
