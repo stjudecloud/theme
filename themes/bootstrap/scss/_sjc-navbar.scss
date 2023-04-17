@@ -252,6 +252,13 @@
     }
   }
 
+  @include media-breakpoint-down(lg) {
+
+    .nav-links {
+      display: none;
+    }
+  }
+
   @include media-breakpoint-only(md) {
 
     .mega-dropdown-menu {
