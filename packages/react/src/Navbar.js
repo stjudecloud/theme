@@ -21,17 +21,18 @@ const propTypes = {
   children: PropTypes.node,
   portalConfig: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired
+    link: PropTypes.string.isRequired,
   }).isRequired,
   loginConfig: PropTypes.shape({
     show: PropTypes.bool,
     loginLink: PropTypes.string.isRequired,
-    loginButtonMessage: PropTypes.string
+    loginButtonMessage: PropTypes.string,
   }),
   userDropdownConfig: PropTypes.shape({
     show: PropTypes.bool,
     logoutLink: PropTypes.string,
     additionalItems: PropTypes.node,
+    initials: PropTypes.string,
   }),
 };
 
@@ -47,14 +48,14 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
   const linkProps = {
     [Link === "a" ? "href" : "to"]: portalConfig.link,
     children: portalConfig.title,
-    className: "portal-title"
+    className: "portal-title",
   };
   const portalElement = React.createElement(Link, linkProps);
 
   let loginButton;
   if (loginConfig && loginConfig.show) {
     const loginButtonProps = {
-      [Link === "a" ? "href" : "to"]: loginConfig.loginLink
+      [Link === "a" ? "href" : "to"]: loginConfig.loginLink,
     };
     loginButton = (
       <div className="d-flex align-items-center">
@@ -74,8 +75,15 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
   if (userDropdownConfig && userDropdownConfig.show) {
     userDropdown = (
       <Dropdown className="user-dropdown" title="User Info" align="end">
-        <Dropdown.Toggle as={Nav.Link} className="profile-dropdown-toggle">
-          <span className="user-icon" alt="Account Information"></span>
+        <Dropdown.Toggle
+          as={Nav.Link}
+          className="profile-dropdown-toggle user-initials"
+        >
+          {userDropdownConfig.initials ? (
+            <span>{userDropdownConfig.initials.toUpperCase()}</span>
+          ) : (
+            <i className="fa fa-user" />
+          )}
         </Dropdown.Toggle>
         <Dropdown.Menu className="profile-dropdown-menu" show={show}>
           <ul className="list-unstyled">
