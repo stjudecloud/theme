@@ -40,5 +40,8 @@
       "source": "scss/fractal-theme.scss",
       "distDir": "dist/"
     }
+  },
+  "engines": {
+    "node": "^18.16.0"
   }
 }
