@@ -169,7 +169,7 @@
     transform: scaleY(1);
   }
 
-  .profile-dropdown-menu>ul,
+  .profile-dropdown-menu > ul,
   .mega-menu-container {
     transition: transform 0.25s ease-in-out;
     transform: translateY(calc(-100% - 65px));
@@ -179,7 +179,7 @@
     padding: 1.5rem 0;
   }
 
-  .show .profile-dropdown-menu>ul,
+  .show .profile-dropdown-menu > ul,
   .show .mega-menu-container {
     transform: translateY(0);
   }
@@ -349,7 +349,7 @@
 
   }
 
-  .navbar-toggler:not(.collapsed) &,
+  .navbar-toggler:not( .collapsed ) &,
   .dropdown.show & {
     transition: transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
     transform: rotate(225deg);
