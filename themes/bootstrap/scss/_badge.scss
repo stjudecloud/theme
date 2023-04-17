@@ -15,6 +15,14 @@
     opacity: 1;
     text-decoration: none;
   }
+
+  .tag-icon {
+    color: inherit;
+  }
+
+  .tag-icon:hover {
+    text-decoration: none;
+  }
 }
 
 .badge.bg-darkest {
@@ -35,6 +43,36 @@
 .badge.bg-non-cancerous-diseases {
   background-color: $non-cancerous-diseases;
   color: $white;
+}
+
+.badge.tag-primary {
+  background-color: $blue-light;
+  color: $blue;
+}
+
+.badge.tag-secondary {
+  background-color: $gray;
+  color: $gray-darkest;
+}
+
+.badge.tag-success {
+  background-color: $green-light;
+  color: $green;
+}
+
+.badge.tag-danger {
+  background-color: $peach-light;
+  color: $peach;
+}
+
+.badge.tag-warning {
+  background-color: $yellow-light;
+  color: $yellow-darkest;
+}
+
+.badge.tag-error {
+  background-color: $red-light;
+  color: $red-bright;
 }
 
 .badge-multiple {
