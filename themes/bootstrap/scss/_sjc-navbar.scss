@@ -23,6 +23,16 @@
     }
   }
 
+  .nav-links .nav-link {
+    color: $white;
+    font-size: 15px;
+    font-weight: 500;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+
   .global-icons .nav-link {
     display: flex;
     width: 40px;

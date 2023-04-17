@@ -34,9 +34,21 @@ const propTypes = {
     additionalItems: PropTypes.node,
     initials: PropTypes.string,
   }),
+  navLinks: PropTypes.arrayOf(
+    PropTypes.shape({
+      href: PropTypes.string.isRequired,
+      content: PropTypes.oneOf([PropTypes.string, PropTypes.node]).isRequired,
+    })
+  ),
 };
 
-function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
+function Navbar({
+  children,
+  portalConfig,
+  loginConfig,
+  userDropdownConfig,
+  navLinks,
+}) {
   // Force react-bootstrap to render the dropdown markdown so CSS can animate
   // the slide on toggle. After setting `show`, immediately unset to allow
   // dropdowns to function normally and independently.
@@ -101,6 +113,17 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
     );
   }
 
+  let navbarLinks;
+  if (navLinks && navLinks.length > 0) {
+    navbarLinks = (
+      <Nav className="nav-links" as="ul">
+        {navLinks.map((navLink) => (
+          <Nav.Link href={navLink.href}>{navLink.content}</Nav.Link>
+        ))}
+      </Nav>
+    );
+  }
+
   return (
     <header className="sjc-omnibar">
       <BSNavbar variant="">
@@ -120,7 +143,7 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
             St. Jude Cloud
           </a>
           {portalElement}
-
+          {navbarLinks}
           <Nav className="global-icons" as="ul">
             {children}
             {loginButton}
