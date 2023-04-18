@@ -7,14 +7,6 @@ import {
   Button,
   Container,
 } from "react-bootstrap";
-import { Link } from "react-router-dom";
-
-let navBarLink = "a";
-try {
-  navBarLink = 'b';
-} catch (err) {
-  navBarLink = "a";
-}
 
 import MegaMenu from "./MegaMenu";
 
@@ -37,6 +29,7 @@ const propTypes = {
 };
 
 function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
+  let Link = "a";
   // Force react-bootstrap to render the dropdown markdown so CSS can animate
   // the slide on toggle. After setting `show`, immediately unset to allow
   // dropdowns to function normally and independently.
@@ -46,22 +39,22 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
   }, []);
 
   const linkProps = {
-    [navBarLink === "a" ? "href" : "to"]: portalConfig.link,
+    [Link === "a" ? "href" : "to"]: portalConfig.link,
     children: portalConfig.title,
     className: "portal-title"
   };
 
-  const portalElement = React.createElement(navBarLink, linkProps);
+  const portalElement = React.createElement(Link, linkProps);
 
   let loginButton;
   if (loginConfig && loginConfig.show) {
     const loginButtonProps = {
-      [navBarLink === "a" ? "href" : "to"]: loginConfig.loginLink
+      [Link === "a" ? "href" : "to"]: loginConfig.loginLink
     };
     loginButton = (
       <div className="d-flex align-items-center">
         <Button
-          as={navBarLink}
+          as={Link}
           variant="outline-light"
           className="login-btn align-items-center"
           {...loginButtonProps}
@@ -85,7 +78,7 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
             {userDropdownConfig.logoutLink && (
               <li>
                 <Dropdown.Item 
-                as={navBarLink}
+                as={Link}
                 to={userDropdownConfig.logoutLink}>
                   {userDropdownConfig.logoutMessage || "Sign out"}
                 </Dropdown.Item>
