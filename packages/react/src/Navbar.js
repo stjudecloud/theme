@@ -32,23 +32,10 @@ const propTypes = {
     show: PropTypes.bool,
     logoutLink: PropTypes.string,
     additionalItems: PropTypes.node,
-    initials: PropTypes.string,
   }),
-  navLinks: PropTypes.arrayOf(
-    PropTypes.shape({
-      href: PropTypes.string.isRequired,
-      content: PropTypes.oneOf([PropTypes.string, PropTypes.node]).isRequired,
-    })
-  ),
 };
 
-function Navbar({
-  children,
-  portalConfig,
-  loginConfig,
-  userDropdownConfig,
-  navLinks,
-}) {
+function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
   // Force react-bootstrap to render the dropdown markdown so CSS can animate
   // the slide on toggle. After setting `show`, immediately unset to allow
   // dropdowns to function normally and independently.
@@ -87,15 +74,8 @@ function Navbar({
   if (userDropdownConfig && userDropdownConfig.show) {
     userDropdown = (
       <Dropdown className="user-dropdown" title="User Info" align="end">
-        <Dropdown.Toggle
-          as={Nav.Link}
-          className="profile-dropdown-toggle user-initials"
-        >
-          {userDropdownConfig.initials ? (
-            <span>{userDropdownConfig.initials.toUpperCase()}</span>
-          ) : (
-            <i className="fa fa-user" />
-          )}
+        <Dropdown.Toggle as={Nav.Link} className="profile-dropdown-toggle">
+          <span className="user-icon" alt="Account Information"></span>
         </Dropdown.Toggle>
         <Dropdown.Menu className="profile-dropdown-menu" show={show}>
           <ul className="list-unstyled">
@@ -110,17 +90,6 @@ function Navbar({
           </ul>
         </Dropdown.Menu>
       </Dropdown>
-    );
-  }
-
-  let navbarLinks;
-  if (navLinks && navLinks.length > 0) {
-    navbarLinks = (
-      <Nav className="nav-links" as="ul">
-        {navLinks.map((navLink) => (
-          <Nav.Link href={navLink.href}>{navLink.content}</Nav.Link>
-        ))}
-      </Nav>
     );
   }
 
@@ -143,7 +112,6 @@ function Navbar({
             St. Jude Cloud
           </a>
           {portalElement}
-          {navbarLinks}
           <Nav className="global-icons" as="ul">
             {children}
             {loginButton}
