@@ -8,7 +8,7 @@ export default {
   component: Navbar,
   argTypes: {
     appName: {
-      name: 'App Name',
+      name: 'App Name Storybook',
       defaultValue: "Portal Name",
       description: "Name of the application the Navbar is rendered on.",
       control: {
@@ -19,54 +19,45 @@ export default {
 };
 
 export const NoUserDropdowns = ({appName}) => (
-  <StaticRouter>
     <Navbar
-      portalConfig={{portalTitle: appName, portalLink: "/"}}
+      portalConfig={{title: appName, link: "/"}}
     />
-  </StaticRouter>
 );
 
 export const UserLoggedOut = ({appName}) => (
-  <StaticRouter>
     <Navbar
-      portalConfig={{portalTitle: appName, portalLink: "/"}}
-      loginConfig={{loginLink: "/", show: true}}
+      portalConfig={{title: appName, link: "/"}}
+      loginConfig={{loginLink: "/", show: true, loginButtonMessage: "Login"}}
     />
-  </StaticRouter>
 );
 
 export const UserLoggedIn = ({appName}) => (
-  <StaticRouter>
-    <Navbar
-      portalConfig={{portalTitle: appName, portalLink: "/"}}
-      userDropdownConfig={{logoutLink: "/", show: true}}
-    />
-  </StaticRouter>
+  <Navbar
+    portalConfig={{portalTitle: appName, portalLink: "/"}}
+    userDropdownConfig={{logoutLink: "/logout", show: true}}
+  />
 );
 
 export const UserLoggedInDropdownWithAdditionalItems = ({appName}) => (
-  <StaticRouter>
-    <Navbar
-      portalConfig={{portalTitle: appName, portalLink: "/"}}
-      userDropdownConfig={{logoutLink: "/", show: true, additionalItems: (
-        <>
-          <li>
-            <Dropdown.Item>
-              Username
-            </Dropdown.Item>
-          </li>
-          <Dropdown.Divider />
-          <li>
-            <Dropdown.Item>
-              Profile Link
-            </Dropdown.Item>
-          </li>
-        </>
-      )}}
-    />
-  </StaticRouter>
+  <Navbar
+    portalConfig={{portalTitle: appName, portalLink: "/"}}
+    userDropdownConfig={{logoutLink: "/", show: true, additionalItems: (
+      <>
+        <li>
+          <Dropdown.Item>
+            Username
+          </Dropdown.Item>
+        </li>
+        <Dropdown.Divider />
+        <li>
+          <Dropdown.Item>
+            Profile Link
+          </Dropdown.Item>
+        </li>
+      </>
+    )}}
+  />
 );
-
 
 export const CustomDropdown = ({appName}) => {
   // Force react-bootstrap to render the dropdown markdown so CSS can animate
@@ -78,36 +69,34 @@ export const CustomDropdown = ({appName}) => {
   }, []);
 
   return (
-    <StaticRouter>
-      <Navbar
-        portalConfig={{portalTitle: appName, portalLink: "/"}}
-        userDropdownConfig={{logoutLink: "/", show: true}}
-      >
-        <Dropdown className="user-dropdown" title="Custom Dropdown" align="end">
-          <Dropdown.Toggle as={Nav.Link} className="profile-dropdown-toggle">
-            <i className="fa fa-user-shield fa-white" />
-          </Dropdown.Toggle>
-          <Dropdown.Menu className="profile-dropdown-menu" show={show}>
-            <ul className="list-unstyled">
-              <li>
-                <Dropdown.Item>
-                  Custom Option 1
-                </Dropdown.Item>
-              </li>
-              <li>
-                <Dropdown.Item>
-                  Custom Option 2
-                </Dropdown.Item>
-              </li>
-              <li>
-                <Dropdown.Item>
-                  Custom Option 3
-                </Dropdown.Item>
-              </li>
-            </ul>
-          </Dropdown.Menu>
-        </Dropdown>
-      </Navbar>
-    </StaticRouter>
+    <Navbar
+      portalConfig={{portalTitle: appName, portalLink: "/"}}
+      userDropdownConfig={{logoutLink: "/", show: true}}
+    >
+      <Dropdown className="user-dropdown" title="Custom Dropdown" align="end">
+        <Dropdown.Toggle as={Nav.Link} className="profile-dropdown-toggle">
+          <i className="fa fa-user-shield fa-white" />
+        </Dropdown.Toggle>
+        <Dropdown.Menu className="profile-dropdown-menu" show={show}>
+          <ul className="list-unstyled">
+            <li>
+              <Dropdown.Item>
+                Custom Option 1
+              </Dropdown.Item>
+            </li>
+            <li>
+              <Dropdown.Item>
+                Custom Option 2
+              </Dropdown.Item>
+            </li>
+            <li>
+              <Dropdown.Item>
+                Custom Option 3
+              </Dropdown.Item>
+            </li>
+          </ul>
+        </Dropdown.Menu>
+      </Dropdown>
+    </Navbar>
   );
 }

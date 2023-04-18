@@ -49,6 +49,7 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
     children: portalConfig.title,
     className: "portal-title"
   };
+
   const portalElement = React.createElement(Link, linkProps);
 
   let loginButton;
@@ -59,7 +60,7 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
     loginButton = (
       <div className="d-flex align-items-center">
         <Button
-          as={Link}
+          // as={Link}
           variant="outline-light"
           className="login-btn align-items-center"
           {...loginButtonProps}
@@ -82,11 +83,14 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
             {userDropdownConfig.additionalItems}
             {userDropdownConfig.logoutLink && (
               <li>
-                <Dropdown.Item as={Link} to={userDropdownConfig.logoutLink}>
+                <Dropdown.Item 
+                // as={Link} 
+                to={userDropdownConfig.logoutLink}>
                   {userDropdownConfig.logoutMessage || "Sign out"}
                 </Dropdown.Item>
               </li>
-            )}
+            )
+            }
           </ul>
         </Dropdown.Menu>
       </Dropdown>
@@ -111,7 +115,7 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
           >
             St. Jude Cloud
           </a>
-          {portalElement}
+          {/* {portalElement} */}
 
           <Nav className="global-icons" as="ul">
             {children}

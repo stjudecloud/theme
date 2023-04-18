@@ -12,6 +12,7 @@ export default {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-mdx-gfm",
+    "@storybook/addon-styling"
   ],
   features: {
     storyStoreV7: false,
