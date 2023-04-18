@@ -7,12 +7,13 @@ import {
   Button,
   Container,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
-let Link = "a";
+let navBarLink = "a";
 try {
-  Link = require("react-router-dom").Link;
+  navBarLink = 'b';
 } catch (err) {
-  Link = "a";
+  navBarLink = "a";
 }
 
 import MegaMenu from "./MegaMenu";
@@ -45,22 +46,22 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
   }, []);
 
   const linkProps = {
-    [Link === "a" ? "href" : "to"]: portalConfig.link,
+    [navBarLink === "a" ? "href" : "to"]: portalConfig.link,
     children: portalConfig.title,
     className: "portal-title"
   };
 
-  const portalElement = React.createElement(Link, linkProps);
+  const portalElement = React.createElement(navBarLink, linkProps);
 
   let loginButton;
   if (loginConfig && loginConfig.show) {
     const loginButtonProps = {
-      [Link === "a" ? "href" : "to"]: loginConfig.loginLink
+      [navBarLink === "a" ? "href" : "to"]: loginConfig.loginLink
     };
     loginButton = (
       <div className="d-flex align-items-center">
         <Button
-          // as={Link}
+          as={navBarLink}
           variant="outline-light"
           className="login-btn align-items-center"
           {...loginButtonProps}
@@ -84,7 +85,7 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
             {userDropdownConfig.logoutLink && (
               <li>
                 <Dropdown.Item 
-                // as={Link} 
+                as={navBarLink}
                 to={userDropdownConfig.logoutLink}>
                   {userDropdownConfig.logoutMessage || "Sign out"}
                 </Dropdown.Item>
@@ -115,7 +116,7 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
           >
             St. Jude Cloud
           </a>
-          {/* {portalElement} */}
+          {portalElement}
 
           <Nav className="global-icons" as="ul">
             {children}

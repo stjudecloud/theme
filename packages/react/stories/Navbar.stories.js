@@ -1,5 +1,4 @@
 import React from "react";
-import {StaticRouter} from "react-router-dom";
 import {Dropdown, Nav} from 'react-bootstrap';
 import Navbar from "../src/Navbar";
 
