@@ -21,12 +21,12 @@ const propTypes = {
   children: PropTypes.node,
   portalConfig: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired
   }).isRequired,
   loginConfig: PropTypes.shape({
     show: PropTypes.bool,
     loginLink: PropTypes.string.isRequired,
-    loginButtonMessage: PropTypes.string,
+    loginButtonMessage: PropTypes.string
   }),
   userDropdownConfig: PropTypes.shape({
     show: PropTypes.bool,
@@ -47,14 +47,14 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
   const linkProps = {
     [Link === "a" ? "href" : "to"]: portalConfig.link,
     children: portalConfig.title,
-    className: "portal-title",
+    className: "portal-title"
   };
   const portalElement = React.createElement(Link, linkProps);
 
   let loginButton;
   if (loginConfig && loginConfig.show) {
     const loginButtonProps = {
-      [Link === "a" ? "href" : "to"]: loginConfig.loginLink,
+      [Link === "a" ? "href" : "to"]: loginConfig.loginLink
     };
     loginButton = (
       <div className="d-flex align-items-center">
@@ -112,6 +112,7 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
             St. Jude Cloud
           </a>
           {portalElement}
+
           <Nav className="global-icons" as="ul">
             {children}
             {loginButton}
