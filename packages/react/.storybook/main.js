@@ -12,9 +12,10 @@ export default {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-mdx-gfm",
-    '@storybook/preset-create-react-app',
-    '@storybook/addon-interactions'
   ],
+  features: {
+    storyStoreV7: false,
+  },
   framework: {
     name: "@storybook/react-webpack5",
     options: {}
