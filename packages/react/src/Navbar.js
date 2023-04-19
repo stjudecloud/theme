@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import {
   Navbar as BSNavbar,
@@ -29,7 +30,7 @@ const propTypes = {
   }),
   navLinks: PropTypes.arrayOf(
     PropTypes.shape({
-      href: PropTypes.string.isRequired,
+      link: PropTypes.string.isRequired,
       content: PropTypes.oneOf([PropTypes.string, PropTypes.node]).isRequired,
     })
   ),
@@ -42,7 +43,6 @@ function Navbar({
   userDropdownConfig,
   navLinks,
 }) {
-  let Link = "a";
   // Force react-bootstrap to render the dropdown markdown so CSS can animate
   // the slide on toggle. After setting `show`, immediately unset to allow
   // dropdowns to function normally and independently.
@@ -51,26 +51,24 @@ function Navbar({
     setShow(null);
   }, []);
 
-  const linkProps = {
-    [Link === "a" ? "href" : "to"]: portalConfig.link,
-    children: portalConfig.title,
-    className: "portal-title",
-  };
-
-  const portalElement = React.createElement(Link, linkProps);
+  let portalElement;
+  if (portalConfig && portalConfig.title) {
+    portalElement = (
+      <Link to={portalConfig.link} className="portal-title">
+        {portalConfig.title}
+      </Link>
+    );
+  }
 
   let loginButton;
   if (loginConfig && loginConfig.show) {
-    const loginButtonProps = {
-      [Link === "a" ? "href" : "to"]: loginConfig.loginLink,
-    };
     loginButton = (
       <div className="d-flex align-items-center">
         <Button
-          as={Link}
+          as="a"
           variant="outline-light"
           className="login-btn align-items-center"
-          {...loginButtonProps}
+          href={loginConfig.loginLink}
         >
           {loginConfig.loginButtonMessage || "Sign in"}
         </Button>
@@ -113,7 +111,9 @@ function Navbar({
     navbarLinks = (
       <Nav className="nav-links" as="ul">
         {navLinks.map((navLink) => (
-          <Nav.Link href={navLink.href}>{navLink.content}</Nav.Link>
+          <Nav.Link as={Link} to={navLink.link}>
+            {navLink.content}
+          </Nav.Link>
         ))}
       </Nav>
     );
