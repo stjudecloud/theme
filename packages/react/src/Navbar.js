@@ -24,7 +24,8 @@ const propTypes = {
   }),
   userDropdownConfig: PropTypes.shape({
     show: PropTypes.bool,
-    logoutLink: PropTypes.string,
+    logoutLink: PropTypes.string.isRequired,
+    logoutMessage: PropTypes.string,
     additionalItems: PropTypes.node,
     initials: PropTypes.string,
   }),
@@ -95,7 +96,7 @@ function Navbar({
             {userDropdownConfig.additionalItems}
             {userDropdownConfig.logoutLink && (
               <li>
-                <Dropdown.Item as={Link} to={userDropdownConfig.logoutLink}>
+                <Dropdown.Item as="a" href={userDropdownConfig.logoutLink}>
                   {userDropdownConfig.logoutMessage || "Sign out"}
                 </Dropdown.Item>
               </li>
