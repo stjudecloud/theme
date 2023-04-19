@@ -1,10 +1,18 @@
 import React from "react";
 import { Dropdown, Nav } from "react-bootstrap";
 import Navbar from "../src/Navbar";
+import { MemoryRouter } from "react-router-dom";
 
 export default {
   title: "Navbar",
   component: Navbar,
+  decorators: [
+    (Story) => (
+      <MemoryRouter>
+        <Story />
+      </MemoryRouter>
+    ),
+  ],
   argTypes: {
     appName: {
       name: "App Name Storybook",
@@ -28,11 +36,11 @@ const props = {
     loginButtonMessage: "Login",
   },
   userDropdownConfig: {
-    logoutLink: "/logout",
+    logoutLink: "/",
     show: true,
   },
   userDropdownConfigWithInitials: {
-    logoutLink: "/logout",
+    logoutLink: "/",
     show: true,
     initials: "JD",
   },
@@ -68,11 +76,11 @@ NavLinks.args = {
   portalConfig: props.portalConfig,
   userDropdownConfig: props.userDropdownConfigWithInitials,
   navLinks: [
-    { href: "/", content: "Data Browser" },
-    { href: "/", content: "Analysis Workflows" },
-    { href: "/", content: "My Dashboard" },
+    { link: "/", content: "Data Browser" },
+    { link: "/", content: "Analysis Workflows" },
+    { link: "/", content: "My Dashboard" },
     {
-      href: "/",
+      link: "/",
       content: (
         <>
           <i className="fa fa-dna" /> DNAnexus
