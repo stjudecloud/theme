@@ -8,13 +8,6 @@ import {
   Container,
 } from "react-bootstrap";
 
-let Link = "a";
-try {
-  Link = require("react-router-dom").Link;
-} catch (err) {
-  Link = "a";
-}
-
 import MegaMenu from "./MegaMenu";
 
 const propTypes = {
@@ -36,6 +29,7 @@ const propTypes = {
 };
 
 function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
+  let Link = "a";
   // Force react-bootstrap to render the dropdown markdown so CSS can animate
   // the slide on toggle. After setting `show`, immediately unset to allow
   // dropdowns to function normally and independently.
@@ -49,6 +43,7 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
     children: portalConfig.title,
     className: "portal-title"
   };
+
   const portalElement = React.createElement(Link, linkProps);
 
   let loginButton;
@@ -82,11 +77,14 @@ function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
             {userDropdownConfig.additionalItems}
             {userDropdownConfig.logoutLink && (
               <li>
-                <Dropdown.Item as={Link} to={userDropdownConfig.logoutLink}>
+                <Dropdown.Item 
+                as={Link}
+                to={userDropdownConfig.logoutLink}>
                   {userDropdownConfig.logoutMessage || "Sign out"}
                 </Dropdown.Item>
               </li>
-            )}
+            )
+            }
           </ul>
         </Dropdown.Menu>
       </Dropdown>
