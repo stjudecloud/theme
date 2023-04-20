@@ -37,7 +37,7 @@
   "dependencies": {
     "@babel/runtime": "^7.14.8",
     "@stjudecloud/assets": "^1.0.0",
-    "@stjudecloud/theme-bootstrap": "^5.1.9",
+    "@stjudecloud/theme-bootstrap": "^5.1.10",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
