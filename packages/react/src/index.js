@@ -1,3 +1,4 @@
-export Navbar from "./Navbar";
-export Footer from "./Footer";
-export ErrorComponent from "./ErrorComponent";
+export * from "./Navbar";
+export * from "./Footer";
+export * from "./Error";
+export * from "./MegaMenu";
