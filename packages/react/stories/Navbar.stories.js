@@ -1,6 +1,6 @@
 import React from "react";
 import { Dropdown, Nav } from "react-bootstrap";
-import Navbar from "../src/Navbar";
+import { Navbar } from "../src";
 import { MemoryRouter } from "react-router-dom";
 
 export default {
