@@ -1,3 +1,7 @@
+const browserlist = [
+  ">= 1%"
+];
+
 module.exports = api => {
   const env = api.env();
 
@@ -24,14 +28,12 @@ module.exports = api => {
           shippedProposals: true,
           include: ["proposal-object-rest-spread"],
           targets: {
-            "edge": "17",
-            "firefox": "60",
-            "chrome": "67",
-            "safari": "11.1"
-          },
+            browsers: browserlist,
+            node: "current"
+          }
         }
       ],
-      [require("@babel/preset-react"), { development: dev }]
+      [require("@babel/preset-react")],
     ],
     plugins: [
       [require("@babel/plugin-proposal-class-properties"), { loose: true }],
