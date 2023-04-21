@@ -1,7 +1,7 @@
 import React from "react";
 import { Dropdown, Nav } from "react-bootstrap";
 import { Navbar } from "../src";
-import { MemoryRouter } from "react-router-dom";
+import { Link, MemoryRouter } from "react-router-dom";
 
 export default {
   title: "Navbar",
@@ -75,19 +75,25 @@ export const NavLinks = NavbarTemplate.bind({});
 NavLinks.args = {
   portalConfig: props.portalConfig,
   userDropdownConfig: props.userDropdownConfigWithInitials,
-  navLinks: [
-    { link: "/", content: "Data Browser" },
-    { link: "/", content: "Analysis Workflows" },
-    { link: "/", content: "My Dashboard" },
-    {
-      link: "/",
-      content: (
-        <>
-          <i className="fa fa-dna" /> DNAnexus
-        </>
-      ),
-    },
-  ],
+  navLinks: (
+    <>
+      <Nav.Link as={Link} to="/">
+        Data Browser
+      </Nav.Link>
+
+      <Nav.Link as={Link} to="/">
+        Workflows
+      </Nav.Link>
+
+      <Nav.Link as={Link} to="/">
+        My Dashboard
+      </Nav.Link>
+
+      <Nav.Link as="a" href="/" target="_blank">
+        <i className="fa fa-dna" /> DNAnexus
+      </Nav.Link>
+    </>
+  ),
 };
 
 export const UserLoggedInDropdownWithAdditionalItems = NavbarTemplate.bind({});
