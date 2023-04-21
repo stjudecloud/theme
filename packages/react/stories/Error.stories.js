@@ -1,9 +1,9 @@
 import React from "react";
-import ErrorComponent from "../src/ErrorComponent";
+import { ErrorComponent } from "../src";
 
 export default {
   title: "Error",
-  component: ErrorComponent
+  component: ErrorComponent,
 };
 
 export const Default = () => <ErrorComponent />;
