@@ -1,4 +1,3 @@
-export * from "./Navbar";
-export * from "./Footer";
-export * from "./Error";
-export * from "./MegaMenu";
+export { default as Navbar }from "./Navbar";
+export { default as Footer } from "./Footer";
+export { default as ErrorComponent } from "./ErrorComponent";
