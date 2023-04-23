@@ -44,6 +44,9 @@ const props = {
     show: true,
     initials: "JD",
   },
+  navLinksConfig: {
+    show: true,
+  },
 };
 
 const NavbarTemplate = (props) => <Navbar {...props} />;
@@ -75,25 +78,28 @@ export const NavLinks = NavbarTemplate.bind({});
 NavLinks.args = {
   portalConfig: props.portalConfig,
   userDropdownConfig: props.userDropdownConfigWithInitials,
-  navLinks: (
-    <>
-      <Nav.Link as={Link} to="/">
-        Data Browser
-      </Nav.Link>
+  navLinksConfig: {
+    ...props.navLinksConfig,
+    navLinks: (
+      <>
+        <Nav.Link as={Link} to="/">
+          Data Browser
+        </Nav.Link>
 
-      <Nav.Link as={Link} to="/">
-        Workflows
-      </Nav.Link>
+        <Nav.Link as={Link} to="/">
+          Workflows
+        </Nav.Link>
 
-      <Nav.Link as={Link} to="/">
-        My Dashboard
-      </Nav.Link>
+        <Nav.Link as={Link} to="/">
+          My Dashboard
+        </Nav.Link>
 
-      <Nav.Link as="a" href="/" target="_blank">
-        <i className="fa fa-dna" /> DNAnexus
-      </Nav.Link>
-    </>
-  ),
+        <Nav.Link as="a" href="/" target="_blank">
+          <i className="fa fa-dna" /> DNAnexus
+        </Nav.Link>
+      </>
+    ),
+  },
 };
 
 export const UserLoggedInDropdownWithAdditionalItems = NavbarTemplate.bind({});

@@ -29,7 +29,10 @@ const propTypes = {
     additionalItems: PropTypes.node,
     initials: PropTypes.string,
   }),
-  navLinks: PropTypes.node,
+  navLinksConfig: PropTypes.shape({
+    show: PropTypes.bool,
+    navLinks: PropTypes.node,
+  }),
 };
 
 function Navbar({
@@ -37,7 +40,7 @@ function Navbar({
   portalConfig,
   loginConfig,
   userDropdownConfig,
-  navLinks,
+  navLinksConfig,
 }) {
   // Force react-bootstrap to render the dropdown markdown so CSS can animate
   // the slide on toggle. After setting `show`, immediately unset to allow
@@ -103,10 +106,10 @@ function Navbar({
   }
 
   let navbarLinks;
-  if (navLinks) {
+  if (navLinksConfig && navLinksConfig.show) {
     navbarLinks = (
       <Nav className="nav-links" as="ul">
-        {navLinks}
+        {navLinksConfig.navLinks}
       </Nav>
     );
   }
@@ -130,8 +133,8 @@ function Navbar({
             St. Jude Cloud
           </a>
           {portalElement}
-
           {navbarLinks}
+
           <Nav className="global-icons" as="ul">
             {children}
             {loginButton}
