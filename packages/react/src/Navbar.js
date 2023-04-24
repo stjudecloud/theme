@@ -33,25 +33,17 @@ const propTypes = {
     show: PropTypes.bool,
     navLinks: PropTypes.arrayOf(
       PropTypes.shape({
-        link: PropTypes.string,
         content: PropTypes.oneOf([PropTypes.node, PropTypes.string]),
-        externalRoute: PropTypes.bool,
-        newTab: PropTypes.bool,
+        props: PropTypes.shape({
+          to: PropTypes.string,
+          href: PropTypes.string,
+          target: PropTypes.string,
+          ref: PropTypes.string,
+          onClick: PropTypes.func,
+        }),
       })
     ),
   }),
-};
-
-const getNavLinkProps = ({ externalRoute, link, newTab, children }) => {
-  if (!externalRoute) return { as: Link, to: link };
-
-  let props = {
-    as: "a",
-    href: link,
-  };
-
-  if (newTab) return { ...props, target: "_blank", rel: "noopener noreferrer" };
-  return props;
 };
 
 function Navbar({
@@ -115,9 +107,7 @@ function Navbar({
               navLinksConfig.show &&
               navLinksConfig.navLinks.map((navLink) => (
                 <li className="collapsed-nav-link">
-                  <Dropdown.Item {...getNavLinkProps(navLink)}>
-                    {navLink.content}
-                  </Dropdown.Item>
+                  <Dropdown.Item {...navLink.props} />
                 </li>
               ))}
             {userDropdownConfig.logoutLink && (
@@ -138,9 +128,7 @@ function Navbar({
     navbarLinks = (
       <Nav className="nav-links" as="ul">
         {navLinksConfig.navLinks.map((navLink) => (
-          <Nav.Link key={navLink.link} {...getNavLinkProps(navLink)}>
-            {navLink.content}
-          </Nav.Link>
+          <Nav.Link key={navLink.link} {...navLink.props} />
         ))}
       </Nav>
     );

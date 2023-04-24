@@ -79,26 +79,37 @@ NavLinks.args = {
     show: true,
     navLinks: [
       {
-        link: "/data",
-        content: "Data Browser",
+        props: {
+          to: "/data",
+          as: Link,
+          children: "Data Browser",
+        },
       },
       {
-        link: "/workflows",
-        content: "Workflows",
+        props: {
+          to: "/workflows",
+          as: Link,
+          children: "Workflows",
+        },
       },
       {
-        link: "/dashboard",
-        content: "My Dashboard",
+        props: {
+          to: "/dashboard",
+          as: Link,
+          children: "My Dashboard",
+        },
       },
       {
-        link: "/dnanexus",
-        content: (
-          <>
-            <i className="fa fa-dna" /> DNAnexus
-          </>
-        ),
-        externalRoute: true,
-        newTab: true,
+        props: {
+          href: "/dnanexus",
+          target: "_blank",
+          rel: "noopener noreferrer",
+          children: (
+            <>
+              <i className="fa fa-dna" /> DNAnexus
+            </>
+          ),
+        },
       },
     ],
   },
