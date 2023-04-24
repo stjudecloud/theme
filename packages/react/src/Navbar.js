@@ -111,6 +111,15 @@ function Navbar({
         <Dropdown.Menu className="profile-dropdown-menu" show={show}>
           <ul className="list-unstyled">
             {userDropdownConfig.additionalItems}
+            {navLinksConfig &&
+              navLinksConfig.show &&
+              navLinksConfig.navLinks.map((navLink) => (
+                <li className="collapsed-nav-link">
+                  <Dropdown.Item {...getNavLinkProps(navLink)}>
+                    {navLink.content}
+                  </Dropdown.Item>
+                </li>
+              ))}
             {userDropdownConfig.logoutLink && (
               <li>
                 <Dropdown.Item as="a" href={userDropdownConfig.logoutLink}>
