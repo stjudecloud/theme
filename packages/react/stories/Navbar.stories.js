@@ -44,9 +44,6 @@ const props = {
     show: true,
     initials: "JD",
   },
-  navLinksConfig: {
-    show: true,
-  },
 };
 
 const NavbarTemplate = (props) => <Navbar {...props} />;
@@ -79,26 +76,31 @@ NavLinks.args = {
   portalConfig: props.portalConfig,
   userDropdownConfig: props.userDropdownConfigWithInitials,
   navLinksConfig: {
-    ...props.navLinksConfig,
-    navLinks: (
-      <>
-        <Nav.Link as={Link} to="/">
-          Data Browser
-        </Nav.Link>
-
-        <Nav.Link as={Link} to="/">
-          Workflows
-        </Nav.Link>
-
-        <Nav.Link as={Link} to="/">
-          My Dashboard
-        </Nav.Link>
-
-        <Nav.Link as="a" href="/" target="_blank">
-          <i className="fa fa-dna" /> DNAnexus
-        </Nav.Link>
-      </>
-    ),
+    show: true,
+    navLinks: [
+      {
+        link: "/data",
+        content: "Data Browser",
+      },
+      {
+        link: "/workflows",
+        content: "Workflows",
+      },
+      {
+        link: "/dashboard",
+        content: "My Dashboard",
+      },
+      {
+        link: "/dnanexus",
+        content: (
+          <>
+            <i className="fa fa-dna" /> DNAnexus
+          </>
+        ),
+        externalRoute: true,
+        newTab: true,
+      },
+    ],
   },
 };
 

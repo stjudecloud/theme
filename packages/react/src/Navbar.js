@@ -31,8 +31,27 @@ const propTypes = {
   }),
   navLinksConfig: PropTypes.shape({
     show: PropTypes.bool,
-    navLinks: PropTypes.node,
+    navLinks: PropTypes.arrayOf(
+      PropTypes.shape({
+        link: PropTypes.string,
+        content: PropTypes.oneOf([PropTypes.node, PropTypes.string]),
+        externalRoute: PropTypes.bool,
+        newTab: PropTypes.bool,
+      })
+    ),
   }),
+};
+
+const getNavLinkProps = ({ externalRoute, link, newTab, children }) => {
+  if (!externalRoute) return { as: Link, to: link };
+
+  let props = {
+    as: "a",
+    href: link,
+  };
+
+  if (newTab) return { ...props, target: "_blank", rel: "noopener noreferrer" };
+  return props;
 };
 
 function Navbar({
@@ -109,7 +128,11 @@ function Navbar({
   if (navLinksConfig && navLinksConfig.show) {
     navbarLinks = (
       <Nav className="nav-links" as="ul">
-        {navLinksConfig.navLinks}
+        {navLinksConfig.navLinks.map((navLink) => (
+          <Nav.Link key={navLink.link} {...getNavLinkProps(navLink)}>
+            {navLink.content}
+          </Nav.Link>
+        ))}
       </Nav>
     );
   }
