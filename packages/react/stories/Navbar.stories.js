@@ -74,7 +74,17 @@ UserLoggedInWithInitials.args = {
 export const NavLinks = NavbarTemplate.bind({});
 NavLinks.args = {
   portalConfig: props.portalConfig,
-  userDropdownConfig: props.userDropdownConfigWithInitials,
+  userDropdownConfig: {
+    ...props.userDropdownConfigWithInitials,
+    additionalItems: (
+      <>
+        <li>
+          <Dropdown.Item disabled>Jane Doe</Dropdown.Item>
+        </li>
+        <Dropdown.Divider />
+      </>
+    ),
+  },
   navLinksConfig: {
     show: true,
     navLinks: [
