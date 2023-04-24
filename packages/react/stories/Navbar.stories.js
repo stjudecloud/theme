@@ -74,26 +74,44 @@ UserLoggedInWithInitials.args = {
 export const NavLinks = NavbarTemplate.bind({});
 NavLinks.args = {
   portalConfig: props.portalConfig,
-  userDropdownConfig: props.userDropdownConfigWithInitials,
-  navLinks: (
-    <>
-      <Nav.Link as={Link} to="/">
-        Data Browser
-      </Nav.Link>
-
-      <Nav.Link as={Link} to="/">
-        Workflows
-      </Nav.Link>
-
-      <Nav.Link as={Link} to="/">
-        My Dashboard
-      </Nav.Link>
-
-      <Nav.Link as="a" href="/" target="_blank">
-        <i className="fa fa-dna" /> DNAnexus
-      </Nav.Link>
-    </>
-  ),
+  userDropdownConfig: {
+    ...props.userDropdownConfigWithInitials,
+    additionalItems: (
+      <>
+        <li>
+          <Dropdown.Item disabled>Jane Doe</Dropdown.Item>
+        </li>
+        <Dropdown.Divider />
+      </>
+    ),
+  },
+  navLinksConfig: {
+    show: true,
+    navLinks: [
+      {
+        link: "/data",
+        content: "Data Browser",
+      },
+      {
+        link: "/workflows",
+        content: "Workflows",
+      },
+      {
+        link: "/dashboard",
+        content: "My Dashboard",
+      },
+      {
+        link: "/dnanexus",
+        content: (
+          <>
+            <i className="fa fa-dna" /> DNAnexus
+          </>
+        ),
+        externalLink: true,
+        newTab: true,
+      },
+    ],
+  },
 };
 
 export const UserLoggedInDropdownWithAdditionalItems = NavbarTemplate.bind({});
