@@ -6,7 +6,7 @@ export default {
   component: Alert,
 };
 
-export const Default = () => <Alert variant="info" />;
-export const Success = () => <Alert variant="success" />;
-export const Warning = () => <Alert variant="warning" />;
-export const Error = () => <Alert variant="error" />;
+export const Default = () => <Alert message= {{ type: "info", title: "I am a title", body: " i am the body " }} />;
+export const Success = () => <Alert message= {{ type: "info", title: "I am a title", body: " i am the body " }} />;
+export const Warning = () => <Alert message= {{ type: "info", title: "I am a title", body: " i am the body " }} />;
+export const Error = () => <Alert message= {{ type: "info", title: "I am a title", body: " i am the body " }} />;
