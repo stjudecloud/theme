@@ -1,5 +1,5 @@
-import React from "react";
-import { Row, Col, Toast } from "react-bootstrap";
+import React, { useState } from "react";
+import { Col, Toast } from "react-bootstrap";
 import ToastContainer from 'react-bootstrap/ToastContainer'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -19,7 +19,9 @@ library.add(
 
 function Alert({ message, onclick }) {
   // control the visibility of the alert
-  const [show, setShow] = React.useState(true);
+  const [showAlert, setShowAlert] = useState(true);
+
+  const dismissAlert = () => setShowAlert(!showAlert);
 
   let variantClass;
   switch (message.type) {
@@ -30,30 +32,33 @@ function Alert({ message, onclick }) {
       variantClass = "alert-warning";
       break;
     case "error":
-      variantClass = "alert-danger";
+      variantClass = "alert-error";
       break;
     case "info":
       variantClass = "alert-info";
       break;
     default:
-      variantClass = "slert-info";
+      variantClass = "alert-info";
   }
 
   return (
     <ToastContainer position="bottom-center">
-      <Toast className={variantClass} autohide>
+      <Toast onClose={() => setShowAlert(false)} className={`alert ${variantClass}`} show={showAlert} delay={3000} autohide>
         <Toast.Body>
-          <Row>
-            <Col>
+          <div className="row d-flex flex-nowrapn g-0">
+            <Col className="col-lg-1 text-center d-flex align-items-center justify-content-center gx-4">
               <FontAwesomeIcon icon={["fa", "circle-check"]} />
             </Col>
-            <Col>
+            <Col className="text-center d-flex align-items-center justify-content-center text-nowrap gx-3">
+              <b>{ `${message.title}:` }</b>
+            </Col>
+            <Col className="text-center d-flex align-items-center justify-content-center text-nowrap" style={{marginRight: 200 }}>
               { message.body }
             </Col>
-            <Col>
+            <Col className="col-lg-1 text-center d-flex align-items-center justify-content-center gx-4" onClick={dismissAlert}>
               <FontAwesomeIcon icon={["fa", "xmark"]} />                
             </Col>
-          </Row>
+          </div>
         </Toast.Body>
       </Toast>
     </ToastContainer>

@@ -1,29 +1,50 @@
 /* Site Alert - Site-Specific Alert */
+.toast {
+  width: max-content;
+  max-width: none !important;
+}
 
 .alert {
-  position: fixed;
+  // position: fixed;
+  font-size: large;
   bottom: 20vh;
+  box-shadow: none;
+  padding: 0 0;
+
+  &.alert-info {
+    margin: 10px 10px;
+    border: 2px solid $teal;
+    border-color: $teal;
+  }
+
+  &.alert-warning {
+    border-color: $yellow;
+  }
+
+  &.alert-success {
+    border-color: $green;
+  }
+
+  &.alert-error {
+    border-color: $red-bright;
+  }
 }
 
 // todo: add different colors to the alert variants
 .alert-info {
-
+  color: $teal;
 }
 
 .alert-warning {
-
+  color: $yellow-dark;
 }
 
 .alert-success {
-
+  color: $green-dark;
 }
 
 .alert-error {
-
+  color: $red-bright;
 }
-
-// todo:set screen breakpoint for alert position
-
-// todo: alert dismiss animation
 
 // todo: alert revoke animation
