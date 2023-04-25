@@ -14,37 +14,37 @@
   &.alert-info {
     margin: 10px 10px;
     border: 2px solid $teal;
-    border-color: $teal;
   }
 
   &.alert-warning {
     border-color: $yellow;
+    border: 2px solid $yellow;
   }
 
   &.alert-success {
     border-color: $green;
+    border: 2px solid $green;
   }
 
   &.alert-error {
     border-color: $red-bright;
+    border: 2px solid $red-bright;
   }
 }
 
 // todo: add different colors to the alert variants
-.alert-info {
+.icon-info {
   color: $teal;
 }
 
-.alert-warning {
+.icon-warning {
   color: $yellow-dark;
 }
 
-.alert-success {
+.icon-success {
   color: $green-dark;
 }
 
-.alert-error {
+.icon-error {
   color: $red-bright;
 }
-
-// todo: alert revoke animation

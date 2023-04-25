@@ -24,38 +24,48 @@ function Alert({ message, onclick }) {
   const dismissAlert = () => setShowAlert(!showAlert);
 
   let variantClass;
+  let icon;
   switch (message.type) {
     case "success":
       variantClass = "alert-success";
+      icon = (
+        <FontAwesomeIcon icon={["fa", "circle-check"]} className="icon-success"/>
+      )
       break;
     case "warning":
       variantClass = "alert-warning";
+      icon = (
+        <FontAwesomeIcon icon={["fa", "exclamation-circle"]} className="icon-warning"/>
+      )
       break;
     case "error":
       variantClass = "alert-error";
-      break;
-    case "info":
-      variantClass = "alert-info";
+      icon = (
+        <FontAwesomeIcon icon={["fa", "exclamation-triangle"]} className="icon-error"/>
+      )
       break;
     default:
       variantClass = "alert-info";
+      icon = (
+        <FontAwesomeIcon icon={["fa", "exclamation-circle"]} className="icon-info"/>
+      )
   }
 
   return (
     <ToastContainer position="bottom-center">
-      <Toast onClose={() => setShowAlert(false)} className={`alert ${variantClass}`} show={showAlert} delay={3000} autohide>
+      <Toast onClose={() => setShowAlert(true)} className={`alert ${variantClass}`} show={showAlert} delay={3000} autohide>
         <Toast.Body>
-          <div className="row d-flex flex-nowrapn g-0">
-            <Col className="col-lg-1 text-center d-flex align-items-center justify-content-center gx-4">
-              <FontAwesomeIcon icon={["fa", "circle-check"]} />
+          <div className="row d-flex flex-nowrap">
+            <Col className="col text-center d-flex align-items-center justify-content-center gx-4">
+              { icon }
             </Col>
-            <Col className="text-center d-flex align-items-center justify-content-center text-nowrap gx-3">
-              <b>{ `${message.title}:` }</b>
+            <Col className="col text-center d-flex align-items-center justify-content-center text-nowrap gx-3 fw-bold">
+              { `${message.title.trim()}:` }
             </Col>
-            <Col className="text-center d-flex align-items-center justify-content-center text-nowrap" style={{marginRight: 200 }}>
-              { message.body }
+            <Col className="col text-center d-flex align-items-center justify-content-center text-nowrap fw-light" style={{marginRight: 200 }}>
+              { `${message.body.trim()}.` }
             </Col>
-            <Col className="col-lg-1 text-center d-flex align-items-center justify-content-center gx-4" onClick={dismissAlert}>
+            <Col className="col text-center d-flex align-items-center justify-content-center gx-4" onClick={dismissAlert}>
               <FontAwesomeIcon icon={["fa", "xmark"]} />                
             </Col>
           </div>
