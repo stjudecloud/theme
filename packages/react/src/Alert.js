@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Col, Toast } from "react-bootstrap";
+import { Col, Toast, Row } from "react-bootstrap";
 import ToastContainer from 'react-bootstrap/ToastContainer'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -17,36 +17,64 @@ library.add(
   faXmark
 );
 
-function Alert({ message }) {
+function Alert({ message, style }) {
   const [showAlert, setShowAlert] = useState(true);
 
   const dismissAlert = () => setShowAlert(!showAlert);
 
-  let variantClass;
-  let icon;
+  let variantClass, icon, col;
+
   switch (message.type) {
     case "success":
       variantClass = "alert-success";
       icon = (
-        <FontAwesomeIcon icon={["fa", "circle-check"]} className="icon-success"/>
+        <FontAwesomeIcon icon={["fa", "circle-check"]} className="icon icon-success"/>
       )
       break;
     case "warning":
       variantClass = "alert-warning";
       icon = (
-        <FontAwesomeIcon icon={["fa", "exclamation-circle"]} className="icon-warning"/>
+        <FontAwesomeIcon icon={["fa", "exclamation-circle"]} className="icon icon-warning"/>
       )
       break;
     case "error":
       variantClass = "alert-error";
       icon = (
-        <FontAwesomeIcon icon={["fa", "exclamation-triangle"]} className="icon-error"/>
+        <FontAwesomeIcon icon={["fa", "exclamation-triangle"]} className="icon icon-error"/>
       )
       break;
     default:
       variantClass = "alert-info";
       icon = (
-        <FontAwesomeIcon icon={["fa", "exclamation-circle"]} className="icon-info"/>
+        <FontAwesomeIcon icon={["fa", "exclamation-circle"]} className="icon icon-info"/>
+      )
+  }
+
+  switch (style) {
+    case "multiplelines":
+      col = (
+        <>
+          <Col className="d-flex flex-column">
+            <Row className="text-nowrap fw-bold">
+              { `${message.title.trim()}:` }
+            </Row>
+            <Row className="text-nowrap">
+              { `${message.body.trim()}.` }
+            </Row>
+          </Col>
+        </>
+      )
+      break;
+    default:
+      col = (
+        <>
+          <Col className="flex flex-row text-nowrap">
+            <div class="d-flex flex-row mr-3">
+              <div class="p-2 fw-bold">{ `${message.title.trim()}:` }</div>
+              <div class="p-2">{ `${message.body.trim()}.` }</div>
+            </div>
+          </Col>
+        </>
       )
   }
 
@@ -54,20 +82,15 @@ function Alert({ message }) {
     <ToastContainer position="bottom-center">
       <Toast onClose={() => setShowAlert(true)} className={`alert ${variantClass}`} show={showAlert} delay={3000} autohide>
         <Toast.Body>
-          <div className="row d-flex flex-nowrap">
-            <Col className="col text-center d-flex align-items-center justify-content-center gx-4">
+          <Row className="no-gutters">
+            <Col className="col-1 d-flex align-items-center">
               { icon }
             </Col>
-            <Col className="col text-center d-flex align-items-center justify-content-center text-nowrap gx-3 fw-bold">
-              { `${message.title.trim()}:` }
+            {col}
+            <Col className="col-1 d-flex align-items-center justify-content-center" onClick={dismissAlert}>
+              <FontAwesomeIcon icon={["fa", "xmark"]} size="lg"/>              
             </Col>
-            <Col className="col text-center d-flex align-items-center justify-content-center text-nowrap fw-light" style={{marginRight: 200 }}>
-              { `${message.body.trim()}.` }
-            </Col>
-            <Col className="col text-center d-flex align-items-center justify-content-center gx-4" onClick={dismissAlert}>
-              <FontAwesomeIcon icon={["fa", "xmark"]} />                
-            </Col>
-          </div>
+          </Row>
         </Toast.Body>
       </Toast>
     </ToastContainer>
@@ -76,6 +99,7 @@ function Alert({ message }) {
 
 Alert.displayName = "St.Jude Cloud Alert";
 Alert.propTypes = {
+  style: PropTypes.oneOf(["oneline", "multiplelines"]),
   msg: {
     type: PropTypes.oneOf(["success", "warning", "error", "info"]),
     title: PropTypes.string,

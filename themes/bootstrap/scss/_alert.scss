@@ -1,12 +1,18 @@
 /* Site Alert - Site-Specific Alert */
+.icon {
+  margin: 0 10px;
+}
+
 .toast {
-  width: max-content;
+  width: 800px;
   max-width: none !important;
+  &-body {
+    padding: 5px 5px !important;
+  }
 }
 
 .alert {
-  // position: fixed;
-  font-size: large;
+  font-size: 1rem;
   bottom: 20vh;
   box-shadow: none;
   padding: 0 0;
@@ -32,7 +38,6 @@
   }
 }
 
-// todo: add different colors to the alert variants
 .icon-info {
   color: $teal;
 }
