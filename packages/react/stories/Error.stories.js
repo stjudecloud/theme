@@ -2,7 +2,7 @@ import React from "react";
 import { ErrorComponent } from "../src";
 
 export default {
-  title: "Error",
+  title: 'SJ React/Atoms/Error',
   component: ErrorComponent,
 };
 

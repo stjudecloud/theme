@@ -17,8 +17,7 @@ library.add(
   faXmark
 );
 
-function Alert({ message, onclick }) {
-  // control the visibility of the alert
+function Alert({ message }) {
   const [showAlert, setShowAlert] = useState(true);
 
   const dismissAlert = () => setShowAlert(!showAlert);
