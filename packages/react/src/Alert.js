@@ -104,8 +104,7 @@ Alert.propTypes = {
     type: PropTypes.oneOf(["success", "warning", "error", "info"]),
     title: PropTypes.string,
     body: PropTypes.string
-  },
-  onclick: PropTypes.func
+  }
 }
 
 export default Alert;
