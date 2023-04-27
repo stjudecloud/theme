@@ -54,7 +54,7 @@ function Alert({ message, style }) {
     case "multiplelines":
       col = (
         <>
-          <Col className="d-flex flex-column">
+          <Col className="flex flex-column gx-5">
             <Row className="text-nowrap fw-bold">
               { `${message.title.trim()}:` }
             </Row>
@@ -82,13 +82,13 @@ function Alert({ message, style }) {
     <ToastContainer position="bottom-center">
       <Toast onClose={() => setShowAlert(true)} className={`alert ${variantClass}`} show={showAlert} delay={3000} autohide>
         <Toast.Body>
-          <Row className="no-gutters">
-            <Col className="col-1 d-flex align-items-center">
+          <Row className="no-gutters g-0">
+            <Col className="col-1 d-flex align-items-center justify-content-end">
               { icon }
             </Col>
             {col}
             <Col className="col-1 d-flex align-items-center justify-content-center" onClick={dismissAlert}>
-              <FontAwesomeIcon icon={["fa", "xmark"]} size="lg"/>              
+              <FontAwesomeIcon icon={["fa", "xmark"]} size="lg" className="icon-grey" />              
             </Col>
           </Row>
         </Toast.Body>
