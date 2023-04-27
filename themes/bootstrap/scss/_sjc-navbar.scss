@@ -153,6 +153,10 @@
 
   .profile-dropdown-menu {
     top: 50.5px;
+
+    .collapsed-nav-link {
+      display: none;
+    }
   }
 
   .profile-dropdown-menu,
@@ -256,6 +260,16 @@
 
     .nav-links {
       display: none;
+    }
+
+    .profile-dropdown-menu {
+
+      ul {
+
+        .collapsed-nav-link {
+          display: flex;
+        }
+      }
     }
   }
 

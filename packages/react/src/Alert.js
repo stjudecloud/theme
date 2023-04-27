@@ -80,7 +80,7 @@ function Alert({ message, style }) {
 
   return (
     <ToastContainer position="bottom-center">
-      <Toast onClose={() => setShowAlert(true)} className={`alert ${variantClass}`} show={showAlert} delay={3000} autohide>
+      <Toast onClose={() => setShowAlert(false)} className={`alert ${variantClass}`} show={showAlert} delay={3000} autohide>
         <Toast.Body>
           <Row className="no-gutters g-0">
             <Col className="col-1 d-flex align-items-center justify-content-end">
@@ -100,7 +100,7 @@ function Alert({ message, style }) {
 Alert.displayName = "St.Jude Cloud Alert";
 Alert.propTypes = {
   style: PropTypes.oneOf(["oneline", "multiplelines"]),
-  msg: {
+  message: {
     type: PropTypes.oneOf(["success", "warning", "error", "info"]),
     title: PropTypes.string,
     body: PropTypes.string

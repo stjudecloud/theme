@@ -1,7 +1,7 @@
 import React from "react";
 import { Dropdown, Nav } from "react-bootstrap";
 import { Navbar } from "../src";
-import { MemoryRouter } from "react-router-dom";
+import { Link, MemoryRouter } from "react-router-dom";
 
 export default {
   title: 'SJ React/Atoms/NavBar',
@@ -74,20 +74,44 @@ UserLoggedInWithInitials.args = {
 export const NavLinks = NavbarTemplate.bind({});
 NavLinks.args = {
   portalConfig: props.portalConfig,
-  userDropdownConfig: props.userDropdownConfigWithInitials,
-  navLinks: [
-    { link: "/", content: "Data Browser" },
-    { link: "/", content: "Analysis Workflows" },
-    { link: "/", content: "My Dashboard" },
-    {
-      link: "/",
-      content: (
-        <>
-          <i className="fa fa-dna" /> DNAnexus
-        </>
-      ),
-    },
-  ],
+  userDropdownConfig: {
+    ...props.userDropdownConfigWithInitials,
+    additionalItems: (
+      <>
+        <li>
+          <Dropdown.Item disabled>Jane Doe</Dropdown.Item>
+        </li>
+        <Dropdown.Divider />
+      </>
+    ),
+  },
+  navLinksConfig: {
+    show: true,
+    navLinks: [
+      {
+        link: "/data",
+        content: "Data Browser",
+      },
+      {
+        link: "/workflows",
+        content: "Workflows",
+      },
+      {
+        link: "/dashboard",
+        content: "My Dashboard",
+      },
+      {
+        link: "/dnanexus",
+        content: (
+          <>
+            <i className="fa fa-dna" /> DNAnexus
+          </>
+        ),
+        externalLink: true,
+        newTab: true,
+      },
+    ],
+  },
 };
 
 export const UserLoggedInDropdownWithAdditionalItems = NavbarTemplate.bind({});
