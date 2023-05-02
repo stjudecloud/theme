@@ -4,7 +4,7 @@ import { Navbar } from "../src";
 import { Link, MemoryRouter } from "react-router-dom";
 
 export default {
-  title: "Navbar",
+  title: 'SJ React/Atoms/NavBar',
   component: Navbar,
   decorators: [
     (Story) => (
