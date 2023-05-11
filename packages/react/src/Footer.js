@@ -58,7 +58,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://jobs-stjude.icims.com/jobs/search?ss=1&searchKeyword=%22St+Jude+Cloud%22+Computational+Biology&searchRadius=20&mobile=false&width=1180&height=500&bga=true&needsRedirect=false&jan1offset=-360&jun1offset=-300" title="Careers">
+                <a href="https://talent.stjude.org/data-sciences/jobs" title="Careers">
                   Careers
                 </a>
               </li>
