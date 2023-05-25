@@ -17,8 +17,10 @@ library.add(
   faXmark
 );
 
-function Alert({ message, style }) {
+function Alert({style, message, autoDismiss, timeout}) {
   const [showAlert, setShowAlert] = useState(true);
+  const autoHideEnabled = autoDismiss && typeof autoDismiss === "boolean" ? autoDismiss : false;
+  const timeoutValue = autoHideEnabled && timeout && typeof timeout === "number" ? timeout : 5000;
 
   const dismissAlert = () => setShowAlert(!showAlert);
 
@@ -80,7 +82,11 @@ function Alert({ message, style }) {
 
   return (
     <ToastContainer position="bottom-center">
-      <Toast onClose={() => setShowAlert(false)} className={`alert ${variantClass}`} show={showAlert} delay={3000} autohide>
+      <Toast onClose={() => setShowAlert(false)} 
+             className={`alert ${variantClass}`} 
+             show={showAlert} 
+             delay={timeoutValue}
+             autohide={autoHideEnabled}>
         <Toast.Body>
           <Row className="no-gutters g-0">
             <Col className="col-1 d-flex align-items-center justify-content-end">
@@ -103,8 +109,10 @@ Alert.propTypes = {
   message: {
     type: PropTypes.oneOf(["success", "warning", "error", "info"]),
     title: PropTypes.string,
-    body: PropTypes.string
-  }
+    body: PropTypes.string,
+  },
+  autoDismiss: PropTypes.bool,
+  timeout: PropTypes.number,
 }
 
 export default Alert;

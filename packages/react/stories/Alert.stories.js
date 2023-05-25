@@ -6,7 +6,7 @@ export default {
   component: Alert,
 };
 
-export const DefaultOneline = () => <Alert message={{ type: "info", title: "Notification Title", body: "Here is the information or diections"}} style="oneline" />;
+export const DefaultOneline = () => <Alert message={{ type: "info", title: "Notification Title", body: "Here is the information or diections"}} style="oneline" autoDismiss={false} timeout={1000}/>;
 export const SuccessOneline = () => <Alert message={{ type: "success", title: "I am a title", body: " i am the body"}} style="oneline"/>;
 export const WarningOneLine = () => <Alert message={{ type: "warning", title: "I am a title", body: " i am the body"}} style="oneline"/>;
 export const ErrorOneline = () => <Alert message={{ type: "error", title: "I am a title", body: " i am the body"}} style="oneline"/>;
