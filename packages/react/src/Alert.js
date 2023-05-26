@@ -17,14 +17,17 @@ library.add(
   faXmark
 );
 
-function Alert({ message, style }) {
+function Alert({style, variant, message, autohide, delay}) {
   const [showAlert, setShowAlert] = useState(true);
+
+  autohide && typeof autohide === "boolean" ? autohide : false;
+  autohide && delay && typeof delay === "number" ? delay : 5000;
 
   const dismissAlert = () => setShowAlert(!showAlert);
 
   let variantClass, icon, col;
 
-  switch (message.type) {
+  switch (variant) {
     case "success":
       variantClass = "alert-success";
       icon = (
@@ -80,7 +83,11 @@ function Alert({ message, style }) {
 
   return (
     <ToastContainer position="bottom-center">
-      <Toast onClose={() => setShowAlert(false)} className={`alert ${variantClass}`} show={showAlert} delay={3000} autohide>
+      <Toast onClose={() => setShowAlert(false)} 
+             className={`alert ${variantClass}`} 
+             show={showAlert} 
+             delay={delay}
+             autohide={autohide}>
         <Toast.Body>
           <Row className="no-gutters g-0">
             <Col className="col-1 d-flex align-items-center justify-content-end">
@@ -100,11 +107,13 @@ function Alert({ message, style }) {
 Alert.displayName = "St.Jude Cloud Alert";
 Alert.propTypes = {
   style: PropTypes.oneOf(["oneline", "multiplelines"]),
+  variant: PropTypes.oneOf(["success", "warning", "error", "info"]),
   message: {
-    type: PropTypes.oneOf(["success", "warning", "error", "info"]),
     title: PropTypes.string,
-    body: PropTypes.string
-  }
+    body: PropTypes.string,
+  },
+  autohide: PropTypes.bool,
+  delay: PropTypes.number,
 }
 
 export default Alert;

@@ -6,14 +6,92 @@ export default {
   component: Alert,
 };
 
-export const DefaultOneline = () => <Alert message={{ type: "info", title: "Notification Title", body: "Here is the information or diections"}} style="oneline" />;
-export const SuccessOneline = () => <Alert message={{ type: "success", title: "I am a title", body: " i am the body"}} style="oneline"/>;
-export const WarningOneLine = () => <Alert message={{ type: "warning", title: "I am a title", body: " i am the body"}} style="oneline"/>;
-export const ErrorOneline = () => <Alert message={{ type: "error", title: "I am a title", body: " i am the body"}} style="oneline"/>;
-export const ExtraLongMessageOneLine = () => <Alert message={{ type: "error", title: "My name is Giovanni Giorgio", body: "but everybody calls me Giorgio"}} style="oneline"/>;
+export const DefaultOneline = () =>
+  <Alert
+    message={{ title: "Do you know?", body: "My cat can backflip"}}
+    style="oneline" 
+    autohide={false} 
+    delay={5000} 
+    variant="info"
+  />;
 
-export const DefaultMultiplelines = () => <Alert message={{ type: "info", title: "Notification Title", body: "Here is the information or diections" }} style="multiplelines"/>;
-export const SuccessMultiplelines = () => <Alert message={{ type: "success", title: "I am a title", body: " i am the body" }} style="multiplelines"/>;
-export const WarningMultiplelines = () => <Alert message={{ type: "warning", title: "I am a title", body: " i am the body" }} style="multiplelines"/>;
-export const ErrorMultiplelines = () => <Alert message={{ type: "error", title: "I am a title", body: " i am the body" }} style="multiplelines"/>;
-export const ExtraLongMessageMultiplelines = () => <Alert message={{ type: "error", title: "My name is Giovanni Giorgio", body: "but everybody calls me Giorgio." }} style="multiplelines"/>;
+export const SuccessOneline = () => 
+  <Alert 
+    message={{ title: "I am a title", body: " i am the body" }} 
+    style="oneline"
+    autohide={true}
+    delay={6000}
+    variant="success"
+  />;
+
+export const WarningOneLine = () => 
+  <Alert 
+    message={{title: "Warning", body: "Hungry kitten is approaching"}}
+    style="oneline"
+    autohide={false}
+    delay={5000}
+    variant="warning"
+  />;
+
+export const ErrorOneline = () =>
+  <Alert 
+    message={{ type: "error", title: "My Cat is", body: "Broken"}} 
+    style="oneline"
+    autohide={true}
+    delay={5000}
+    variant="error"
+  />;
+
+export const ExtraLongMessageOneLine = () => 
+  <Alert 
+    message={{title: "My name is Giovanni Giorgio", body: "but everybody calls me Giorgio, Giorgio"}}
+    style="oneline"
+    autohide={true}
+    delay={5000}
+    variant="error"
+  />;
+
+export const DefaultMultiplelines = () =>
+  <Alert 
+    message={{title: "Warning", body: "Hungry kitten is approaching"}}
+    style="multiplelines"
+    autohide={true}
+    delay={5000}
+    variant="info"
+  />;
+
+export const SuccessMultiplelines = () =>
+  <Alert
+    message={{title: "I am a title", body: " i am the body" }} 
+    style="multiplelines"
+    autohide={false}
+    delay={5000}
+    variant="success"
+  />;
+
+export const WarningMultiplelines = () =>
+  <Alert 
+    message={{title: "I am a title", body: " i am the body" }} 
+    style="multiplelines"
+    autohide={false}
+    delay={5000}
+    variant="warning"
+  />;
+
+export const ErrorMultiplelines = () => 
+  <Alert 
+    message={{title: "I am a title", body: " i am the body" }} 
+    style="multiplelines"
+    variant="error"
+    autohide={true}
+    delay={2000}
+  />;
+
+export const ExtraLongMessageMultiplelines = () => 
+  <Alert 
+    message={{title: "My name is Giovanni Giorgio", body: "but everybody calls me Giorgio." }} 
+    style="multiplelines"
+    autohide={true}
+    delay={5000}
+    variant="error"
+  />;
