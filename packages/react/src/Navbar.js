@@ -29,7 +29,12 @@ const propTypes = {
     additionalItems: PropTypes.node,
     initials: PropTypes.string,
   }),
-  navLinks: PropTypes.node,
+  navLinks: PropTypes.arrayOf(
+    PropTypes.shape({
+      link: PropTypes.string.isRequired,
+      content: PropTypes.oneOf([PropTypes.string, PropTypes.node]).isRequired,
+    })
+  ),
 };
 
 function Navbar({
@@ -61,10 +66,10 @@ function Navbar({
     loginButton = (
       <div className="d-flex align-items-center">
         <Button
-          as={Link}
+          as="a"
           variant="outline-light"
           className="login-btn align-items-center"
-          to={loginConfig.loginLink}
+          href={loginConfig.loginLink}
         >
           {loginConfig.loginButtonMessage || "Sign in"}
         </Button>
@@ -103,10 +108,14 @@ function Navbar({
   }
 
   let navbarLinks;
-  if (navLinks) {
+  if (navLinks && navLinks.length > 0) {
     navbarLinks = (
       <Nav className="nav-links" as="ul">
-        {navLinks}
+        {navLinks.map((navLink) => (
+          <Nav.Link as={Link} to={navLink.link}>
+            {navLink.content}
+          </Nav.Link>
+        ))}
       </Nav>
     );
   }
