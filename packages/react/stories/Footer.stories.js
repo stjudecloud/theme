@@ -1,9 +1,9 @@
 import React from "react";
-import { Footer } from "../src";
+import Footer from "../src/Footer";
 
 export default {
-  title: 'SJ React/Atoms/Footer',
-  component: Footer,
+  title: "Footer",
+  component: Footer
 };
 
 export const Default = () => <Footer />;

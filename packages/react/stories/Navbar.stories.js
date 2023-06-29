@@ -1,136 +1,101 @@
 import React from "react";
-import { Dropdown, Nav } from "react-bootstrap";
-import { Navbar } from "../src";
-import { MemoryRouter } from "react-router-dom";
+import {Dropdown, Nav} from 'react-bootstrap';
+import Navbar from "../src/Navbar";
 
 export default {
   title: 'SJ React/Atoms/NavBar',
   component: Navbar,
-  decorators: [
-    (Story) => (
-      <MemoryRouter>
-        <Story />
-      </MemoryRouter>
-    ),
-  ],
   argTypes: {
     appName: {
-      name: "App Name Storybook",
+      name: 'App Name Storybook',
       defaultValue: "Portal Name",
       description: "Name of the application the Navbar is rendered on.",
       control: {
-        type: "text",
-      },
-    },
-  },
+        type: 'text'
+      }
+    }
+  }
 };
 
-const props = {
-  portalConfig: {
-    title: "Genomics Platform",
-    link: "/",
-  },
-  loginConfig: {
-    loginLink: "/",
-    show: true,
-    loginButtonMessage: "Login",
-  },
-  userDropdownConfig: {
-    logoutLink: "/",
-    show: true,
-  },
-  userDropdownConfigWithInitials: {
-    logoutLink: "/",
-    show: true,
-    initials: "JD",
-  },
-};
+export const NoUserDropdowns = ({appName}) => (
+    <Navbar
+      portalConfig={{title: appName, link: "/"}}
+    />
+);
 
-const NavbarTemplate = (props) => <Navbar {...props} />;
+export const UserLoggedOut = ({appName}) => (
+    <Navbar
+      portalConfig={{title: appName, link: "/"}}
+      loginConfig={{loginLink: "/", show: true, loginButtonMessage: "Login"}}
+    />
+);
 
-export const NoUserDropdowns = NavbarTemplate.bind({});
-NoUserDropdowns.args = {
-  portalConfig: props.portalConfig,
-};
+export const UserLoggedIn = ({appName}) => (
+  <Navbar
+    portalConfig={{portalTitle: appName, portalLink: "/"}}
+    userDropdownConfig={{logoutLink: "/logout", show: true}}
+  />
+);
 
-export const UserLoggedOut = NavbarTemplate.bind({});
-UserLoggedOut.args = {
-  portalConfig: props.portalConfig,
-  loginConfig: props.loginConfig,
-};
-
-export const UserLoggedInWithoutInitials = NavbarTemplate.bind({});
-UserLoggedInWithoutInitials.args = {
-  portalConfig: props.portalConfig,
-  userDropdownConfig: props.userDropdownConfig,
-};
-
-export const UserLoggedInWithInitials = NavbarTemplate.bind({});
-UserLoggedInWithInitials.args = {
-  portalConfig: props.portalConfig,
-  userDropdownConfig: props.userDropdownConfigWithInitials,
-};
-
-export const NavLinks = NavbarTemplate.bind({});
-NavLinks.args = {
-  portalConfig: props.portalConfig,
-  userDropdownConfig: props.userDropdownConfigWithInitials,
-  navLinks: [
-    { link: "/", content: "Data Browser" },
-    { link: "/", content: "Analysis Workflows" },
-    { link: "/", content: "My Dashboard" },
-    {
-      link: "/",
-      content: (
-        <>
-          <i className="fa fa-dna" /> DNAnexus
-        </>
-      ),
-    },
-  ],
-};
-
-export const UserLoggedInDropdownWithAdditionalItems = NavbarTemplate.bind({});
-UserLoggedInDropdownWithAdditionalItems.args = {
-  portalConfig: props.portalConfig,
-  userDropdownConfig: {
-    ...props.userDropdownConfigWithInitials,
-    additionalItems: (
+export const UserLoggedInDropdownWithAdditionalItems = ({appName}) => (
+  <Navbar
+    portalConfig={{portalTitle: appName, portalLink: "/"}}
+    userDropdownConfig={{logoutLink: "/", show: true, additionalItems: (
       <>
         <li>
-          <Dropdown.Item disabled>Jane Doe</Dropdown.Item>
+          <Dropdown.Item>
+            Username
+          </Dropdown.Item>
         </li>
         <Dropdown.Divider />
         <li>
-          <Dropdown.Item>Profile Link</Dropdown.Item>
+          <Dropdown.Item>
+            Profile Link
+          </Dropdown.Item>
         </li>
       </>
-    ),
-  },
-};
+    )}}
+  />
+);
 
-export const CustomDropdown = NavbarTemplate.bind({});
-CustomDropdown.args = {
-  portalConfig: props.portalConfig,
-  userDropdownConfig: props.userDropdownConfigWithInitials,
-  children: (
-    <Dropdown className="user-dropdown" title="Custom Dropdown" align="end">
-      <Dropdown.Toggle as={Nav.Link} className="profile-dropdown-toggle">
-        <i className="fa fa-user-shield fa-white" />
-      </Dropdown.Toggle>
-      <Dropdown.Menu className="profile-dropdown-menu">
-        <ul className="list-unstyled">
-          <li>
-            <Dropdown.Item>Custom Option 1</Dropdown.Item>
-          </li>
-          <li>
-            <Dropdown.Item>Custom Option 2</Dropdown.Item>
-          </li>
-          <li>
-            <Dropdown.Item>Custom Option 3</Dropdown.Item>
-          </li>
-        </ul>
-      </Dropdown.Menu>
-    </Dropdown>
-  ),
-};
+export const CustomDropdown = ({appName}) => {
+  // Force react-bootstrap to render the dropdown markdown so CSS can animate
+  // the slide on toggle. After setting `show`, immediately unset to allow
+  // dropdowns to function normally and independently.
+  const [show, setShow] = React.useState(true);
+  React.useEffect(() => {
+    setShow(null);
+  }, []);
+
+  return (
+    <Navbar
+      portalConfig={{portalTitle: appName, portalLink: "/"}}
+      userDropdownConfig={{logoutLink: "/", show: true}}
+    >
+      <Dropdown className="user-dropdown" title="Custom Dropdown" align="end">
+        <Dropdown.Toggle as={Nav.Link} className="profile-dropdown-toggle">
+          <i className="fa fa-user-shield fa-white" />
+        </Dropdown.Toggle>
+        <Dropdown.Menu className="profile-dropdown-menu" show={show}>
+          <ul className="list-unstyled">
+            <li>
+              <Dropdown.Item>
+                Custom Option 1
+              </Dropdown.Item>
+            </li>
+            <li>
+              <Dropdown.Item>
+                Custom Option 2
+              </Dropdown.Item>
+            </li>
+            <li>
+              <Dropdown.Item>
+                Custom Option 3
+              </Dropdown.Item>
+            </li>
+          </ul>
+        </Dropdown.Menu>
+      </Dropdown>
+    </Navbar>
+  );
+}

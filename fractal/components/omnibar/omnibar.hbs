@@ -9,21 +9,6 @@
         App
       </span>
 
-      <ul class="nav nav-links">
-        <li class="nav-item">
-          <a class="nav-link" href="">Link 1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Link 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Link 3</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Link 4</a>
-        </li>
-      </ul>
-
       <ul class="nav global-icons">
         <li class="nav-item user-dropdown dropdown">
           <a
@@ -35,68 +20,21 @@
             aria-expanded="false"
             title="User Info"
           >
-            <span class="user-icon"></span>
+            <span class="user-icon"></i>
           </a>
           <div
-            class="dropdown-menu profile-dropdown-menu"
+            class="dropdown-menu dropdown-menu-right profile-dropdown-menu"
             aria-labelledby="profile-dropdown-toggle"
           >
-            <ul class="list-unstyled">
-              <li>
-                <a class="dropdown-item" href="">
-                  Sign In
-                </a>
-              </li>
+          <ul class="list-unstyled">
+            <li>
+              <a class="dropdown-item" href="">
+                Sign In
+              </a>
+            </li>
               <li>
                 <a class="dropdown-item" href="">
                   Create Account
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="nav-item user-dropdown dropdown">
-          <a
-            class="nav-link dropdown-toggle profile-dropdown-toggle user-initials"
-            href=""
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            title="User Info"
-          >
-            <span>JD</span>
-          </a>
-          <div
-            class="dropdown-menu dropdown-menu-left profile-dropdown-menu"
-            aria-labelledby="profile-dropdown-toggle"
-          >
-            <ul class="list-unstyled">
-              <li>
-                <a class="dropdown-item disabled" href="">
-                  Hi Jane!
-                </a>
-              </li>
-              <div class="dropdown-divider"></div>
-              <li>
-                <a class="dropdown-item" href="">
-                  Link 1
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="">
-                  Link 2
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="">
-                  Link 3
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="">
-                  Link 4
                 </a>
               </li>
             </ul>
@@ -128,19 +66,21 @@
                   </div>
                   <ul class="list-unstyled">
                     <li>
-                      <a
-                        href="https://stjude.cloud/research-domains/pediatric-cancer"
-                      >Pediatric Cancer</a>
+                      <a href="https://stjude.cloud/research-domains/pediatric-cancer"
+                        >Pediatric Cancer</a
+                      >
                     </li>
                     <li>
                       <a
                         href="https://stjude.cloud/research-domains/cancer-survivorship"
-                      >Cancer Survivorship</a>
+                        >Cancer Survivorship</a
+                      >
                     </li>
                     <li>
                       <a
                         href="https://stjude.cloud/research-domains/non-cancerous-diseases"
-                      >Non-cancerous Diseases</a>
+                        >Non-cancerous Diseases</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -150,26 +90,29 @@
                   </div>
                   <ul class="list-unstyled">
                     <li>
-                      <a href="https://platform.stjude.cloud" class="app-title">
+                      <a
+                        href="https://platform.stjude.cloud"
+                        class="app-title"
+                      >
                         <img
                           class="app-title__icon"
-                          src="{{path
-                            '/assets/images/icon-genomics-platform.png'
-                          }}"
+                          src="{{ path '/assets/images/icon-genomics-platform.png' }}"
                           alt="Genomics Platform Icon"
                         />
                         <span>
                           Genomics Platform
-                          <div class="genomics-platform-subtext">Data &amp;
-                            Tools</div>
+                          <div class="genomics-platform-subtext">Data &amp; Tools</div>
                         </span>
                       </a>
                     </li>
                     <li>
-                      <a href="https://models.stjude.cloud" class="app-title">
+                      <a
+                        href="https://models.stjude.cloud"
+                        class="app-title"
+                      >
                         <img
                           class="app-title__icon"
-                          src="{{path '/assets/images/icon-model-systems.png'}}"
+                          src="{{ path '/assets/images/icon-model-systems.png' }}"
                           alt="Model Systems Icon"
                         />
                         <span>
@@ -178,10 +121,13 @@
                       </a>
                     </li>
                     <li>
-                      <a href="https://pecan.stjude.cloud/" class="app-title">
+                      <a
+                        href="https://pecan.stjude.cloud/"
+                        class="app-title"
+                      >
                         <img
                           class="app-title__icon"
-                          src="{{path '/assets/images/icon-pecan.png'}}"
+                          src="{{ path '/assets/images/icon-pecan.png' }}"
                           alt="PeCan Icon"
                         />
                         <span>
@@ -190,10 +136,13 @@
                       </a>
                     </li>
                     <li>
-                      <a href="https://viz.stjude.cloud" class="app-title">
+                      <a
+                        href="https://viz.stjude.cloud"
+                        class="app-title"
+                      >
                         <img
                           class="app-title__icon"
-                          src="{{path '/assets/images/icon-viz.png'}}"
+                          src="{{ path '/assets/images/icon-viz.png' }}"
                           alt="Visualization Community Icon"
                         />
                         <span>
@@ -202,7 +151,10 @@
                       </a>
                     </li>
                     <li>
-                      <a href="https://stjude.cloud/apps" class="text-primary">
+                      <a
+                        href="https://stjude.cloud/apps"
+                        class="text-primary"
+                      >
                         View All Apps
                       </a>
                     </li>
@@ -213,7 +165,7 @@
                     <a href="https://stjude.cloud/studies/clinical-genomics">
                       <img
                         class="featured-study__image"
-                        src="{{path '/assets/images/featured-study.jpg'}}"
+                        src="{{ path '/assets/images/featured-study.jpg' }}"
                         alt="Featured Study Image"
                       />
                     </a>
@@ -221,9 +173,7 @@
                       <div class="featured-study__title">Featured Study</div>
                       <ul class="list-unstyled">
                         <li>
-                          <a
-                            href="https://stjude.cloud/studies/clinical-genomics"
-                          >
+                          <a href="https://stjude.cloud/studies/clinical-genomics">
                             Real-time Clinical Genomics
                           </a>
                         </li>
@@ -249,21 +199,24 @@
                         href="https://university.stjude.cloud/docs/"
                         target="_blank"
                         rel="noopener noreferrer"
-                      >Help Guides</a>
+                        >Help Guides</a
+                      >
                     </li>
                     <li>
                       <a
                         href="https://university.stjude.cloud/docs/faq/"
                         target="_blank"
                         rel="noopener noreferrer"
-                      >FAQs</a>
+                        >FAQs</a
+                      >
                     </li>
                     <li>
                       <a
                         href="https://stjude.cloud/contact"
                         target="_blank"
                         rel="noopener noreferrer"
-                      >Contact Us</a>
+                        >Contact Us</a
+                      >
                     </li>
                   </ul>
                 </div>
