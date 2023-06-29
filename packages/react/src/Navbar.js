@@ -29,29 +29,7 @@ const propTypes = {
     additionalItems: PropTypes.node,
     initials: PropTypes.string,
   }),
-  navLinksConfig: PropTypes.shape({
-    show: PropTypes.bool,
-    navLinks: PropTypes.arrayOf(
-      PropTypes.shape({
-        link: PropTypes.string,
-        content: PropTypes.oneOf([PropTypes.node, PropTypes.string]),
-        externalLink: PropTypes.bool,
-        newTab: PropTypes.bool,
-      })
-    ),
-  }),
-};
-
-const getNavLinkProps = ({ externalLink, link, newTab }) => {
-  if (!externalLink) return { as: Link, to: link };
-
-  let props = {
-    as: "a",
-    href: link,
-  };
-
-  if (newTab) return { ...props, target: "_blank", rel: "noopener noreferrer" };
-  return props;
+  navLinks: PropTypes.node,
 };
 
 function Navbar({
@@ -59,7 +37,7 @@ function Navbar({
   portalConfig,
   loginConfig,
   userDropdownConfig,
-  navLinksConfig,
+  navLinks,
 }) {
   // Force react-bootstrap to render the dropdown markdown so CSS can animate
   // the slide on toggle. After setting `show`, immediately unset to allow
@@ -111,13 +89,6 @@ function Navbar({
         <Dropdown.Menu className="profile-dropdown-menu" show={show}>
           <ul className="list-unstyled">
             {userDropdownConfig.additionalItems}
-            {navLinksConfig &&
-              navLinksConfig.show &&
-              navLinksConfig.navLinks.map((navLink) => (
-                <li className="collapsed-nav-link">
-                  <Dropdown.Item {...getNavLinkProps(navLink)}>{navLink.content}</Dropdown.Item>
-                </li>
-              ))}
             {userDropdownConfig.logoutLink && (
               <li>
                 <Dropdown.Item as="a" href={userDropdownConfig.logoutLink}>
@@ -132,14 +103,10 @@ function Navbar({
   }
 
   let navbarLinks;
-  if (navLinksConfig && navLinksConfig.show) {
+  if (navLinks) {
     navbarLinks = (
       <Nav className="nav-links" as="ul">
-        {navLinksConfig.navLinks.map((navLink) => (
-          <Nav.Link key={navLink.link} {...getNavLinkProps(navLink)}>
-            {navLink.content}
-          </Nav.Link>
-        ))}
+        {navLinks}
       </Nav>
     );
   }
@@ -163,8 +130,8 @@ function Navbar({
             St. Jude Cloud
           </a>
           {portalElement}
-          {navbarLinks}
 
+          {navbarLinks}
           <Nav className="global-icons" as="ul">
             {children}
             {loginButton}
