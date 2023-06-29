@@ -1,4 +1,4 @@
 export * from "./Navbar";
 export * from "./Footer";
-export * from "./Error";
+export * from "./ErrorComponent";
 export * from "./MegaMenu";
