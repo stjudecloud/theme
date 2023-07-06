@@ -11,7 +11,7 @@
   }
 
   .login-btn {
-    padding: 0.65rem 1.5rem;
+    padding: 0.25rem 1rem;
     font-size: 14px;
     line-height: 14px;
 
@@ -20,16 +20,6 @@
 
       /* stylelint-disable-next-line scss/at-function-named-arguments */
       background-color: scale-color($primary, $lightness: 20%);
-    }
-  }
-
-  .nav-links .nav-link {
-    color: $white;
-    font-size: 15px;
-    font-weight: 500;
-
-    &:hover {
-      opacity: 0.85;
     }
   }
 
@@ -42,15 +32,8 @@
     color: $white;
     text-align: center;
 
-    &.user-initials {
-      background-color: $blue-light;
-      border-radius: 32px;
-      color: $blue;
-      font-size: 14px;
-      font-weight: 700;
-    }
 
-    >* {
+    > * {
       margin: auto;
     }
   }
@@ -66,17 +49,10 @@
     opacity: 0.85;
   }
 
-  .dropdown.show {
-
-    .nav-link {
-      text-align: center;
-      background-color: lighten($primary, 10%);
-      border-radius: 5px;
-
-      &.user-initials {
-        color: $white;
-      }
-    }
+  .dropdown.show > .nav-link {
+    text-align: center;
+    background-color: lighten($primary, 10%);
+    border-radius: 5px;
   }
 
   .logo {
@@ -100,21 +76,16 @@
 
   .portal-title {
     display: inline-block;
-    padding: 4px 8px;
+    padding-left: 8px;
     margin-right: auto;
     overflow: hidden;
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 12px;
-    color: $primary;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.75rem;
+    color: lighten($primary, 30%);
     text-decoration: none;
     text-overflow: ellipsis;
     white-space: nowrap;
-    background-color: $teal-light;
-    border-radius: 3px;
-    margin-left: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
   }
 
   .user-icon {
@@ -153,10 +124,6 @@
 
   .profile-dropdown-menu {
     top: 50.5px;
-
-    .collapsed-nav-link {
-      display: none;
-    }
   }
 
   .profile-dropdown-menu,
@@ -253,23 +220,6 @@
 
     .sjc-title {
       display: none;
-    }
-  }
-
-  @include media-breakpoint-down(lg) {
-
-    .nav-links {
-      display: none;
-    }
-
-    .profile-dropdown-menu {
-
-      ul {
-
-        .collapsed-nav-link {
-          display: flex;
-        }
-      }
     }
   }
 

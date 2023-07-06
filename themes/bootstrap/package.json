@@ -1,6 +1,6 @@
 {
   "name": "@stjudecloud/theme-bootstrap",
-  "version": "5.1.12",
+  "version": "5.1.14",
   "description": "Bootstrap Sass/CSS theme for the St. Jude Cloud project.",
   "scripts": {
     "build": "npm-run-all clean build:dev build:prod",

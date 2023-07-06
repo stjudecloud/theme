@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import {
   Navbar as BSNavbar,
@@ -15,52 +14,22 @@ const propTypes = {
   children: PropTypes.node,
   portalConfig: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired
   }).isRequired,
   loginConfig: PropTypes.shape({
     show: PropTypes.bool,
     loginLink: PropTypes.string.isRequired,
-    loginButtonMessage: PropTypes.string,
+    loginButtonMessage: PropTypes.string
   }),
   userDropdownConfig: PropTypes.shape({
     show: PropTypes.bool,
-    logoutLink: PropTypes.string.isRequired,
-    logoutMessage: PropTypes.string,
+    logoutLink: PropTypes.string,
     additionalItems: PropTypes.node,
-    initials: PropTypes.string,
-  }),
-  navLinksConfig: PropTypes.shape({
-    show: PropTypes.bool,
-    navLinks: PropTypes.arrayOf(
-      PropTypes.shape({
-        link: PropTypes.string,
-        content: PropTypes.oneOf([PropTypes.node, PropTypes.string]),
-        externalLink: PropTypes.bool,
-        newTab: PropTypes.bool,
-      })
-    ),
   }),
 };
 
-const getNavLinkProps = ({ externalLink, link, newTab }) => {
-  if (!externalLink) return { as: Link, to: link };
-
-  let props = {
-    as: "a",
-    href: link,
-  };
-
-  if (newTab) return { ...props, target: "_blank", rel: "noopener noreferrer" };
-  return props;
-};
-
-function Navbar({
-  children,
-  portalConfig,
-  loginConfig,
-  userDropdownConfig,
-  navLinksConfig,
-}) {
+function Navbar({ children, portalConfig, loginConfig, userDropdownConfig }) {
+  let Link = "a";
   // Force react-bootstrap to render the dropdown markdown so CSS can animate
   // the slide on toggle. After setting `show`, immediately unset to allow
   // dropdowns to function normally and independently.
@@ -69,24 +38,26 @@ function Navbar({
     setShow(null);
   }, []);
 
-  let portalElement;
-  if (portalConfig && portalConfig.title) {
-    portalElement = (
-      <Link to={portalConfig.link} className="portal-title">
-        {portalConfig.title}
-      </Link>
-    );
-  }
+  const linkProps = {
+    [Link === "a" ? "href" : "to"]: portalConfig.link,
+    children: portalConfig.title,
+    className: "portal-title"
+  };
+
+  const portalElement = React.createElement(Link, linkProps);
 
   let loginButton;
   if (loginConfig && loginConfig.show) {
+    const loginButtonProps = {
+      [Link === "a" ? "href" : "to"]: loginConfig.loginLink
+    };
     loginButton = (
       <div className="d-flex align-items-center">
         <Button
           as={Link}
           variant="outline-light"
           className="login-btn align-items-center"
-          to={loginConfig.loginLink}
+          {...loginButtonProps}
         >
           {loginConfig.loginButtonMessage || "Sign in"}
         </Button>
@@ -98,49 +69,25 @@ function Navbar({
   if (userDropdownConfig && userDropdownConfig.show) {
     userDropdown = (
       <Dropdown className="user-dropdown" title="User Info" align="end">
-        <Dropdown.Toggle
-          as={Nav.Link}
-          className="profile-dropdown-toggle user-initials"
-        >
-          {userDropdownConfig.initials ? (
-            <span>{userDropdownConfig.initials.toUpperCase()}</span>
-          ) : (
-            <i className="fa fa-user" />
-          )}
+        <Dropdown.Toggle as={Nav.Link} className="profile-dropdown-toggle">
+          <span className="user-icon" alt="Account Information"></span>
         </Dropdown.Toggle>
         <Dropdown.Menu className="profile-dropdown-menu" show={show}>
           <ul className="list-unstyled">
             {userDropdownConfig.additionalItems}
-            {navLinksConfig &&
-              navLinksConfig.show &&
-              navLinksConfig.navLinks.map((navLink) => (
-                <li className="collapsed-nav-link">
-                  <Dropdown.Item {...getNavLinkProps(navLink)}>{navLink.content}</Dropdown.Item>
-                </li>
-              ))}
             {userDropdownConfig.logoutLink && (
               <li>
-                <Dropdown.Item as="a" href={userDropdownConfig.logoutLink}>
+                <Dropdown.Item 
+                as={Link}
+                to={userDropdownConfig.logoutLink}>
                   {userDropdownConfig.logoutMessage || "Sign out"}
                 </Dropdown.Item>
               </li>
-            )}
+            )
+            }
           </ul>
         </Dropdown.Menu>
       </Dropdown>
-    );
-  }
-
-  let navbarLinks;
-  if (navLinksConfig && navLinksConfig.show) {
-    navbarLinks = (
-      <Nav className="nav-links" as="ul">
-        {navLinksConfig.navLinks.map((navLink) => (
-          <Nav.Link key={navLink.link} {...getNavLinkProps(navLink)}>
-            {navLink.content}
-          </Nav.Link>
-        ))}
-      </Nav>
     );
   }
 
@@ -163,7 +110,6 @@ function Navbar({
             St. Jude Cloud
           </a>
           {portalElement}
-          {navbarLinks}
 
           <Nav className="global-icons" as="ul">
             {children}

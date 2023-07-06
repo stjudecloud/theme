@@ -21,7 +21,6 @@
     "media-feature-name-no-vendor-prefix": null,
     "media-feature-name-no-unknown": null,
     "selector-max-type": null,
-    "selector-max-class": null,
     "selector-max-compound-selectors": null,
     "property-no-vendor-prefix": null,
     "scss/operator-no-unspaced": null,

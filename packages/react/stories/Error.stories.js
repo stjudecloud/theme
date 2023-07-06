@@ -1,9 +1,9 @@
 import React from "react";
-import { ErrorComponent } from "../src";
+import ErrorComponent from "../src/ErrorComponent";
 
 export default {
-  title: 'SJ React/Atoms/Error',
-  component: ErrorComponent,
+  title: "Error",
+  component: ErrorComponent
 };
 
 export const Default = () => <ErrorComponent />;
