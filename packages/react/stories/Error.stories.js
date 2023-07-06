@@ -3,7 +3,7 @@ import ErrorComponent from "../src/ErrorComponent";
 
 export default {
   title: "Error",
-  component: ErrorComponent
+  component: ErrorComponent,
 };
 
 export const Default = () => <ErrorComponent />;
