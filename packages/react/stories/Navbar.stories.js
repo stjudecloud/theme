@@ -3,7 +3,7 @@ import {Dropdown, Nav} from 'react-bootstrap';
 import Navbar from "../src/Navbar";
 
 export default {
-  title: 'SJ React/Atoms/NavBar',
+  title: "Navbar",
   component: Navbar,
   argTypes: {
     appName: {
