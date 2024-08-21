@@ -5,7 +5,6 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   fab,
   faFacebookSquare,
-  faTwitter,
   faInstagram,
   faLinkedin,
   faYoutube
@@ -14,7 +13,6 @@ import {
 library.add(
   fab,
   faFacebookSquare,
-  faTwitter,
   faInstagram,
   faLinkedin,
   faYoutube
@@ -97,8 +95,8 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a 
-                  href="https://models.stjude.cloud" 
+                <a
+                  href="https://models.stjude.cloud"
                   title="Model Systems"
                 >
                     Model Systems
@@ -142,20 +140,6 @@ function Footer() {
                   icon={["fab", "facebook-square"]}
                 />
                 <span>Facebook</span>
-              </a>
-
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://twitter.com/StJudeResearch"
-                title="Twitter"
-                alt="Twiter"
-                className="social-icon social-icon-react"
-              >
-                <FontAwesomeIcon
-                  icon={["fab", "twitter"]}
-                />
-                <span>Twitter</span>
               </a>
 
               <a
