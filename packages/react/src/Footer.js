@@ -53,11 +53,6 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://stjude.cloud/contact" title="Contact">
-                  Contact
-                </a>
-              </li>
-              <li>
                 <a href="https://talent.stjude.org/data-sciences/jobs" title="Careers">
                   Careers
                 </a>
