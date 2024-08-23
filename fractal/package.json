@@ -20,7 +20,7 @@
     "@frctl/mandelbrot": "^1.9.4",
     "@stjudecloud/assets": "^1.0.0",
     "@stjudecloud/theme-bootstrap": "^5.1.16",
-    "@stjudecloud/ui-react": "^5.1.16"
+    "@stjudecloud/ui-react": "^5.1.17"
   },
   "devDependencies": {
     "@frctl/fractal": "^1.5.11",
