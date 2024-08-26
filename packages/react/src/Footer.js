@@ -92,8 +92,8 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a 
-                  href="https://models.stjude.cloud" 
+                <a
+                  href="https://models.stjude.cloud"
                   title="Model Systems"
                 >
                     Model Systems
@@ -116,85 +116,6 @@ function Footer() {
                 </a>
               </li>
             </ul>
-          </Col>
-          <Col
-            xs={{ span: 8, offset: 2 }}
-            lg={{ span: 6, offset: 3 }}
-            xl={{ span: 3, offset: 0 }}
-            className="footer-social"
-          >
-            <h6>Follow Us</h6>
-            <div className="d-flex justify-content-between">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.facebook.com/stjuderesearch"
-                title="Facebook"
-                alt="Facebook"
-                className="social-icon social-icon-react"
-              >
-                <FontAwesomeIcon
-                  icon={["fab", "facebook-square"]}
-                />
-                <span>Facebook</span>
-              </a>
-
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://twitter.com/StJudeResearch"
-                title="Twitter"
-                alt="Twiter"
-                className="social-icon social-icon-react"
-              >
-                <FontAwesomeIcon
-                  icon={["fab", "twitter"]}
-                />
-                <span>Twitter</span>
-              </a>
-
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.instagram.com/stjuderesearch/"
-                title="Instagram"
-                alt="Instagram"
-                className="social-icon social-icon-react"
-              >
-                <FontAwesomeIcon
-                  icon={["fab", "instagram"]}
-                />
-                <span>Instagram</span>
-              </a>
-
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.linkedin.com/company/st-jude-childrens-research-hospital/"
-                title="LinkedIn"
-                alt="LinkedIn"
-                className="social-icon social-icon-react"
-              >
-                <FontAwesomeIcon
-                  icon={["fab", "linkedin"]}
-                />
-                <span>LinkedIn</span>
-              </a>
-
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.youtube.com/user/MyStJude"
-                title="YouTube"
-                alt="YouTube"
-                className="social-icon social-icon-react"
-              >
-                <FontAwesomeIcon
-                  icon={["fab", "youtube"]}
-                />
-                <span>YouTube</span>
-              </a>
-            </div>
           </Col>
         </Row>
       </Container>
