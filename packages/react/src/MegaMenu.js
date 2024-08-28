@@ -137,15 +137,6 @@ function MegaMenu() {
                 FAQs
               </a>
             </li>
-            <li>
-              <a
-                href="https://stjude.cloud/contact"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Contact Us
-              </a>
-            </li>
           </ul>
         </Col>
       </Row>
